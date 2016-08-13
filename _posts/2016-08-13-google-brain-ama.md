@@ -26,6 +26,8 @@ Chris Olah is a clear outlier, having not completed a university degree. Damn im
 
 #### *Bachelors Degrees: 95%*
 
+About 5% of the questions in the AMA were related to education for a career in ML. That's around 40 questions, all with about 1 upvote each.
+
 ### Most Responsive Googler = Jeff Dean
 
 ![most_responsive]({{ site.url }}images/most_responsive.png)
@@ -50,6 +52,6 @@ Chris Olah is a clear outlier, having not completed a university degree. Damn im
 
 ### Method & Final Thoughts
 
-This information was produced using simple tools from [praw](https://praw.readthedocs.io/en/stable/), [matplotlib](http://matplotlib.org/), and [nltk](http://www.nltk.org/). Education information was gathered manually (eugh). 
+This information was produced using simple tools from [praw](https://praw.readthedocs.io/en/stable/), [matplotlib](http://matplotlib.org/), and [nltk](http://www.nltk.org/). Education information was gathered manually (eugh).
 
 I was really encouraged to read about the diversity within the Google Brain team. Having come from a design and architecture background myself, with a fondness for philosophy and literature, it's great to see that intellectual diversity is valued highly.
