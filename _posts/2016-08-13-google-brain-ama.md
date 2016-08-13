@@ -12,7 +12,7 @@ categories: machine-learning
   }
 </style>
 
-Read through Google Brain's AMA on [r/machinelearning](https://www.reddit.com/r/MachineLearning/comments/4w6tsv/ama_we_are_the_google_brain_team_wed_love_to?st=irsuxr8l&sh=0288a171) if you have forgotten what true yearning feels like. Maybe one day guys, maybe one day.
+Read through Google Brain's AMA on [r/machinelearning](https://www.reddit.com/r/MachineLearning/comments/4w6tsv/ama_we_are_the_google_brain_team_wed_love_to?st=irsuxr8l&sh=0288a171) if you have forgotten what true yearning feels like. Man what a great job to have. Maybe one day guys, maybe one day.
 
 ### Education Levels at Google Brain
 
@@ -48,6 +48,8 @@ Chris Olah is a clear outlier, having not completed a university degree. Damn im
   <footer><a href="http://www.cs.toronto.edu/~hinton/"><cite title="Geoffrey Hinton">Geoffrey Hinton, /u/geoffhinton</cite></a></footer>
 </blockquote>
 
-### Final Thoughts
+### Method & Final Thoughts
+
+This information was produced using simple tools from [praw](https://praw.readthedocs.io/en/stable/), [matplotlib](http://matplotlib.org/), and [nltk](http://www.nltk.org/). Education information was gathered manually (eugh). 
 
 I was really encouraged to read about the diversity within the Google Brain team. Having come from a design and architecture background myself, with a fondness for philosophy and literature, it's great to see that intellectual diversity is valued highly.
