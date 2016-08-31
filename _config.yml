@@ -111,3 +111,8 @@ gems:
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
+
+# Collections (for design section of site)
+collections:
+  portfolio:
+    output: true

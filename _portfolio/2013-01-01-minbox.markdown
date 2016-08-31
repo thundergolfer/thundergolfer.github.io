@@ -1,0 +1,33 @@
+---
+layout: post-wide
+hero-bg-color: "#101010"
+uid: minbox
+title:  "Minbox"
+worktype: "Design & Development"
+date:   2013-01-01 09:35:01
+categories: project
+---
+
+<p>
+  Dropbox for photographers.
+</p>
+<p>
+  With a few clicks, it allows you to easily share large photos and galleries between users. In the background it crunches up large files into small chunks, uploads them and when ready to view alerts your recipients that the gallery can be viewed on Desktop / Mobile / Tablet – all through the same responsive web view. The users can then tag their favorites, download individual photos, whole galleries and share photos.
+</p>
+<p>
+  I designed and build the desktop and mobile gallery.  Built using backbonejs and coffeescript.  I also built their homepage.
+</p>
+
+<p class="meta">Client: <strong>minbox</strong> | Date: <strong>{{ page.date | date: "%b %Y" }}</strong> | <a href="http://www.minbox.com">View site</a></p>
+
+<div class="showcase">
+  <img src="/img/minbox/1.jpg" alt="1">
+  <img src="/img/minbox/2.jpg" alt="2">
+  <img src="/img/minbox/3.jpg" alt="3">
+  <img src="/img/minbox/4.jpg" alt="4">
+  <h2>Homepage</h2>
+  <img src="/img/minbox/5.jpg" alt="5">
+</div>
+
+
+
