@@ -468,6 +468,10 @@ td {
     text-align: center;
   }
 
+  a .cover {
+    background-image: none;
+  }
+
   .projects .cover:hover {
     opacity: 1;
     color:#333;
