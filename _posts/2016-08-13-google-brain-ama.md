@@ -16,7 +16,7 @@ Read through Google Brain's AMA on [r/machinelearning](https://www.reddit.com/r/
 
 ### Education Levels at Google Brain
 
-"Do you need a PHD?" is a painfully common question asked of ML researchers at Google, and the answer is pretty clear. No, you dont **need** one because 22% of the Google Brain team don't have one, but the clear majority do have one.
+"Do you need a PHD?" is a painfully common question asked of ML researchers at Google, and the answer is pretty clear. No, you dont *need* one because 22% of the Google Brain team don't have one, but the clear majority do have one.
 
 Chris Olah is a clear outlier, having not completed a university degree. Damn impressed with you Chris.
 
