@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Thundergolfer.IO - I'm now on Youtube
-date:       2016-08-27
+date:       2016-09-13
 summary:    I'm to try and create useful AI video content when I get a spare minute.
 categories: personal youtube social
 ---
