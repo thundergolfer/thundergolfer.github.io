@@ -6,6 +6,8 @@ summary:    In two minutes, what is a Recurrent Neural Network basically doing?
 categories: machine-learning neural-networks drawing recurrent-neural-network
 ---
 
+Themselves. Goldfish. Your.
+
 Those are the fourth, fifth, and sixth words from the next three sentences. Sitting there by themselves that have *some* meaning, but you couldn't tell me what X was Y. If you were a goldfish (that hypothetically speaks english), could you understand even one sentence if you kept forgetting the start by the end, let alone the *last word upon hearing the next*?
 
 You absolutely couldn't, you require your thoughts (which is information) to persist. In a traditional neural network there is no persistence. You feed something in wholesale and you get something output at the end. Information does not really persist in the network.
@@ -28,7 +30,7 @@ By unrolling we mean that we visual each *step* of the network's computing the *
 3. ***s<sub>t</sub>*** is the hidden state at step ***t***. It the bit that has the network memory persistence, as it is calculated based on the previous hidden state and the input at the current step.
 4. The RNN is sharing the parameters (A,V,W) across all steps. This is because we are performing the same task at each step, just with different input and a different *context*.
 
-The final sketch is a diagram showing another way of visualising the RNN, as a 'projection' rather than an unrolling. This diagram also shows two hidden neurons rather than one. 
+The final sketch is a diagram showing another way of visualising the RNN, as a 'projection' rather than an unrolling. This diagram also shows two hidden neurons rather than one.
 
 ![projection unroll](/images/rnn_short/projection_unroll.jpg)
 
