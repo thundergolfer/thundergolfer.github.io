@@ -6,7 +6,7 @@ summary:    We really don't know much about anything. Always never forget that.
 categories: AI NLP Papers
 ---
 
-I read through a decades old paper criticizing a few unhelpful feature of the AI field and its researchers. Reaction and thoughts are kept here as a record.
+I read through a decades old paper criticizing a few unhelpful features of the AI field and its researchers. Reaction and thoughts are kept here as a record.
 
 ### A Good Dressing Down
 
