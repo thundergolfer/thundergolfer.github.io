@@ -10,11 +10,11 @@ I read through Digital Reasoning's [Technology Review of their *Synthesys* Syste
 
 ### This is a cool company
 
-Digital Reasoning (DR) starts of outlining their playground, the booming world of unstructured-data. Unstructured-data, apparently a whole new class of economic asset, is filled with mysteries, and stories, and conspiracies. DR sets itself up as a company to build new approaches to understanding human communication in unstructured datasets, and their work will have huge utility to the financial and intelligence communities in particular (their targets I assume).
+Digital Reasoning (DR) starts off outlining their playground, the booming world of unstructured-data. Unstructured-data, apparently a whole new class of economic asset, is filled with mysteries, and stories, and conspiracies. DR sets itself up as a company to build new approaches to understanding human communication in unstructured datasets, and their work will have huge utility to the financial and intelligence communities in particular (their targets I assume).
 
 As described, DR's Synthesys machine learning platform seems to be a straightforward application of supervised learning techniques, in the realm of natural language, and some unsupervised learning as well. The mention that unsupervised techniques are used in their analytics, but don't ever expand on it. I could guess that they use it for anomaly detection, given their work with fraud detection.
 
-In section 1.3, DR detail a few of the tools they employee in Synthesys; Hadoop, Cassandra and Accumulo to name a few. These tools manage data storage and retrieval and I'm pretty sure they're open-source, so I'll be able to get to know them.
+In section 1.3, DR detail a few of the tools they employee in Synthesys; Hadoop, Cassandra and Accumulo to name a few. These tools manage data storage and retrieval and I'm pretty sure they're open-source so I'll be able to get to know them.
 
 As a system, DR identifies Synthesys as having a *READ*, *RESOLVE*, and *REASON* phase. Here's how they describe them:
 
@@ -29,11 +29,11 @@ unified entity storage architecture called a Knowledge Base (KB).
 
 How exactly they implement their *spatial and temporal reasoning* would be really interesting, as well as seeing how exactly a *Unified Entity Storage Architecture* is organised.
 
-...and I've read a little further and apparently is a "combination of persistent storage and intelligent data caching". A little clear but I still essentially have no idea how to begin building that.
+...and I've read a little further and apparently is a "combination of persistent storage and intelligent data caching". A little clearer but I still essentially have no idea how to begin building that.
 
-DR's report then gets even more specific about what's going on in the Read, Resolve, and Reason steps. It's detailed enough to sketch out their system and possibly build a ugly-sister of Synthesys; if you had a lot of free time.
+DR's report then gets even more specific about what's going on in the Read, Resolve, and Reason steps. It's detailed enough to sketch out their system and possibly build an ugly-sister of Synthesys if you had a lot of free time.
 
-The technology report closes out with some less interesting (to me) information about information retrieval query systems and APIs. Once all that work has been done to put it all together, DR makes the effort so that for clients it isn't a headache to pull the good stuff out.
+The technology report closes out with some less interesting (to me) information about information retrieval query systems and APIs. Once all the work has been done to put it all together, DR makes the effort so that it isn't a headache for clients to pull the good stuff out.
 
 
 ### Takeaway
