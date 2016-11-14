@@ -8,7 +8,7 @@ categories: machine-learning neural-networks drawing recurrent-neural-network
 
 Themselves. Goldfish. Your.
 
-Those are the fourth, fifth, and sixth words from the next three sentences. Sitting there by themselves that have *some* meaning, but you couldn't tell me what X was Y. If you were a goldfish (that hypothetically speaks english), could you understand even one sentence if you kept forgetting the start by the end, let alone the *last word upon hearing the next*?
+Those are the fourth, fifth, and sixth words from the next three sentences. Sitting there by themselves that have *some* meaning, but you couldn't tell me If this goldfish is dead, alive, or just a drawing. If you were a goldfish (that hypothetically speaks english), could you understand even one sentence if you kept forgetting the start by the end, let alone the *last word upon hearing the next*?
 
 You absolutely couldn't, you require your thoughts (which is information) to persist. In a traditional neural network there is no persistence. You feed something in wholesale and you get something output at the end. Information does not really persist in the network.
 
