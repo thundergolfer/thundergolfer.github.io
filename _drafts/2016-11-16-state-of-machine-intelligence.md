@@ -31,3 +31,5 @@ I did have success with Twitter following thankfully. Seeing as I only had the c
 ### Going Forward
 
 I might write a script to find these company's Github accounts and follow them. I may also use this list in the future to track the health of this group of companies. Many of them are startups so it will be interesting to see which fail, merge, or grow.
+
+Another thing I may use it for is as a 'target list' of companies to apply to for internships and graduate roles. Now that I have a text list I can put it all into Excel or something and manage all my applications better.
