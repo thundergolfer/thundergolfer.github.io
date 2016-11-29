@@ -101,7 +101,7 @@ text:
 # Build settings
 markdown:     kramdown
 redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+  extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
 permalink:    pretty
 paginate:     4
 sass:
