@@ -10,15 +10,15 @@ If you are wanting to make contributions to significant open-source projects, yo
 
 ### Getting Started
 
-Reading 10s of thousands, or 100s of thousands of lines is a large and often daunting task, especially for 'green' developers like me. There's some articles and forum answers around that also speak on this problem, but I have found them to be (whilst still informative) high-level and broad. The following is a stepwise, practical, and detail oriented approach that I have so far fashioned, and continue to improve. I should not that I am very much focused on the [Github](https://github.com/) open-source ecosystem.
+Reading 10s of thousands, or 100s of thousands of lines is a large and often daunting task, especially for 'green' developers like me. There's some articles and forum answers around that also speak on this problem, but I have found them to be (whilst still informative) high-level and broad. The following is a stepwise, practical, and detail oriented approach that I have so far fashioned, and continue to improve. I should note that I am very much focused on the [Github](https://github.com/) open-source ecosystem.
 
 ### 1. Fork, Build, and Run
 
-Obvious yes, but get this out of the way before starting. [Fork](https://help.github.com/articles/fork-a-repo/) the repository for the codebase/project you are looking to learn and contribute to. You now have a copy of it which can track the original, whilst still being a sandbox for your learning. Next follow the build and run steps which should hopefully be included in some documentation. Building and running the software itself will show you a part of how the code works, but more so it is vital to continued learning.
+Obvious yes, but get this out of the way before starting. [Fork](https://help.github.com/articles/fork-a-repo/) the repository for the codebase/project you are looking to learn and contribute to. You now have a copy of it which can track the original, whilst still being a sandbox for your learning. Next follow the build and run steps which should hopefully be included in some documentation. Building and running the software itself will show you a part of how the code works, but more so it is vital for continued learning.
 
 ### 2. Become Confident Using The Codebase
 
-Understanding the functionality and usage of a codebase is a catalyst for understanding the source. The features of the codebase are *the reason* for the all those developer hours. They are goals already achieved which will point you in the direction for your own work. This is the easy part, the fun part, go and become an expert in the codebase you so admire and enjoy that you decided to work on it.
+Understanding the functionality and usage of a codebase is a catalyst for understanding the source. The features of the codebase are *the reason* for the all those developer hours. They are goals already achieved which will point you in the direction for your own work. This is the easy part, the fun part, go and become an expert in the codebase you admire and enjoy so much that you decided to work on it.
 
 ### 3. The First Pass
 
@@ -38,7 +38,7 @@ Any significant open-source project worth its salt should have thorough and well
 
 When reading and re-reading through unfamiliar code I have found it really useful to fill a version of the codebase's files with personal comments to support my own understanding. It's not enough to just read the code, because you'll often have forgotten things about the first files you read through by the time you reach the last. To keep everything clear and organised, I like to keep two *git branches* in my fork.
 
-So from the base folder of your local fork, use the command `git branch comments` to create the `comments` branch and use `git checkout comments` to switch to it. From this branch, you are free to fill the codebase with your own comments, and whenever you want use `git checkout master` to switch back to the comment-free, 'clean' codebase if you'd like.
+So from the base folder of your local fork, use the command `git branch comments` to create the `comments` branch and use `git checkout comments` to switch to it. From this branch, you are free to fill the codebase with your own comments, and whenever you want use `git checkout master` to switch back to the comment-free, 'clean' codebase.
 
 Something else that I do is mark out my own comments from the existing comments with 'tags'. By doing this I can spot at a glance which comments are my own, and also use [regex](https://en.wikipedia.org/wiki/Regular_expression) to pull out my comments from the source code bulk. For example:
 
@@ -85,18 +85,18 @@ It's reasonably clear what this command is doing. `cat` is a common command to r
 
 ### 6. Working Through The Code
 
-Ok so if you've faithfully tracked along with me, you are probably ready to get parts of the codebase running. I generally do one of two things. The first method is to jump into an IDE's debugger or another type of debugging tool (like [pdb](https://docs.python.org/2/library/pdb.html)) and set a breakpoint at a **important 'jumping off point' in the code**. An intelligently placed breakpoint will set you going through a part of the codebase revealing much about how the codebase works.
+Ok so if you've faithfully tracked along with me, you are probably ready to get parts of the codebase running. I generally do one of two things. The first method is to jump into an IDE's debugger or another type of debugging tool (like [pdb](https://docs.python.org/2/library/pdb.html)) and set a breakpoint at an important 'jumping off point' in the code. An intelligently placed breakpoint will set you going through a part of the codebase revealing much about how that codebase works.
 
 The second method is to try and break a part of the code in a calculated way. By reading through the code, your will form ideas about what the code is and what the code does. Challenge these ideas that you've formed by forming an expectation of what certain changes will do, and then break/manipulate/change the code to try and do that.
 
 ### 7. Another Pass
 
-By now you chewed through much of the codebase, note-taking and tinkering. Go back to basics again, and read through the source code 'cover to cover'. You'll look on it with 'new eyes' and be able see more into the detail and intricacies.
+By now you chewed through much of the codebase, note-taking and tinkering. Go back to basics again, and read over the source code 'cover to cover'. You'll look on it with new eyes and be able see more into the detail and intricacies.
 
 ### 8. Lock Into Your Area Of Interest
 
-This is the stuff you do once you have a solid understanding of the codebases subsystems. From the start, you may have found a particular part of the codebase interesting and wanted to contribute specifically in that area. Now you should be ready to drill into that area and build yourself into a position.
+This is the stuff you do once you have a solid understanding of the codebases subsystems. From the start, you may have found a particular part of the codebase interesting and wanted to contribute specifically in that area. Now you should be ready to drill into that area and build yourself into a position of confidence.
 
 ### And There We Go
 
-That's how I'm reading large open-source codebases. I'll be hopefully updating this with more specific and practical tips in future, and will also modify the content if my approach changes to something I consider more effective. For now, thanks for reading. 
+That's how I'm reading large open-source codebases. I'll be hopefully updating this with more specific and practical tips in future, and will also modify the content if my approach changes to something I consider more effective. For now, thanks for reading.

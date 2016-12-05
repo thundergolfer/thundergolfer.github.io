@@ -10,9 +10,9 @@ I'm about to start as a *Date Engineering Intern* working with Zendesk's Data En
 
 ### Where I Looked For Answers
 
-Somewhat shockingly, Wikipedia does not have an article for "Data Engineering". You can search around an find that [Data Engineers are in growing demand](https://tdwi.org/TDWI/TDWI-Upside/Articles/2016/11/04/Data-Engineers-Suddenly-In-Demand.aspx), but still no article. There's articles for ["Information Engineering"](https://en.wikipedia.org/wiki/Information_engineering) and ["Knowledge Engineering"](https://en.wikipedia.org/wiki/Knowledge_engineering) but looking at these they clearly don't map so well to what we're talking about.
+Somewhat shockingly, Wikipedia does not have an article for "Data Engineering". You can search around an find that [Data Engineers are in growing demand](https://tdwi.org/TDWI/TDWI-Upside/Articles/2016/11/04/Data-Engineers-Suddenly-In-Demand.aspx), but still no article. There's articles for ["Information Engineering"](https://en.wikipedia.org/wiki/Information_engineering) and ["Knowledge Engineering"](https://en.wikipedia.org/wiki/Knowledge_engineering) but looking at these, they clearly don't map so well to what we're talking about.
 
-I found [this great answer from Sean McClure](https://www.quora.com/How-do-I-become-a-data-engineer/answer/Sean-McClure-3?srid=udLGL) to the question "How do I become a data engineer?" on [Quora](https://www.quora.com/). It is broad and contains enough detail to set you off on the trail of further research. I'm going to use it as a base for my answer, fleshing out that parts that need further information on. On Quora there is also the ["What is data engineering?"](https://www.quora.com/What-is-data-engineering) question, but the answers found there I thought were less clear.
+I found [this great answer from Sean McClure](https://www.quora.com/How-do-I-become-a-data-engineer/answer/Sean-McClure-3?srid=udLGL) to the question "How do I become a data engineer?" on [Quora](https://www.quora.com/). It is broad and contains enough detail to set you off on the trail of further research. I'm going to use it as a base for my answer, fleshing out that parts that need further information on. On Quora there is also the ["What is data engineering?"](https://www.quora.com/What-is-data-engineering) question, but I thought the answers found there were less clear.
 
 Here We Go.
 
@@ -118,8 +118,8 @@ It's been about three hours since I first pasted Sean McClure's answer into my e
 
 -----------
 
-[^1] : Data Engineering, Techopedia -  https://www.techopedia.com/definition/6730/data-architecture
+[^1]: Data Engineering, Techopedia -  https://www.techopedia.com/definition/6730/data-architecture
 
-[^2] : Data Ingestion -  http://whatis.techtarget.com/definition/data-ingestion
+[^2]: Data Ingestion -  http://whatis.techtarget.com/definition/data-ingestion
 
-[^3] : What We Believe, Palantir - https://www.palantir.com/what-we-believe/
+[^3]: What We Believe, Palantir - https://www.palantir.com/what-we-believe/
