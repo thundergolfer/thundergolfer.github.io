@@ -21,9 +21,9 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 	{% endif %}
-
+  {% include header.html %}
   <div class="site-wrap">
-    {% include header.html %}
+
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
@@ -35,3 +35,9 @@
   {% include footer.html %}
 </body>
 </html>
+
+{% if page.flicker %}
+<script type="text/javascript">
+  {% include js/flicker.js %}
+</script>
+{% endif %}

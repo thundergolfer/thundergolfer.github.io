@@ -1,0 +1,30 @@
+---
+layout: default
+title: Projects & Open-Source
+tags: projects
+permalink: /projects/
+js:
+- js/gh_projects.js
+- js/util_buttons.js
+---
+
+<div id="display-projects"></div>
+
+<div class="circle-button">
+      <div class="top-circle" data-sr-id="80" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+        <img src="{{ site.url }}/images/logos/top.png">
+  </div>
+</div>
+
+{% for js in page.js %}
+  <script type="text/javascript">
+  {% include {{ js }} %}
+  </script>
+{% endfor %}
+
+<!-- <script src="path_to_js/gitquery.js"></script> -->
+<script type="text/javascript">
+  $(function() {
+    $("#display-projects").getRepos("thundergolfer"); //Add your github username.
+  });
+</script>
