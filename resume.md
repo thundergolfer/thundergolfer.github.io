@@ -69,19 +69,16 @@ __* Please see my Github profile for other projects and pull-request contributio
 
 ## Awards
 
+1​st​ Place ​in NASA’s SpaceApps Melbourne Hackathon ​APR 2016
+
+2nd Place in Facebook Melbourne Hackathon 2017
+
+Most Creative Team​ ​in Unihack 2016 AUG 2016
+
+
 MRC Capacity building scholarship (PhD fees + enhanced stipend)
 
 MRC Full postgraduate scholarship (MSc fees + stipend)
-
-ISCB computational biology Wikipedia competition 2013 ([doi:10.1371/journal.pcbi.1003242](http://dx.doi.org/10.1371/journal.pcbi.1003242); 2nd place)
-
-Imperial Create Lab's "Summer data challenge" ([summerdatachallenge.com](http://summerdatachallenge.com); 3rd place)
-
-Individual engagement grant from the Wikimedia Foundation to attend ISMB 2014
-
-Training accreditation for Wikimedia UK, the national chapter of the Wikimedia Foundation
-
-Front cover design selected for J. Comp. Chem. (34:22) ([doi:10.1002/jcc.23388](http://dx.doi.org/10.1002/jcc.23388))
 
 ## Technical
 
@@ -99,7 +96,7 @@ Front cover design selected for J. Comp. Chem. (34:22) ([doi:10.1002/jcc.23388](
 
 * <i class="fa fa-envelope"></i> <a href="mailto:jbelotti@zendesk.com">jbelotti@zendesk.com</a><br />
 * <i class="fa fa-github"></i> <a href="http://github.com/thundergolfer">thundergolfer</a><br />
-*  <i class="fa fa-twitter"></i> <a href="http://twitter.com/benjaminlmoore">benjaminlmoore</a><br />
+*  <i class="fa fa-twitter"></i> <a href="http://twitter.com/jonobelotti_IO">jonobelotti_IO</a><br />
 
 <!-- ### Footer
 
