@@ -76,10 +76,6 @@ __* Please see my Github profile for other projects and pull-request contributio
 Most Creative Team​ ​in Unihack 2016 AUG 2016
 
 
-MRC Capacity building scholarship (PhD fees + enhanced stipend)
-
-MRC Full postgraduate scholarship (MSc fees + stipend)
-
 ## Technical
 
 * **Python**
