@@ -77,15 +77,36 @@ So this defines that criteria by which a neural network can be said to store inf
 
 *General Position* is a very simple property of an input space that has important implications for the storage capacity of the neural network. Because we've seen that information can be stored in the network by implementing mappings from some input vector to a binary output vector, the *amount* of mappings possible within the network has direct impact on capacity. It turns out that whether or not a neural network can map `2N` inputs to arbitrary binary outputs depends on the input vector group and not just on the architecture of the network.
 
+
 #### ! - Explain general position
 
+General position can be a characteristic of any set of points or geometric objects, but let's first consider a small set of low-dimensional vectors, and a more simple single-layer perceptron that maps inputs to either 0 or 1. In order to implement a mapping from inputs to outputs, a single-layer perceptron network must implement a function. In our simple case this function determines a dichotomy; points are either 0 or they're 1.
 
-#### ! - Talk about how it's possible that the neural network is gauranteed to find the correct mapping
+##### TODO: Mention the lack of a bias bit
+
+Our small set of low-dimensional vectors looks like this: `{[0,1], [2, 2], [0,5]}`. These `3` vectors with dimension `N = 2` could map to one of `8` possible outcomes: `[0,0,0], [0,0,1], [0,1,0] ... [1, 1, 1]`. The entropy of this variable space is thus `3` (log<sub>2</sub>2<sup>3</sup>). The function of our neural network must (<<--- why!) be able to dichotomise these 3 points in those 8 ways.
+
+### DIAGRAM OF 3 VECTORS IN GENERAL POSITION
+
+What happens though if we change `[0, 5]` to `[4, 4]`? Our new set becomes `{[0,1], [2, 2], [4,4]}` and our plot looks like this:
+
+### DIAGRAM OF 3 VECTORS **NOT** IN GENERAL POSITION
+
+It should be quite clear that the network can no longer implement functions that dichotomise the 3 inputs in 8 different ways. Our new input space has imposed a restriction on the network such that it *cannot implement a mapping to "arbitrary [2]-dimensional binary output vectors"*. This directly impacts the information storage capacity of the network because the linear dependence of `[2, 2]` and `[4, 4]` ensure that they *must share the same outcome*. If they share an outcome, then the uncertainty about the system is reduced. (TODO: Check if that preceding sentence makes sense).
+
+
+#### ! - Explain Cover's function theorem (or maybe don't)
+
+
+#### ! - Talk about how it's possible that the neural network is guaranteed to find the correct mapping
 
 
 #### ! - Talk about how it's "at least" 2 bits of information. How can it be more?
 
 #### ! - Talk about the connection to physics research
 
-#### ! - Add footnotes
+#### Footnotes
+
+blah blah blah
+
 ------
