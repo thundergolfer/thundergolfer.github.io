@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "A Foundation Result in Machine Learning..."
+title:      "\"A Foundation Result in Machine Learning...\""
 date:       2017-07-07
 summary:    Diving into single-layer perceptrons and information theory
 categories: machine-learning information-theory rnn
