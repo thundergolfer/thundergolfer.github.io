@@ -114,7 +114,7 @@ This short answer introduces *yet more* terms for us to understand. But I'll lea
 
 ### Phew, All Done
 
-It's been about three hours since I first pasted Sean McClure's answer into my editor for expansion. I've come away with a better understanding of the feild and a sense of its depth and breadth; I hope you've learned a bit by reading.
+It's been about three hours since I first pasted Sean McClure's answer into my editor for expansion. I've come away with a better understanding of the field and a sense of its depth and breadth; I hope you've learned a bit by reading.
 
 -----------
 

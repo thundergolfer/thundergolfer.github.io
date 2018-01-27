@@ -23,7 +23,7 @@ How does this looping work? If can imagine that each part of the input is a *ste
 ![unrolled start](/images/rnn_short/unrolled_start.jpg)
 ![unrolled RNN](/images/rnn_short/unrolled.jpg)
 
-By unrolling we mean that we visual each *step* of the network's computing the ***t*** length input. For example, if we are running a sentiment analysis on a sentence of 9 words, the network unrolls to a 9 layer neural network. In this diagram, we can see that:
+By unrolling we mean that we visualise each *step* of the network's computing the ***t*** length input. For example, if we are running a sentiment analysis on a sentence of 9 words, the network unrolls to a 9 layer neural network. In this diagram, we can see that:
 
 1. ***x<sub>t</sub>*** is the input at step ***t***. This may be the word "disgustingly", corresponding to the 4th word in the sentence. (Note that the word alone is not enough for sentiment analysis).
 2. ***o<sub>t</sub>*** is the output at step ***t***. For example in our Sentiment Analysis example it could be the *positivity value* (0.000 -> 1.000) of the sentence so far.
