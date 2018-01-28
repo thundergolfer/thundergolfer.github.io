@@ -22,14 +22,6 @@ There is more than one guide because it has been the experience of the author th
 
 When possible, these guides have stuck closely to the views of established Machine Learning engineers and researchers. In other places, the author has forwards their view of things. Please feel free to submit feedback and improvements for these any parts of these guides.
 
-Follow the flow diagram to get the best guide for your purposes.
-
-@@@@@@@@@@@@@@@@@@@@
-
-DIAGRAM
-
-@@@@@@@@@@@@@@@@@@@@
-
 ------
 
 ## Getting into ML: High Schoolers Guide
