@@ -1,2 +1,3 @@
 ---
-BUNDLE_CLEAN: true
+BUNDLE_CLEAN: "true"
+BUNDLE_PATH: "vendor/bundle"
