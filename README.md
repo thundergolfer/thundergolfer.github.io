@@ -1,6 +1,6 @@
 # thundergolfer.github.io
 
-just my website
+Just my website. The theme is [thundergolfer/junior-theme](https://github.com/thundergolfer/junior-theme)
 
 ----
 
