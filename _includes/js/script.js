@@ -1,20 +1,10 @@
-// this aint supposed to be private... just idiot proof
+/* this aint supposed to be private... just idiot proof */
 var showcasePwd = "sesame";
 
 $(document).ready(function(){
   bindProjectNavArrows();
   bindPasswordDetect();
   fadePageIn();
-
-  BackgroundCheck.init({
-    targets: '.target',
-    images: '.post-wide-hero'
-  });
-
-  setTimeout(function(){
-    BackgroundCheck.refresh();
-  },300);
-
 });
 
 function bindPasswordDetect(){

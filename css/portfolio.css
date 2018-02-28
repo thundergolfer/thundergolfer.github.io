@@ -52,6 +52,10 @@ body, button, input, select, textarea {
   text-shadow: none;
 }
 
+#main ul {
+  padding-left: 0;
+}
+
 a {
   color: #00e;
   -webkit-transition: color 200ms linear;
@@ -377,13 +381,13 @@ td {
   */
 
   .github-icon{
-    background-image:url(images/github-icon.png);
+    background-image:url("/images/github-icon.png");
     background-size:30px 30px;
     height:30px;
     width:30px;
   }
   .github-icon.light{
-    background-image:url(images/github-icon-white.png);
+    background-image:url("/images/github-icon-white.png");
   }
 
   .project .progress{
@@ -398,7 +402,7 @@ td {
   }
 
   .project .progress .under-construction{
-    background-image:url(images/under-construction.png);
+    background-image:url("/images/under-construction.png");
     width:26px;
     height:26px;
     background-size:26px 26px;
@@ -434,16 +438,27 @@ td {
     position: relative;
     margin: 0 15px ;
     padding-bottom: 5%;
+    text-align: center;
   }
 
   .projects li {
+    width: 20vw;
+    height: 20vw;
+    padding: 2%;
     display: inline-block;
     list-style: none;
-    width: 33.3333%;
-    float: left;
   }
 
   .projects li .project {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
     margin: 30px 15px 0 15px;
     background-color: #ccc;
     -webkit-transition: all 200ms linear;
@@ -528,20 +543,20 @@ td {
 
   .next-project{
     left: 30px;
-    background-image: url(images/chevron-left-black.png);
+    background-image: url("/images/chevron-left-black.png");
   }
 
   .prev-project{
-    background-image: url(images/chevron-right-black.png);
+    background-image: url("/images/chevron-right-black.png");
     right: 30px;
   }
 
   .next-project.background--dark{
-    background-image: url(images/chevron-left-white.png);
+    background-image: url("/images/chevron-left-white.png");
   }
 
   .prev-project.background--dark{
-    background-image: url(images/chevron-right-white.png);
+    background-image: url("/images/chevron-right-white.png");
   }
 
   .underlined-link{
@@ -756,7 +771,8 @@ td {
     }
 
     .projects li {
-      width: 50%;
+      width: 60vw;
+      height: 60vw;
     }
 
     /*#container {
@@ -764,7 +780,7 @@ td {
     }*/
 
     .projects li .project {
-      margin: 15px 7.5px 0 7.5px;
+      margin: 15px 7.5px 0 0px;
     }
 
     header .inner{
@@ -845,24 +861,20 @@ td {
   }
 
   @media only screen and (max-width: 480px) {
-
-    header nav {
-      display: none;
-    }
-
     header nav.mobile-nav {
       display: block;
     }
 
     .projects li {
-      width: 100%;
+      width: 60vw;
+      height: 60vw;
     }
   }
 
   @media only screen and (min-width: 1900px) {
-    .projects li {
+    /*.projects li {
       width: 25%;
-    };
+    };*/
   }
 
 

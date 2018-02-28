@@ -1,38 +1,38 @@
 jQuery.gitUser = function (username, callback) {
-  jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback) //Change per_page according to your need.
-}
+  jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback); /* Change per_page according to your need. */
+};
 
 jQuery.fn.getRepos = function (username) {
   this.html("<h2 style=\"color:#FFF;\">Hold on tight, digging out " + username + "'s repositories...</h2><br>");
 
   var target = this;
   $.gitUser(username, function (data) {
-    var repos = data.data; // JSON Parsing
-    //alert(repos.length); Only for checking how many items are returned.
-    sortByForks(repos); //Sorting by forks. You can customize it according to your needs.
+    var repos = data.data; /* JSON Parsing */
+    /* alert(repos.length); Only for checking how many items are returned. */
+    sortByForks(repos); /* Sorting by forks. You can customize it according to your needs. */
     var list = $('<dl/>');
     target.empty().append(list);
     $(repos).each(function () {
       checkfork = this.fork;
-      console.log(this)
-      if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { //Check for username.github.com repo and for forked projects
+      console.log(this);
+      if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { /* Check for username.github.com repo and for forked projects */
         list.append('<dt> \
                         <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">/' + this.name + '   </h4></a> \
-                        <span class="lang" style="background:' + mapLangToColor(this.language) +'"></span> \
+                        <div style="display: inline-block;"><span class="lang" style="background:' + mapLangToColor(this.language) +'"></span> \
                       	<span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> STARS</span> \
-                      	<a href=' + this.stargazers_url + '><span class="numbertag">' + this.watchers + '</span></a> \
+                        <a href=' + this.html_url + '><span class="numbertag">' + this.watchers + '</span></a> \
                         <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> FORKS</span> \
-                      	<a href=' + this.forks_url + '><span class="numbertag">' + this.forks + '</span></a> \
+                        <a href=' + this.html_url + '><span class="numbertag">' + this.forks + '</span></a></div> \
                         <div style="padding-top: 2%;"><p>' + emojione.shortnameToImage(this.description) + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
                     ');
-        //Similarly fetch everything else you need.
+        /* Similarly fetch everything else you need. */
       }
     });
   });
 
   function sortByForks(repos) {
     repos.sort(function (a, b) {
-      return b.forks - a.forks; //Descending order for number of forks based sorting.
+      return b.forks - a.forks; /* Descending order for number of forks based sorting. */
     });
   }
 
@@ -1414,9 +1414,9 @@ jQuery.fn.getRepos = function (username) {
                 "color": null,
                 "url": "https://github.com/trending?l=Zimpl"
             }
-        }
-    lang = map[lang]
-    color = (!lang ? false : lang['color'])
-    return (!color ? "gray" : color)
+        };
+    lang = map[lang];
+    color = (!lang ? false : lang['color']);
+    return (!color ? "gray" : color);
   }
 };
