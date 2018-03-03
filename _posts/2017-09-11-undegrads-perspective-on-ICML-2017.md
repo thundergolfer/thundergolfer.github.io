@@ -8,7 +8,7 @@ categories: machine-learning conferences
 
 I attended the 35th International Conference on Machine Learning in Sydney, Australia this past August. The following is a brief canvassing of my time there, and some advice for other undergraduates wondering about academic machine learning conferences. I’ll present things as if I’m answering the questions I had when deciding to attend.
 
-As a 3rd year Software Engineering undergraduate at RMIT Melbourne, I likely would not have attended this academic conference if it was for a couple of conveniences. For one, it’s is rare that a top Machine Learning conference lands on Australian shores, so the travel time was just the 1 hour flight from Melbourne. Two, I was able to attend with the Machine Learning staff at Zendesk Melbourne, as I am currently interning as part of the Machine Learning product team there. It’s good to have conference companions.
+As a 3rd year Software Engineering undergraduate at RMIT Melbourne, I likely would not have attended this academic conference if it was not for a couple of conveniences. For one, it’s is rare that a top Machine Learning conference lands on Australian shores, so the travel time was just the 1 hour flight from Melbourne. Two, I was able to attend with the Machine Learning staff at Zendesk Melbourne, as I am currently interning as part of the Machine Learning product team there. It’s good to have conference companions.
 
 ### Will I understand anything?
 
