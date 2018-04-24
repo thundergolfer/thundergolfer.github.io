@@ -1,4 +1,11 @@
-# Fake News and NLP Stupidity
+---
+layout:     post
+title:      “The ‘Fake News’ problem and its NLP ‘solutions’“
+date:       2018-04-24
+summary:  Have people already started to cargo-cult NLP models? Of course they have.
+categories: machine-learning nlp fake-news news-media
+---
+
 One of the saddest realities of the internet age is that the early optimistic maxim of technologists that “the world wide web will bring unlimited access to knowledge and learning to all” turned out to be horribly naive. The internet is really pretty great, but the ’consumer internet’, serving the public such things as Facebook, Twitter, Reddit, Instagram, Tumblr, etc. is no better at producing an educated people than the radio stations, magazines, newspapers, and television channels that came before them.
 ‘Fake News’  is possibly the malignant apotheosis of the internet’s hyper-share-ability and openness. It came to a head in the United States’s recent disaster election period. [Supposedly paedophilic pizza shops were shot up](https://en.wikipedia.org/wiki/Pizzagate_conspiracy_theory), [Barack Obama was repeatedly accused of being foreign-born](https://en.wikipedia.org/wiki/Barack_Obama_citizenship_conspiracy_theories), and a horrid man was elected to power by millions of dupes. Given that this problem was predominantly created by tech companies full of programmers, programmers found themselves feverish to take it on fighting bad good algorithms with good algorithms.
 
