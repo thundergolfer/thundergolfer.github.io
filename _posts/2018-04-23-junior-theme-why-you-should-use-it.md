@@ -6,6 +6,8 @@ summary:    Sharing a new theme I developed for myself
 categories: jekyll portfolio personal-website
 ---
 
+![front page mockup of junior theme](/images/junior-theme/junior-front-page.jpg)
+
 If you’re looking for a [Jekyll](https://jekyllrb.com/) theme that fulfils all the main use cases of a personal portfolio site and blog, where most themes only handle a subset, then you should use [Junior Theme](https://github.com/thundergolfer/junior-theme).
 
 I started with a theme that handled basic static page blog posts and an ‘About’ page, but like most other blog-focused themes it was missing:
