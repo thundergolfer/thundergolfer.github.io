@@ -32,5 +32,7 @@ The Github [user profile page](https://github.com/thundergolfer) can show only 6
 What I’ve got now is a page that pulls from Github’s API *all* my public projects so that I can display their critical information in a list.
 
 In future I’ll be looking to extend this page to show more relevant information to the page viewer that I wouldn’t want to just put in the repo’s description or it’s `README.md` . For example I’d like to display the tech stack for each project.
+
 -----
+
 If you become a user of the Junior theme and to see a new feature introduced, or something improved/fixed, then  [submit an issue](https://github.com/thundergolfer/junior-theme/issues). I’m keen to get this theme used by others, and will be happy to address your needs.
