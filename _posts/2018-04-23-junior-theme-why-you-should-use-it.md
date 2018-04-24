@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Junior Theme: Why You Should Use It	
+title:      "Junior Theme: Why You Should Use It"
 date:       2018-04-23
 summary:    Sharing new theme I developed for myself
 categories: jekyll portfolio personal-website
