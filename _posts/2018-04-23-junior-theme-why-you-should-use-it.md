@@ -35,4 +35,4 @@ In future I’ll be looking to extend this page to show more relevant informatio
 
 -----
 
-If you become a user of the Junior theme and to see a new feature introduced, or something improved/fixed, then  [submit an issue](https://github.com/thundergolfer/junior-theme/issues). I’m keen to get this theme used by others, and will be happy to address your needs.
+If you become a user of the Junior theme and want to see a new feature introduced, or something improved/fixed, then [submit an issue](https://github.com/thundergolfer/junior-theme/issues). I’m keen to get this theme used by others, and will be happy to address your needs.
