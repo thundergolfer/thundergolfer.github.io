@@ -9,3 +9,8 @@ _config.gh-pages.yml
 Gemfile.lock
 vendor/
 .bundle\/config
+
+##############
+# Intellij
+##############
+.idea
