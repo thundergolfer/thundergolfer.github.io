@@ -17,7 +17,15 @@ permalink: /resume/
 
 ## Experience
 
-`2017-`
+`2019-` __Backend Software Engineer, Canva__ On the Data Engineering team. Working with AWS, Spark, Argo on Kubernetes, and Bazel.  
+
+`2018-19`
+__Software Engineer, Zendesk__ Building software systems to support the company’s Machine Learning products, with a current focus on replatforming services into Kubernetes.
+
+`2017-18`
+__Software Developer Intern, Atlassian__ Implemented new full-stack features for Atlassian’s internal monitoring and reliability software, using Golang, ReactJS, AWS S3, and AWS DynamoDB. The new features allow for the replacement of Atlassian’s existing pre-deployment health-checking procedure, and also for improved failure analysis by SREs.
+
+`2017`
 __Data Engineering Intern, Zendesk__ Work alongside the data science team on the machine learning driven Automatic Answers and Satisfaction Prediction products.
 
 `2016`
@@ -30,8 +38,8 @@ __Tutor (Computer Science), Indigenous Tutorial Assistance Scheme__ Tutor studen
 
 ## Education
 
-`2015-`
-__Bachelor of Software Engineering, RMIT Melbourne__
+`2015-19`
+__Bachelor of Software Engineering, RMIT Melbourne__ - *Chancellor's Award Winner for Top 2%*
 
 ***GPA 3.9:***  100 - Web Programming, 97 - Soft. Eng. Fundamentals, 93 - Data Comm, 89 - Discrete Math
 
