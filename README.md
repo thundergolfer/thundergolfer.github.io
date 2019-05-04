@@ -14,7 +14,7 @@ Just my website. The theme is [thundergolfer/junior-theme](https://github.com/th
 * [Some of my design work](http://jonathonbelotti.com/design/)
 * [My resumé](http://jonathonbelotti.com/resume/)
 * [A Summary of my open-source work](http://jonathonbelotti.com/projects/)
-* [An basic about page](http://jonathonbelotti.com/about/)
+* [A basic about page](http://jonathonbelotti.com/about/)
 
 ### Other places you can find me
 
