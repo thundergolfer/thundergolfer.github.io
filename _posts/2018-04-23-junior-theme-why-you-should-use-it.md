@@ -19,7 +19,7 @@ I started with a theme that handled basic static page blog posts and an ‘About
 After a bit of toil, I introduced these features into my personal website and decided that it would be worth packaging into a theme. I also had a particular idea of how I wanted the theme to look. It’s hardly unique, just CSS to create a black and white minimal appearance, but it’s done it a way that differentiates it from the major minimalist Jekyll themes like [Pixyll](http://pixyll.com/),  [Centrarium](http://bencentra.com/centrarium/), or [Gravity](https://github.com/hemangsk/Gravity).
 
 ### The Resumé Page
-[Here it is showing my resumé](http://jonathonbelotti.com/resume/). The content is plain markdown, and clicking the “PDF” button on the right gets you a `.pdf` doc that looks very close to what you see on the site.
+[Here it is showing my resumé](/resume/). The content is plain markdown, and clicking the “PDF” button on the right gets you a `.pdf` doc that looks very close to what you see on the site.
 
 That’s your CV solution, hosted and printable.
 
