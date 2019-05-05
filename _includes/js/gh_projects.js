@@ -1,15 +1,20 @@
 jQuery.gitUser = function (username, callback, errCallback) {
     /* Change per_page according to your need. */
     jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?')
-        .done(function( data ) {
+        .done(function (data) {
             callback(data);
         })
-        .fail(function( jqxhr, textStatus, error ) {
+        .fail(function (jqxhr, textStatus, error) {
             errCallback();
         });
 };
 
 jQuery.fn.getRepos = function (username) {
+    const errElement = `
+        <div style="text-align: center; margin: 20% 0">
+            😖 Unable to retrieve projects. Try going directly to <a  target="_blank" href="https://github.com/${username}">github.com/${username}</a>.
+        </div>`;
+
     this.append(`
     <div style="color: black; text-align: center; margin: 20% 0;">
         🚧 Hold on tight, digging out ${username}'s repositories... 🚧 
@@ -22,7 +27,13 @@ jQuery.fn.getRepos = function (username) {
         function (data) {
             var repos = data.data; /* JSON Parsing */
             /* alert(repos.length); Only for checking how many items are returned. */
-            sortByForks(repos); /* Sorting by forks. You can customize it according to your needs. */
+            try {
+                sortByForks(repos); /* Sorting by forks. You can customize it according to your needs. */
+            } catch (err) {
+                target.empty().append(errElement);
+                return;
+            }
+
             var list = $('<dl/>');
             target.empty().append(list);
             $(repos).each(function () {
@@ -30,7 +41,7 @@ jQuery.fn.getRepos = function (username) {
                 if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { /* Check for username.github.com repo and for forked projects */
                     list.append('<dt> \
                             <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">/' + this.name + '   </h4></a> \
-                            <div style="display: inline-block;"><span class="lang" style="background:' + mapLangToColor(this.language) +'"></span> \
+                            <div style="display: inline-block;"><span class="lang" style="background:' + mapLangToColor(this.language) + '"></span> \
                             <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> STARS</span> \
                             <a href=' + this.html_url + '><span class="numbertag">' + this.watchers + '</span></a> \
                             <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> FORKS</span> \
@@ -42,11 +53,7 @@ jQuery.fn.getRepos = function (username) {
             });
         },
         function () {
-            target.empty().append(`
-            <div style="text-align: center; margin: 20% 0">
-                😖 Unable to retreive projects. Try going directly to <a  target="_blank" href="https://github.com/${username}">github.com/${username}</a>.
-            </div>
-          `);
+            target.empty().append(errElement);
         });
 
     function sortByForks(repos) {
