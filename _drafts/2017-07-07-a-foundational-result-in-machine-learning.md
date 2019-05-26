@@ -10,7 +10,7 @@ categories: machine-learning information-theory rnn
 
 ....Wait what? Foundational? Was this in the Coursera Course?!
 
-This short passage comes from [*Capacity and Trainability in Recurrent Neural Networks*](https://arxiv.org/pdf/1611.09913.pdf), a paper exploring empirically the nature of Recurrent Neural Networks. Their exploration extends much earlier work done to study simple single-layer perceptron networks, and it is from that decades old work that this "foundation result" comes.
+This short passage comes from [*Capacity and Trainability in Recurrent Neural Networks*](https://arxiv.org/pdf/1611.09913.pdf), a paper exploring empirically the nature of Recurrent Neural Networks. Their exploration extends much earlier work done to study simple single-layer perceptron networks, and it is from that decades old work that this "foundational result" comes.
 
 So, I found this passage quite dense when I first read it. The following questions featured immediately and prominently:
 
@@ -29,7 +29,7 @@ The network described looks like this:
 
 It is single-layer, so there are no intermediate (hidden) layers between the input nodes and the output nodes. Because it receives `N` dimensional vectors, and outputs `N` dimensional vectors we have `2N` nodes with `N X N` (or N<sup>2</sup>) connections. Each of these connections has an associated *weight*, and it is these N<sup>2</sup> weights that are our N<sup>2</sup> "parameters".
 
-This is the network can can store `2 X N X N` bits of information utilising `N X N` parameters.
+This is the network that can store `2 X N X N` bits of information utilising `N X N` parameters.
 
 > 2 bits of information per parameter
 
@@ -39,7 +39,7 @@ I will quickly give an intro to Information Theory, but see [this from Stanford 
 
 Information exists in contrast to uncertainty. Given a unknown variable or set of variables, uncertainty is higher when it is 'harder' to predict the values of that variable/variable group. For example, a typical coin can be flipped and the outcome will be heads or tails. The outcome of the flip is the unknown variable; it is 50% likely to be heads and 50% likely to be tails. `2` possible outcomes.
 
-A 8-sided die on the other hand has `8` equally possible outcomes. So for a die throw, predicting the value of the unknown variable is 'harder'. How is extra uncertainty quantified? *Entropy* is the equation that defines uncertainty. This is the equation for Entropy, where `X` is the uncertain outcome, and `p(x)` is the probability distribution over the values that outcome can take. In our examples things are simple, because all potential values of the outcome are equally likely.
+A 8-sided die on the other hand has `8` equally possible outcomes. So for a die throw, predicting the value of the unknown variable is 'harder'. How is this extra uncertainty quantified? *Entropy* is the equation that defines uncertainty. This is the equation for Entropy, where `X` is the uncertain outcome, and `p(x)` is the probability distribution over the values that outcome can take. In our examples things are simple, because all potential values of the outcome are equally likely.
 
 H<sub>X</sub> ≡ − (SUM over x∈X) p(x) log2 p(x)
 
@@ -49,7 +49,7 @@ Each outcome of the die throw has a probability of `1/8` so summing over each ou
 
 It was said before that information contrasts with uncertainty. To be specific, information is contained in that which reduces entropy. It is the thing that takes a variable which could be a number of ways, and reduces those number of ways such that we can more easily predict that variable. Most simply, if you can perfectly predict the outcome of an unknown variable, you have perfect information, and *that information is precisely equal to the entropy of that random variable*. If you have a variable space of `K` uncertainty, then to have the power to predict perfectly the values of that space is to have `K` information. This is crucial for soon understanding how each parameter has `2` *bits* of information.
 
-Now there’s a subtle jump from saying “this random discrete variable has an entropy of 3” to saying “this random discrete variable has 3 **bits** of entropy. All the it means to tack on the notion of there being bits of entropy is that we are using base 2 in our calculations (see the log base in equation above). We could quantify our entropy in another base if we wanted, but neural networks run on computers and so it’s “bits of entropy”.
+Now there’s a subtle jump from saying “this random discrete variable has an entropy of 3” to saying “this random discrete variable has 3 **bits** of entropy. All that it means to tack on the notion of there being bits of entropy is that we are using base 2 in our calculations (see the log base in equation above). We could quantify our entropy in another base if we wanted, but neural networks run on computers and so it’s “bits of entropy”.
 
 So for our network to have `2` bits of information per parameter, `2 X N X N` bits of information in total, it would have to provide perfect information of a variable space with `2 X N X N` entropy. Like above, we assume that all outcomes are equally likely. This means that entropy is equal to the logarithm of the number of possible outcomes. Let **B** be the number of outcomes.
 
@@ -79,7 +79,10 @@ So this defines that criteria by which a neural network can be said to store inf
 
 General position can be a characteristic of any set of points or geometric objects, but let's first consider a small set of low-dimensional vectors, and a more simple single-layer perceptron that maps inputs to either `0` or `1`. In order to implement a mapping from inputs to outputs, a single-layer perceptron network must obviously implement a function. In our simple case this function determines a dichotomy; points are either `0` or they're `1`.
 
-(Note: The network under discussion here has no ‘bias value’ for simplicity, but ignoring the that does not compromise generality)
+(Note: The network under discussion here has no ‘bias value’ for simplicity, but ignoring that does not compromise generality)
+
+[INCLUDE PICTURE HERE B/C READING RIGHT NOW IT'S CONFUSING ME THAT WE'VE
+SWITCHED CONTEXT TO A NEW TYPE OF NETWORK]
 
 Our small set of low-dimensional vectors looks like this: `{[0,1], [2, 2], [0,5]}`. These `3` vectors with dimension `N = 2` could map to one of `8` possible outcomes: `[0,0,0], [0,0,1], [0,1,0] ... [1, 1, 1]`. The entropy of this variable space is thus `3` (log<sub>2</sub>2<sup>3</sup>). The function of our neural network must be able to dichotomise these 3 points in those 8 ways. If it doesn’t, then it hasn’t completely removed the entropy of the variable space, and thus can’t claim the full `3` bits of information.
 
@@ -89,7 +92,7 @@ What happens though if we change `[0, 5]` to `[4, 4]`? Our new set becomes `{[0,
 
 ### DIAGRAM OF 3 VECTORS **NOT** IN GENERAL POSITION
 
-It should be quite clear that the network can no longer implement functions that dichotomise the 3 inputs in 8 different ways. Imagine trying to drawing a line that separates (dichotomises) the vectors. Our new input space has imposed a restriction on the network such that it *cannot implement a mapping to "arbitrary [2]-dimensional binary output vectors"*. This directly impacts the information storage capacity of the network because the linear dependence of `[2, 2]` and `[4, 4]` ensure that they *must share the same outcome*. If they share an outcome, then the uncertainty about the system is reduced. (TODO: Check if that preceding sentence makes sense).
+It should be quite clear that the network can no longer implement functions that dichotomise the 3 inputs in 8 different ways. Imagine trying to drawing a line that separates (dichotomises) these vectors. Our new input space has imposed a restriction on the network such that it *cannot implement a mapping to "arbitrary [2]-dimensional binary output vectors"*. This directly impacts the information storage capacity of the network because the linear dependence of `[2, 2]` and `[4, 4]` ensure that they *must share the same outcome*. If they share an outcome, then the uncertainty about the system is reduced. (TODO: Check if that preceding sentence makes sense).
 
 Now it was called as an “extremely weak restriction” this need for general position-ality. Why? Well, because in some space `d` dimensional space it is [almost certain that any random set of real valued points from  `d`  will be in general position](https://math.stackexchange.com/a/1065352). You’d have to carefully design your variable space to *not* have this quality.
 
@@ -99,7 +102,7 @@ This idea of a variable space having a ‘complexity’ that enables a neural ne
 
 #### ! - Talk about how it's possible that the neural network is guaranteed to find the correct mapping
 
-Exactly *how* a neural network’s group of weights is able to implement these arbitrary function mappings is outside the scope of this blogpost. Maybe I’ll do it in a follow-up. If you want to go into yourself, the “Perceptron Learning Algorithm” is explored under heading 3 in  [Introduction: The Perceptron Haim](http://web.mit.edu/course/other/i2course/www/vision_and_learning/perceptron_notes.pdf).
+Exactly *how* a neural network’s group of weights is able to implement these arbitrary function mappings is outside the scope of this blogpost. Maybe I’ll do it in a follow-up. If you want to go into yourself, the “Perceptron Learning Algorithm” is explored under heading 3 in  [*Introduction: The Perceptron*, Haim Sompolinsky, MIT](http://web.mit.edu/course/other/i2course/www/vision_and_learning/perceptron_notes.pdf).
 
 #### ! - Talk about how it's "at least" 2 bits of information. How can it be more?
 
@@ -107,7 +110,7 @@ Now there’s one last thing to note about the quote introduced at the start. It
 
 > In the random case, the maximum number of patterns is 2N (Cover 1965, Venkatesh 1986a, b, Baldi and Venkatesh 1987) and we will show that this increases for **correlated patterns**.  [emphasis mine]
 
-For random patterns, the storage capacity is `2` bits, but when input patterns are correlated, the network is able to exploit the correlation to store more pattern -> output mappings. The correlation between inputs means that the storage of each individual pattern represents *less* information storage, but overall the storage capacity of the network is increased beyond `2` bits per parameter because of an relatively larger increase in the number of stored patterns. I don’t understand that physics paper very well at all, and it’s exploring neural networks in an unfamiliar context where apparently “magnetism -> *m*”  is a thing, but I think the high-level intuition can be gathered.
+For random patterns, the storage capacity is `2` bits, but when input patterns are correlated, the network is able to exploit the correlation to store more pattern -> output mappings. The correlation between inputs means that the storage of each individual pattern represents *less* information storage, but overall the storage capacity of the network is increased beyond `2` bits per parameter because of a relatively larger increase in the number of stored patterns. I don’t understand that physics paper very well at all, and it’s exploring neural networks in an unfamiliar context where apparently “magnetism -> *m*”  is a thing, but I think the high-level intuition can be gathered.
 
 ----
 

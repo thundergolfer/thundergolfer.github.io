@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      “DEYD - Do Everything Yourself Development“
-date:       2018-16-02
+date:       2018-02-16
 summary:  A strategy for building stronger programming fundamentals
 categories: software-engineering methodology
 ---

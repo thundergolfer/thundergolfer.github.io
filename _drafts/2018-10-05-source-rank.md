@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      “SourceRank.org - Open-source quality assessment of news media publications“
-date:       2018-16-02
+date:       2018-02-16
 summary:  Our Facebook Hack 2018 project
 categories: software-engineering fake-news news-media
 ---
