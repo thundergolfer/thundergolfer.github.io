@@ -2,7 +2,7 @@
 layout:     post
 title:      The Books I Read - 2019 
 date:       2019-12-29
-summary:    A retrospective on my best year of reading in a decade
+summary:    A retrospective on my best year of reading in a decade.
 categories: reading learning
 ---
 
