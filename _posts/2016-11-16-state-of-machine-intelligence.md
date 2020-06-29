@@ -6,7 +6,7 @@ summary:    I made Bloomberg Beta's cool infographic more useful.
 categories: machine-learning
 ---
 
-![state of machine learning 3.0](https://d3tdunqjn7n0wj.cloudfront.net/720x480/main-art-v-3-mi-landscape-3.81-1400px-4f76e61045d9dc463cae0acfff57c210.jpg)
+![state of machine learning 3.0](https://format-com-cld-res.cloudinary.com/image/private/s--vBR3OVI_--/c_crop,h_1500,w_2000,x_0,y_0/c_fill,g_center,h_855,w_1140/fl_keep_iptc.progressive.apng/v1/19575bcc040a6dcff3097618ec9c585e/MI-Landscape-3_7.png)
 
 ### From Image To List
 
