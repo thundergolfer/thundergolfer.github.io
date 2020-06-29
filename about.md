@@ -1,22 +1,25 @@
 ---
 layout: about
-title: About Me
+title: Jonathon Belotti
 permalink: /about/
 tags: about
 flicker: true
 headshot: /images/headshot.jpg
 ---
 
-### June 2020 Edition
+Just hit 18 months @ [Canva]([Canva](https://www.canva.com/)). I'm now team lead of the small 'Data Platform & Tools' team within the data group. The team manages the main data monorepo and its build/release, 
+owns core data platform pieces like container-orchestration (K8s) and the Data Lake build, and provides core productivity systems like a Notebook environment and batch workflow system. 
 
-Just hit 18 months @ [Canva]([Canva](https://www.canva.com/)). I'm now team lead of the small 'Data Platform & Tools' team within the data group.
+Beyond platform responsibilities, I'm increasingly working closer with data scientists and machine learning engineers, leaning more into a role that is sometimes called 'Software Engineering - ML Platform'.
+
 I'm still right into the [Bazel](https://bazel.build/) build system, and now help maintain the [Python rules](https://github.com/bazelbuild/rules_python) for Bazel. It's the future, get on it.
-I'm increasingly working closer with data scientists and machine learning engineers, leaning more into a role that is sometimes called 'Software Engineering - ML Platform'.
 
 I just completed the first half of [some more formal education in Mathematics](https://www.handbook.uts.edu.au/courses/c11210.html). 
 I'm doing it to upskill in Linear Algebra, Calculus, and Statistics so that I may become a self-sufficient machine learning engineer in future, building data-intensive machine learning systems from the ground up.
 
-### May 2019 Edition
+## *Previously...*
+
+### **May 2019 Edition**
 
 I'm a Backend Software Engineer @ [Canva](https://www.canva.com/) in their Data Engineering team. 
 I'm still quite interested in NLP, Knowledge Bases, and Computational Dialectics, but now regularly find myself
