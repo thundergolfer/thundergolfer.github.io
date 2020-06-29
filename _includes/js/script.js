@@ -1,20 +1,7 @@
-/* this aint supposed to be private... just idiot proof */
-var showcasePwd = "sesame";
-
 $(document).ready(function(){
   bindProjectNavArrows();
-  bindPasswordDetect();
   fadePageIn();
 });
-
-function bindPasswordDetect(){
-  $( "#showcase__password" ).keyup(function() {
-    if($( "#showcase__password" ).val() == showcasePwd){
-      $( "#showcase__password" ).hide();
-      $( ".showcase").show();
-    }
-  });
-}
 
 function bindProjectNavArrows(){
   $(".next-project, .prev-project").click(function(evt){
