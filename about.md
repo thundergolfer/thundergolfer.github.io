@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Jonathon Belotti
+title: About
 permalink: /about/
 tags: about
 flicker: true
