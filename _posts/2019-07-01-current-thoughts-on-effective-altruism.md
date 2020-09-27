@@ -37,7 +37,7 @@ become I think offensively minor problems. Is my life really so much more import
 needs in order to shore up the chances that my life go absolutely as well as possible? No, I really think it isn't.
 
 
-### But Socialism: Forwarding Socialist and Democratic causes is the best of my money
+### But Socialism: Forwarding Socialist and Democratic causes is the best use of my money
 
 Since learning more about politics and history I have become much more confident in the merits of Democratic Socialism (DemSoc) and quite
 skeptical of the legitimacy of Capitalism. I became interested in how Socialists would critique the EA movement and found this great piece
