@@ -1,0 +1,566 @@
+[
+    {
+        "title": "A Cyborg Manifesto: Science, Technology, and Socialist-Feminism in the Late Twentieth Century",
+        "author": "Donna J. Haraway",
+        "rating": "",
+        "isbn": "9788807460012"
+    },
+    {
+        "title": "For Whom the Bell Tolls",
+        "author": "Ernest Hemingway",
+        "rating": "",
+        "isbn": "1439571481"
+    },
+    {
+        "title": "A Moveable Feast",
+        "author": "Ernest Hemingway",
+        "rating": "",
+        "isbn": "0684833638"
+    },
+    {
+        "title": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
+        "author": "Michelle Alexander",
+        "rating": "",
+        "isbn": "1620975459"
+    },
+    {
+        "title": "The Mythical Man-Month: Essays on Software Engineering",
+        "author": "Frederick P. Brooks Jr.",
+        "rating": "",
+        "isbn": "0201835959"
+    },
+    {
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "rating": "",
+        "isbn": "067001690X"
+    },
+    {
+        "title": "The Diamond Age: Or, a Young Lady's Illustrated Primer",
+        "author": "Neal Stephenson",
+        "rating": "",
+        "isbn": "0553380966"
+    },
+    {
+        "title": "Silent Spring",
+        "author": "Rachel Carson",
+        "rating": "",
+        "isbn": "0618249060"
+    },
+    {
+        "title": "The Overstory",
+        "author": "Richard Powers",
+        "rating": "",
+        "isbn": "039335668X"
+    },
+    {
+        "title": "Snow Crash",
+        "author": "Neal Stephenson",
+        "rating": "",
+        "isbn": "8496208621"
+    },
+    {
+        "title": "Refactoring: Improving the Design of Existing Code",
+        "author": "Martin Fowler",
+        "rating": "",
+        "isbn": "0201485672"
+    },
+    {
+        "title": "Code Complete",
+        "author": "Steve McConnell",
+        "rating": "",
+        "isbn": "0735619670"
+    },
+    {
+        "title": "100 Plus: How the Coming Age of Longevity Will Change Everything, from Careers and Relationships to Family and Faith",
+        "author": "Sonia Arrison",
+        "rating": "",
+        "isbn": "0465019668"
+    },
+    {
+        "title": "Sophie's World",
+        "author": "Jostein Gaarder",
+        "rating": "",
+        "isbn": "1857993284"
+    },
+    {
+        "title": "Ishmael",
+        "author": "Daniel Quinn",
+        "rating": "",
+        "isbn": "0553375407"
+    },
+    {
+        "title": "Down and Out in Paris and London",
+        "author": "George Orwell",
+        "rating": "",
+        "isbn": "015626224X"
+    },
+    {
+        "title": "Hackers & Painters: Big Ideas from the Computer Age",
+        "author": "Paul    Graham",
+        "rating": "",
+        "isbn": "0596006624"
+    },
+    {
+        "title": "Free Culture: The Nature and Future of Creativity",
+        "author": "Lawrence Lessig",
+        "rating": "",
+        "isbn": "0143034650"
+    },
+    {
+        "title": "The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary",
+        "author": "Eric S. Raymond",
+        "rating": "",
+        "isbn": "0596001088"
+    },
+    {
+        "title": "Free Software, Free Society: Selected Essays",
+        "author": "Richard M. Stallman",
+        "rating": "",
+        "isbn": "1882114981"
+    },
+    {
+        "title": "The Unlucky Australians",
+        "author": "Frank J. Hardy",
+        "rating": "",
+        "isbn": "0726000124"
+    },
+    {
+        "title": "Power Without Glory",
+        "author": "Frank J. Hardy",
+        "rating": "",
+        "isbn": "9780207147241"
+    },
+    {
+        "title": "Living",
+        "author": "Henry Green",
+        "rating": "",
+        "isbn": "0781200377"
+    },
+    {
+        "title": "The Conquest of Bread",
+        "author": "Pyotr Kropotkin",
+        "rating": "",
+        "isbn": "1904859100"
+    },
+    {
+        "title": "The Meaning of Freedom: And Other Difficult Dialogues",
+        "author": "Angela Y. Davis",
+        "rating": "",
+        "isbn": "0872865800"
+    },
+    {
+        "title": "The Happy Prince and Other Tales",
+        "author": "Oscar Wilde",
+        "rating": "",
+        "isbn": "0679444734"
+    },
+    {
+        "title": "The Song of Achilles",
+        "author": "Madeline Miller",
+        "rating": "",
+        "isbn": "1408816032"
+    },
+    {
+        "title": "A Taste of Power: A Black Woman's Story",
+        "author": "Elaine  Brown",
+        "rating": "",
+        "isbn": "0385471076"
+    },
+    {
+        "title": "The Gulag Archipelago 1918\u20131956 (Abridged)",
+        "author": "Aleksandr Solzhenitsyn",
+        "rating": "",
+        "isbn": "0060007761"
+    },
+    {
+        "title": "God and Man at Yale: The Superstitions of 'Academic Freedom'",
+        "author": "William F. Buckley Jr.",
+        "rating": "",
+        "isbn": "089526692X"
+    },
+    {
+        "title": "The Federalist Papers",
+        "author": "Alexander Hamilton",
+        "rating": "",
+        "isbn": "9780143121978"
+    },
+    {
+        "title": "The Autobiography of Malcolm X",
+        "author": "Malcolm X",
+        "rating": "",
+        "isbn": "9780345350688"
+    },
+    {
+        "title": "I Know Why the Caged Bird Sings (Maya Angelou's Autobiography, #1)",
+        "author": "Maya Angelou",
+        "rating": "",
+        "isbn": "0553279378"
+    },
+    {
+        "title": "My Brilliant Friend",
+        "author": "Elena Ferrante",
+        "rating": "",
+        "isbn": "9781609450786"
+    },
+    {
+        "title": "White Teeth",
+        "author": "Zadie Smith",
+        "rating": "",
+        "isbn": "0375703861"
+    },
+    {
+        "title": "Jazz",
+        "author": "Toni Morrison",
+        "rating": "",
+        "isbn": "0452269652"
+    },
+    {
+        "title": "The Beautiful and Damned",
+        "author": "F. Scott Fitzgerald",
+        "rating": "",
+        "isbn": "0743451503"
+    },
+    {
+        "title": "We Were Eight Years in Power: An American Tragedy",
+        "author": "Ta-Nehisi Coates",
+        "rating": "",
+        "isbn": "0399590560"
+    },
+    {
+        "title": "Flatland: A Romance of Many Dimensions",
+        "author": "Edwin A. Abbott",
+        "rating": "",
+        "isbn": "048627263X"
+    },
+    {
+        "title": "The Black Swan: The Impact of the Highly Improbable",
+        "author": "Nassim Nicholas Taleb",
+        "rating": "",
+        "isbn": "1400063515"
+    },
+    {
+        "title": "The Sixth Extinction: An Unnatural History",
+        "author": "Elizabeth Kolbert",
+        "rating": "",
+        "isbn": "0805092994"
+    },
+    {
+        "title": "Stranger in a Strange Land",
+        "author": "Robert A. Heinlein",
+        "rating": "",
+        "isbn": "0441788386"
+    },
+    {
+        "title": "The Left Hand of Darkness (Hainish Cycle, #4)",
+        "author": "Ursula K. Le Guin",
+        "rating": "",
+        "isbn": "9780441478125"
+    },
+    {
+        "title": "Neuromancer (Sprawl, #1)",
+        "author": "William Gibson",
+        "rating": "",
+        "isbn": "0441569595"
+    },
+    {
+        "title": "The Mill on the Floss",
+        "author": "George Eliot",
+        "rating": "",
+        "isbn": "0141439629"
+    },
+    {
+        "title": "Little Women",
+        "author": "Louisa May Alcott",
+        "rating": "",
+        "isbn": "0451529308"
+    },
+    {
+        "title": "As I Lay Dying",
+        "author": "William Faulkner",
+        "rating": "",
+        "isbn": "067973225X"
+    },
+    {
+        "title": "The Ministry Of The Future",
+        "author": "Kim Stanley Robinson",
+        "rating": "",
+        "isbn": "9780316300162"
+    },
+    {
+        "title": "Make It Stick: The Science of Successful Learning",
+        "author": "Peter C. Brown",
+        "rating": "",
+        "isbn": "0674729013"
+    },
+    {
+        "title": "Democracy and Education",
+        "author": "John Dewey",
+        "rating": "",
+        "isbn": "0684836319"
+    },
+    {
+        "title": "Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers",
+        "author": "Geoffrey A. Moore",
+        "rating": "",
+        "isbn": "0060517123"
+    },
+    {
+        "title": "Metamagical Themas: Questing for the Essence of Mind and Pattern",
+        "author": "Douglas R. Hofstadter",
+        "rating": "",
+        "isbn": "0465045669"
+    },
+    {
+        "title": "Toward a Theory of Instruction (Revised)",
+        "author": "Jerome Bruner",
+        "rating": "",
+        "isbn": "0674897013"
+    },
+    {
+        "title": "Black Reconstruction in America 1860-1880",
+        "author": "W.E.B. Du Bois",
+        "rating": "",
+        "isbn": "0684856573"
+    },
+    {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "rating": "",
+        "isbn": "0140447601"
+    },
+    {
+        "title": "Entitled: How Male Privilege Hurts Women",
+        "author": "Kate Manne",
+        "rating": "",
+        "isbn": "9780141990743"
+    },
+    {
+        "title": "Reinventing Discovery: The New Era of Networked Science",
+        "author": "Michael Nielsen",
+        "rating": "",
+        "isbn": "0691148902"
+    },
+    {
+        "title": "Mathematics and Its History",
+        "author": "John Stillwell",
+        "rating": "",
+        "isbn": "0387953361"
+    },
+    {
+        "title": "Concrete Mathematics: A Foundation for Computer Science",
+        "author": "Ronald L. Graham",
+        "rating": "",
+        "isbn": "0201558025"
+    },
+    {
+        "title": "Skunk Works: A Personal Memoir of My Years at Lockheed",
+        "author": "Ben R. Rich",
+        "rating": "",
+        "isbn": "0751515035"
+    },
+    {
+        "title": "The Rickover Effect: How One Man Made a Difference",
+        "author": "Theodore Rockwell",
+        "rating": "",
+        "isbn": "1557507023"
+    },
+    {
+        "title": "Deep Work: Rules for Focused Success in a Distracted World",
+        "author": "Cal Newport",
+        "rating": "",
+        "isbn": "1455586692"
+    },
+    {
+        "title": "A People's History of the United States",
+        "author": "Howard Zinn",
+        "rating": "",
+        "isbn": "0060838655"
+    },
+    {
+        "title": "The Medium is the Message",
+        "author": "Marshall McLuhan",
+        "rating": "",
+        "isbn": "0670044199"
+    },
+    {
+        "title": "To Save Everything, Click Here: The Folly of Technological Solutionism",
+        "author": "Evgeny Morozov",
+        "rating": "",
+        "isbn": "1610391381"
+    },
+    {
+        "title": "Postcapitalism: A Guide to Our Future",
+        "author": "Paul  Mason",
+        "rating": "",
+        "isbn": "1846147387"
+    },
+    {
+        "title": "Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right",
+        "author": "Jane Mayer",
+        "rating": "",
+        "isbn": "9780385535601"
+    },
+    {
+        "title": "Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America",
+        "author": "Nancy MacLean",
+        "rating": "",
+        "isbn": "1101980966"
+    },
+    {
+        "title": "Bit Tyrants: The Political Economy of Silicon Valley",
+        "author": "Rob Larson",
+        "rating": "",
+        "isbn": "9781642590319"
+    },
+    {
+        "title": "The Road to Serfdom",
+        "author": "Friedrich A. Hayek",
+        "rating": "",
+        "isbn": "0226320618"
+    },
+    {
+        "title": "Creating a Learning Society: A New Approach to Growth, Development, and Social Progress (Kenneth Arrow Lecture Series)",
+        "author": "Joseph E. Stiglitz",
+        "rating": "",
+        "isbn": ""
+    },
+    {
+        "title": "Things Hidden Since the Foundation of the World",
+        "author": "Ren\u00e9 Girard",
+        "rating": "",
+        "isbn": "0804722153"
+    },
+    {
+        "title": "The Soul of Man Under Socialism",
+        "author": "Oscar Wilde",
+        "rating": "",
+        "isbn": "1419183044"
+    },
+    {
+        "title": "Debt: The First 5,000 Years",
+        "author": "David Graeber",
+        "rating": "",
+        "isbn": "1933633867"
+    },
+    {
+        "title": "The Handmaid's Tale (The Handmaid's Tale, #1)",
+        "author": "Margaret Atwood",
+        "rating": "",
+        "isbn": "9780449212608"
+    },
+    {
+        "title": "What the Dormouse Said: How the Sixties Counterculture Shaped the Personal Computer Industry",
+        "author": "John Markoff",
+        "rating": "",
+        "isbn": "0143036769"
+    },
+    {
+        "title": "The Warmth of Other Suns: The Epic Story of America's Great Migration",
+        "author": "Isabel Wilkerson",
+        "rating": "",
+        "isbn": "0679444327"
+    },
+    {
+        "title": "The Sciences of the Artificial",
+        "author": "Herbert A. Simon",
+        "rating": "",
+        "isbn": "0262691914"
+    },
+    {
+        "title": "From Hell",
+        "author": "Alan Moore",
+        "rating": "",
+        "isbn": "0861661419"
+    },
+    {
+        "title": "Paying for the Party: How College Maintains Inequality",
+        "author": "Elizabeth A. Armstrong",
+        "rating": "",
+        "isbn": "0674049578"
+    },
+    {
+        "title": "Capital in the Twenty-First Century",
+        "author": "Thomas Piketty",
+        "rating": "",
+        "isbn": "067443000X"
+    },
+    {
+        "title": "Messengers of the Right: Conservative Media and the Transformation of American Politics",
+        "author": "Nicole Hemmer",
+        "rating": "",
+        "isbn": "081229307X"
+    },
+    {
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoyevsky",
+        "rating": "",
+        "isbn": "0143058142"
+    },
+    {
+        "title": "Surfaces and Essences: Analogy as the Fuel and Fire of Thinking",
+        "author": "Douglas R. Hofstadter",
+        "rating": "",
+        "isbn": "0465018475"
+    },
+    {
+        "title": "Analogie",
+        "author": "Douglas R. Hofstadter",
+        "rating": "",
+        "isbn": ""
+    },
+    {
+        "title": "The Art of Computer Programming: Volume 3: Sorting and Searching",
+        "author": "Donald Ervin Knuth",
+        "rating": "",
+        "isbn": "0201896850"
+    },
+    {
+        "title": "The Art of Computer Programming, Volume 2: Seminumerical Algorithms",
+        "author": "Donald Ervin Knuth",
+        "rating": "",
+        "isbn": "0201896842"
+    },
+    {
+        "title": "Finite and Infinite Games: A Vision of Life as Play and Possibility",
+        "author": "James P. Carse",
+        "rating": "",
+        "isbn": "0345341848"
+    },
+    {
+        "title": "When Breath Becomes Air",
+        "author": "Paul Kalanithi",
+        "rating": "",
+        "isbn": "9780812988406"
+    },
+    {
+        "title": "Gravity's Rainbow",
+        "author": "Thomas Pynchon",
+        "rating": "",
+        "isbn": "0143039946"
+    },
+    {
+        "title": "David Foster Wallace's Infinite Jest: A Reader's Guide",
+        "author": "Stephen J. Burn",
+        "rating": "",
+        "isbn": "082641477X"
+    },
+    {
+        "title": "A Theory of Justice",
+        "author": "John Rawls",
+        "rating": "",
+        "isbn": "0674017722"
+    },
+    {
+        "title": "Catch-22 (Catch-22, #1)",
+        "author": "Joseph Heller",
+        "rating": "",
+        "isbn": "0684833395"
+    },
+    {
+        "title": "Robinson Kruso",
+        "author": "Daniel Defoe",
+        "rating": "",
+        "isbn": "2940005929365"
+    }
+]

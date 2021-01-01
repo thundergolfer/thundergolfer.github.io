@@ -1,0 +1,740 @@
+[
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Ernest Hemingway",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0684830493"
+    },
+    {
+        "title": "Tender Is the Night",
+        "author": "F. Scott Fitzgerald",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "068480154X"
+    },
+    {
+        "title": "Children of Dune (Dune Chronicles, #3)",
+        "author": "Frank Herbert",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0593098242"
+    },
+    {
+        "title": "Heart of Darkness",
+        "author": "Joseph Conrad",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1892295490"
+    },
+    {
+        "title": "Between the World and Me",
+        "author": "Ta-Nehisi Coates",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0812993543"
+    },
+    {
+        "title": "Foundation (Foundation, #1)",
+        "author": "Isaac Asimov",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0553803719"
+    },
+    {
+        "title": "Of Mice and Men",
+        "author": "John Steinbeck",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0142000671"
+    },
+    {
+        "title": "Amusing Ourselves to Death: Public Discourse in the Age of Show Business",
+        "author": "Neil Postman",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "014303653X"
+    },
+    {
+        "title": "Notes on Nationalism",
+        "author": "George Orwell",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0241339561"
+    },
+    {
+        "title": "Why We're Polarized",
+        "author": "Ezra Klein",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1797107658"
+    },
+    {
+        "title": "The Uninhabitable Earth: Life After Warming",
+        "author": "David Wallace-Wells",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0525576703"
+    },
+    {
+        "title": "The Pearl",
+        "author": "John Steinbeck",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0142000698"
+    },
+    {
+        "title": "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change",
+        "author": "Camille Fournier",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "1491973897"
+    },
+    {
+        "title": "Dune Messiah (Dune Chronicles, #2)",
+        "author": "Frank Herbert",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0593098234"
+    },
+    {
+        "title": "The End of Policing",
+        "author": "Alex S. Vitale",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Liar's Poker",
+        "author": "Michael   Lewis",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "039333869X"
+    },
+    {
+        "title": "A Clockwork Orange",
+        "author": "Anthony Burgess",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0393341763"
+    },
+    {
+        "title": "Dune (Dune, #1)",
+        "author": "Frank Herbert",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "059309932X"
+    },
+    {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0451526341"
+    },
+    {
+        "title": "The Sirens of Titan",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780385333498"
+    },
+    {
+        "title": "The Undoing Project: A Friendship That Changed Our Minds",
+        "author": "Michael   Lewis",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0393254593"
+    },
+    {
+        "title": "Constructing the Political Spectacle",
+        "author": "Murray Edelman",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0226183998"
+    },
+    {
+        "title": "Evicted: Poverty and Profit in the American City",
+        "author": "Matthew Desmond",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0553447432"
+    },
+    {
+        "title": "The Innovator's Dilemma: The Revolutionary Book that Will Change the Way You Do Business",
+        "author": "Clayton M. Christensen",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0060521996"
+    },
+    {
+        "title": "Designing Data-Intensive Applications",
+        "author": "Martin Kleppmann",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "The Road",
+        "author": "Cormac McCarthy",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0307265439"
+    },
+    {
+        "title": "Normal People",
+        "author": "Sally Rooney",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1984822179"
+    },
+    {
+        "title": "Down Girl: The Logic of Misogyny",
+        "author": "Kate Manne",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0190604980"
+    },
+    {
+        "title": "Cat's Cradle",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0140285601"
+    },
+    {
+        "title": "Zero to One: Notes on Startups, or How to Build the Future",
+        "author": "Peter Thiel",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0804139296"
+    },
+    {
+        "title": "V for Vendetta",
+        "author": "Alan Moore",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1401207928"
+    },
+    {
+        "title": "Friday Black",
+        "author": "Nana Kwame Adjei-Brenyah",
+        "rating": "\u2605\u2605",
+        "isbn": "1328911241"
+    },
+    {
+        "title": "New Dark Age: Technology and the End of the Future",
+        "author": "James Bridle",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values (Phaedrus, #1)",
+        "author": "Robert M. Pirsig",
+        "rating": "",
+        "isbn": "0060589469"
+    },
+    {
+        "title": "The Entrepreneurial State: Debunking Public vs. Private Sector Myths",
+        "author": "Mariana Mazzucato",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0857282514"
+    },
+    {
+        "title": "The Restaurant at the End of the Universe (Hitchhiker's Guide to the Galaxy, #2)",
+        "author": "Douglas Adams",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Why Knowledge Matters: Rescuing Our Children from Failed Educational Theories",
+        "author": "E.D. Hirsch",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1612509525"
+    },
+    {
+        "title": "Signifying Rappers: Rap and Race in the Urban Present",
+        "author": "David Foster Wallace",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0880015357"
+    },
+    {
+        "title": "The Trial",
+        "author": "Franz Kafka",
+        "rating": "",
+        "isbn": null
+    },
+    {
+        "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+        "author": "Douglas Adams",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "American Psycho",
+        "author": "Bret Easton Ellis",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0679735771"
+    },
+    {
+        "title": "The Road to Wigan Pier",
+        "author": "George Orwell",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "The Big Short: Inside the Doomsday Machine",
+        "author": "Michael   Lewis",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "039335315X"
+    },
+    {
+        "title": "The Long Tail: Why the Future of Business is Selling Less of More",
+        "author": "Chris Anderson",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1401309666"
+    },
+    {
+        "title": "The New New Thing: A Silicon Valley Story",
+        "author": "Michael   Lewis",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0393347818"
+    },
+    {
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0374275637"
+    },
+    {
+        "title": "Eragon (The Inheritance Cycle, #1)",
+        "author": "Christopher Paolini",
+        "rating": "",
+        "isbn": "0375826696"
+    },
+    {
+        "title": "The Defining Decade: Why Your Twenties Matter\u2014And How to Make the Most of Them Now",
+        "author": "Meg Jay",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Hard Times",
+        "author": "Charles Dickens",
+        "rating": "",
+        "isbn": "0321107217"
+    },
+    {
+        "title": "Gorgias",
+        "author": "Plato",
+        "rating": "",
+        "isbn": "0199540322"
+    },
+    {
+        "title": "Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley",
+        "author": "Antonio Garc\u00eda Mart\u00ednez",
+        "rating": "\u2605\u2605",
+        "isbn": "0062458191"
+    },
+    {
+        "title": "The Conscience of a Conservative",
+        "author": "Barry M. Goldwater",
+        "rating": "\u2605",
+        "isbn": "0691131171"
+    },
+    {
+        "title": "The Intelligent Investor",
+        "author": "Benjamin Graham",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0060555661"
+    },
+    {
+        "title": "The Architecture of Happiness",
+        "author": "Alain de Botton",
+        "rating": "\u2605\u2605",
+        "isbn": "0375424431"
+    },
+    {
+        "title": "The Consolations of Philosophy",
+        "author": "Alain de Botton",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0679779175"
+    },
+    {
+        "title": "Infidel",
+        "author": "Ayaan Hirsi Ali",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0743289684"
+    },
+    {
+        "title": "The World According to Clarkson (World According to Clarkson, #1)",
+        "author": "Jeremy Clarkson",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0141017899"
+    },
+    {
+        "title": "Maus: Un survivant raconte, tome 1: Mon p\u00e8re saigne l'histoire (Maus, #1)",
+        "author": "Art Spiegelman",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "2080660292"
+    },
+    {
+        "title": "The Elements of Style",
+        "author": "William Strunk Jr.",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "The Importance of Being Earnest",
+        "author": "Oscar Wilde",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "158049580X"
+    },
+    {
+        "title": "The Fountainhead",
+        "author": "Ayn Rand",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0451191153"
+    },
+    {
+        "title": "Atlas Shrugged",
+        "author": "Ayn Rand",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0452011876"
+    },
+    {
+        "title": "I Am a Strange Loop",
+        "author": "Douglas R. Hofstadter",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0465030785"
+    },
+    {
+        "title": "G\u00f6del, Escher, Bach: An Eternal Golden Braid",
+        "author": "Douglas R. Hofstadter",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0465026567"
+    },
+    {
+        "title": "The Giver (The Giver, #1)",
+        "author": "Lois Lowry",
+        "rating": "",
+        "isbn": "0385732554"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0060929871"
+    },
+    {
+        "title": "Startupland: How Three Guys Risked Everything to Turn an Idea Into a Global Business",
+        "author": "Mikkel Svane",
+        "rating": "\u2605\u2605",
+        "isbn": "1118980816"
+    },
+    {
+        "title": "Richard III",
+        "author": "William Shakespeare",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0192839934"
+    },
+    {
+        "title": "A Midsummer Night's Dream",
+        "author": "William Shakespeare",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0743477545"
+    },
+    {
+        "title": "Romeo and Juliet",
+        "author": "William Shakespeare",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0743477111"
+    },
+    {
+        "title": "Enduring Love",
+        "author": "Ian McEwan",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0099481243"
+    },
+    {
+        "title": "Modern Architecture Since 1900",
+        "author": "William J.R. Curtis",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0714833568"
+    },
+    {
+        "title": "Complexity and Contradiction in Architecture",
+        "author": "Robert Venturi",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0870702823"
+    },
+    {
+        "title": "Delirious New York: A Retroactive Manifesto for Manhattan",
+        "author": "Rem Koolhaas",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1885254008"
+    },
+    {
+        "title": "Freefall: America, Free Markets, and the Sinking of the World Economy",
+        "author": "Joseph E. Stiglitz",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0393075966"
+    },
+    {
+        "title": "The Soul of a New Machine",
+        "author": "Tracy Kidder",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0316491977"
+    },
+    {
+        "title": "The Communist Manifesto",
+        "author": "Karl Marx",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0140447571"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0316769177"
+    },
+    {
+        "title": "Superintelligence: Paths, Dangers, Strategies",
+        "author": "Nick Bostrom",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0199678111"
+    },
+    {
+        "title": "23 Things They Don't Tell You about Capitalism",
+        "author": "Ha-Joon Chang",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1608191664"
+    },
+    {
+        "title": "The Shark Net",
+        "author": "Robert Drewe",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0143002155"
+    },
+    {
+        "title": "The Beginning of Infinity: Explanations That Transform the World",
+        "author": "David Deutsch",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0670022756"
+    },
+    {
+        "title": "The Fabric of Reality: The Science of Parallel Universes--and Its Implications",
+        "author": "David Deutsch",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "014027541X"
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Hegemony or Survival: America's Quest for Global Dominance",
+        "author": "Noam Chomsky",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0805076883"
+    },
+    {
+        "title": "Understanding Power: The Indispensable Chomsky",
+        "author": "Noam Chomsky",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1565847032"
+    },
+    {
+        "title": "Manufacturing Consent: The Political Economy of the Mass Media",
+        "author": "Edward S. Herman",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0375714499"
+    },
+    {
+        "title": "Infinite Jest",
+        "author": "David Foster Wallace",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0316921173"
+    },
+    {
+        "title": "Slaughterhouse-Five",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0385333846"
+    },
+    {
+        "title": "Breakfast of Champions",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0385334206"
+    },
+    {
+        "title": "Treasure Islands: Uncovering the Damage of Offshore Banking and Tax Havens",
+        "author": "Nicholas Shaxson",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0230105017"
+    },
+    {
+        "title": "The Hobbit, or There and Back Again",
+        "author": "J.R.R. Tolkien",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0618260307"
+    },
+    {
+        "title": "The Return of the King (The Lord of the Rings, #3)",
+        "author": "J.R.R. Tolkien",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "The Two Towers (The Lord of the Rings, #2)",
+        "author": "J.R.R. Tolkien",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0618346260"
+    },
+    {
+        "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+        "author": "J.R.R. Tolkien",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0618346252"
+    },
+    {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "014044923X"
+    },
+    {
+        "title": "The Nicomachean Ethics",
+        "author": "Aristotle",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0140449493"
+    },
+    {
+        "title": "Reasons and Persons",
+        "author": "Derek Parfit",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "019824908X"
+    },
+    {
+        "title": "The Most Good You Can Do: How Effective Altruism Is Changing Ideas About Living Ethically",
+        "author": "Peter Singer",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0300180276"
+    },
+    {
+        "title": "Animal Liberation",
+        "author": "Peter Singer",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0060011572"
+    },
+    {
+        "title": "The Hostile Hospital (A Series of Unfortunate Events, #8)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1405206128"
+    },
+    {
+        "title": "The Slippery Slope (A Series of Unfortunate Events, #10)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0064410137"
+    },
+    {
+        "title": "The Carnivorous Carnival (A Series of Unfortunate Events, #9)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0064410129"
+    },
+    {
+        "title": "The Vile Village (A Series of Unfortunate Events, #7)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0060566221"
+    },
+    {
+        "title": "The Austere Academy (A Series of Unfortunate Events, #5)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0064408639"
+    },
+    {
+        "title": "The Miserable Mill (A Series of Unfortunate Events, #4)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0439272637"
+    },
+    {
+        "title": "The Wide Window (A Series of Unfortunate Events, #3)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0064407683"
+    },
+    {
+        "title": "The Reptile Room (A Series of Unfortunate Events, #2)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0439206480"
+    },
+    {
+        "title": "The Bad Beginning (A Series of Unfortunate Events, #1)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0439206472"
+    },
+    {
+        "title": "The Ersatz Elevator (A Series of Unfortunate Events, #6)",
+        "author": "Lemony Snicket",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0060566213"
+    },
+    {
+        "title": "Harry Potter and the Goblet of Fire (Harry Potter, #4)",
+        "author": "J.K. Rowling",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
+        "author": "J.K. Rowling",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0439064864"
+    },
+    {
+        "title": "Harry Potter and the Deathly Hallows (Harry Potter, #7)",
+        "author": "J.K. Rowling",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+        "author": "J.K. Rowling",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "043965548X"
+    },
+    {
+        "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
+        "author": "J.K. Rowling",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "Outliers: The Story of Success",
+        "author": "Malcolm Gladwell",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0316017922"
+    },
+    {
+        "title": "Walden",
+        "author": "Henry David Thoreau",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "How to Win Friends and Influence People",
+        "author": "Dale Carnegie",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": null
+    },
+    {
+        "title": "God Is Not Great: How Religion Poisons Everything",
+        "author": "Christopher Hitchens",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0446579807"
+    },
+    {
+        "title": "The End of Faith: Religion, Terror, and the Future of Reason",
+        "author": "Sam Harris",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0393327655"
+    },
+    {
+        "title": "The God Delusion",
+        "author": "Richard Dawkins",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0618680004"
+    }
+]
