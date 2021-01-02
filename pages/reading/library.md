@@ -13,7 +13,7 @@ To see things I haven't yet read browse the [Antilibrary]({{ site.baseurl }}/ant
 {% for member in site.data.library %}
     <a target="_blank" href="https://www.librarything.com/isbn/{{ member.isbn }}" style="color: #333333; flex: 1; width: 100%; min-width: 250px; padding-top: 5%;">
         <div style="width: 250px">
-            <img src="http://covers.openlibrary.org/b/ISBN/{{ member.isbn }}-L.jpg">
+            <img class="grow-me" src="http://covers.openlibrary.org/b/ISBN/{{ member.isbn }}-L.jpg">
         </div>
         <div style="width: 250px">
             <h4>{{ member.title }}</h4>
@@ -23,3 +23,15 @@ To see things I haven't yet read browse the [Antilibrary]({{ site.baseurl }}/ant
     </a>
 {% endfor %}
 </section>
+
+<style>
+.grow-me {
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+}
+
+.grow-me:hover {
+  transform: scale(1.02);
+}
+
+</style>
