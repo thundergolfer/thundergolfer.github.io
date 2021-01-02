@@ -26,6 +26,7 @@ in the book that I didn't understand the first time round, like this interjectio
 multiple times:
 
 > ―Do you mind if I pull down the curtain?
+>
 > ―Please do. It's too light in here.
 
 Why is this repeated much later through the book, seemingly totally out of context?  I don't get it, but it was eerie.
