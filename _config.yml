@@ -92,7 +92,8 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
 permalink:    pretty
-paginate:     4
+paginate:     6
+paginate_path: "/blog/:num/"
 sass:
   compressed: true
 plugins:
