@@ -3,7 +3,11 @@
   <div class="flexbox-parent">
     <div class="flexbox-child">
       <li class="about-anc">
-        <h4><a class="nav-underline home" href="{{site.url}}">Home</a></h4></li>
+        <h4><a class="nav-underline home" href="{{site.url}}">Home</a></h4>
+      </li>
+      <li>
+        <h4><a class="nav-underline blog" href="{{site.url}}/blog">Blog</a></h4>
+      </li>
       {% for page in site.pages %}
         {% if page.tags contains "about" %}
           <li class="about-anc">
