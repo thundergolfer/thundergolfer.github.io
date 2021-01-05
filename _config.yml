@@ -102,7 +102,9 @@ plugins:
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
 
-# Collections (for design section of site)
+collections_dir: collections
 collections:
+  reviews:
+    output: true
   portfolio:
     output: true
