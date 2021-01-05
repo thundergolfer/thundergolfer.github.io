@@ -20,3 +20,5 @@ I'd like, owing to the fact that it was originally written as separate parts and
 
 I'll definitely continue reading the Foundation series, though I'm not keen to read further into it just yet. I'll try different science fiction
 writers like Ursula K. Le Guin first. 
+
+✭✭✭✭
