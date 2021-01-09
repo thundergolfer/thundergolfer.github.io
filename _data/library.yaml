@@ -3,642 +3,848 @@
         "title": "The Old Man and the Sea",
         "author": "Ernest Hemingway",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0684830493"
+        "isbn": "0684830493",
+        "review_path": "the-old-man-and-the-sea-ernest-hemingway/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Tender Is the Night",
         "author": "F. Scott Fitzgerald",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "068480154X"
+        "isbn": "068480154X",
+        "review_path": "tender-is-the-night-f-scott-fitzgerald/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Children of Dune (Dune Chronicles, #3)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0593098242"
+        "isbn": "0593098242",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Heart of Darkness",
         "author": "Joseph Conrad",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "1892295490"
+        "isbn": "1892295490",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Between the World and Me",
         "author": "Ta-Nehisi Coates",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0812993543"
+        "isbn": "0812993543",
+        "review_path": "between-the-world-and-me-ta-nehisi-coates/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Foundation (Foundation, #1)",
         "author": "Isaac Asimov",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0553803719"
+        "isbn": "0553803719",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Of Mice and Men",
         "author": "John Steinbeck",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0142000671"
+        "isbn": "0142000671",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Amusing Ourselves to Death: Public Discourse in the Age of Show Business",
         "author": "Neil Postman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "014303653X"
+        "isbn": "014303653X",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "Notes on Nationalism",
         "author": "George Orwell",
         "rating": "\u2605\u2605\u2605\u2606",
-        "isbn": "0241339561"
+        "isbn": "0241339561",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "Why We're Polarized",
         "author": "Ezra Klein",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9781476700366"
+        "isbn": "9781476700366",
+        "review_path": "why-were-polarized-ezra-klein/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "The Uninhabitable Earth: Life After Warming",
         "author": "David Wallace-Wells",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0525576703"
+        "isbn": "0525576703",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "The Pearl",
         "author": "John Steinbeck",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "9782070364282"
+        "isbn": "9782070364282",
+        "review_path": "the-pearl-john-steinbeck/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change",
         "author": "Camille Fournier",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "1491973897"
+        "isbn": "1491973897",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Dune Messiah (Dune Chronicles, #2)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780425035856"
+        "isbn": "9780425035856",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "The End of Policing",
         "author": "Alex S. Vitale",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9781784782924"
+        "isbn": "9781784782924",
+        "review_path": "the-end-of-policing-alex-s-vitale/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Liar's Poker",
         "author": "Michael   Lewis",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "039333869X"
+        "isbn": "039333869X",
+        "review_path": "liars-poker-michael-lewis/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "A Clockwork Orange",
         "author": "Anthony Burgess",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0393341763"
+        "isbn": "0393341763",
+        "review_path": "a-clockwork-orange-anthony-burgess/",
+        "year_i_finished_reading": null
     },
     {
         "title": "Dune (Dune, #1)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "059309932X"
+        "isbn": "059309932X",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Animal Farm",
         "author": "George Orwell",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0451526341"
+        "isbn": "0451526341",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Sirens of Titan",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780385333498"
+        "isbn": "9780385333498",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "The Undoing Project: A Friendship That Changed Our Minds",
         "author": "Michael   Lewis",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0393254593"
+        "isbn": "0393254593",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Constructing the Political Spectacle",
         "author": "Murray Edelman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0226183998"
+        "isbn": "0226183998",
+        "review_path": "constructing-the-political-spectacle-murray-edelman/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Evicted: Poverty and Profit in the American City",
         "author": "Matthew Desmond",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0553447432"
+        "isbn": "0553447432",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "The Innovator's Dilemma: The Revolutionary Book that Will Change the Way You Do Business",
         "author": "Clayton M. Christensen",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0060521996"
+        "isbn": "0060521996",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Designing Data-Intensive Applications",
         "author": "Martin Kleppmann",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9781449373320"
+        "isbn": "9781449373320",
+        "review_path": "designing-data-intensive-applications-martin-kleppmann/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "The Road",
         "author": "Cormac McCarthy",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0307265439"
+        "isbn": "0307265439",
+        "review_path": "the-road-cormac-mccarthy/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Normal People",
         "author": "Sally Rooney",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "1984822179"
+        "isbn": "1984822179",
+        "review_path": "normal-people-sally-rooney/",
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Down Girl: The Logic of Misogyny",
         "author": "Kate Manne",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0190604980"
+        "isbn": "0190604980",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Cat's Cradle",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0140285601"
+        "isbn": "0140285601",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Zero to One: Notes on Startups, or How to Build the Future",
         "author": "Peter Thiel",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0804139296"
+        "isbn": "0804139296",
+        "review_path": null,
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "V for Vendetta",
         "author": "Alan Moore",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "1401207928"
+        "isbn": "1401207928",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Friday Black",
         "author": "Nana Kwame Adjei-Brenyah",
         "rating": "\u2605\u2605",
-        "isbn": "1787476014"
+        "isbn": "1787476014",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "New Dark Age: Technology and the End of the Future",
         "author": "James Bridle",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "9781786635471"
+        "isbn": "9781786635471",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values (Phaedrus, #1)",
         "author": "Robert M. Pirsig",
         "rating": "",
-        "isbn": "0060589469"
+        "isbn": "0060589469",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Entrepreneurial State: Debunking Public vs. Private Sector Myths",
         "author": "Mariana Mazzucato",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0857282514"
+        "isbn": "0857282514",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Restaurant at the End of the Universe (Hitchhiker's Guide to the Galaxy, #2)",
         "author": "Douglas Adams",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780671442682"
+        "isbn": "9780671442682",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "Why Knowledge Matters: Rescuing Our Children from Failed Educational Theories",
         "author": "E.D. Hirsch",
         "rating": "\u2605\u2605\u2605\u2605\u2606",
-        "isbn": "1612509525"
+        "isbn": "1612509525",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "Signifying Rappers: Rap and Race in the Urban Present",
         "author": "David Foster Wallace",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0880015357"
+        "isbn": "0880015357",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Trial",
         "author": "Franz Kafka",
         "rating": "",
-        "isbn": "9781529021073"
+        "isbn": "9781529021073",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
         "author": "Douglas Adams",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780434023394"
+        "isbn": "9780434023394",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "American Psycho",
         "author": "Bret Easton Ellis",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0679735771"
+        "isbn": "0679735771",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Road to Wigan Pier",
         "author": "George Orwell",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0141185171"
+        "isbn": "0141185171",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Big Short: Inside the Doomsday Machine",
         "author": "Michael   Lewis",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780393072235"
+        "isbn": "9780393072235",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "The Long Tail: Why the Future of Business is Selling Less of More",
         "author": "Chris Anderson",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "1401309666"
+        "isbn": "1401309666",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The New New Thing: A Silicon Valley Story",
         "author": "Michael   Lewis",
         "rating": "\u2605\u2605\u2605\u2606",
-        "isbn": "9781469244341"
+        "isbn": "9781469244341",
+        "review_path": null,
+        "year_i_finished_reading": "2019"
     },
     {
         "title": "Thinking, Fast and Slow",
         "author": "Daniel Kahneman",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0374275637"
+        "isbn": "0374275637",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Defining Decade: Why Your Twenties Matter\u2014And How to Make the Most of Them Now",
         "author": "Meg Jay",
         "rating": "\u2605\u2605\u2605",
-        "isbn": ""
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Hard Times",
         "author": "Charles Dickens",
         "rating": "",
-        "isbn": "0321107217"
+        "isbn": "0321107217",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Gorgias",
         "author": "Plato",
         "rating": "",
-        "isbn": "0199540322"
+        "isbn": "0140440941",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley",
         "author": "Antonio Garc\u00eda Mart\u00ednez",
         "rating": "\u2605\u2605",
-        "isbn": "9780062458209"
+        "isbn": "9780062458209",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Conscience of a Conservative",
         "author": "Barry M. Goldwater",
         "rating": "\u2605",
-        "isbn": "0691131171"
+        "isbn": "0691131171",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Intelligent Investor",
         "author": "Benjamin Graham",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0060555661"
+        "isbn": "0060555661",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Architecture of Happiness",
         "author": "Alain de Botton",
         "rating": "\u2605\u2605",
-        "isbn": "0375424431"
+        "isbn": "0375424431",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Consolations of Philosophy",
         "author": "Alain de Botton",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0679779175"
+        "isbn": "0679779175",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Infidel",
         "author": "Ayaan Hirsi Ali",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0743289684"
-    },
-    {
-        "title": "The World According to Clarkson (World According to Clarkson, #1)",
-        "author": "Jeremy Clarkson",
-        "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0141017899"
+        "isbn": "0743289684",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Maus: Un survivant raconte, tome 1: Mon p\u00e8re saigne l'histoire (Maus, #1)",
         "author": "Art Spiegelman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "2080660292"
+        "isbn": "2080660292",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Elements of Style",
         "author": "William Strunk Jr.",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": ""
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Importance of Being Earnest",
         "author": "Oscar Wilde",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "158049580X"
+        "isbn": "158049580X",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Fountainhead",
         "author": "Ayn Rand",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0451191153"
+        "isbn": "0451191153",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Atlas Shrugged",
         "author": "Ayn Rand",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0452011876"
+        "isbn": "0452011876",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "I Am a Strange Loop",
         "author": "Douglas R. Hofstadter",
         "rating": "\u2605\u2605\u2605\u2605\u2606",
-        "isbn": "0465030785"
+        "isbn": "0465030785",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "G\u00f6del, Escher, Bach: An Eternal Golden Braid",
         "author": "Douglas R. Hofstadter",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0465026567"
+        "isbn": "0465026567",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Giver (The Giver, #1)",
         "author": "Lois Lowry",
         "rating": "",
-        "isbn": "0385732554"
+        "isbn": "0385732554",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "1984",
         "author": "George Orwell",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780141036144"
+        "isbn": "9780141036144",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Brave New World",
         "author": "Aldous Huxley",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0060929871"
+        "isbn": "0060929871",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Startupland: How Three Guys Risked Everything to Turn an Idea Into a Global Business",
         "author": "Mikkel Svane",
         "rating": "\u2605\u2605",
-        "isbn": "1118980816"
+        "isbn": "1118980816",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Richard III",
         "author": "William Shakespeare",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0192839934"
+        "isbn": "0192839934",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "A Midsummer Night's Dream",
         "author": "William Shakespeare",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0743477545"
+        "isbn": "0743477545",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Romeo and Juliet",
         "author": "William Shakespeare",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0743477111"
+        "isbn": "0743477111",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Enduring Love",
         "author": "Ian McEwan",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0099481243"
+        "isbn": "0099481243",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Modern Architecture Since 1900",
         "author": "William J.R. Curtis",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0714833568"
+        "isbn": "0714833568",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Complexity and Contradiction in Architecture",
         "author": "Robert Venturi",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0870702823"
+        "isbn": "0870702823",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Delirious New York: A Retroactive Manifesto for Manhattan",
         "author": "Rem Koolhaas",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "1885254008"
+        "isbn": "1885254008",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Freefall: America, Free Markets, and the Sinking of the World Economy",
         "author": "Joseph E. Stiglitz",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0393075966"
+        "isbn": "0393075966",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Soul of a New Machine",
         "author": "Tracy Kidder",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0316491977"
+        "isbn": "0316491977",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Communist Manifesto",
         "author": "Karl Marx",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0140447571"
+        "isbn": "0140447571",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9781784752637"
+        "isbn": "9781784752637",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0316769177"
+        "isbn": "0316769177",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Superintelligence: Paths, Dangers, Strategies",
         "author": "Nick Bostrom",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0199678111"
+        "isbn": "0199678111",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "23 Things They Don't Tell You about Capitalism",
         "author": "Ha-Joon Chang",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "1608191664"
+        "isbn": "1608191664",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Shark Net",
         "author": "Robert Drewe",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0670888095"
+        "isbn": "0670888095",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Beginning of Infinity: Explanations That Transform the World",
         "author": "David Deutsch",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0670022756"
+        "isbn": "0670022756",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Fabric of Reality: The Science of Parallel Universes--and Its Implications",
         "author": "David Deutsch",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "014027541X"
+        "isbn": "014027541X",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9781839407598"
+        "isbn": "9781839407598",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Hegemony or Survival: America's Quest for Global Dominance",
         "author": "Noam Chomsky",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0805076883"
+        "isbn": "0805076883",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Understanding Power: The Indispensable Chomsky",
         "author": "Noam Chomsky",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "1565847032"
+        "isbn": "1565847032",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Manufacturing Consent: The Political Economy of the Mass Media",
         "author": "Edward S. Herman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0375714499"
+        "isbn": "0375714499",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Infinite Jest",
         "author": "David Foster Wallace",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0316921173"
+        "isbn": "0316921173",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Slaughterhouse-Five",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0385333846"
+        "isbn": "0385333846",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Breakfast of Champions",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0385334206"
+        "isbn": "0385334206",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Treasure Islands: Uncovering the Damage of Offshore Banking and Tax Havens",
         "author": "Nicholas Shaxson",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9781847921109"
+        "isbn": "9781847921109",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Hobbit, or There and Back Again",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0618260307"
+        "isbn": "0618260307",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Return of the King (The Lord of the Rings, #3)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605\u2606",
-        "isbn": "9782266120975"
+        "isbn": "9782266120975",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Two Towers (The Lord of the Rings, #2)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0618346260"
+        "isbn": "0618346260",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0618346252"
+        "isbn": "0618346252",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Beyond Good and Evil",
         "author": "Friedrich Nietzsche",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "014044923X"
+        "isbn": "014044923X",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Nicomachean Ethics",
         "author": "Aristotle",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0140449493"
+        "isbn": "0140449493",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Reasons and Persons",
         "author": "Derek Parfit",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "019824908X"
+        "isbn": "019824908X",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The Most Good You Can Do: How Effective Altruism Is Changing Ideas About Living Ethically",
         "author": "Peter Singer",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0300180276"
+        "isbn": "0300180276",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Animal Liberation",
         "author": "Peter Singer",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0060011572"
+        "isbn": "0060011572",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Outliers: The Story of Success",
         "author": "Malcolm Gladwell",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0316017922"
+        "isbn": "0316017922",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "Walden",
         "author": "Henry David Thoreau",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9781722500030"
+        "isbn": "9781722500030",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "How to Win Friends and Influence People",
         "author": "Dale Carnegie",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0671355007"
+        "isbn": "0671355007",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "God Is Not Great: How Religion Poisons Everything",
         "author": "Christopher Hitchens",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0446579807"
+        "isbn": "0446579807",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The End of Faith: Religion, Terror, and the Future of Reason",
         "author": "Sam Harris",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0393327655"
+        "isbn": "0393327655",
+        "review_path": null,
+        "year_i_finished_reading": null
     },
     {
         "title": "The God Delusion",
         "author": "Richard Dawkins",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0618680004"
+        "isbn": "0618680004",
+        "review_path": null,
+        "year_i_finished_reading": null
     }
 ]

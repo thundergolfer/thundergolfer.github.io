@@ -6,7 +6,10 @@ the /library page of the website.
 import csv
 import json
 import pathlib
+import re
 import subprocess
+
+from typing import Optional
 
 #  I'll leave out children's authors, young-adult fiction, and bland fiction from what shows up on my website
 IGNORED_AUTHORS = {
@@ -99,6 +102,17 @@ def fmt_rating(rating: str):
     return "★" * int(rating)
 
 
+def get_book_review_path(book_reviews_directory: pathlib.Path, title: str, author: str) -> Optional[str]:
+    cleaned_title = "-".join(re.sub("[!'.]", "", title).split()).lower()
+    cleaned_author = "-".join(re.sub("[!'.]", "", author).split()).lower()
+    expected_review_filename = f"{cleaned_title}-{cleaned_author}.md"
+    expected_review_path = book_reviews_directory / expected_review_filename
+    print(expected_review_path)
+    if expected_review_path.exists():
+        return f"{cleaned_title}-{cleaned_author}/"
+    return None
+
+
 if __name__ == "__main__":
     repo_root = subprocess.run(
         ["git", "rev-parse", "--show-toplevel"],
@@ -106,6 +120,7 @@ if __name__ == "__main__":
         check=True,
     ).stdout.decode("utf-8").strip()
 
+    book_reviews_directory = pathlib.Path(repo_root, "collections", "_reviews")
     reading_data_csv_path = pathlib.Path(repo_root, "_data", "goodreads_library_export.csv")
 
     entries = []
@@ -120,11 +135,18 @@ if __name__ == "__main__":
         read_count = int(row["Read Count"])
         # TITLE_TO_ISBN takes precedence because some of the ISBNs in Goodreads data don't have cover available
         isbn = TITLE_TO_ISBN.get(row["Title"]) or row["ISBN"][2:-1] or row["ISBN13"][2:-1]
+        review_path = get_book_review_path(
+            book_reviews_directory=book_reviews_directory,
+            title=row["Title"],
+            author=row["Author"]
+        )
         entry = {
             "title": row["Title"],
             "author": row["Author"],
             "rating": fmt_rating(RATING_OVERRIDES[row["Title"]]) if RATING_OVERRIDES.get(row["Title"]) else fmt_rating(row["My Rating"]),
             "isbn": isbn,
+            "review_path": review_path,
+            "year_i_finished_reading": row["Date Read"].split("/")[0] if row["Date Read"] else None,
         }
 
         if not isbn:
