@@ -103,8 +103,8 @@ def fmt_rating(rating: str):
 
 
 def get_book_review_path(book_reviews_directory: pathlib.Path, title: str, author: str) -> Optional[str]:
-    cleaned_title = "-".join(re.sub("[!'.]", "", title).split()).lower()
-    cleaned_author = "-".join(re.sub("[!'.]", "", author).split()).lower()
+    cleaned_title = "-".join(re.sub("[!'.:]", "", title).split()).lower()
+    cleaned_author = "-".join(re.sub("[!'.:]", "", author).split()).lower()
     expected_review_filename = f"{cleaned_title}-{cleaned_author}.md"
     expected_review_path = book_reviews_directory / expected_review_filename
     print(expected_review_path)
