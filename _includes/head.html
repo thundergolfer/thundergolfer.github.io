@@ -1,13 +1,13 @@
 <head>
     {% if site.google_analytics %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=[[[TRACKING ID HERE]]]"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', '[[[TRACKING ID HERE]]]');
+      gtag("config", "{{ site.google_analytics }}");
     </script>
     {% endif %}
     <meta charset="utf-8">

@@ -6,7 +6,7 @@ summary:
 categories: university education maths
 ---
 
-⚠️ *This was written in late 2018, and is only just being published. It's still relevant.*
+*This was written in late 2018, and is only just being published, but it's still relevant.*
 
 ---
 There’s something quite weird about the Computer Science program at my school, RMIT University. While going through the program, I was reading things online written by Computer Science students at elite schools in Canada and the USA and getting the sense that they were doing *a lot* more maths than those of us at RMIT. It bugged me long enough that I had to check up on it, and yes, unfortunately, RMIT and many other Australian universities are under-training students in mathematics. It’s been forcedly pointed out by Australian tech leaders that much more students must enrol in Computer Science. Assuming somehow Computer Science enrolment significantly jumps to match industry growth and societal demands, I now worry whether enough of those enrolments will translate into quality computer & software professionals.

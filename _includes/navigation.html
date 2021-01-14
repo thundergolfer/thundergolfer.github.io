@@ -3,7 +3,11 @@
   <div class="flexbox-parent">
     <div class="flexbox-child">
       <li class="about-anc">
-        <h4><a class="nav-underline home" href="{{site.url}}">Home</a></h4></li>
+        <h4><a class="nav-underline home" href="{{site.url}}">Home</a></h4>
+      </li>
+      <li>
+        <h4><a class="nav-underline blog" href="{{site.url}}/blog">Blog</a></h4>
+      </li>
       {% for page in site.pages %}
         {% if page.tags contains "about" %}
           <li class="about-anc">
@@ -21,9 +25,9 @@
           <li class="beliefs-anc">
             <h4><a class="nav-underline resume" href="{{page.url}}">{{page.title}}</a></h4></li>
         {% endif %}
-        {% if page.tags contains "portfolio" %}
-          <li class="team-anc">
-            <h4><a class="nav-underline portfolio" href="{{page.url}}">{{page.title}}</a></h4></li>
+        {% if page.tags contains "read_list" %}
+        <li class="team-anc">
+          <h4><a class="nav-underline library" href="{{page.url}}">{{page.title}}</a></h4></li>
         {% endif %}
       {% endfor %}
           <li>
