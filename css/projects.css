@@ -7,13 +7,20 @@
 }
 
 dt {
-  margin-bottom: 5%;
+  	margin-bottom: 5%;
+	border: solid 2px #888;
+	border-radius: 5px;
+	padding: 2%;
+}
+
+dt p {
+	font-weight: 100;
 }
 
 @media screen and (min-width: 770px) {
-.clients .top-circle {
-    margin-bottom: 100px;
-}
+	.clients .top-circle {
+		margin-bottom: 100px;
+	}
 }
 
 .circle-button .top-circle {
@@ -75,12 +82,14 @@ dt {
 }
 
 .numbertag{
-  font-family: sans-serif;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+  	font-family: sans-serif;
 	white-space:nowrap;
 	position:relative;
 	margin:0 0px 0 0px;
-  margin-right: 10px;
-  margin-left: -5px;
+  	margin-right: 10px;
+  	margin-left: -5px;
 	display:inline-block;
 	height: 40px;
 	padding: 0 25px 0 15px;
