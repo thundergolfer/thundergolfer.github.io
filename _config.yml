@@ -24,16 +24,6 @@ enable_mathjax: false
 extended_fonts: false
 enable_anchorjs: true
 
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname: 'jonathonbelottiblog'
-
-# Facebook Comments plugin
-# (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
-facebook_appid:
-facebook_comments_number: 10
-
 # Social icons
 github_username: thundergolfer
 bitbucket_username:
