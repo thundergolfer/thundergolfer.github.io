@@ -27,10 +27,8 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
-    {% if page.tags contains "projects" or page.tags contains "resume" %}
-    <!-- JQuery (Required only for Github Projects Page, and Resume Page for PDF printing) -->
+    <!-- JQuery (Required for menu, Github Projects Page, and Resume Page for PDF printing) -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    {% endif %}
 
     {% if page.categories contains "project" or page.tags contains "portfolio" %}
     <!-- Page-type specific CSS -->
