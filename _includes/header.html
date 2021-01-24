@@ -5,18 +5,21 @@
       </nav>
   </div>
     <nav aria-label="secondary" style="z-index: 1; position: relative">
-        <div style="z-index: 1; position: relative">
+        <div style="z-index: 1; position: relative; margin-top: 150px">
             <ul style="z-index: 1; position: relative">
-                <div class="flexbox-parent">
+                <div class="flexbox-parent" style="margin-top: 100px">
                     <div class="flexbox-child" style="margin: 0 auto; max-width: 42rem; text-align: right">
                         <li class="beliefs-anc">
                             <h4><a class="" href="/resume">Home</a></h4>
                         </li>
                         <li class="beliefs-anc">
-                            <h4><a class="" href="/resume">Resumé</a></h4>
+                            <h4><a class="" href="/resume">Blog</a></h4>
                         </li>
                         <li class="beliefs-anc">
-                            <h4><a class="" href="/resume">Foobar</a></h4>
+                            <h4><a class="" href="/resume">Projects</a></h4>
+                        </li>
+                        <li class="beliefs-anc">
+                            <h4><a class="" href="/resume">Library</a></h4>
                         </li>
                     </div>
                 </div>
@@ -41,11 +44,11 @@ $( ".menu-btn" ).click(function() {
     if (  $( ".menu-text" ).css( "opacity" ) == "0" ){
         $(".menu-line:nth-of-type(2)").css("transform","rotate(135deg)");
         $(".menu-text").css("opacity", "1");
-        $( "#main-menu" ).css("transform", "translate(0%, -80%) matrix(1, 0, 0, 1, 0, 0)");
+        $( "#main-menu" ).css("transform", "translate(0%, -190%) matrix(1, 0, 0, 1, 0, 0)");
     } else {
         $(".menu-line:nth-of-type(2)").css("transform","rotate(44deg)");
         $(".menu-text").css("opacity", "0");
-        $( "#main-menu" ).css("transform", "translate(0%, 30%) matrix(1, 0, 0, 1, 0, 0)");
+        $( "#main-menu" ).css("transform", "translate(0%, 130%) matrix(1, 0, 0, 1, 0, 0)");
     }
 });
 </script>
