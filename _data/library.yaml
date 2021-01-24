@@ -1,5 +1,37 @@
 [
     {
+        "title": "Silent Spring",
+        "author": "Rachel Carson",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0618249060",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
+        "author": "Michelle Alexander",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1620975459",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Down and Out in Paris and London",
+        "author": "George Orwell",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "015626224X",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Infidel",
+        "author": "Ayaan Hirsi Ali",
+        "rating": "\u2605\u2605",
+        "isbn": "0743289684",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "The Old Man and the Sea",
         "author": "Ernest Hemingway",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -432,14 +464,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Infidel",
-        "author": "Ayaan Hirsi Ali",
-        "rating": "\u2605\u2605\u2605",
-        "isbn": "0743289684",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Maus: Un survivant raconte, tome 1: Mon p\u00e8re saigne l'histoire (Maus, #1)",
         "author": "Art Spiegelman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -467,7 +491,7 @@
         "title": "The Fountainhead",
         "author": "Ayn Rand",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0451191153",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },

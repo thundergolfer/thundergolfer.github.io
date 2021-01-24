@@ -1,5 +1,37 @@
 [
     {
+        "title": "An Introduction to Statistical Learning: With Applications in R",
+        "author": "Gareth James",
+        "rating": "",
+        "isbn": "1461471370",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Why We Love Dogs, Eat Pigs, and Wear Cows: An Introduction to Carnism: The Belief System That Enables Us to Eat Some Animals and Not Others",
+        "author": "Melanie Joy",
+        "rating": "",
+        "isbn": "1573244619",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Eating Animals",
+        "author": "Jonathan Safran Foer",
+        "rating": "",
+        "isbn": "0316069906",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Hackers: Heroes of the Computer Revolution",
+        "author": "Steven Levy",
+        "rating": "",
+        "isbn": "0141000511",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "A Cyborg Manifesto: Science, Technology, and Socialist-Feminism in the Late Twentieth Century",
         "author": "Donna J. Haraway",
         "rating": "",
@@ -24,14 +56,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
-        "author": "Michelle Alexander",
-        "rating": "",
-        "isbn": "1620975459",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Mythical Man-Month: Essays on Software Engineering",
         "author": "Frederick P. Brooks Jr.",
         "rating": "",
@@ -52,14 +76,6 @@
         "author": "Neal Stephenson",
         "rating": "",
         "isbn": "0553380966",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Silent Spring",
-        "author": "Rachel Carson",
-        "rating": "",
-        "isbn": "0618249060",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -116,14 +132,6 @@
         "author": "Daniel Quinn",
         "rating": "",
         "isbn": "0553375407",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Down and Out in Paris and London",
-        "author": "George Orwell",
-        "rating": "",
-        "isbn": "015626224X",
         "review_path": null,
         "year_i_finished_reading": null
     },
