@@ -16,7 +16,6 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             false
 show_related_posts:   false
 show_post_footers:    True
 show_social_icons:    True
