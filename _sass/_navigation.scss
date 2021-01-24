@@ -1,11 +1,11 @@
 
 nav ul {
-    z-index: 1001;
+    position: relative;
     float: left;
     padding-left: 0;
     padding-bottom: 5%;
     margin: 0;
-    background: $header-fg;
+    //background: $header-fg;
     width: 100%;
     -webkit-transform: translateY(-116%);
     transform: translateY(-116%);
@@ -26,12 +26,18 @@ nav ul {
 }
 
 nav .flexbox-parent {
-    width: 100000%;
+    width: 100%;
+    text-align: right;
 }
 
 nav li {
+    display: inline-block;
     list-style: none;
-    margin: 4vh auto;
+    margin: 4vh 1.5vh;
+}
+
+nav li h4 {
+    display: inline;
 }
 
 nav .nav-underline:before {

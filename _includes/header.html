@@ -1,9 +1,28 @@
 <header class="site-header px-responsive">
-  <div class="mt2 wrap">
-      <nav class="">
+  <div class="mt2 wrap" style="z-index: 100000; position: relative">
+      <nav class="" aria-label="primary">
         {% include navigation.html %}
       </nav>
   </div>
+    <nav aria-label="secondary" style="z-index: 1; position: relative">
+        <div style="z-index: 1; position: relative">
+            <ul style="z-index: 1; position: relative">
+                <div class="flexbox-parent">
+                    <div class="flexbox-child" style="margin: 0 auto; max-width: 42rem; text-align: right">
+                        <li class="beliefs-anc">
+                            <h4><a class="" href="/resume">Home</a></h4>
+                        </li>
+                        <li class="beliefs-anc">
+                            <h4><a class="" href="/resume">Resumé</a></h4>
+                        </li>
+                        <li class="beliefs-anc">
+                            <h4><a class="" href="/resume">Foobar</a></h4>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <div class="menu-btn">
@@ -22,11 +41,11 @@ $( ".menu-btn" ).click(function() {
     if (  $( ".menu-text" ).css( "opacity" ) == "0" ){
         $(".menu-line:nth-of-type(2)").css("transform","rotate(135deg)");
         $(".menu-text").css("opacity", "1");
-        $( "#main-menu" ).css("transform", "translate(0%, -116%) matrix(1, 0, 0, 1, 0, 0)");
+        $( "#main-menu" ).css("transform", "translate(0%, -80%) matrix(1, 0, 0, 1, 0, 0)");
     } else {
         $(".menu-line:nth-of-type(2)").css("transform","rotate(44deg)");
         $(".menu-text").css("opacity", "0");
-        $( "#main-menu" ).css("transform", "matrix(1, 0, 0, 1, 0, 0)");
+        $( "#main-menu" ).css("transform", "translate(0%, 30%) matrix(1, 0, 0, 1, 0, 0)");
     }
 });
 </script>
