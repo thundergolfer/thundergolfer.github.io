@@ -10,6 +10,7 @@
       gtag("config", "{{ site.google_analytics }}");
     </script>
     {% endif %}
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
@@ -26,11 +27,13 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
-    <!-- JQuery -->
+    {% if page.tags contains "projects" or page.tags contains "resume" %}
+    <!-- JQuery (Required only for Github Projects Page, and Resume Page for PDF printing) -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {% endif %}
 
-    <!-- Page-type specific CSS -->
     {% if page.categories contains "project" or page.tags contains "portfolio" %}
+    <!-- Page-type specific CSS -->
     <link rel="stylesheet" href="{{ "/css/960.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     <link rel="stylesheet" href="{{ "/css/portfolio.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     {% endif %}
@@ -42,7 +45,6 @@
     <link href="../css/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="../css/cv-print.css" type="text/css" rel="stylesheet" media="print">
     <!-- imports -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     {% endif %}
 
@@ -57,16 +59,17 @@
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
 
-    <!-- MathJax -->
     {% if site.enable_mathjax or page.mathjax == true %}
+    <!-- MathJax -->
     <script async type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
 
-    <!-- Verifications -->
     {% if site.google_verification %}
+    <!-- Google Verification -->
       <meta name="google-site-verification" content="{{ site.google_verification }}" />
     {% endif %}
     {% if site.bing_verification %}
+    <!-- Bing Verification -->
       <meta name="msvalidate.01" content="{{ site.bing_verification }}" />
     {% endif %}
 
