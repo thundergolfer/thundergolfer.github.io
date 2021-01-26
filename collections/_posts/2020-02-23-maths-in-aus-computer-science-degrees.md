@@ -45,15 +45,16 @@ Now it’s not self-evident that extensive mathematics coursework is a necessary
 Mathematics is central to the field of Computer Science, whether you engage with it as an academic or an industry professional. This centrality is reflected in the prominence compulsory math training has in leading US and Canadian Computer Science courses. Maths is a side-show at RMIT, and I think this should pose a definite concern to current and future RMIT students, and Australians generally. Computer Science knowledge drives software innovation, and software innovation is already at the forefront of social and industrial change.  Australia wants to develop great Computer Science talent, and build a great software industry. It really needs to do the latter. Exactly why RMIT’s Computer Science degree exhibits its distinct lack of mathematics training is a question for another post. 
 
 ## References 
+
 1. [Australia’s Economy is a House of Cards – Matt Barrie – Medium](https://medium.com/@matt_11659/matt-barrie-australias-economy-is-a-house-of-cards-6877adb3fb2f)
-2. https://blogs.adelaide.edu.au/cser/2017/02/15/a-look-at-it-and-engineering-enrolments-in-australia-updated/
-3. https://docs.education.gov.au/system/files/doc/other/2017firsthalfyearstudentinfographic.pdf
+2. [A Look At I,T And Engineering Enrolments In Australia, _The University of Adelaide_](https://ecms.adelaide.edu.au/news/list/2015/07/03/a-look-at-it-and-engineering-enrolments-in-australia)
+3. [2017 First Half Year Higher Education Statistics - Infographic, _Australian Government Department of Education_](https://docs.education.gov.au/system/files/doc/other/2017firsthalfyearstudentinfographic.pdf)
 4. [Bachelors Curriculum - Admitted 2017 - Carnegie Mellon University - Computer Science Department](https://csd.cs.cmu.edu/academic/undergraduate/bachelors-curriculum-admitted-2017)
-5. https://exploredegrees.stanford.edu/schoolofengineering/computerscience/#bachelortext
-6. http://guide.berkeley.edu/undergraduate/degree-programs/computer-science/#sampleplanofstudytext
-7. https://handbook.fas.harvard.edu/book/computer-science
-8. https://www.cc.gatech.edu/three-year-course-outline
+5. [Stanford Bachelor of Science in Computer Science - Course](https://exploredegrees.stanford.edu/schoolofengineering/computerscience/#bachelortext)
+6. [Berkeley Computer Science Course Guide](http://guide.berkeley.edu/undergraduate/degree-programs/computer-science/#sampleplanofstudytext)
+7. [Harvard Computer Science Handbook](https://handbook.fas.harvard.edu/book/computer-science)
+8. [Georgia Tech College of Computing - Three-Year Course Outline](https://www.cc.gatech.edu/three-year-course-outline)
 9. [Computer Science - Undergraduate Programs - University of Waterloo](https://uwaterloo.ca/future-students/programs/computer-science)
 10. [Baccalauréat en informatique - Université de Montréal](https://admission.umontreal.ca/programmes/baccalaureat-en-informatique/structure-du-programme/)
-11. http://www.eng.unimelb.edu.au/study/degrees/bachelor-science-computing-software/degree-structure#degree-structure
-12. http://www.monash.edu/pubs/handbooks/courses/C2001.html?_ga=2.200747054.1022470932.1538133778-1332508748.1535713923
+11. [UniMelb Bachelor of Science (Computing and Software Systems)](https://web.archive.org/web/20181207033624/http://www.eng.unimelb.edu.au/study/degrees/bachelor-science-computing-software/degree-structure)
+12. [Monash University Handbook - Bachelor of Computer Science](http://www.monash.edu/pubs/handbooks/courses/C2001.html?_ga=2.200747054.1022470932.1538133778-1332508748.1535713923)
