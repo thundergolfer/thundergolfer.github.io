@@ -27,10 +27,14 @@ categories: communication slack
 ["Rubber duck debugging"](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is a well known debugging trick in programming, and it should be done where appropriate before asking a question or dumping an error into Slack.
 
 > 👩🏻‍🔧 I created my model. I made my controller. I’m using the model to retrieve my video games in my controller… but right now it’s retrieving them all. 
-🐤 ...
-👩🏻‍🔧 I only want to retrieve the ones made after…”
-👩🏻‍🔧 Oh dammit. OF COURSE. I need to use a `where` clause in the video game retrieval line to restrict it to fetching only video games with a `production_date` greater than or equal to `'1999-01-01'`!
-🐤 ...
+> 
+> 🐤 ...
+> 
+> 👩🏻‍🔧 I only want to retrieve the ones made after…”
+> 
+> 👩🏻‍🔧 Oh dammit. OF COURSE. I need to use a `where` clause in the video game retrieval line to restrict it to fetching only video games with a `production_date` greater than or equal to `'1999-01-01'`!
+> 
+> 🐤 ...
 
 ### **2. I checked that this question hasn't been asked before.** ✔️
 
@@ -75,12 +79,18 @@ The XY problem shows up when the person asking for help obscures their real issu
 *As an example:*
 
 > 🙎‍♂️ How can I echo the last three characters in a filename?
-😼 If they're in a variable: `echo ${foo: -3}`
-😼 Why 3 characters? What do you REALLY want?
-😼 Do you want the extension?
-🙎‍♂️ Yes.
-😼 There's no guarantee that every filename will have a three-letter extension, so blindly grabbing three characters does not solve the problem.
-😼 Go with `echo ${foo##*.}`
+> 
+> 😼 If they're in a variable: `echo ${foo: -3}`
+> 
+> 😼 Why 3 characters? What do you REALLY want?
+> 
+> 😼 Do you want the extension?
+> 
+> 🙎‍♂️ Yes.
+> 
+> 😼 There's no guarantee that every filename will have a three-letter extension, so blindly grabbing three characters does not solve the problem.
+> 
+> 😼 Go with `echo ${foo##*.}`
 
 There is a neat website dedicated to this problem: [https://xyproblem.info/](https://xyproblem.info/)
 
