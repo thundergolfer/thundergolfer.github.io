@@ -3,7 +3,6 @@ layout: about
 title: About
 permalink: /about/
 tags: about
-flicker: true
 headshot: /images/headshot.jpg
 ---
 
