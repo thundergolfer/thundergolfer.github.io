@@ -26,30 +26,12 @@ enable_anchorjs: true
 
 # Social icons
 github_username: thundergolfer
-bitbucket_username:
 stackoverflow_id:
 twitter_username: jonobelotti_io
-skype_username:
-steam_nickname:
 google_plus_id:
 linkedin_username: jonathonbelotti
-angellist_username:
-#medium_id: thundergolfer
 youtube_channel_id: UCSP7fMKwmaXaZhViAV2Vgvg
-bitcoin_url:
 paypal_url:
-flattr_button:
-
-# Change to 'true' to enable individual icons
-share_facebook: True
-share_twitter: True
-share_googleplus: True
-share_linkedin: false
-share_digg: false
-share_tumblr: false
-share_reddit: True
-share_stumbleupon: false
-share_hackernews: false
 
 text:
   pagination:
