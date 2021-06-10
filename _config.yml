@@ -40,8 +40,6 @@ bitcoin_url:
 paypal_url:
 flattr_button:
 
-# Post sharing icons
-show_sharing_icons: False # Looks Ugly atm
 # Change to 'true' to enable individual icons
 share_facebook: True
 share_twitter: True
@@ -57,17 +55,6 @@ text:
   pagination:
     newer: 'Newer'
     older: 'Older'
-  share_buttons:
-    text:         'Share this post!'
-    facebook:     'Share on Facebook'
-    twitter:      'Share on Twitter'
-    googleplus:   'Share on Google+'
-    linkedin:     'Share on LinkedIn'
-    digg:         'Share on Digg'
-    tumblr:       'Share on Tumblr'
-    reddit:       'Share on Reddit'
-    stumbleupon:  'Share on StumbleUpon'
-    hackernews:   'Share on Hacker News'
   post:
     updated:        'Updated'
     minute_read:    'minute read'
