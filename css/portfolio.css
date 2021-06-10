@@ -509,17 +509,6 @@ td {
     /*margin: 30px;*/
   }
 
-  .post-narrow{
-    width: 940px;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
-  .post-narrow h2{
-    margin-top: 100px;
-  }
-
   .post p{
     font-size: 16px;
     line-height: 24px;
@@ -757,10 +746,6 @@ td {
     .post-wide-hero{
       background-size: 320px auto ;
       height:200px;
-    }
-
-    .post-narrow h2{
-      margin-top:55px;
     }
 
     .post-wide h2{
