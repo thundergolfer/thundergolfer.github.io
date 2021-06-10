@@ -93,6 +93,7 @@ RATING_OVERRIDES = {
     "The New New Thing: A Silicon Valley Story": "3.5",
     "I Am a Strange Loop": "4.5",
     "Why Knowledge Matters: Rescuing Our Children from Failed Educational Theories": "4.5",
+    "Flowers for Algernon": "4.5",
 }
 
 
