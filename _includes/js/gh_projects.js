@@ -12,7 +12,7 @@ jQuery.gitUser = function (username, callback, errCallback) {
 jQuery.fn.getRepos = function (username) {
     const errElement = `
         <div style="text-align: center; margin: 20% 0">
-            😖 Unable to retrieve projects. Try going directly to <a  target="_blank" href="https://github.com/${username}">github.com/${username}</a>.
+            😖 Unable to retrieve projects. Try going directly to <a  target="_blank" rel="noopener noreferrer" href="https://github.com/${username}">github.com/${username}</a>.
         </div>`;
 
     this.append(`
