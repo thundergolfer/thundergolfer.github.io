@@ -284,7 +284,7 @@ td {
 
 /* ==|== primary styles =====================================================
    Author:
-   ========================================================================== */
+========================================================================== */
 
   body {
     font-family: 'Open Sans', sans-serif;
@@ -307,78 +307,6 @@ td {
   a:active, a:visited {
     color: #000;
   }
-
-  /*
-  header {
-    padding-top:30px;
-    padding-bottom:30px;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    left: 0px;
-    top: 0px;
-    height: 50px;
-    z-index: 50;
-    background-color:white;
-  }
-
-  header .inner{
-    border-top: 10px solid black;
-    border-bottom: 1px solid #000;
-    position: relative;
-    margin: 0 30px;
-  }
-
-  header h1, header .initials {
-    position: absolute;
-    display: inline-block;
-    float: left;
-    left: 0px;
-    font-weight: normal;
-    font-size: 16px;
-    margin: 10px 0;
-  }
-
-  header .initials {
-    display: none;
-  }
-
-  header nav {
-    display: inline-block;
-  }
-
-  header .main-nav {
-    width: 100%;
-    margin: 0px auto;
-  }
-
-  header .sub-nav {
-    right: 0;
-    top: 0;
-    position: absolute;
-  }
-
-  header .mobile-nav {
-    display: none;
-    text-align: right;
-  }
-
-  header nav ul li {
-    display: inline-block;
-    margin: 0 0px;
-    padding: 10px;
-  }
-
-  header nav.sub-nav ul li {
-    margin: 0 0 0 10px;
-  }
-
-  header nav ul li a {
-
-  }
-  */
 
   .github-icon{
     background-image:url("/images/github-icon.png");
@@ -775,10 +703,6 @@ td {
       height: 60vw;
     }
 
-    /*#container {
-      margin-top: 65px;
-    }*/
-
     .projects li .project {
       margin: 15px 7.5px 0 0px;
     }
@@ -932,5 +856,5 @@ td {
 
     h2, h3 {
       page-break-after: avoid;
-    };
+    }
   }
