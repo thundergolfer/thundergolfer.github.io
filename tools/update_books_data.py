@@ -81,6 +81,9 @@ TITLE_TO_ISBN = {
     "The New New Thing: A Silicon Valley Story": "9781469244341",
     "The Big Short: Inside the Doomsday Machine": "9780393072235",
     "Gorgias": "0140440941",
+    "Flowers for Algernon": "9781474605731",
+    "The Nickel Boys": "0345804341",
+    "Little Women": "9780451529305",
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.
