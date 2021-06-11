@@ -35,7 +35,7 @@ Instead of inlining my reviews of books in this post, I'll leverage the new func
 {% endfor %}
 </section>
 
-I've set my 2021 reading goal [at 30 books](https://www.goodreads.com/user/show/88184044-jonathon-belotti). Will see how it goes.
+I've set my 2021 reading goal [at 30 books](https://www.goodreads.com/user/show/88184044-jonathon-belotti).
 
 <style>
 .grow-me {
