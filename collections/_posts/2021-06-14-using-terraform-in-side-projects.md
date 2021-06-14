@@ -23,7 +23,7 @@ The two most important benefits of Terraform for side-projects are the declarati
 ./scripts/cloud.sh up
 ```
 
-On a weekend I may use this kind of script across multiple side-projects, spinning up and spinning down expensive resources like EKS clusters, Application Load Balancers, Apache Spark clusters, and GPU-enabled VMs. 
+On a weekend I may use this kind of script across multiple side-projects, spinning up and spinning down expensive resources such as EKS clusters, Application Load Balancers, Apache Spark clusters, and GPU-enabled VMs. 
 
 This saves money, but even better saves a hell of a lot of time and toil that would be involved if I didn't have Terraform setup and instead had to 'click ops' my way through infrastructure maintenance.
 
@@ -143,13 +143,13 @@ Here's some examples:
 
 ```bash
 # These values are a real pain to get at the moment. Hopefully Terraform makes it easier in future.
-  # https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc_verify-thumbprint.html
-  thumbprint_list = [
-    # ⚠️ This value *might* need to be updated whenever cluster is destroyed and recreated.
-    # ⚠️ Any IAM Roles using the OIDC outputs do need to be updated.
-    # ⚠️ See README.md in this folder.
-    "9988776655aabbcc0b539foobar6bb7f3b02e22da2b1122334455aabbcc"
-  ] 
+# https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc_verify-thumbprint.html
+thumbprint_list = [
+  # ⚠️ This value *might* need to be updated whenever cluster is destroyed and recreated.
+  # ⚠️ Any IAM Roles using the OIDC outputs do need to be updated.
+  # ⚠️ See README.md in this folder.
+  "9988776655aabbcc0b539foobar6bb7f3b02e22da2b1122334455aabbcc"
+] 
 ```
 
 and in that [README.md](http://readme.md) I have:
