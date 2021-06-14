@@ -50,7 +50,7 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
 permalink:    pretty
-paginate:     6
+paginate:     20
 paginate_path: "/blog/:num/"
 sass:
   compressed: true
