@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: About Me
 permalink: /about/
 tags: about
 headshot: /images/headshot.jpg
@@ -15,6 +15,8 @@ I'm still right into the [Bazel](https://bazel.build/) build system, and now hel
 
 I just completed the first half of [some more formal education in Mathematics](https://www.handbook.uts.edu.au/courses/c11210.html). 
 I'm doing it to upskill in Linear Algebra, Calculus, and Statistics so that I may become a self-sufficient machine learning engineer in future, building data-intensive machine learning systems from the ground up.
+
+---
 
 ## *Previously...*
 
@@ -36,9 +38,3 @@ I'm currently shopping around for graduate software engineering positions starti
 I'm currently also doing a lot of work building developer communities around my University. I'll chase any opportunity to improve collaboration and outreach in the tech. industry.
 
 My main areas of interest are in NLP, Knowledge Bases, and Computational Dialectics.
-
-<style>
-.post-header {
-  text-align: center; /* Want the About Page header to be in the middle */
-}
-</style>
