@@ -9,7 +9,7 @@ categories: build-systems software-engineering bazel
 > "I really think that Bazel has the opportunity to be a Linux-like project"  - [Oscar Boykin](https://youtu.be/t_Omlhh7IJc?t=172s)
 
 You don't need to be excited about build systems. Really, they're most appreciated when they manage to just get out of your way. 
-For a boring build system though, Bazel is catching on like wildfire, and I'd claim that in just five years it could be as dominant as `git`.
+For a boring build system though, Bazel is catching on like wildfire, and I'll claim that in just five years it could be as dominant as `git`.
 
 When Bazel (née Blaze) was open-sourced is garnered [a decent amount of attention and appreciation](https://news.ycombinator.com/item?id=9256844), but it was Tensorflow, 
 open-sourced a couple of years later, that would become the jewel of Google's open-source suite and the most starred project on Github. In 2018 some would have made the 
