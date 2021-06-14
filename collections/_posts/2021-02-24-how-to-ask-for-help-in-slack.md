@@ -8,7 +8,7 @@ categories: communication slack
 
 ## The Checklist
 
-- [x]  I have 'rubber duck debugged' my own own question.
+- [x]  I have 'rubber duck debugged' my own question.
 - [x]  I checked that this question hasn't been asked before.
 - [x]  I have noted in my message what I've tried.
 - [x]  I have avoided the 'XY problem' by clearly detailing the core problem, X.
@@ -22,7 +22,7 @@ categories: communication slack
 
 ## Checklist Item Details
 
-### **1. I have 'rubber duck debugged' my own own question.** ✔️
+### **1. I have 'rubber duck debugged' my own question.** ✔️
 
 ["Rubber duck debugging"](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is a well known debugging trick in programming, and it should be done where appropriate before asking a question or dumping an error into Slack.
 
