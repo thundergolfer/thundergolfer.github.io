@@ -16,7 +16,7 @@ hour I dilly-dallied before hitting 'send', seeking arguments to both dissuade a
 I have for years now been thoroughly convinced of the arguments made by Peter Singer, Derek Parfit, and William MacAskill, who together generally
 forward the idea that rich people have a strong obligation to give away money to help those in need. The moral principle is captured nicely as:
 
-> We ought to help others when we can do so without sacrificing anything nearly as important
+> We ought to help others when we can do so without sacrificing anything nearly as important.
 
 What I am sacrificing here is money that would otherwise sit in my savings account or be invested in securities. It is plain-as-day obvious to me
 now that this money is better spent preventing young children from suffering and dying of preventable disease and starvation. 
