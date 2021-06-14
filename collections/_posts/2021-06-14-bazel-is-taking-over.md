@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Bazel is taking over
-date:       2021-06-15
+date:       2021-06-14
 summary:    On the Bazel build system's potential to become a category-killer.  
 categories: build-systems software-engineering bazel
 ---
