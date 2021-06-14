@@ -13,8 +13,7 @@ Just my website. The theme is [thundergolfer/**junior-theme**](https://github.co
 * [Blog posts](http://thundergolfer.com/)
 * [My 'library' and 'antilibrary'](http://thundergolfer.com/library)
 * [A crude summary of my open-source work](http://thundergolfer.com/projects/)
-* [A basic about page](http://thundergolfer.com/about/)
-* [My resumé](http://thundergolfer.com/resume/) (Probably outdated)
+* [A basic about me page](http://thundergolfer.com/about/)
 
 ### Other places you can find me
 
