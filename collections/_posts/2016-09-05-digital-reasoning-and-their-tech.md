@@ -6,6 +6,21 @@ summary:    During an internship search this company caught my eye, so I'm looki
 categories: internship review general
 ---
 
+<div class="callout-panel callout-panel-info">
+    <span class="callout-panel-icon callout-panel-info-icon">
+        <span class="" role="img" aria-label="Panel info">
+            <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                <path d="M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-8.5a1 1 0 0 0-1 1V15a1 1 0 0 0 2 0v-2.5a1 1 0 0 0-1-1zm0-1.125a1.375 1.375 0 1 0 0-2.75 1.375 1.375 0 0 0 0 2.75z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+        </span>
+    </span>
+    <div class="ak-editor-panel__content">
+        <p data-renderer-start-pos="97">
+            One of this company's ML engineers, <a href="https://twitter.com/iamtrask?lang=en">Andrew Trask</a>, eventually went on to join Deepmind and is now a leader in privacy-first AI.
+        </p>
+    </div>
+</div>
+
 I read through Digital Reasoning's [Technology Review of their *Synthesys* System](http://www.digitalreasoning.com/resources/Synthesys_v3.9_Technology_Overview_FINAL_Jan_2015.pdf), which is their main commercial product offering.
 
 ### This is a cool company
@@ -43,3 +58,42 @@ The work these guys do, and the intention behind it, seems right up my alley. Fo
 They aren't a big company, online searches put their revenue between $5M and $10M, but the work they do is interesting and their CEO seems great.
 
 There's also already a review from an intern up on Glassdoor for DR, so it is possible to intern there. Here's hoping.
+
+
+<style>
+.callout-panel {
+    border-radius: 3px;
+    margin: 1.145rem 0px 1rem 0px;
+    padding: 12px;
+    min-width: 48px;
+    display: flex;
+    /*-webkit-box-align: baseline;*/
+    /*align-items: baseline;*/
+    word-break: break-word;
+    border: none;
+}
+
+.callout-panel p {
+    margin-bottom: 0;
+    line-height: 24px;
+}
+
+.callout-panel-icon {
+    display: block;
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+    box-sizing: content-box;
+    padding-right: 8px;
+    color: rgb(0, 82, 204);
+}
+
+.callout-panel-info {
+    background-color: rgb(222, 235, 255);
+}
+
+.callout-panel-info-icon {
+    color: blue;
+}
+
+</style>
