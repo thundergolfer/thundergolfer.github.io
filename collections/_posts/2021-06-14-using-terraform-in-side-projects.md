@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Using Terraform to make my many side-projects 'pick up and play'
-date:       2021-02-24
+date:       2021-06-14
 summary:    A post contending that Terraform is a no-brainer addition to your side-project development toolkit. 
 categories: devops side-projects software-engineering
 ---
