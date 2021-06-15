@@ -11,7 +11,7 @@ categories: build-systems software-engineering bazel
 You don't need to be excited about build systems. Really, they're most appreciated when they manage to just get out of your way. 
 For a boring build system though, Bazel is catching on like wildfire, and I'll claim that in just five years it could be as dominant as `git`.
 
-When Bazel (née Blaze) was open-sourced is garnered [a decent amount of attention and appreciation](https://news.ycombinator.com/item?id=9256844), but it was Tensorflow, 
+When Bazel (née Blaze) was open-sourced it garnered [a decent amount of attention and appreciation](https://news.ycombinator.com/item?id=9256844), but it was Tensorflow, 
 open-sourced a couple of years later, that would become the jewel of Google's open-source suite and the most starred project on Github. In 2018 some would have made the 
 'safe bet' that it would be Tensorflow not Bazel that dominated in its category, but it's 2020 and PyTorch sure makes that bet look shaky. 
 
