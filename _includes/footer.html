@@ -1,5 +1,5 @@
 <footer class="center">
-  <div class="desktop-footer">
+  <div class="footer-container">
     <div class="footer-each">
       <h5>
         <a href="https://www.google.com/maps/place/Canva/@-33.885392,151.2091746,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae1f4079c757:0x5258d435a542d08b!8m2!3d-33.885392!4d151.2113686" target="_blank" rel="noopener noreferrer">
@@ -17,15 +17,6 @@
 
 <style>
 
-footer .desktop-footer {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.client-each, .footer-bar, .section, footer .desktop-footer {
-    max-width: 45.33563em;
-}
-
 footer {
     margin-bottom: 30px;
     visibility: visible;
@@ -36,21 +27,19 @@ footer {
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
     transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
 }
-</style>
 
-<style>
-.home .contact-overlay .contact-a:nth-child(6n+1), .icon-and-text:nth-child(2n+1), footer .desktop-footer .footer-each:nth-child(6n+1) {
-    clear: left;
+footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-footer .desktop-footer .footer-each {
+
+footer .footer-container .footer-each {
     float: left;
     display: block;
     margin-right: 4%;
     width: 19em;
-}
-
-footer .desktop-footer .footer-each:first-child {
-    margin-left: 4%;
 }
 
 footer .footer-each a {
@@ -65,15 +54,11 @@ footer .footer-each a:active, footer .footer-each a:hover {
     outline-width: 0;
 }
 
-.founder-each h2, .group-pic, .header-title, .home .contact-overlay .contact-a, .section h1, .section h2, .section h3, .section p, .team small, .title-div, body .home .contact-overlay .contact-a-mob, footer .desktop-footer .footer-each, footer .mobile-footer, footer .mobile-footer .footer-each, nav li {
-    text-align: center;
-}
-
-.contact-a, .contact-a span, .contact-a-mob span, .footer-each span, footer, sub, sup {
+.footer-each span, footer, sub, sup {
     position: relative;
 }
 
-.contact-a span:before, .contact-a-mob span:before, .footer-each span:before {
+.footer-each span:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -85,10 +70,16 @@ footer .footer-each a:active, footer .footer-each a:hover {
     transform: scaleX(1);
 }
 
-.contact-a a:hover span:before, .contact-a-mob a:hover span:before, .footer-each a:hover span:before {
+.footer-each a:hover span:before {
     content: '';
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
+}
+
+@media screen and (max-width: 1000px) {
+  footer h5 {
+    font-size: 1.5em;
+  }
 }
 </style>
 
