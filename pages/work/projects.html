@@ -19,8 +19,8 @@ js:
 
 <h2>Active Projects</h2>
 
-<a class="active-project" style="color: black" href="https://whitelist.sh/" aria-label="Whitelist newsfeed" target="_blank" rel="noopener noreferrer">
-    <div style="display: flex; align-items: center; border-color: #999; border-width: 1px; border-style: solid; border-radius: 5px;">
+<a style="color: black" href="https://whitelist.sh/" aria-label="Whitelist newsfeed" target="_blank" rel="noopener noreferrer">
+    <div class="active-project" style="display: flex; align-items: center; border-color: #999; border-width: 1px; border-style: solid; border-radius: 5px;">
         <div class="">
             <span class="sr-only">Whitelist.sh newsfeed</span>
             <img src="https://whitelist-assets.s3.amazonaws.com/0.75x/whitelist-logo-dark-ldpi.png" height="100px" width="100px" style="min-width: 100px">
@@ -56,3 +56,13 @@ js:
     $("#display-projects").getRepos("thundergolfer"); /* Add your github username. */
   });
 </script>
+
+<style>
+    .active-project {
+        transition: all .2s ease-in-out;
+    }
+    
+    .active-project:hover {
+        transform: scale(1.01);
+    }
+</style>
