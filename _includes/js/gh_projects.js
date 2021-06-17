@@ -50,7 +50,7 @@ jQuery.fn.getRepos = function (username) {
                 checkfork = this.fork;
                 if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { /* Check for username.github.com repo and for forked projects */
                     list.append('<dt> \
-                            <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">/' + this.name + '   </h4></a> \
+                            <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">' + this.name + '   </h4></a> \
                             <div style="display: inline-block;"><span class="lang" style="background:' + mapLangToColor(this.language) + '"></span> \
                             <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> STARS</span> \
                             <a href=' + this.html_url + '><span class="numbertag">' + this.watchers + '</span></a> \
