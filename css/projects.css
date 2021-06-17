@@ -57,7 +57,8 @@ dt p {
 /* For Stars/Forks */
 /* --------------- */
 .tag, .lang {
-  font-family: sans-serif;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	white-space:nowrap;
 	position:relative;
 	margin:0 0px 0 0px;
@@ -70,21 +71,19 @@ dt p {
 }
 
 .lang {
-    margin-right: -10px;
+	border-radius: 10px;
     display: inline-block;
     *display:inline; /* ie 7 fix */
     vertical-align: top;
-    font-family: sans-serif;
 	position:relative;
 	display:inline-block;
-	padding: 0 0px 0 15px;
+	padding: 0 0px 0 10px;
 	color:#999;
 }
 
 .numbertag{
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-  	font-family: sans-serif;
 	white-space:nowrap;
 	position:relative;
 	margin:0 0px 0 0px;

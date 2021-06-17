@@ -34,6 +34,9 @@ jQuery.fn.getRepos = function (username) {
             filteredRepos["ghportfolio"] = true;
             filteredRepos["thundergolfer.github.io"] = true;
             filteredRepos["thundergolfer"] = true;
+            filteredRepos["golang-reactjs-skeleton-app"] = true;
+            filteredRepos["bazel-python-mypy-protobuf"] = true;
+            filteredRepos["arXie-Bot"] = true;
 
             /* alert(repos.length); Only for checking how many items are returned. */
             try {
@@ -52,9 +55,9 @@ jQuery.fn.getRepos = function (username) {
                     list.append('<dt> \
                             <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">' + this.name + '   </h4></a> \
                             <div style="display: inline-block;"><span class="lang" style="background:' + mapLangToColor(this.language) + '"></span> \
-                            <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> STARS</span> \
+                            <span class="tag">Stars</span> \
                             <a href=' + this.html_url + '><span class="numbertag">' + this.watchers + '</span></a> \
-                            <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> FORKS</span> \
+                            <span class="tag">Forks</span> \
                             <a href=' + this.html_url + '><span class="numbertag">' + this.forks + '</span></a></div> \
                             <div style="padding-top: 2%;"><p>' + emojione.shortnameToImage(this.description) + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
                         ');
