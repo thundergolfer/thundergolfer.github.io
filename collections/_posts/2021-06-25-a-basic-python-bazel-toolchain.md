@@ -208,7 +208,7 @@ register_toolchains("//tools/build/bazel/py_toolchain:py_toolchain")
 ```
 
 After doing this, our toolchain will be used in all `py_*` targets. If you use the `rules_python` project's `pip_install` 
-rule you should also use the `python_interpreter_target` attribute to have the package installing interpreter identical 
+rule you should also use the `python_interpreter_target` attribute to have the interpreter used in package installation be identical 
 to your build target intepreter: 
 
 ```python
