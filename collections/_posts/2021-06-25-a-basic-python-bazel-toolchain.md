@@ -23,7 +23,7 @@ categories: bazel python
 
 ----
 
-Here's what I've currently got for a basic hermetic Python toolchain in Bazel. The default Bazel toolchain used in [bazelbuild/**rules_python**](https://github.com/bazelbuild/rules_python) 
+Here's how to quickly setup a basic hermetic Python toolchain in Bazel. The default Bazel toolchain used in [bazelbuild/**rules_python**](https://github.com/bazelbuild/rules_python) 
 is the 'autodetecting toolchain', called `@bazel_tools//tools/python:_autodetecting_py_runtime_pair`. You probably don't want to 
 use it, as it is completely non-hermetic and leads to a number of frustrating user issues. Quite a few Github issues created on 
 the rules_python project can be traced back to this default leaky setup. It is non-hermetic because the auto-detecting toolchain 
