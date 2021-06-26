@@ -8,6 +8,34 @@ js:
 - js/util_buttons.js
 ---
 
+<h1>Projects</h1>
+
+<p>
+    Pulls my public Github projects and does some simple sorting and filtering.
+    Click-through to check out the work in more detail.
+</p>
+
+<hr>
+
+<h2>Active Projects</h2>
+
+<a style="color: black" href="https://whitelist.sh/" aria-label="Whitelist newsfeed" target="_blank" rel="noopener noreferrer">
+    <div class="active-project" style="display: flex; align-items: center; border-color: #999; border-width: 1px; border-style: solid; border-radius: 5px;">
+        <div class="">
+            <span class="sr-only">Whitelist.sh newsfeed</span>
+            <img src="https://whitelist-assets.s3.amazonaws.com/0.75x/whitelist-logo-dark-ldpi.png" height="100px" width="100px" style="min-width: 100px">
+        </div>
+        <div>
+            <h4 class="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">Whitelist.sh</h4>
+            <p class="leading-5 text-gray-700 dark:text-gray-300">An educational content feed for your long-term engineering goals.</p>
+        </div>
+    </div>
+</a>
+
+<hr>
+
+<h2>Public Repos</h2>
+
 <div id="display-projects"></div>
 
 <div class="circle-button">
@@ -28,3 +56,13 @@ js:
     $("#display-projects").getRepos("thundergolfer"); /* Add your github username. */
   });
 </script>
+
+<style>
+    .active-project {
+        transition: all .2s ease-in-out;
+    }
+    
+    .active-project:hover {
+        transform: scale(1.01);
+    }
+</style>

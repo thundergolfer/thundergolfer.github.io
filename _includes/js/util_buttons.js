@@ -16,7 +16,6 @@ $(document).ready(function () {
     });
 
     $('.print-button').click(function () {
-        console.log("hey");
         window.print();
         return false;
     });

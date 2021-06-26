@@ -18,9 +18,9 @@ Instead of inlining my reviews of books in this post, I'll leverage the new func
 {% for member in site.data.library %}
     {% if member.year_i_finished_reading == "2020" %}
         {% if member.review_path %}
-        <a target="_blank" href="{{ site.baseurl }}/reviews/{{ member.review_path }}" style="color: #333333; flex: 1; width: 100%; min-width: 250px; padding-top: 5%;">
+        <a target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}/reviews/{{ member.review_path }}" style="color: #333333; flex: 1; width: 100%; min-width: 250px; padding-top: 5%;">
         {% else %}
-        <a target="_blank" href="https://www.librarything.com/isbn/{{ member.isbn }}" style="color: #333333; flex: 1; width: 100%; min-width: 250px; padding-top: 5%;">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.librarything.com/isbn/{{ member.isbn }}" style="color: #333333; flex: 1; width: 100%; min-width: 250px; padding-top: 5%;">
         {% endif %}
             <div style="width: 250px">
                 <img class="grow-me" src="http://covers.openlibrary.org/b/ISBN/{{ member.isbn }}-L.jpg">
@@ -35,7 +35,7 @@ Instead of inlining my reviews of books in this post, I'll leverage the new func
 {% endfor %}
 </section>
 
-I've set my 2021 reading goal [at 30 books](https://www.goodreads.com/user/show/88184044-jonathon-belotti). Will see how it goes.
+I've set my 2021 reading goal [at 30 books](https://www.goodreads.com/user/show/88184044-jonathon-belotti).
 
 <style>
 .grow-me {

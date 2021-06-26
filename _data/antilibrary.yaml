@@ -1,5 +1,229 @@
 [
     {
+        "title": "On Not Knowing Greek",
+        "author": "Virginia Woolf",
+        "rating": "",
+        "isbn": "1843916053",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Euclid's Elements",
+        "author": "Euclid",
+        "rating": "",
+        "isbn": "1888009195",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Odyssey",
+        "author": "Homer",
+        "rating": "",
+        "isbn": "0393089053",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Foundation and Empire (Foundation #2)",
+        "author": "Isaac Asimov",
+        "rating": "",
+        "isbn": "0553803727",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Doors of Perception",
+        "author": "Aldous Huxley",
+        "rating": "",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A People's History of the United States",
+        "author": "Howard Zinn",
+        "rating": "",
+        "isbn": "0060838655",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "East of Eden",
+        "author": "John Steinbeck",
+        "rating": "",
+        "isbn": "0142000655",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Overstory",
+        "author": "Richard Powers",
+        "rating": "",
+        "isbn": "039335668X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Green Mars (Mars Trilogy, #2)",
+        "author": "Kim Stanley Robinson",
+        "rating": "",
+        "isbn": "0553572393",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Blue Mars (Mars Trilogy, #3)",
+        "author": "Kim Stanley Robinson",
+        "rating": "",
+        "isbn": "0553573357",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Cultural Literacy: What Every American Needs to Know",
+        "author": "E.D. Hirsch Jr.",
+        "rating": "",
+        "isbn": "0394758439",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Selected Essays by Ahad Ha 'Am",
+        "author": "Ahad Ha'am",
+        "rating": "",
+        "isbn": "141790867X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "All God's Dangers: The Life of Nate Shaw",
+        "author": "Theodore Rosengarten",
+        "rating": "",
+        "isbn": "0226727742",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Last of the Just",
+        "author": "Andr\u00e9 Schwarz-Bart",
+        "rating": "",
+        "isbn": "1585670162",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Public Opinion",
+        "author": "Walter Lippmann",
+        "rating": "",
+        "isbn": "0684833271",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Tale of Two Cities",
+        "author": "Charles Dickens",
+        "rating": "",
+        "isbn": "0141439602",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Children's Bible",
+        "author": "Lydia Millet",
+        "rating": "",
+        "isbn": "0393867382",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Just Mercy: A Story of Justice and Redemption",
+        "author": "Bryan Stevenson",
+        "rating": "",
+        "isbn": "0812994523",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Why Socialism?",
+        "author": "Albert Einstein",
+        "rating": "",
+        "isbn": "2940039012309",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Sleepers, Wake!: Technology & The Future Of Work",
+        "author": "Barry  Jones",
+        "rating": "",
+        "isbn": "0195537564",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "What Is to Be Done: political engagement and saving the planet",
+        "author": "Barry Jones",
+        "rating": "",
+        "isbn": "1913348032",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Engines of Creation: The Coming Era of Nanotechnology",
+        "author": "K. Eric Drexler",
+        "rating": "",
+        "isbn": "0385199732",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed",
+        "author": "James C. Scott",
+        "rating": "",
+        "isbn": "0300078153",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Hacking Capitalism: The Free and Open Source Software Movement",
+        "author": "Johan S\u00f6derberg",
+        "rating": "",
+        "isbn": "0415955432",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "An Introduction to Statistical Learning: With Applications in R",
+        "author": "Gareth James",
+        "rating": "",
+        "isbn": "1461471370",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Why We Love Dogs, Eat Pigs, and Wear Cows: An Introduction to Carnism: The Belief System That Enables Us to Eat Some Animals and Not Others",
+        "author": "Melanie Joy",
+        "rating": "",
+        "isbn": "1573244619",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Eating Animals",
+        "author": "Jonathan Safran Foer",
+        "rating": "",
+        "isbn": "0316069906",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Hackers: Heroes of the Computer Revolution",
+        "author": "Steven Levy",
+        "rating": "",
+        "isbn": "0141000511",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "A Cyborg Manifesto: Science, Technology, and Socialist-Feminism in the Late Twentieth Century",
         "author": "Donna J. Haraway",
         "rating": "",
@@ -20,54 +244,6 @@
         "author": "Ernest Hemingway",
         "rating": "",
         "isbn": "0684833638",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
-        "author": "Michelle Alexander",
-        "rating": "",
-        "isbn": "1620975459",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Mythical Man-Month: Essays on Software Engineering",
-        "author": "Frederick P. Brooks Jr.",
-        "rating": "",
-        "isbn": "0201835959",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Grapes of Wrath",
-        "author": "John Steinbeck",
-        "rating": "",
-        "isbn": "067001690X",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Diamond Age: Or, a Young Lady's Illustrated Primer",
-        "author": "Neal Stephenson",
-        "rating": "",
-        "isbn": "0553380966",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Silent Spring",
-        "author": "Rachel Carson",
-        "rating": "",
-        "isbn": "0618249060",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Overstory",
-        "author": "Richard Powers",
-        "rating": "",
-        "isbn": "039335668X",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -96,14 +272,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "100 Plus: How the Coming Age of Longevity Will Change Everything, from Careers and Relationships to Family and Faith",
-        "author": "Sonia Arrison",
-        "rating": "",
-        "isbn": "0465019668",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Sophie's World",
         "author": "Jostein Gaarder",
         "rating": "",
@@ -116,22 +284,6 @@
         "author": "Daniel Quinn",
         "rating": "",
         "isbn": "0553375407",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Down and Out in Paris and London",
-        "author": "George Orwell",
-        "rating": "",
-        "isbn": "015626224X",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Hackers & Painters: Big Ideas from the Computer Age",
-        "author": "Paul    Graham",
-        "rating": "",
-        "isbn": "0596006624",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -208,14 +360,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Song of Achilles",
-        "author": "Madeline Miller",
-        "rating": "",
-        "isbn": "1408816032",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "A Taste of Power: A Black Woman's Story",
         "author": "Elaine  Brown",
         "rating": "",
@@ -264,10 +408,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "My Brilliant Friend",
+        "title": "My Brilliant Friend (The Neapolitan Novels #1)",
         "author": "Elena Ferrante",
         "rating": "",
-        "isbn": "9781609450786",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -276,14 +420,6 @@
         "author": "Zadie Smith",
         "rating": "",
         "isbn": "0375703861",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Jazz",
-        "author": "Toni Morrison",
-        "rating": "",
-        "isbn": "0452269652",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -315,7 +451,7 @@
         "title": "The Black Swan: The Impact of the Highly Improbable",
         "author": "Nassim Nicholas Taleb",
         "rating": "",
-        "isbn": "1400063515",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -331,7 +467,7 @@
         "title": "Stranger in a Strange Land",
         "author": "Robert A. Heinlein",
         "rating": "",
-        "isbn": "0441788386",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -363,7 +499,7 @@
         "title": "Little Women",
         "author": "Louisa May Alcott",
         "rating": "",
-        "isbn": "0451529308",
+        "isbn": "9780451529305",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -371,12 +507,12 @@
         "title": "As I Lay Dying",
         "author": "William Faulkner",
         "rating": "",
-        "isbn": "067973225X",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "The Ministry Of The Future",
+        "title": "The Ministry for the Future",
         "author": "Kim Stanley Robinson",
         "rating": "",
         "isbn": "9780316300162",
@@ -496,18 +632,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "A People's History of the United States",
-        "author": "Howard Zinn",
-        "rating": "",
-        "isbn": "0060838655",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Medium is the Message",
         "author": "Marshall McLuhan",
         "rating": "",
-        "isbn": "0670044199",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -736,7 +864,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Catch-22 (Catch-22, #1)",
+        "title": "Catch-22",
         "author": "Joseph Heller",
         "rating": "",
         "isbn": "0684833395",

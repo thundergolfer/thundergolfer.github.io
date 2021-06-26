@@ -3,7 +3,7 @@ layout:   post
 title:    Up And Running with Dropbox's Bazel Python Rules, <code>dropbox/dbx_build_tools</code>
 date:     2021-01-03
 summary:  TODO
-categories: software-engineering fake-news news-media
+categories: software-engineering bazel
 ---
 
 Being a maintainer of `bazelbuild/rules_python` (whenever I scrounge sometime) I had to eventually checkout Dropbox's Python rules for Bazel, open-sourced mid-2020. Dropbox adopted Bazel really soon after it escaped Google in 2015, and so their rules are highly mature and battle-tested, worked on by super-experienced Python devs like [Benjamin Peterson](https://discuss.python.org/t/steering-council-nomination-benjamin-peterson/665), and even on by the most senior Python person there is, the BDFL. I think the `bazelbuild/rules_python` ruleset has much to learn from the Dropbox rules. So, finally having some free time once finishing part-time study, I christened a brand-new Git repository `[dropbox-style-github-repo](https://github.com/thundergolfer/dropbox-style-python-repo)` and had some fun stitching C code to Python using Dropbox's rules.

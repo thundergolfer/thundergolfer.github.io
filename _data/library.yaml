@@ -1,5 +1,149 @@
 [
     {
+        "title": "Hackers & Painters: Big Ideas from the Computer Age",
+        "author": "Paul    Graham",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0596006624",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Flowers for Algernon",
+        "author": "Daniel Keyes",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9781474605731",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Red Mars (Mars Trilogy, #1)",
+        "author": "Kim Stanley Robinson",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0553560735",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "067001690X",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Nickel Boys",
+        "author": "Colson Whitehead",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0345804341",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "A Visit from the Goon Squad",
+        "author": "Jennifer Egan",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0307592839",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Little Women",
+        "author": "Louisa May Alcott",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780451529305",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Jazz (Beloved Trilogy, #2)",
+        "author": "Toni Morrison",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0452269652",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Quiet Revolution",
+        "author": "Jim Cairns",
+        "rating": "\u2605\u2605",
+        "isbn": "0869320076",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Age of Spiritual Machines: When Computers Exceed Human Intelligence ",
+        "author": "Ray Kurzweil",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0140282025",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Mythical Man-Month: Essays on Software Engineering",
+        "author": "Frederick P. Brooks Jr.",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0201835959",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Diamond Age: Or, a Young Lady's Illustrated Primer",
+        "author": "Neal Stephenson",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0553380966",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Song of Achilles",
+        "author": "Madeline Miller",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1408816032",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "100 Plus: How the Coming Age of Longevity Will Change Everything, from Careers and Relationships to Family and Faith",
+        "author": "Sonia Arrison",
+        "rating": "\u2605",
+        "isbn": "0465019668",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Silent Spring",
+        "author": "Rachel Carson",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0618249060",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
+        "author": "Michelle Alexander",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1620975459",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Down and Out in Paris and London",
+        "author": "George Orwell",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "015626224X",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Infidel",
+        "author": "Ayaan Hirsi Ali",
+        "rating": "\u2605\u2605",
+        "isbn": "0743289684",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "The Old Man and the Sea",
         "author": "Ernest Hemingway",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -84,7 +228,7 @@
         "author": "David Wallace-Wells",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0525576703",
-        "review_path": null,
+        "review_path": "the-uninhabitable-earth-life-after-warming-david-wallace-wells/",
         "year_i_finished_reading": "2020"
     },
     {
@@ -289,7 +433,7 @@
     },
     {
         "title": "Why Knowledge Matters: Rescuing Our Children from Failed Educational Theories",
-        "author": "E.D. Hirsch",
+        "author": "E.D. Hirsch Jr.",
         "rating": "\u2605\u2605\u2605\u2605\u2606",
         "isbn": "1612509525",
         "review_path": null,
@@ -432,14 +576,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Infidel",
-        "author": "Ayaan Hirsi Ali",
-        "rating": "\u2605\u2605\u2605",
-        "isbn": "0743289684",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Maus: Un survivant raconte, tome 1: Mon p\u00e8re saigne l'histoire (Maus, #1)",
         "author": "Art Spiegelman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -467,7 +603,7 @@
         "title": "The Fountainhead",
         "author": "Ayn Rand",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0451191153",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -488,7 +624,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "G\u00f6del, Escher, Bach: An Eternal Golden Braid",
+        "title": "G\u00f6del, Escher, Bach: an Eternal Golden Braid",
         "author": "Douglas R. Hofstadter",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0465026567",
@@ -520,7 +656,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Startupland: How Three Guys Risked Everything to Turn an Idea Into a Global Business",
+        "title": "Startupland: How Three Guys Risked Everything to Turn an Idea into a Global Business",
         "author": "Mikkel Svane",
         "rating": "\u2605\u2605",
         "isbn": "1118980816",

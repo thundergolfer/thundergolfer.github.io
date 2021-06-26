@@ -12,7 +12,7 @@ jQuery.gitUser = function (username, callback, errCallback) {
 jQuery.fn.getRepos = function (username) {
     const errElement = `
         <div style="text-align: center; margin: 20% 0">
-            😖 Unable to retrieve projects. Try going directly to <a  target="_blank" href="https://github.com/${username}">github.com/${username}</a>.
+            😖 Unable to retrieve projects. Try going directly to <a  target="_blank" rel="noopener noreferrer" href="https://github.com/${username}">github.com/${username}</a>.
         </div>`;
 
     this.append(`
@@ -26,9 +26,22 @@ jQuery.fn.getRepos = function (username) {
         username,
         function (data) {
             var repos = data.data; /* JSON Parsing */
+            const filteredRepos = {};
+            filteredRepos["library-management-slack-bot"] = true;
+            filteredRepos["bazel-build_python_zip-bug-reproduction"] = true;
+            filteredRepos["dotfiles"] = true;
+            filteredRepos["homebrew-formulae"] = true;
+            filteredRepos["ghportfolio"] = true;
+            filteredRepos["thundergolfer.github.io"] = true;
+            filteredRepos["thundergolfer"] = true;
+            filteredRepos["golang-reactjs-skeleton-app"] = true;
+            filteredRepos["bazel-python-mypy-protobuf"] = true;
+            filteredRepos["arXie-Bot"] = true;
+
             /* alert(repos.length); Only for checking how many items are returned. */
             try {
                 sortByForks(repos); /* Sorting by forks. You can customize it according to your needs. */
+                repos = repos.filter(r => !(r.name in filteredRepos));
             } catch (err) {
                 target.empty().append(errElement);
                 return;
@@ -40,11 +53,11 @@ jQuery.fn.getRepos = function (username) {
                 checkfork = this.fork;
                 if ((this.name != (username.toLowerCase() + '.github.com')) && (checkfork != true)) { /* Check for username.github.com repo and for forked projects */
                     list.append('<dt> \
-                            <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">/' + this.name + '   </h4></a> \
+                            <a style="font-size:20px;" href="' + (this.homepage ? this.homepage : this.html_url) + '"><h4 style="display: inline; padding-right: 2%;">' + this.name + '   </h4></a> \
                             <div style="display: inline-block;"><span class="lang" style="background:' + mapLangToColor(this.language) + '"></span> \
-                            <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> STARS</span> \
+                            <span class="tag">Stars</span> \
                             <a href=' + this.html_url + '><span class="numbertag">' + this.watchers + '</span></a> \
-                            <span class="tag"><i class="fa fa-github fa-2" aria-hidden="true"></i> FORKS</span> \
+                            <span class="tag">Forks</span> \
                             <a href=' + this.html_url + '><span class="numbertag">' + this.forks + '</span></a></div> \
                             <div style="padding-top: 2%;"><p>' + emojione.shortnameToImage(this.description) + (this.homepage ? ('<a href="' + this.homepage + '"> ' + this.homepage + '</a>') : "") + '</p></div> \
                         ');

@@ -81,6 +81,9 @@ TITLE_TO_ISBN = {
     "The New New Thing: A Silicon Valley Story": "9781469244341",
     "The Big Short: Inside the Doomsday Machine": "9780393072235",
     "Gorgias": "0140440941",
+    "Flowers for Algernon": "9781474605731",
+    "The Nickel Boys": "0345804341",
+    "Little Women": "9780451529305",
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.
@@ -90,6 +93,7 @@ RATING_OVERRIDES = {
     "The New New Thing: A Silicon Valley Story": "3.5",
     "I Am a Strange Loop": "4.5",
     "Why Knowledge Matters: Rescuing Our Children from Failed Educational Theories": "4.5",
+    "Flowers for Algernon": "4.5",
 }
 
 
