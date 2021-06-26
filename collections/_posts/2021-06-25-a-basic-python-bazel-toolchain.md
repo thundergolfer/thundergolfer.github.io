@@ -50,7 +50,7 @@ At work we use Nix and Nixpkgs to pull in a hermetic toolchain, but offering Nix
 
 This basic toolchain setup just involves:
 
-1. **Using Starlark to download a Python interpreter:** a bit of custom Starlark to download and unpack a standalone Python interpreter
+1. **Using Starlark to download a Python interpreter:** a bit of custom Starlark to download and unpack a standalone Python interpreter.gi
 2. **Defining the toolchain:** a `BUILD.bazel` file to define our a `py_runtime` and pass it into Bazel's `toolchain` setup rule.
 3. **Registering the toolchain:** the registration of this new toolchain with Bazel's toolchain resolution system.
 
@@ -81,7 +81,7 @@ I have defined the custom Starlark `.bzl` module and the `BUILD` file in the sam
 
 The `py_interpreter.bzl` module will define a repository rule that executes at WORKSPACE evaluation time to produce an external Bazel repository with two Bazel targets:
 
-1. `:interpreter` - a 'filegroup' rule exposing a single file, the executable interpreter binary
+1. `:interpreter` - a 'filegroup' rule exposing a single file, the executable interpreter binary.
 2. `:files` - also a 'filegroup' rule, containing a bunch of files that a needed by the interpreter, such as C header files, the stdlib modules, and other stuff.
 
 These get used to create a `py_runtime` target, which is a special Bazel rule that "Represents a Python runtime used to execute Python code."
