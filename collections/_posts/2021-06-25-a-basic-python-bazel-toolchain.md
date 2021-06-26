@@ -52,7 +52,7 @@ This basic toolchain setup just involves:
 
 1. **Using Starlark to download a Python interpreter:** a bit of custom Starlark to download and unpack a standalone Python interpreter
 2. **Defining the toolchain:** a `BUILD.bazel` file to define our a `py_runtime` and pass it into Bazel's `toolchain` setup rule.
-3. **Register the toolchain:** the registration of this new toolchain with Bazel's toolchain resolution system.
+3. **Registering the toolchain:** the registration of this new toolchain with Bazel's toolchain resolution system.
 
 
 I have defined the custom Starlark `.bzl` module and the `BUILD` file in the same Bazel package: `//tools/build/bazel/py_toolchain`.  So we'll have:
