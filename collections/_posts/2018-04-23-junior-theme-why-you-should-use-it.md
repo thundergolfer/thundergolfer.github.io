@@ -24,7 +24,7 @@ After a bit of toil, I introduced these features into my personal website and de
 That’s your CV solution, hosted and printable.
 
 ### Image-focused Content
-Junior Theme shows of it’s `portfolio` layout on the [Sketch & Design](http://juniortheme.live/design/) page. On that demo page I have image dominated design content, but I had in mind that this sort of functionality would also be used for showing off programming projects.
+Junior Theme shows off its `portfolio` layout on the [Sketch & Design](http://juniortheme.live/design/) page. On that demo page I have image dominated design content, but I had in mind that this sort of functionality would also be used for showing off programming projects.
 
 ### Open-Source Showcasing
 The Github [user profile page](https://github.com/thundergolfer) can show only 6 repositories, which was the main annoyance for me. In general though I wanted more control over how I communicated my Github presence on my website. Just linking to my profile wasn’t really going to satisfy me.
