@@ -131,7 +131,7 @@ def _python_build_standalone_interpreter_impl(repository_ctx):
     res = repository_ctx.execute([unzstd_bin_path, "python.tar.zst"])
 
     if res.return_code:
-        fail("Error decompressiong with zstd" + res.stdout + res.stderr)
+        fail("Error decompressing with zstd" + res.stdout + res.stderr)
 
     repository_ctx.extract(archive = "python.tar")
     repository_ctx.delete("python.tar")
