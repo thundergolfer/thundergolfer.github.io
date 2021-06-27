@@ -109,7 +109,7 @@ def _python_build_standalone_interpreter_impl(repository_ctx):
     if os_name == OSX_OS_NAME:
         url = "https://github.com/indygreg/python-build-standalone/releases/download/20210228/cpython-3.8.8-x86_64-apple-darwin-pgo+lto-20210228T1503.tar.zst"
         integrity_shasum = "4c859311dfd677e4a67a2c590ff39040e76b97b8be43ef236e3c924bff4c67d2"
-    elif os_name == "linux":
+    elif os_name == LINUX_OS_NAME:
         url = "https://github.com/indygreg/python-build-standalone/releases/download/20210228/cpython-3.8.8-x86_64-unknown-linux-gnu-pgo+lto-20210228T1503.tar.zst"
         integrity_shasum = "74c9067b363758e501434a02af87047de46085148e673547214526da6e2b2155"
     else:
