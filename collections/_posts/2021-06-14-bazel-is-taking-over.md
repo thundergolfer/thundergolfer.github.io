@@ -23,7 +23,7 @@ With the recent announcement that Twitter, the creator of Pants, would be migrat
 Bazel already had significant community momentum, which partly led to Twitter's decision, but with Twitter onboard and also Android onboard, Bazel is now the obvious first choice for large polyglot codebases. 
 
 The list of companies that have fully or partially adopted Bazel includes some enormous engineering organizations: Google, Apple, Salesforce, VMWare, Nvidia. Also onboard are Uber, 
-Twitter, SpaceX, Pinterest, Etsy, Square, Grab , Databricks, Brex, and my company, Canva. At least half of the 10 most valuable YCombinator companies use Bazel, including Dropbox, Stripe, and Coinbase. 
+Twitter, SpaceX, Pinterest, Etsy, Square, Grab , Databricks, Brex, and my company, Canva. At least half of the 10 most valuable YCombinator companies use Bazel, including Dropbox, Stripe, AirBnB, and Coinbase. 
 The total engineering headcount in those company's build engineering teams is huge, and the codebases involved basically guarantee that Bazel will be more battle-tested for software development at scale than any other open-source option. 
 
 Over the next 3-5 years, good leadership from Google and active, positive participation from the rapidly accumulating group of adopters could see Bazel becoming obviously the best build system for most relatively large software codebases. 
