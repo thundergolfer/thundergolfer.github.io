@@ -31,6 +31,10 @@ ul {
 ol,
 ul {
   padding-left: $space-3;
+  margin-bottom: $space-2;
+}
+
+ol ul, ul ol, ol ol, ul ul {
   margin-bottom: 0;
 }
 
