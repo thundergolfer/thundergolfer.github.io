@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "From Data Engineer to SysAdmin: Put down the K8s cluster, your pipelines can run without it" 
-date:       2021-10-04
-summary:    Big Data meets Big Container, and now no one's getting anything done. 
+date:       2021-11-04
+summary:    Big Data meets Big Container, and now no one is getting anything done. 
 categories: kubernetes infrastructure data-engineering
 ---
 
