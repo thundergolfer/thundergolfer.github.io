@@ -67,7 +67,7 @@ Now *general* batch compute platforms accepting Docker images from whomever don'
 
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">HELL YES. <a href="https://twitter.com/awscloud?ref_src=twsrc%5Etfw">@awscloud</a> has released a Serverless service that runs Docker containers as cron jobs. FINALLY!<br><br>There&#39;s nothing to manage, it only charges you when it&#39;s running, it has tagging and CloudFormation support...</p>&mdash; Corey Quinn (@QuinnyPig) <a href="https://twitter.com/QuinnyPig/status/1283823439237660672?ref_src=twsrc%5Etfw">July 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-(read through that whole thread to learn AWS's secretly best batch job service) 
+(read through that whole thread to learn about AWS's secret batch job service) 
 
 ## A possible serverless data future
 
