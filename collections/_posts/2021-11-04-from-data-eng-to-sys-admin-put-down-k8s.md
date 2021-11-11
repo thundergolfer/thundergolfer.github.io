@@ -20,7 +20,7 @@ My god, the ecosystem. It is in conversations where K8s is offered in tandem wit
 
 I aspire to simple, and take seriously the rewards of persisting with only [a few dull, well-trodden technologies](https://mcfunley.com/choose-boring-technology), and the K8s ecosystem attacks these better angels of my nature. One thousand new fancy peices of tech are just a YAML apply away.
 
-### Putting your product engineers on the K8 learning curve
+### Putting your product engineers on the K8s learning curve
 
 Good engineers will embrace a learning-mindset, but opportunity costs demand that they be deliberate about what they learn in the time they have. I have no qualms with infrastructure engineers devoting hours to learning how to operate K8s, but do worry that it's too easy to burden a K8s cluster's end-users, in my case product-oriented engineers, with an unpleasant learning curve. Product-oriented engineers should be maximally focused on building products. That's their business problem. But without concerted effort on the part of an infrastructure engineer to hide K8s from the product engineer, that person finds themselves floundering without K8s knowledge. Product-oriented engineers should put their minds onto the inherent complexity of their business problem, and I usually fail to see how the complexity in K8s should be included as inherent complexity in a problem like "predict the churn propensity of foo customers using our GoldWidgets product". K8s is no more part of that problem than understanding the Javascript V8 runtime is part of an web accessibility engineer's business problems.
 
