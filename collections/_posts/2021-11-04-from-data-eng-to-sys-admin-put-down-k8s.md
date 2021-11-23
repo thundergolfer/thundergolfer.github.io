@@ -57,7 +57,7 @@ I think we could enjoy a platform like this, but that platform is far from out-o
 
 It's 2021, we should have a good serverless batch processing service by now, and be happy using it. AWS S3 showed that you can have ridiculously scaleable and reliable blob storage with a sane API, and I think that data infrastructure folks should look to it as a model of what we deserve.
 
-With K8s, you run and operate a crapload of software so that you can have your cluster users just command: "Give me 10 vCPUs, 500GB of RAM, and 100GiB of disk space to run this container image." As a platform user experience that's a great start, but unfortunately for a K8s operator it's still their job to wrangle a group of VMs to make sure those resources are available and prevent scheduling errors. The data engineer becomes the sys-admin.That sucks.
+With K8s, you run and operate a crapload of software so that you can have your cluster users just command: "Give me 10 vCPUs, 500GB of RAM, and 100GiB of disk space to run this container image." As a platform user experience that's a great start, but unfortunately for a K8s operator it's still their job to wrangle a group of VMs to make sure those resources are available and prevent scheduling errors. The data engineer becomes the sys-admin. That sucks.
 
 A major recent success story in the serverless data platform space is Snowflake data warehouse. As a warehouse operator, you deal not with EC2 VMs but with t-shirt sized 'warehouses'. Thanks to decades of SQL query engine development, Snowflake can let you 'turn the tap on' and  execute a fat query over terabytes of data all without thinking about milliCPUs, RAM, disk, network, scheduling, VMs, Docker. That's *their* problem, you just hand over the SQL query and the money.
 
