@@ -1,5 +1,165 @@
 [
     {
+        "title": "Project Hail Mary",
+        "author": "Andy Weir",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0593135202",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Steppenwolf",
+        "author": "Hermann Hesse",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0140282580",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Sciences of the Artificial",
+        "author": "Herbert A. Simon",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0262691914",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Zen in the Art of Writing",
+        "author": "Ray Bradbury",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0553296345",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Call of the Wild",
+        "author": "Jack London",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0439227143",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Dispossessed (Hainish Cycle, #6)",
+        "author": "Ursula K. Le Guin",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9781857988826",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Left Hand of Darkness (Hainish Cycle, #4)",
+        "author": "Ursula K. Le Guin",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9780441478125",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Snow Crash",
+        "author": "Neal Stephenson",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9780241953181",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Dataclysm: Who We Are (When We Think No One's Looking)",
+        "author": "Christian Rudder",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0385347375",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "An Elegant Puzzle: Systems of Engineering Management",
+        "author": "Will Larson",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "9781732265189",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Working in Public: The Making and Maintenance of Open Source Software",
+        "author": "Nadia Eghbal",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0578675862",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Psychology of Computer Programming",
+        "author": "Gerald M. Weinberg",
+        "rating": "\u2605\u2605",
+        "isbn": "0932633420",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Debt: The First 5,000 Years",
+        "author": "David Graeber",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1933633867",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Beautiful World, Where Are You",
+        "author": "Sally Rooney",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0374602603",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Medium is the Message",
+        "author": "Marshall McLuhan",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9781584230700",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Showstopper! the Breakneck Race to Create Windows NT and the Next Generation at Microsoft",
+        "author": "G. Pascal Zachary",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0759285780",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right",
+        "author": "Jane Mayer",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9780385535601",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Neuromancer (Sprawl, #1)",
+        "author": "William Gibson",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0441569595",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Little Women",
+        "author": "Louisa May Alcott",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780451529305",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary",
+        "author": "Eric S. Raymond",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0596001088",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "Hackers & Painters: Big Ideas from the Computer Age",
         "author": "Paul    Graham",
         "rating": "\u2605\u2605\u2605",
@@ -10,7 +170,7 @@
     {
         "title": "Flowers for Algernon",
         "author": "Daniel Keyes",
-        "rating": "\u2605\u2605\u2605\u2605",
+        "rating": "\u2605\u2605\u2605\u2605\u2606",
         "isbn": "9781474605731",
         "review_path": null,
         "year_i_finished_reading": "2021"
@@ -44,14 +204,6 @@
         "author": "Jennifer Egan",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0307592839",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Little Women",
-        "author": "Louisa May Alcott",
-        "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780451529305",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -99,7 +251,7 @@
         "title": "The Song of Achilles",
         "author": "Madeline Miller",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "1408816032",
+        "isbn": "9781408821985",
         "review_path": null,
         "year_i_finished_reading": "2021"
     },
@@ -155,7 +307,7 @@
         "title": "Tender Is the Night",
         "author": "F. Scott Fitzgerald",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "068480154X",
+        "isbn": "",
         "review_path": "tender-is-the-night-f-scott-fitzgerald/",
         "year_i_finished_reading": "2020"
     },
@@ -179,7 +331,7 @@
         "title": "Between the World and Me",
         "author": "Ta-Nehisi Coates",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0812993543",
+        "isbn": "",
         "review_path": "between-the-world-and-me-ta-nehisi-coates/",
         "year_i_finished_reading": "2020"
     },
@@ -441,7 +593,7 @@
     },
     {
         "title": "Signifying Rappers: Rap and Race in the Urban Present",
-        "author": "David Foster Wallace",
+        "author": "Mark Costello",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0880015357",
         "review_path": null,
@@ -571,7 +723,7 @@
         "title": "The Consolations of Philosophy",
         "author": "Alain de Botton",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0679779175",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -624,7 +776,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "G\u00f6del, Escher, Bach: an Eternal Golden Braid",
+        "title": "G\u00f6del, Escher, Bach: An Eternal Golden Braid",
         "author": "Douglas R. Hofstadter",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0465026567",
@@ -867,7 +1019,7 @@
         "title": "The Hobbit, or There and Back Again",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0618260307",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },

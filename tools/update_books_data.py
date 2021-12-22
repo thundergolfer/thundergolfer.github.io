@@ -23,7 +23,6 @@ IGNORED_AUTHORS = {
     "Neil Strauss",  # Eugh, bit gross
     "Christopher Paolini",  # Young Adult
     "Jeremy Clarkson",  # Blurgh
-
 }
 
 # For some reason Goodreads left out ISBN information for some of the books in my collection,
@@ -84,6 +83,18 @@ TITLE_TO_ISBN = {
     "Flowers for Algernon": "9781474605731",
     "The Nickel Boys": "0345804341",
     "Little Women": "9780451529305",
+    "The Dispossessed (Hainish Cycle, #6)": "9781857988826",
+    "Snow Crash": "9780241953181",
+    "An Elegant Puzzle: Systems of Engineering Management": "9781732265189",
+    "The Medium is the Message": "9781584230700",
+    "The Song of Achilles": "9781408821985",
+    "Team of Rivals: The Political Genius of Abraham Lincoln": "9780141043722",
+    "Wage Labour and Capital": "9780717804702",
+    "Cryptonomicon": "9780380973460",
+    "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win": "9781942788300",
+    "Draft No. 4: On the Writing Process": "9780374537975",
+    "The Doors of Perception": "9780060801717",
+
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.
@@ -94,6 +105,8 @@ RATING_OVERRIDES = {
     "I Am a Strange Loop": "4.5",
     "Why Knowledge Matters: Rescuing Our Children from Failed Educational Theories": "4.5",
     "Flowers for Algernon": "4.5",
+    "Neuromancer (Sprawl, #1)": "5",
+    "Working in Public: The Making and Maintenance of Open Source Software": "3",
 }
 
 
@@ -144,6 +157,8 @@ if __name__ == "__main__":
             title=row["Title"],
             author=row["Author"]
         )
+        if review_path == "neal-stephenson":
+            raise RuntimeError("what")
         entry = {
             "title": row["Title"],
             "author": row["Author"],

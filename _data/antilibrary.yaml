@@ -1,5 +1,485 @@
 [
     {
+        "title": "Empire of Pain: The Secret History of the Sackler Dynasty",
+        "author": "Patrick Radden Keefe",
+        "rating": "",
+        "isbn": "0385545681",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Container Security: Fundamental Technology Concepts That Protect Containerized Applications",
+        "author": "Liz Rice",
+        "rating": "",
+        "isbn": "1492056707",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Programmer's Brain",
+        "author": "Felienne Hermans",
+        "rating": "",
+        "isbn": "1617298670",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Engines of Creation: The Coming Era of Nanotechnology",
+        "author": "K. Eric Drexler",
+        "rating": "",
+        "isbn": "0385199732",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Team of Rivals: The Political Genius of Abraham Lincoln",
+        "author": "Doris Kearns Goodwin",
+        "rating": "",
+        "isbn": "9780141043722",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Hyperion",
+        "author": "Dan Simmons",
+        "rating": "",
+        "isbn": "0553283685",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Gospel of Wealth",
+        "author": "Andrew Carnegie",
+        "rating": "",
+        "isbn": "1409942171",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Combat Liberalism",
+        "author": "Mao Zedong",
+        "rating": "",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Origin of the Family, Private Property and the State",
+        "author": "Friedrich Engels",
+        "rating": "",
+        "isbn": "0898754690",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Wage Labour and Capital",
+        "author": "Karl Marx",
+        "rating": "",
+        "isbn": "9780717804702",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Lenin: A Biography",
+        "author": "Robert Service",
+        "rating": "",
+        "isbn": "0330491393",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Days with Lenin",
+        "author": "Maxim Gorky",
+        "rating": "",
+        "isbn": "1410211967",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Call of the Wild / White Fang",
+        "author": "Jack London",
+        "rating": "",
+        "isbn": "1587263890",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Mort (Discworld, #4; Death, #1)",
+        "author": "Terry Pratchett",
+        "rating": "",
+        "isbn": "0061020680",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Wyrd Sisters (Discworld, #6; Witches #2)",
+        "author": "Terry Pratchett",
+        "rating": "",
+        "isbn": "0061020664",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Going Postal (Discworld, #33; Moist von Lipwig, #1)",
+        "author": "Terry Pratchett",
+        "rating": "",
+        "isbn": "0060502932",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Possibilities: Essays on Hierarchy, Rebellion, and Desire",
+        "author": "David Graeber",
+        "rating": "",
+        "isbn": "1904859666",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+        "author": "Walter Isaacson",
+        "rating": "",
+        "isbn": "1982115858",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Uses of Literacy",
+        "author": "Richard Hoggart",
+        "rating": "",
+        "isbn": "0765804212",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Cryptonomicon",
+        "author": "Neal Stephenson",
+        "rating": "",
+        "isbn": "9780380973460",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "I See Satan Fall Like Lightning",
+        "author": "Ren\u00e9 Girard",
+        "rating": "",
+        "isbn": "1570753199",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Art of the Short Story",
+        "author": "Dana Gioia",
+        "rating": "",
+        "isbn": "0321363639",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Five Dysfunctions of a Team: A Leadership Fable",
+        "author": "Patrick Lencioni",
+        "rating": "",
+        "isbn": "0787960756",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Don't Think of an Elephant! Know Your Values and Frame the Debate: The Essential Guide for Progressives",
+        "author": "George Lakoff",
+        "rating": "",
+        "isbn": "1931498717",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Dawn of Everything: A New History of Humanity",
+        "author": "David Graeber",
+        "rating": "",
+        "isbn": "0374157359",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Thinking in Systems: A Primer",
+        "author": "Donella H. Meadows",
+        "rating": "",
+        "isbn": "1603580557",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Death and Life of Great American Cities",
+        "author": "Jane Jacobs",
+        "rating": "",
+        "isbn": "0375508732",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Steppenwolf",
+        "author": "Clifford Meyer",
+        "rating": "",
+        "isbn": "1440405832",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies",
+        "author": "Geoffrey B. West",
+        "rating": "",
+        "isbn": "1594205582",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Goal: A Process of Ongoing Improvement",
+        "author": "Eliyahu M. Goldratt",
+        "rating": "",
+        "isbn": "0884271781",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+        "author": "Gene Kim",
+        "rating": "",
+        "isbn": "9781942788300",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Peopleware: Productive Projects and Teams",
+        "author": "Tom DeMarco",
+        "rating": "",
+        "isbn": "0932633439",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Fidelity: Five stories",
+        "author": "Wendell Berry",
+        "rating": "",
+        "isbn": "0679748318",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Coders at Work: Reflections on the Craft of Programming",
+        "author": "Peter Seibel",
+        "rating": "",
+        "isbn": "1430219483",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Odyssey",
+        "author": "Homer",
+        "rating": "",
+        "isbn": "0393089053",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Home Town",
+        "author": "Tracy Kidder",
+        "rating": "",
+        "isbn": "0671785214",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Programming Languages: History and Fundamentals",
+        "author": "Jean E. Sammet",
+        "rating": "",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Multics System: An Examination Of Its Structure",
+        "author": "Elliott I. Organick",
+        "rating": "",
+        "isbn": "0262150123",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The HP Way: How Bill Hewlett And I Built Our Company",
+        "author": "David Packard",
+        "rating": "",
+        "isbn": "0887307477",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Barbarians at the Gate: The Fall of RJR Nabisco",
+        "author": "Bryan Burrough",
+        "rating": "",
+        "isbn": "0060536357",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines",
+        "author": "Luiz Andr\u00e9 Barroso",
+        "rating": "",
+        "isbn": "159829556X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Leviathan: The Unauthorised Biography of Sydney",
+        "author": "John Birmingham",
+        "rating": "",
+        "isbn": "0091842034",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Statistical Rethinking: A Bayesian Course with Examples in R and Stan",
+        "author": "Richard McElreath",
+        "rating": "",
+        "isbn": "1482253445",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Anatomy of Story: 22 Steps to Becoming a Master Storyteller",
+        "author": "John Truby",
+        "rating": "",
+        "isbn": "0865479518",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "How Not to Be Wrong: The Power of Mathematical Thinking",
+        "author": "Jordan Ellenberg",
+        "rating": "",
+        "isbn": "1594205221",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Draft No. 4: On the Writing Process",
+        "author": "John McPhee",
+        "rating": "",
+        "isbn": "9780374537975",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Programming On Purpose III: Essays On Software Technology",
+        "author": "P.J. Plauger",
+        "rating": "",
+        "isbn": "0133281132",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Programming On Purpose II: Essays On Software People",
+        "author": "P.J. Plauger",
+        "rating": "",
+        "isbn": "0133281051",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Programming on Purpose: Essays on Programming Design",
+        "author": "P.J. Plauger",
+        "rating": "",
+        "isbn": "0137213743",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Programming Pearls",
+        "author": "Jon L. Bentley",
+        "rating": "",
+        "isbn": "0201657880",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage",
+        "author": "Clifford Stoll",
+        "rating": "",
+        "isbn": "1416507787",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Technology and the Character of Contemporary Life: A Philosophical Inquiry",
+        "author": "Albert Borgmann",
+        "rating": "",
+        "isbn": "0226066290",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Party: The Secret World of China's Communist Rulers",
+        "author": "Richard McGregor",
+        "rating": "",
+        "isbn": "0061708771",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Demystifying the Chinese Economy",
+        "author": "Justin Yifu Lin",
+        "rating": "",
+        "isbn": "0521181747",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Tombstone: The Great Chinese Famine, 1958-1962",
+        "author": "Yang Jisheng",
+        "rating": "",
+        "isbn": "0374277931",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "China in Ten Words",
+        "author": "Yu Hua",
+        "rating": "",
+        "isbn": "0307379353",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Key Thinkers of the Radical Right: Behind the New Threat to Liberal Democracy",
+        "author": "Mark Sedgwick",
+        "rating": "",
+        "isbn": "0190877596",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Class: A Guide Through the American Status System",
+        "author": "Paul Fussell",
+        "rating": "",
+        "isbn": "0671792253",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+        "author": "Joshua Foer",
+        "rating": "",
+        "isbn": "159420229X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Ravelstein",
+        "author": "Saul Bellow",
+        "rating": "",
+        "isbn": "0141001763",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "On Not Knowing Greek",
         "author": "Virginia Woolf",
         "rating": "",
@@ -16,14 +496,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Odyssey",
-        "author": "Homer",
-        "rating": "",
-        "isbn": "0393089053",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Foundation and Empire (Foundation #2)",
         "author": "Isaac Asimov",
         "rating": "",
@@ -35,7 +507,7 @@
         "title": "The Doors of Perception",
         "author": "Aldous Huxley",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780060801717",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -139,7 +611,7 @@
         "title": "Just Mercy: A Story of Justice and Redemption",
         "author": "Bryan Stevenson",
         "rating": "",
-        "isbn": "0812994523",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -147,7 +619,7 @@
         "title": "Why Socialism?",
         "author": "Albert Einstein",
         "rating": "",
-        "isbn": "2940039012309",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -164,14 +636,6 @@
         "author": "Barry Jones",
         "rating": "",
         "isbn": "1913348032",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Engines of Creation: The Coming Era of Nanotechnology",
-        "author": "K. Eric Drexler",
-        "rating": "",
-        "isbn": "0385199732",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -248,14 +712,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Snow Crash",
-        "author": "Neal Stephenson",
-        "rating": "",
-        "isbn": "8496208621",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Refactoring: Improving the Design of Existing Code",
         "author": "Martin Fowler",
         "rating": "",
@@ -292,14 +748,6 @@
         "author": "Lawrence Lessig",
         "rating": "",
         "isbn": "0143034650",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary",
-        "author": "Eric S. Raymond",
-        "rating": "",
-        "isbn": "0596001088",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -472,22 +920,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Left Hand of Darkness (Hainish Cycle, #4)",
-        "author": "Ursula K. Le Guin",
-        "rating": "",
-        "isbn": "9780441478125",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Neuromancer (Sprawl, #1)",
-        "author": "William Gibson",
-        "rating": "",
-        "isbn": "0441569595",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Mill on the Floss",
         "author": "George Eliot",
         "rating": "",
@@ -632,14 +1064,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Medium is the Message",
-        "author": "Marshall McLuhan",
-        "rating": "",
-        "isbn": "",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "To Save Everything, Click Here: The Folly of Technological Solutionism",
         "author": "Evgeny Morozov",
         "rating": "",
@@ -652,14 +1076,6 @@
         "author": "Paul  Mason",
         "rating": "",
         "isbn": "1846147387",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right",
-        "author": "Jane Mayer",
-        "rating": "",
-        "isbn": "9780385535601",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -688,10 +1104,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Creating a Learning Society: A New Approach to Growth, Development, and Social Progress (Kenneth Arrow Lecture Series)",
+        "title": "Creating a Learning Society: A New Approach to Growth, Development, and Social Progress",
         "author": "Joseph E. Stiglitz",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780231175494",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -708,14 +1124,6 @@
         "author": "Oscar Wilde",
         "rating": "",
         "isbn": "1419183044",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Debt: The First 5,000 Years",
-        "author": "David Graeber",
-        "rating": "",
-        "isbn": "1933633867",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -740,14 +1148,6 @@
         "author": "Isabel Wilkerson",
         "rating": "",
         "isbn": "0679444327",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Sciences of the Artificial",
-        "author": "Herbert A. Simon",
-        "rating": "",
-        "isbn": "0262691914",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -785,7 +1185,7 @@
     },
     {
         "title": "Crime and Punishment",
-        "author": "Fyodor Dostoyevsky",
+        "author": "Fyodor Dostoevsky",
         "rating": "",
         "isbn": "0143058142",
         "review_path": null,
