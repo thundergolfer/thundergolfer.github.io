@@ -56,7 +56,7 @@ As in the 2020 post, clicking the book cover takes you to a short review.
 {% endfor %}
 </section>
 
-I've set my 2021 reading goal [at 30 books](https://www.goodreads.com/user/show/88184044-jonathon-belotti).
+I've set my 2022 reading goal [at 40 books](https://www.goodreads.com/user/show/88184044-jonathon-belotti).
 
 <style>
 .grow-me {
