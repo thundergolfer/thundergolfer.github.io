@@ -4,7 +4,7 @@
         "author": "Andy Weir",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0593135202",
-        "review_path": null,
+        "review_path": "project-hail-mary-andy-weir/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -12,7 +12,7 @@
         "author": "Hermann Hesse",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0140282580",
-        "review_path": null,
+        "review_path": "steppenwolf-hermann-hesse/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -20,7 +20,7 @@
         "author": "Herbert A. Simon",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0262691914",
-        "review_path": null,
+        "review_path": "the-sciences-of-the-artificial-herbert-a-simon/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -28,7 +28,7 @@
         "author": "Ray Bradbury",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0553296345",
-        "review_path": null,
+        "review_path": "zen-in-the-art-of-writing-ray-bradbury/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -36,7 +36,7 @@
         "author": "Jack London",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0439227143",
-        "review_path": null,
+        "review_path": "the-call-of-the-wild-jack-london/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -44,7 +44,7 @@
         "author": "Ursula K. Le Guin",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9781857988826",
-        "review_path": null,
+        "review_path": "the-dispossessed-(hainish-cycle,-#6)-ursula-k-le-guin/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -52,7 +52,7 @@
         "author": "Ursula K. Le Guin",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9780441478125",
-        "review_path": null,
+        "review_path": "the-left-hand-of-darkness-(hainish-cycle,-#4)-ursula-k-le-guin/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -60,7 +60,7 @@
         "author": "Neal Stephenson",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9780241953181",
-        "review_path": null,
+        "review_path": "snow-crash-neal-stephenson/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -76,7 +76,7 @@
         "author": "Will Larson",
         "rating": "\u2605\u2605\u2605",
         "isbn": "9781732265189",
-        "review_path": null,
+        "review_path": "an-elegant-puzzle-systems-of-engineering-management-will-larson/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -84,7 +84,7 @@
         "author": "Nadia Eghbal",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0578675862",
-        "review_path": null,
+        "review_path": "working-in-public-the-making-and-maintenance-of-open-source-software-nadia-eghbal/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -92,7 +92,7 @@
         "author": "Gerald M. Weinberg",
         "rating": "\u2605\u2605",
         "isbn": "0932633420",
-        "review_path": null,
+        "review_path": "the-psychology-of-computer-programming-gerald-m-weinberg/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -100,7 +100,7 @@
         "author": "David Graeber",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "1933633867",
-        "review_path": null,
+        "review_path": "debt-the-first-5,000-years-david-graeber/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -108,7 +108,7 @@
         "author": "Sally Rooney",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0374602603",
-        "review_path": null,
+        "review_path": "beautiful-world,-where-are-you-sally-rooney/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -116,7 +116,7 @@
         "author": "Marshall McLuhan",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9781584230700",
-        "review_path": null,
+        "review_path": "the-medium-is-the-message-marshall-mcluhan/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -124,7 +124,7 @@
         "author": "G. Pascal Zachary",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0759285780",
-        "review_path": null,
+        "review_path": "showstopper-the-breakneck-race-to-create-windows-nt-and-the-next-generation-at-microsoft-g-pascal-zachary/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -132,7 +132,7 @@
         "author": "Jane Mayer",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9780385535601",
-        "review_path": null,
+        "review_path": "dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right-jane-mayer/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -140,7 +140,7 @@
         "author": "William Gibson",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0441569595",
-        "review_path": null,
+        "review_path": "neuromancer-(sprawl,-#1)-william-gibson/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -148,7 +148,7 @@
         "author": "Louisa May Alcott",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780451529305",
-        "review_path": null,
+        "review_path": "little-women-louisa-may-alcott/",
         "year_i_finished_reading": null
     },
     {
@@ -156,7 +156,7 @@
         "author": "Eric S. Raymond",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0596001088",
-        "review_path": null,
+        "review_path": "the-cathedral-&-the-bazaar-musings-on-linux-and-open-source-by-an-accidental-revolutionary-eric-s-raymond/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -164,7 +164,7 @@
         "author": "Paul    Graham",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0596006624",
-        "review_path": null,
+        "review_path": "hackers-&-painters-big-ideas-from-the-computer-age-paul-graham/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -172,7 +172,7 @@
         "author": "Daniel Keyes",
         "rating": "\u2605\u2605\u2605\u2605\u2606",
         "isbn": "9781474605731",
-        "review_path": null,
+        "review_path": "flowers-for-algernon-daniel-keyes/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -180,7 +180,7 @@
         "author": "Kim Stanley Robinson",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0553560735",
-        "review_path": null,
+        "review_path": "red-mars-(mars-trilogy,-#1)-kim-stanley-robinson/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -188,7 +188,7 @@
         "author": "John Steinbeck",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "067001690X",
-        "review_path": null,
+        "review_path": "the-grapes-of-wrath-john-steinbeck/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -196,7 +196,7 @@
         "author": "Colson Whitehead",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0345804341",
-        "review_path": null,
+        "review_path": "the-nickel-boys-colson-whitehead/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -204,7 +204,7 @@
         "author": "Jennifer Egan",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0307592839",
-        "review_path": null,
+        "review_path": "a-visit-from-the-goon-squad-jennifer-egan/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -212,7 +212,7 @@
         "author": "Toni Morrison",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0452269652",
-        "review_path": null,
+        "review_path": "jazz-(beloved-trilogy,-#2)-toni-morrison/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -220,7 +220,7 @@
         "author": "Jim Cairns",
         "rating": "\u2605\u2605",
         "isbn": "0869320076",
-        "review_path": null,
+        "review_path": "the-quiet-revolution-jim-cairns/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -228,7 +228,7 @@
         "author": "Ray Kurzweil",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0140282025",
-        "review_path": null,
+        "review_path": "the-age-of-spiritual-machines-when-computers-exceed-human-intelligence-ray-kurzweil/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -236,7 +236,7 @@
         "author": "Frederick P. Brooks Jr.",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0201835959",
-        "review_path": null,
+        "review_path": "the-mythical-man-month-essays-on-software-engineering-frederick-p-brooks-jr/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -244,7 +244,7 @@
         "author": "Neal Stephenson",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0553380966",
-        "review_path": null,
+        "review_path": "the-diamond-age-or,-a-young-ladys-illustrated-primer-neal-stephenson/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -252,7 +252,7 @@
         "author": "Madeline Miller",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9781408821985",
-        "review_path": null,
+        "review_path": "the-song-of-achilles-madeline-miller/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -260,7 +260,7 @@
         "author": "Sonia Arrison",
         "rating": "\u2605",
         "isbn": "0465019668",
-        "review_path": null,
+        "review_path": "100-plus-how-the-coming-age-of-longevity-will-change-everything,-from-careers-and-relationships-to-family-and-faith-sonia-arrison/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -268,7 +268,7 @@
         "author": "Rachel Carson",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0618249060",
-        "review_path": null,
+        "review_path": "silent-spring-rachel-carson/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -276,7 +276,7 @@
         "author": "Michelle Alexander",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "1620975459",
-        "review_path": null,
+        "review_path": "the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness-michelle-alexander/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -284,7 +284,7 @@
         "author": "George Orwell",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "015626224X",
-        "review_path": null,
+        "review_path": "down-and-out-in-paris-and-london-george-orwell/",
         "year_i_finished_reading": "2021"
     },
     {
