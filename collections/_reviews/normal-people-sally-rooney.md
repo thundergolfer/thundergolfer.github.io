@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Review - Normal People
+date: 2020-02-20
 tags: review
 ---
 

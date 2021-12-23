@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Review - The End of Policing 🙅‍♂️👮‍♂️
+title: "Review - The End of Policing 🙅‍♂️👮‍♂️"
+date: 2020-11-21
 tags: review
 ---
 

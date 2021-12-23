@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Review - Evicted 🏚
+title: "Review - Evicted 🏚"
+date: 2020-08-25
 tags: review
 ---
 

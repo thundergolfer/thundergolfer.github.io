@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Review - Designing Data Intensive Applications 
+title: Review - Designing Data Intensive Applications
+date: 2020-06-24 
 tags: review
 ---
 
