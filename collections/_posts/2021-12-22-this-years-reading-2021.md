@@ -10,15 +10,14 @@ categories: reading learning
 
 I've never read more books in a single year, and it feels good. I've continued to use reading to detach
 my iPhone from my brain-stem, often carrying a book around and reading in short periods instead of fiddling
-with my phone. I didn't play video games _at all_ this year, replacing it with reading – keen to play a little next year though, if the games are good.
+with my phone. I didn't play video games at all this year, replacing it with reading – keen to play a little next year though, if the new PS5 games are good.
+After three years of consistent reading, I feel like I've made significant progress breaking out of ['the shallows'](https://en.wikipedia.org/wiki/The_Shallows_(book)).
 
-After three years of solid reading, I feel like I've made significant progress breaking out of ['the shallows'](https://en.wikipedia.org/wiki/The_Shallows_(book)).
-
-To cap off the year of reading. Here's some simple stats/facts on my year's reading.
+To cap off the year of reading. Here's some simple stats/facts:
 
 * Worst book: _100 Plus_
 * 11,300+ pages, apparently 
-* 11/36 from women authors
+* 11/36 from women authors (gf rightly nags me about this)
 * 16/36 second hand books
 
 I read a lot of famous and well regarded books this year, and they were so good I couldn't pick a favourite.
