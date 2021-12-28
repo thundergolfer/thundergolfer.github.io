@@ -96,6 +96,8 @@ TITLE_TO_ISBN = {
     "The Doors of Perception": "9780060801717",
     "The Little Prince": "9780156012195",
     "Do Androids Dream of Electric Sheep?": "9780575094185",
+    "Tender Is the Night": "9780684801544",
+    "Between the World and Me": "9780812993547",
 
 }
 
