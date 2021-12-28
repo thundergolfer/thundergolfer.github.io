@@ -1,5 +1,109 @@
 [
     {
+        "title": "The Martian",
+        "author": "Andy Weir",
+        "rating": "",
+        "isbn": "0804139024",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Wizard of Earthsea (Earthsea Cycle, #1)",
+        "author": "Ursula K. Le Guin",
+        "rating": "",
+        "isbn": "0553383043",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "rating": "",
+        "isbn": "0330426648",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "author": "Hamilton Wright Helmer",
+        "rating": "",
+        "isbn": "0998116319",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Tools for Conviviality",
+        "author": "Ivan Illich",
+        "rating": "",
+        "isbn": "0714509744",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Mating",
+        "author": "Norman Rush",
+        "rating": "",
+        "isbn": "067973709X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Detroit: I Do Mind Dying: A Study in Urban Revolution",
+        "author": "Dan Georgakas",
+        "rating": "",
+        "isbn": "1608462218",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Psychoanalysis: The Impossible Profession",
+        "author": "Janet Malcolm",
+        "rating": "",
+        "isbn": "1568213425",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Berlin Stories",
+        "author": "Christopher Isherwood",
+        "rating": "",
+        "isbn": "0811200701",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "John Wayne's America: The Politics of Celebrity",
+        "author": "Garry Wills",
+        "rating": "",
+        "isbn": "0684808234",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Defiant Middle: How Women Claim Life's In-Betweens to Remake the World",
+        "author": "Kaya Oakes",
+        "rating": "",
+        "isbn": "1506467687",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Making of a Manager: What to Do When Everyone Looks to You",
+        "author": "Julie Zhuo",
+        "rating": "",
+        "isbn": "0735219567",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Shallows: What the Internet Is Doing to Our Brains",
+        "author": "Nicholas Carr",
+        "rating": "",
+        "isbn": "0393339750",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "Empire of Pain: The Secret History of the Sackler Dynasty",
         "author": "Patrick Radden Keefe",
         "rating": "",
@@ -20,14 +124,6 @@
         "author": "Felienne Hermans",
         "rating": "",
         "isbn": "1617298670",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Engines of Creation: The Coming Era of Nanotechnology",
-        "author": "K. Eric Drexler",
-        "rating": "",
-        "isbn": "0385199732",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -101,7 +197,7 @@
         "rating": "",
         "isbn": "1587263890",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Mort (Discworld, #4; Death, #1)",
@@ -933,7 +1029,7 @@
         "rating": "",
         "isbn": "9780451529305",
         "review_path": "little-women-louisa-may-alcott/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "As I Lay Dying",

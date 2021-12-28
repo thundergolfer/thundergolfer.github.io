@@ -1,5 +1,37 @@
 [
     {
+        "title": "Do Androids Dream of Electric Sheep?",
+        "author": "Philip K. Dick",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780575094185",
+        "review_path": "do-androids-dream-of-electric-sheep?-philip-k-dick/",
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Little Prince",
+        "author": "Antoine de Saint-Exup\u00e9ry",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780156012195",
+        "review_path": "the-little-prince-antoine-de-saint-exup\u00e9ry/",
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Engines of Creation: The Coming Era of Nanotechnology",
+        "author": "K. Eric Drexler",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0385199732",
+        "review_path": null,
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "Neuromancer (Sprawl, #1)",
+        "author": "William Gibson",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0441569595",
+        "review_path": "neuromancer-(sprawl,-#1)-william-gibson/",
+        "year_i_finished_reading": null
+    },
+    {
         "title": "Project Hail Mary",
         "author": "Andy Weir",
         "rating": "\u2605\u2605\u2605",
@@ -37,7 +69,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0439227143",
         "review_path": "the-call-of-the-wild-jack-london/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "The Dispossessed (Hainish Cycle, #6)",
@@ -133,14 +165,6 @@
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9780385535601",
         "review_path": "dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right-jane-mayer/",
-        "year_i_finished_reading": "2021"
-    },
-    {
-        "title": "Neuromancer (Sprawl, #1)",
-        "author": "William Gibson",
-        "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0441569595",
-        "review_path": "neuromancer-(sprawl,-#1)-william-gibson/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -835,7 +859,7 @@
         "title": "Romeo and Juliet",
         "author": "William Shakespeare",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0743477111",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },

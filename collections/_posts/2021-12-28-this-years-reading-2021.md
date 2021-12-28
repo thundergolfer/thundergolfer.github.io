@@ -1,12 +1,12 @@
 ---
 layout:     post
 title:      The Books I Read - 2021 
-date:       2021-12-22
-summary:    The 36 books I read in our <em>second</em> COVID-19 year (with some reviews). 
+date:       2021-12-28
+summary:    The 38 books I read in our <em>second</em> COVID-19 year (with some reviews). 
 categories: reading learning
 ---
 
-16 books in 2019. 26 books in 2020. 36 in 2021. An encouraging pattern.
+16 books in 2019. 26 books in 2020. 38 in 2021. An encouraging trend.
 
 I've never read more books in a single year, and it feels good. I've continued to use reading to detach
 my iPhone from my brain-stem, often carrying a book around and reading in short periods instead of fiddling
@@ -17,8 +17,8 @@ To cap off the year of reading. Here's some simple stats/facts:
 
 * Worst book: _100 Plus_
 * 11,300+ pages, apparently 
-* 11/36 from women authors (gf rightly nags me about this)
-* 16/36 second hand books
+* 11/38 from women authors (gf rightly nags me about this)
+* 18/38 second hand books
 
 I read a lot of famous and well regarded books this year, and they were so good I couldn't pick a favourite.
 That said, these are a top 5 in terms of how much they durably affected my emotions and thinking.
@@ -31,9 +31,9 @@ That said, these are a top 5 in terms of how much they durably affected my emoti
 
 ---
 
-As in the 2020 post, clicking the book cover takes you to a short review.
+As in [the 2020 post]({% post_url 2021-01-09-this-years-reading-2020 %}), clicking the book cover takes you to a short review.
 
-**Below are the covers, titles, authors, and ratings of the <code>36</code> books I read this year. Click them to read my short review.**
+**Below are the covers, titles, authors, and ratings of the <code>38</code> books I read this year. Click them to read my short review.**
 
 <section style="display: flex; justify-content: space-between; flex-wrap: wrap">
 {% for member in site.data.library %}

@@ -94,6 +94,8 @@ TITLE_TO_ISBN = {
     "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win": "9781942788300",
     "Draft No. 4: On the Writing Process": "9780374537975",
     "The Doors of Perception": "9780060801717",
+    "The Little Prince": "9780156012195",
+    "Do Androids Dream of Electric Sheep?": "9780575094185",
 
 }
 
