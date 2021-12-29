@@ -16,7 +16,7 @@ After three years of consistent reading, I feel like I've made significant progr
 To cap off the year of reading. Here's some simple stats/facts:
 
 * Worst book: _100 Plus_
-* 11,300+ pages, apparently 
+* 11,800+ pages, apparently 
 * 11/38 from women authors (gf rightly nags me about this)
 * 18/38 second hand books
 
