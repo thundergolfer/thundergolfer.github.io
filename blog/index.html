@@ -33,25 +33,8 @@ tags: blog
 }
 </style>
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>-->
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
-
-<script>
-    const grid = $('.posts').isotope({
-        itemSelector: '.post-item',
-    });
-    $('.filter-button-group').on( 'click', 'a', function() {
-        var filterValue = $(this).attr('data-filter');
-        console.log("clicked filter-button-group");
-        console.log(grid);
-        grid.isotope({ filter: filterValue });
-    });
-    $('.button-group a.btn').on('click', function(){
-        $('.button-group a.btn').removeClass('active');
-        console.log("clicked button-group");
-        $(this).addClass('active');
-    });
-</script>
 
 <div class="home">
     {% if posts_count > 0 %}
@@ -75,3 +58,23 @@ tags: blog
         <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
     {% endif %}
 </div>
+
+<script>
+    var elem = document.querySelector('.posts');
+    const iso = new Isotope( elem, {
+        itemSelector: '.post-item',
+        layoutMode: 'fitRows'
+    });
+    $('.filter-button-group').on( 'click', 'a', function() {
+        var filterValue = $(this).attr('data-filter');
+        console.log("clicked filter-button-group");
+        iso.arrange({ filter: filterValue });
+        console.log(grid);
+        console.log(filterValue);
+    });
+    $('.button-group a.btn').on('click', function(){
+        $('.button-group a.btn').removeClass('active');
+        console.log("clicked button-group");
+        $(this).addClass('active');
+    });
+</script>
