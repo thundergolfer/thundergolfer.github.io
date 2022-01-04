@@ -13,19 +13,41 @@ tags: blog
 
 <div class="button-group filter-button-group justify-content-center">
     <div class="circle-button">
-        <a class="btn top-circle" data-filter=".reading">Publications</a>
+        <div class="foo">
+            <a class="btn" data-filter=".reading">Software</a>
+        </div>
     </div>
     <div class="circle-button">
-        <a class="btn top-circle" data-filter=".bazel">Code</a>
+        <a class="btn" data-filter=".bazel">Life</a>
     </div>
     <div class="circle-button">
-        <a class="btn top-circle" data-filter="*">All</a>
+        <a class="btn" data-filter="*">All</a>
     </div>
 </div>
 
 <style>
 .button-group {
     display: flex;
+}
+
+.filter-button {
+    margin-bottom: 5%;
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.filter-button a {
+    color: blueviolet;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.top-circle {
+    display: inline-flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
 }
 
 .active {
@@ -65,7 +87,7 @@ tags: blog
         itemSelector: '.post-item',
         layoutMode: 'fitRows'
     });
-    $('.filter-button-group').on( 'click', 'a', function() {
+    $('.filter-button-group').on( 'click', 'div', function() {
         var filterValue = $(this).attr('data-filter');
         console.log("clicked filter-button-group");
         iso.arrange({ filter: filterValue });
