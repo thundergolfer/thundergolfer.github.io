@@ -11,11 +11,53 @@ tags: blog
 
 <hr>
 
+<div class="button-group filter-button-group justify-content-center">
+    <div class="circle-button">
+        <a class="btn top-circle" data-filter=".reading">Publications</a>
+    </div>
+    <div class="circle-button">
+        <a class="btn top-circle" data-filter=".bazel">Code</a>
+    </div>
+    <div class="circle-button">
+        <a class="btn top-circle" data-filter="*">All</a>
+    </div>
+</div>
+
+<style>
+.button-group {
+    display: flex;
+}
+
+.active {
+    color: green;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+
+<script>
+    const grid = $('.posts').isotope({
+        itemSelector: '.post-item',
+    });
+    $('.filter-button-group').on( 'click', 'a', function() {
+        var filterValue = $(this).attr('data-filter');
+        console.log("clicked filter-button-group");
+        console.log(grid);
+        grid.isotope({ filter: filterValue });
+    });
+    $('.button-group a.btn').on('click', function(){
+        $('.button-group a.btn').removeClass('active');
+        console.log("clicked button-group");
+        $(this).addClass('active');
+    });
+</script>
+
 <div class="home">
     {% if posts_count > 0 %}
         <div class="posts">
             {% for post in paginator.posts %}
-            <div class="post py3">
+            <div class="post post-item py3 {{ post.categories | join: ' ' }}">
                 <p class="post-meta">{{ post.date | date: site.date_format }}</p>
                 <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
                 <p class="post-summary">
