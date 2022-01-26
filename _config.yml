@@ -16,7 +16,7 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-show_related_posts:   false
+show_related_posts:   True
 show_post_footers:    True
 show_social_icons:    True
 ajaxify_contact_form: false
@@ -40,7 +40,7 @@ text:
   post:
     updated:        'Updated'
     minute_read:    'minute read'
-    related_posts:  'Related Posts'
+    related_posts:  'More to read'
   index:
     coming_soon: 'Coming soon...'
   og_locale: 'en_US'

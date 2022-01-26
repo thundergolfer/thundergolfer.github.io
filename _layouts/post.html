@@ -56,14 +56,47 @@ p .reversefootnote:hover, p .reversefootnote:active, p .reversefootnote:focus {
   {% include post_footer.html %}
 {% endif %}
 
+<hr>
+
 {% if site.show_related_posts %}
-  <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
-  {% for post in site.related_posts %}
-    <div class="post ml2">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-        <h4 class="post-title">{{ post.title }}</h4>
-        <p class="post-summary">{{ post.summary }}</p>
-      </a>
-    </div>
-  {% endfor %}
+  <div class="relatedPosts">
+
+    <h2>{{ site.text.post.related_posts }}</h2>
+
+    {% assign maxRelated = 4 %}
+    {% assign minCommonTags =  1 %}
+    {% assign maxRelatedCounter = 0 %}
+
+    {% for post in site.posts %}
+
+      {% assign sameTagCount = 0 %}
+      {% assign commonTags = '' %}
+
+      {% for category in post.categories %}
+        {% if post.url != page.url %}
+          {% if page.categories contains category %}
+            {% assign sameTagCount = sameTagCount | plus: 1 %}
+            {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+            {% assign commonTags = commonTags | append: tagmarkup %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% if sameTagCount >= minCommonTags %}
+        <div>
+          <h4>
+            <a class="dark-gray" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <span class="post-meta" style="display: inline-block">({{ post.date | date: site.date_format }})</span>
+          </h4>
+        </div>
+        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% if maxRelatedCounter >= maxRelated %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+
+    {% endfor %}
+
+  </div>
+
 {% endif %}
