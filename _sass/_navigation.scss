@@ -1,13 +1,8 @@
 nav ul {
-  z-index: 1001;
-  float: left;
   padding-left: 0;
-  padding-bottom: 5%;
-  margin: 0;
-  background: $header-fg;
   width: 100%;
-  -webkit-transform: translateY(-116%);
-  transform: translateY(-116%);
+  margin: 0;
+  width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -24,13 +19,31 @@ nav ul {
   transition: all 0.75s ease;
 }
 
-nav .flexbox-parent {
-  width: 100000%;
-  box-shadow: rgba(100, 100, 111, 20%) 0px 25px 29px 0px;
+ul.nav {
+  background-color: #3D99CE;
+  text-align: center;
 }
+
+#main-menu li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+#main-menu li > a {
+  text-decoration: none;
+}
+
 nav li {
   list-style: none;
   margin: 4vh auto;
+}
+
+// Reduce vertical spacing on mobile.
+@media only screen and (max-width: 600px) {
+  nav li {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 nav .nav-underline:before {
@@ -74,4 +87,8 @@ nav a:after {
   width: 100%;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+}
+
+.current {
+  font-weight: bold !important;
 }

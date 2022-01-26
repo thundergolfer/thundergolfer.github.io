@@ -1,32 +1,5 @@
 <header class="site-header px-responsive">
   <div class="mt2 wrap">
-      <nav class="">
         {% include navigation.html %}
-      </nav>
   </div>
 </header>
-
-<div class="menu-btn">
-  <span class="menu-line"></span>
-  <span class="menu-line"></span>
-  <span class="menu-text">Menu</span>
-</div>
-
-<div class="home-btn" onclick="window.location.href = '/'">
-  <span class="static-menu-line"></span>
-  <span class="home-text">Home</span>
-</div>
-
-<script>
-$( ".menu-btn" ).click(function() {
-    if (  $( ".menu-text" ).css( "opacity" ) == "0" ){
-        $(".menu-line:nth-of-type(2)").css("transform","rotate(135deg)");
-        $(".menu-text").css("opacity", "1");
-        $( "#main-menu" ).css("transform", "translate(0%, -116%) matrix(1, 0, 0, 1, 0, 0)");
-    } else {
-        $(".menu-line:nth-of-type(2)").css("transform","rotate(44deg)");
-        $(".menu-text").css("opacity", "0");
-        $( "#main-menu" ).css("transform", "matrix(1, 0, 0, 1, 0, 0)");
-    }
-});
-</script>
