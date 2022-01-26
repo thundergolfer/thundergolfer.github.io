@@ -60,9 +60,6 @@ p .reversefootnote:hover, p .reversefootnote:active, p .reversefootnote:focus {
 
 {% if site.show_related_posts %}
   <div class="relatedPosts">
-
-    <h2>{{ site.text.post.related_posts }}</h2>
-
     {% assign maxRelated = 4 %}
     {% assign minCommonTags =  1 %}
     {% assign maxRelatedCounter = 0 %}
@@ -83,6 +80,7 @@ p .reversefootnote:hover, p .reversefootnote:active, p .reversefootnote:focus {
       {% endfor %}
 
       {% if sameTagCount >= minCommonTags %}
+        <h2>{{ site.text.post.related_posts }}</h2>
         <div>
           <h4>
             <a class="dark-gray" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
