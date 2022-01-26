@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Review - The Manager's Path 🧗‍♂️
+date: 2020-12-04
 tags: review
 ---
 

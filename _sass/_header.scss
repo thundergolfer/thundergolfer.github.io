@@ -122,4 +122,9 @@
 
 #main-menu {
   background-color: rgba(255, 255, 255, 0.75);;
+  //background-color: $header-bg;
+
+  li {
+    text-align: center;
+  }
 }

@@ -14,3 +14,11 @@ vendor/
 # Intellij
 ##############
 .idea
+
+########
+# Python
+########
+**/poetry.lock
+**/media
+
+**/__pycache__

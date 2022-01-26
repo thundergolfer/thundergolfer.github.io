@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Review - Constructing The Political Spectacle
+date: 2020-08-27
 tags: review
 ---
 

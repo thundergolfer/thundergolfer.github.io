@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Review - The Innovator's Dilemma
+title: "Review - The Innovator's Dilemma"
+date: 2020-07-08
 tags: review
 ---
 

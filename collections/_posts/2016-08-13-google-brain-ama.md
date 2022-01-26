@@ -20,21 +20,21 @@ Read through Google Brain's AMA on [r/machinelearning](https://www.reddit.com/r/
 
 Chris Olah is a clear outlier, having not completed a university degree. Damn impressed with you Chris.
 
-#### *Doctorate of Philosophy Degrees: 78%*
+* Doctorate of Philosophy Degrees: 78%
 
-#### *Masters Degrees: 34%*
+* Masters Degrees: 34%
 
-#### *Bachelors Degrees: 95%*
+* Bachelors Degrees: 95%
 
 About 5% of the questions in the AMA were related to education for a career in ML. That's around 40 questions, all with about 1 upvote each.
 
 ### Most Responsive Googler = Jeff Dean
 
-![most_responsive]({{ site.url }}images/most_responsive.png)
+![most_responsive]({{ site.url }}/images/most_responsive.png)
 
 ### Googler's Most Used Words
 
-![most_responsive]({{ site.url }}images/most_used_words.png)
+![most_responsive]({{ site.url }}/images/most_used_words.png)
 
 ### Highest Upvoted Answer:
 

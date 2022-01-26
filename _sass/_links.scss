@@ -26,14 +26,14 @@ button,
 }
 
 .anchorjs-link {
-    text-shadow: none;
-    background-image: none;
+  color: #aaa;
 }
+
 .anchorjs-link:hover,
 .anchorjs-link:focus,
 .anchorjs-link:active{
     border: 0;
-    color: $link-hover-color;
+    color: $link-color;
     text-shadow: none;
     background-image: none;
 }

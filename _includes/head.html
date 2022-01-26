@@ -10,6 +10,7 @@
       gtag("config", "{{ site.google_analytics }}");
     </script>
     {% endif %}
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
@@ -26,11 +27,11 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
-    <!-- JQuery -->
-    <script aync src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- JQuery (Required for menu, Github Projects Page, and Resume Page for PDF printing) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!-- Page-type specific CSS -->
     {% if page.categories contains "project" or page.tags contains "portfolio" %}
+    <!-- Page-type specific CSS -->
     <link rel="stylesheet" href="{{ "/css/960.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     <link rel="stylesheet" href="{{ "/css/portfolio.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     {% endif %}
@@ -38,40 +39,31 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ "/css/junior.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
 
-    {% if page.tags contains "resume" %}
-    <link href="../css/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="../css/cv-print.css" type="text/css" rel="stylesheet" media="print">
-    <!-- imports -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    {% endif %}
-
     {% if page.tags contains "projects" %}
     <link rel="stylesheet" href="{{ "/css/projects.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0.3/extras/css/emojione.min.css"/>
     {% endif %}
 
     <!-- Fonts -->
-    {% if site.extended_fonts %}
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,800" rel="stylesheet">
-    {% else %}
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,800" rel="stylesheet">
-    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
     {% if site.show_social_icons or site.show_sharing_icons %}
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
 
-    <!-- MathJax -->
     {% if site.enable_mathjax or page.mathjax == true %}
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+    <!-- MathJax -->
+    <script async type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
 
-    <!-- Verifications -->
     {% if site.google_verification %}
+    <!-- Google Verification -->
       <meta name="google-site-verification" content="{{ site.google_verification }}" />
     {% endif %}
     {% if site.bing_verification %}
+    <!-- Bing Verification -->
       <meta name="msvalidate.01" content="{{ site.bing_verification }}" />
     {% endif %}
 
@@ -80,7 +72,7 @@
     <meta property="og:locale" content="{{ site.text.og_locale }}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+    <meta property="og:description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title | xml_escape }}">
 
@@ -94,8 +86,5 @@
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛳️</text></svg>">
 </head>

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Review - The Uninhabitable Earth 🔥🌏🔥
+title: "Review - The Uninhabitable Earth 🔥🌏🔥"
+date: 2020-07-13
 tags: review
 ---
 

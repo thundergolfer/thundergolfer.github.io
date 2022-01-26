@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Review - Liar's Poker 🃏
+date: 2020-01-05
 tags: review
 ---
 

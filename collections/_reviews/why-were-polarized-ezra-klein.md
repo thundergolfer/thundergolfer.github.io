@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Review - Why We're Polarized
+title: "Review - Why We're Polarized"
+date: 2020-04-17
 tags: review
 ---
 

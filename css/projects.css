@@ -7,13 +7,20 @@
 }
 
 dt {
-  margin-bottom: 5%;
+  	margin-bottom: 5%;
+	border: solid 1px #999;
+	border-radius: 5px;
+	padding: 2%;
+}
+
+dt p {
+	font-weight: 100;
 }
 
 @media screen and (min-width: 770px) {
-.clients .top-circle {
-    margin-bottom: 100px;
-}
+	.clients .top-circle {
+		margin-bottom: 100px;
+	}
 }
 
 .circle-button .top-circle {
@@ -50,7 +57,8 @@ dt {
 /* For Stars/Forks */
 /* --------------- */
 .tag, .lang {
-  font-family: sans-serif;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	white-space:nowrap;
 	position:relative;
 	margin:0 0px 0 0px;
@@ -63,24 +71,24 @@ dt {
 }
 
 .lang {
-    margin-right: -10px;
+	border-radius: 10px;
     display: inline-block;
     *display:inline; /* ie 7 fix */
     vertical-align: top;
-    font-family: sans-serif;
 	position:relative;
 	display:inline-block;
-	padding: 0 0px 0 15px;
+	padding: 0 0px 0 10px;
 	color:#999;
 }
 
 .numbertag{
-  font-family: sans-serif;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	white-space:nowrap;
 	position:relative;
 	margin:0 0px 0 0px;
-  margin-right: 10px;
-  margin-left: -5px;
+  	margin-right: 10px;
+  	margin-left: -5px;
 	display:inline-block;
 	height: 40px;
 	padding: 0 25px 0 15px;

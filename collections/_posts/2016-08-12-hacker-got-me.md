@@ -6,7 +6,7 @@ summary:    Wordpress website's got nuked. New beginnings here on Github Pages
 categories: life website
 ---
 
-A little while ago I got some unpleasant news from Bluehost. My account had been hacked and my sites within it were now distributing malware. Crap. My sites were built on Wordpress with the Divi theme and I immediately imagined how difficult it would be to clean those sites and re-establish them. Hours and Hours of work had gone into learning Wordpress, Divi, and customising my themes to be just how I wanted them. Did I really want to bother? I didn't, but felt that I my investment into that WordPress site was too great to abandon.
+A little while ago I got some unpleasant news from Bluehost. My account had been hacked and my sites within it were now distributing malware. Crap. My sites were built on Wordpress with the Divi theme and I immediately imagined how difficult it would be to clean those sites and re-establish them. Hours and hours of work had gone into learning Wordpress, Divi, and customising my themes to be just how I wanted them. Did I really want to bother? I didn't, but felt that I my investment into that WordPress site was too great to abandon.
 
 I looked through the source files over FTP, and saw the smug bugger had replaced key .php files with:
 

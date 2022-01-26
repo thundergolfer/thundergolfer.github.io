@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Review - The Pearl
+date: 2020-07-25
 tags: review
 ---
 
