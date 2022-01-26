@@ -97,6 +97,25 @@ p .reversefootnote:hover, p .reversefootnote:active, p .reversefootnote:focus {
 
     {% endfor %}
 
+    {% if maxRelatedCounter == 0 %}
+        {% if page.next.url %}
+        <div>
+          <h4>
+            <a class="dark-gray" href="{{page.next.url}}">{{page.next.title}}</a>
+            <span class="post-meta" style="display: inline-block">({{ page.next.date | date: site.date_format }})</span>
+          </h4>
+        </div>
+        {% endif %}
+        {% if page.previous.url %}
+          <div>
+            <h4>
+              <a class="dark-gray" href="{{page.previous.url}}">{{page.previous.title}}</a>
+              <span class="post-meta" style="display: inline-block">({{ page.previous.date | date: site.date_format }})</span>
+            </h4>
+          </div>
+        {% endif %}
+    {% endif %}
+
   </div>
 
 {% endif %}
