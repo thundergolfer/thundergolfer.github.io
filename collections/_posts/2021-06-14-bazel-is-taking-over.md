@@ -13,7 +13,7 @@ For a boring build system though, Bazel is catching on like wildfire, and I'll c
 
 When Bazel (née Blaze) was open-sourced it garnered [a decent amount of attention and appreciation](https://news.ycombinator.com/item?id=9256844), but it was Tensorflow, 
 open-sourced a couple of years later, that would become the jewel of Google's open-source suite and the most starred project on Github. In 2018 some would have made the 
-'safe bet' that it would be Tensorflow not Bazel that dominated in its category, but it's 2020 and PyTorch sure makes that bet look shaky. 
+'safe bet' that it would be Tensorflow not Bazel that dominated in its category, but it's 2021 and PyTorch sure makes that bet look shaky. 
 
 Bazel has had a slow start on adoption because it has a very high cost to adoption and because it was open-sourced only after ex-Googlers had already copied it at their 
 new companies ([Buck](https://github.com/facebook/buck), [Pants](https://github.com/pantsbuild/pants), [Please](https://github.com/thought-machine/please)) and then open-sourced those. 
