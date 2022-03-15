@@ -33,7 +33,7 @@ Bazel isn't having this quiet success because the unsexy world of build engineer
 I'm not saying we couldn't do better than Bazel, but at its core is the principle that *your build should be a pure function*, and that core principle, given its due, produces a build technology that is a true level up on what's currently acceptable in software engineering. 
 
 If we grant that Bazel will come to dominate the codebases of large engineering organizations (which is a hugely impactful sea change in professional software development) that still leaves 
-*all the other* codebases. If Bazel is to become a 'linux-like' project, or be as ubiquitous as `git`, then Bazel's cost to adoption will have to become dramatically lower, and 
+*all the other* codebases. If Bazel is to become a 'linux-like' project, or be as ubiquitous as `git`, then Bazel's adoption cost will have to become dramatically lower, and 
 it's developer experience will have to markedly improve. I think this can happen without too much trouble, but that's an argument to be made in another post.  
 
 So Bazel is taking over. Our builds will be pure functions from source to deployable. This will represent a durable evolution the software engineering field, and Bazel will become as 
