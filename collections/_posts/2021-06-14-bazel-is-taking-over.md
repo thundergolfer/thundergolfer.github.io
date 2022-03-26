@@ -36,5 +36,5 @@ If we grant that Bazel will come to dominate the codebases of large engineering 
 *all the other* codebases. If Bazel is to become a 'linux-like' project, or be as ubiquitous as `git`, then Bazel's adoption cost will have to become dramatically lower, and 
 it's developer experience will have to markedly improve. I think this can happen without too much trouble, but that's an argument to be made in another post.  
 
-So Bazel is taking over. Our builds will be pure functions from source to deployable. This will represent a durable evolution the software engineering field, and Bazel will become as 
+So Bazel is taking over. Our builds will be pure functions from source to deployable. This will represent a durable evolution in the software engineering field, and Bazel will become as 
 essential as `git` and source control. Like `git`, we will often find it annoying. We will punch out comments about how it's API is not quite right, or that it's too hard to learn, and we will likely be right. But we will never suggest going back.
