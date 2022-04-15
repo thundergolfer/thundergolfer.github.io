@@ -38,7 +38,7 @@ Below is an example flashcard question drawn from Chapter 8.
 > **Q:** What are *fencing tokens*, used in the context of distributed systems?
 > 
 
-As said above, some flashcards are not drawn the textbook, and text general system design knowledge.
+As said above, some flashcards are not drawn the textbook, and test general system design knowledge.
 The following are a couple of examples.
 
 > **Q:** At two nines of availability, 99%, how much downtime is there per year?
