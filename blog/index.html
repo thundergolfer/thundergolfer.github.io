@@ -16,7 +16,12 @@ tags: blog
         <div class="posts">
             {% for post in paginator.posts %}
             <div class="post py3">
-                <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+                <p class="post-meta">
+                    <span>{{ post.date | date: site.date_format }}</span>
+                    {% if post.tags contains "popular" %}
+                    <span class="post-meta-popular-tag">Popular</span>
+                    {% endif %}
+                </p>
                 <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
                 <p class="post-summary">
                     {% if post.summary %}
