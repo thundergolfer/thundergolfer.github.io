@@ -45,4 +45,4 @@ The following are a couple of examples.
 >
 > **Q:** Approx how much does 1GB of blob storage cost per month, in the cloud? (eg. S3, GCS)
 
-Overall I’ve found deck to be helpful in both my day to day backend engineering work and in interviews. I hope you’ll find it similarly helpful.
+Overall I’ve found the deck to be helpful in both my day to day backend engineering work and in interviews. I hope you’ll find it similarly helpful.
