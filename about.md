@@ -6,7 +6,7 @@ tags: about
 headshot: /images/headshot.jpg
 ---
 
-Just hit 18 months @ [Canva]([Canva](https://www.canva.com/)). I'm now team lead of the small 'Data Platform & Tools' team within the data group. The team manages the main data monorepo and its build/release, 
+Just hit 18 months @ [Canva](https://www.canva.com/). I'm now team lead of the small 'Data Platform & Tools' team within the data group. The team manages the main data monorepo and its build/release, 
 owns core data platform pieces like container-orchestration (K8s) and the Data Lake build, and provides core productivity systems like a Notebook environment and batch workflow system. 
 
 Beyond platform responsibilities, I'm increasingly working closer with data scientists and machine learning engineers, leaning more into a role that is sometimes called 'Software Engineering - ML Platform'.
