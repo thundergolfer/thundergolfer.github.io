@@ -150,7 +150,7 @@ Here’s a rundown of the above callstack data:
 
 It makes total sense that doing `memmove` on 100GB is slow. The `scalene` profiler was showing us in the <code style="color: rgb(205, 191, 0);"><strong>COPY (MB/s)</strong></code> column that about 3.4GB of memory was being copied per second.
 
-But that memory copying was only happening on the 100,000th `.write()`. When asking the snippet to write 99GB, which trigger 99,999 `.write()` operations, no significant memory copying happened at all. Why?
+But that memory copying was only happening on the 100,000th `.write()`. When asking the snippet to write 99GB, which triggers 99,999 `.write()` operations, no significant memory copying happened at all. Why?
 
 Looking up the `flush_accumulator` function [in the CPython source code](https://github.com/python/cpython/blob/3.9/Objects/accu.c#L29) gives the answer.
 
