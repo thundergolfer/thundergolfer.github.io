@@ -223,7 +223,7 @@ class CStructStruct(ctypes.Structure):
     _fields_ = [
         ("ob_refcnt", ctypes.c_long),
         ("ob_type", ctypes.c_void_p),
-        ("ob_ptr", ctypes.c_long),  # char* pointer cast to long
+        ("ob_ptr", ctypes.c_long),
     ]
 
 def f(NUMBER):
@@ -236,7 +236,7 @@ def f(NUMBER):
             print(
                 f"'s' var's reference count just before StringIO is realized: {cstruct_s.ob_refcnt}"
             )
-        num_written = output.write(s)
+        output.write(s)
         bytes_written += CHUNK_SIZE
         writes += 1
     if writes > 100_000:
