@@ -163,7 +163,7 @@ The `flush_accumulator` function and its related code actually just got replaced
 did ‘lazy writing’ of Unicode strings to their internal buffer with something called an *accumulator*. This accumulator 
 functionality was in `Objects/accu.c`, and it contains the core function, `_PyAccu_Accumulate`:
 
-```python
+```c++
 int _PyAccu_Accumulate(_PyAccu *acc, PyObject *unicode)
 {
     Py_ssize_t nsmall;
