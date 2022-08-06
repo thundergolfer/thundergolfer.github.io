@@ -66,7 +66,7 @@ Writing 99GB to memory took ~350ms, impossibly fast, and writing 100GB took *30*
 
 ## Initial debugging
 
-This kind of blow up was dramatic and initially unexplainable, and it wouldn’t be in the spirit of the quiz to shrug and 
+This kind of blow up was dramatic and initially unexplainable. It wouldn’t have been in the spirit of the quiz to shrug and 
 move on, so I stopped and began spelunking in the deeper layers of this short code snippet.
 
 ### plasma-umass / **scalene**
