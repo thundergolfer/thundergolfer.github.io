@@ -74,8 +74,7 @@ move on, so I stopped and began spelunking in the deeper layers of this short co
 The first tool I reached for was [Scalene](https://github.com/plasma-umass/scalene), a new and shiny Python profiler.
 Profiling the snail-pace 100GB run showed a few interesting things:
 
-- Essentially zero time was being spent executing `.py` code. Most execution time was in “native” code (C code) and 
-- “system” (most likely I/O)
+- Essentially zero time was being spent executing `.py` code. Most execution time was in “native” code (C code) and “system” (most likely I/O)
 - Scalene’s <code style="color: rgb(205, 191, 0);"><strong>COPY (MB/s)</strong></code> column was calling out that the 
 - program was copying about 3.4GB of memory a second. 100GB divided by 3.4GB/s memory copy bandwidth gives approximately
 - the program’s execution time of 28.1 seconds.
