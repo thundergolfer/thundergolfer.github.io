@@ -75,9 +75,7 @@ The first tool I reached for was [Scalene](https://github.com/plasma-umass/scale
 Profiling the snail-pace 100GB run showed a few interesting things:
 
 - Essentially zero time was being spent executing `.py` code. Most execution time was in “native” code (C code) and “system” (most likely I/O)
-- Scalene’s <code style="color: rgb(205, 191, 0);"><strong>COPY (MB/s)</strong></code> column was calling out that the 
-- program was copying about 3.4GB of memory a second. 100GB divided by 3.4GB/s memory copy bandwidth gives approximately
-- the program’s execution time of 28.1 seconds.
+- Scalene’s <code style="color: rgb(205, 191, 0);"><strong>COPY (MB/s)</strong></code> column was calling out that the program was copying about 3.4GB of memory a second. 100GB divided by 3.4GB/s memory copy bandwidth gives approximately the program’s execution time of 28.1 seconds.
 - Peak memory usage was 95.36 GiB (102.39 GB), which accords with expected program behavior.
 
 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 4%">
