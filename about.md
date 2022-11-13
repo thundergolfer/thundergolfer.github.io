@@ -8,7 +8,7 @@ headshot: /images/headshot.jpg
 
 ### Where I'm from
 
-🇦🇺 I was born and raised in the southeast suburbs of Victoria, Australia, a place almost perfecting the ['surbubia as giant nursery'](http://www.paulgraham.com/nerds.html) vision of urban development.
+🇦🇺 I was born and raised in the southeast suburbs of Victoria, Australia — a place almost perfecting the ['surbubia as giant nursery'](http://www.paulgraham.com/nerds.html) vision of urban development.
 
 I was raised by a tireless single mother, kept up good grades, and played way too much Call of Duty. I never wanted to program computers, right up until around 23 years old when programming computers became all I wanted to do.
 ### What I do now
