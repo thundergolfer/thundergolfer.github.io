@@ -34,7 +34,7 @@ Previous to Canva I worked at [Zendesk](https://www.zendesk.com/) on their [Answ
 <div id="stats" class="hidden">
 <h2>Just finished.</h2>
 
-<p>Curious what I'm reading? Here's my most recent reads, updating daily.</p>
+<p>Curious what I'm reading? Here's my most recent reads, updating daily. And my <a href="https://www.goodreads.com/user/show/88184044-jonathon-belotti)" target="_blank" rel="noopener noreferrer">Goodreads profile</a> has more history.</p>
 
 <div id="recent-finished-books"></div>
 
