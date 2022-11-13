@@ -6,7 +6,13 @@ summary:    The 38 books I read in our <em>second</em> COVID-19 year (with some 
 categories: reading learning
 ---
 
-16 books in 2019. 26 books in 2020. 38 in 2021. An encouraging trend.
+16 books in 2019: 📚📚📚📚📚
+
+26 books in 2020: 📚📚📚📚📚📚📚📚📚
+
+38 in 2021: 📚📚📚📚📚📚📚📚📚📚📚📚📚
+
+An encouraging trend.
 
 I've never read more books in a single year, and it feels good. I've continued to use reading to detach
 my iPhone from my brain-stem, often carrying a book around and reading in short periods instead of fiddling
