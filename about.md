@@ -1,40 +1,173 @@
 ---
 layout: about
-title: About Me
 permalink: /about/
 tags: about
 headshot: /images/headshot.jpg
 ---
+## A little bit about me.
 
-Just hit 18 months @ [Canva](https://www.canva.com/). I'm now team lead of the small 'Data Platform & Tools' team within the data group. The team manages the main data monorepo and its build/release, 
-owns core data platform pieces like container-orchestration (K8s) and the Data Lake build, and provides core productivity systems like a Notebook environment and batch workflow system. 
+### Where I'm from
 
-Beyond platform responsibilities, I'm increasingly working closer with data scientists and machine learning engineers, leaning more into a role that is sometimes called 'Software Engineering - ML Platform'.
+I was born and raised in the southeast suburbs of Victoria, Australia, a place almost perfecting the ['surbubia as giant nursery'](http://www.paulgraham.com/nerds.html) vision of urban development.
 
-I'm still right into the [Bazel](https://bazel.build/) build system, and now help maintain the [Python rules](https://github.com/bazelbuild/rules_python) for Bazel. It's the future, get on it.
+I was raised by a tireless single mother, kept up good grades, and played way too much Call of Duty. I never wanted to program computers, right up until around 23 years old when programming computers became all I wanted to do.
+### What I do now
 
-I just completed the first half of [some more formal education in Mathematics](https://www.handbook.uts.edu.au/courses/c11210.html). 
-I'm doing it to upskill in Linear Algebra, Calculus, and Statistics so that I may become a self-sufficient machine learning engineer in future, building data-intensive machine learning systems from the ground up.
+Currently, I help build [**modal.com**](https://modal.com), a serverless cloud platform built for developers and data scientists sick of wrestling Kubernetes.
+Scroll down to see some personal dashboard stats powered by Modal!
+
+### Where I'm at now
+
+Today, I live in NYC 🗽. When I'm not working, you can find me walking a new part of the five boroughs, or stopped in park to read.
+
+There's a lot to love in this vast, grubby city, and I hope to see all of it by foot.
+
+### What I used to do
+
+I spent 3.5 years at [Canva](https://www.canva.com/), joining when it had about 300 engineers and leaving when it had about 1800. I joined as a graduate, hobbling around with a broken leg, and ended up as team lead
+of ML Platform. The whole way through I grew under the mentorship of [Greg Roodt](https://www.linkedin.com/in/groodt/).
+
+When not doing Data or ML Platform stuff, I spend quite a bit of time working with the [Bazel](https://bazel.build/) build system, and helped maintain the [Python rules](https://github.com/bazelbuild/rules_python) for Bazel. It's the future, get on it.
+
+I also exhausted myself one year completing some [graduate mathematics study at UTS](https://www.handbook.uts.edu.au/courses/c11210.html) after work. 
+
+Previous to Canva I worked at [Zendesk](https://www.zendesk.com/) on their [Answer Bot](https://www.zendesk.com/answer-bot/) machine learning product, and at [Atlassian](https://www.atlassian.com) as an application developer intern in their reliability/monitoring team.
 
 ---
 
-## *Previously...*
+<div id="stats" class="hidden">
+<h2>Just finished.</h2>
 
-### **May 2019 Edition**
+<p>Curious what I'm reading? Here's my most recent reads, updating daily.</p>
 
-I'm a Backend Software Engineer @ [Canva](https://www.canva.com/) in their Data Engineering team. 
-I'm still quite interested in NLP, Knowledge Bases, and Computational Dialectics, but now regularly find myself
-exploring the world of the [Bazel](https://bazel.build/) build system. 
+<div id="recent-finished-books"></div>
 
-Major surgery on my right leg has had me off my feet for six months now, so I've spent most of my free time stationary, either
-[reading books](https://www.goodreads.com/user/show/88184044-jonathon-belotti) or coding 🙂. 
+<h2>Top tracks.</h2>
 
+<p>Curious what I'm currently listening to? Here's my top tracks on Spotify, updating daily.</p>
 
-### Jan 2018 Edition
+<ol id="top-spotify-tracks"></ol>
 
-I am a Software Engineering student at [RMIT University](https://www.rmit.edu.au/) in Melbourne. I've previously interned with [Zendesk](https://www.zendesk.com/) on their [Answer Bot](https://www.zendesk.com/answer-bot/) product, and at [Atlassian](https://www.atlassian.com) as an application developer in their reliability/monitoring team.
-I'm currently shopping around for graduate software engineering positions starting after November 2018.
+</div>
 
-I'm currently also doing a lot of work building developer communities around my University. I'll chase any opportunity to improve collaboration and outreach in the tech. industry.
+<script>
+/**
+ * @param {String} HTML representing a single element
+ * @return {Element}
+ */
+function htmlToElement(html) {
+    var template = document.createElement('template');
+    /* Never return a text node of whitespace as the result */
+    html = html.trim();
+    template.innerHTML = html;
+    return template.content.firstChild;
+}
 
-My main areas of interest are in NLP, Knowledge Bases, and Computational Dialectics.
+function populateDashboardHTML(data) {
+    const topSpotifyTracksList = document.querySelector('#top-spotify-tracks');
+    data.spotify.forEach(track => {
+        topSpotifyTracksList.appendChild(htmlToElement(`
+            <li>
+                <a href="${track.link}"><strong>${track.name}</strong></a> 
+                <p>${track.artist}</p>
+            </li>
+        `));
+    });
+
+    const recentFinishedBooks = document.querySelector('#recent-finished-books');
+    data.goodreads.slice(0, 3).forEach(book => {
+        recentFinishedBooks.appendChild(htmlToElement(`
+            <a class="book-item" target="_blank" rel="noopener noreferrer" href="${book.link}">
+            <div style="width: 200px">
+                <img class="grow-me" src="${book.cover_image_link}">
+            </div>
+            <div class="book-info" style="width: 200px">
+                <h4>${book.title}</h4>
+                <p>${book.authors[0]}</p>
+            </div>
+            </a>
+        `));
+    });
+}
+
+const url = 'https://thundergolfer-cgflgpx.modal.run';
+
+fetch(
+    url, {
+        mode: 'cors',
+        'Access-Control-Allowed-Origin': '*',
+        'accept': 'application/json',
+    }
+)
+  .then((response) => {
+    console.log(response);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    return response.json();
+  })
+  .then((data) => {
+    populateDashboardHTML(data);
+    /* Reveal the now populated stats section. */
+    document.getElementById("stats").classList.remove("hidden");
+  });
+
+</script>
+
+<style>
+#recent-finished-books {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#recent-finished-books a {
+    color: #111;
+}
+
+.book-item {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+.book-info h4 {
+    color: #222;
+}
+
+.book-info p {
+    color: #555;
+}
+
+.grow-me {
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+}
+
+.grow-me:hover {
+  transform: scale(1.02);
+}
+
+#top-spotify-tracks {
+    padding-left: 0.5em;
+}
+
+#top-spotify-tracks li {
+    color: #888;
+    border-bottom: 1px solid #ededed;
+    margin-top: 1rem;
+}
+
+#top-spotify-tracks a {
+    color: #111;
+}
+
+#top-spotify-tracks p {
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
+</style>
