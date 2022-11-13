@@ -74,10 +74,10 @@ function populateDashboardHTML(data) {
     data.goodreads.slice(0, 3).forEach(book => {
         recentFinishedBooks.appendChild(htmlToElement(`
             <a target="_blank" rel="noopener noreferrer" class="book-item" target="_blank" rel="noopener noreferrer" href="${book.link}">
-            <div style="width: 200px">
+            <div class="cover-container">
                 <img class="grow-me" src="${book.cover_image_link}">
             </div>
-            <div class="book-info" style="width: 200px">
+            <div class="book-info">
                 <h4>${book.title}</h4>
                 <p>${book.authors[0]}</p>
             </div>
@@ -128,6 +128,10 @@ fetch(
     margin-right: 0.4em;
 }
 
+.book-item div {
+    width: 200px;
+}
+
 .book-info h4 {
     color: #222;
 }
@@ -169,5 +173,33 @@ fetch(
 
 .hidden {
     display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #recent-finished-books {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book-item div {
+    width: 400px;
+  }
+
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cover-container, .book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #top-spotify-tracks {
+    padding-left: 1.2em;
+  }
 }
 </style>
