@@ -31,7 +31,7 @@ Previous to Canva I worked at [Zendesk](https://www.zendesk.com/) on their [Answ
 
 <div id="stats" class="hidden">
 
-<h3 id="stats-title"><code>#dashboard</code></h3>
+<h3 id="dashboard"><code>#dashboard</code></h3>
 
 <h2>Just finished.</h2>
 
@@ -120,11 +120,11 @@ fetch(
   margin-top: 2.5em;
 }
 
-#stats-title {
+#dashboard {
   margin: 0rem;
 }
 
-#stats-title code {
+#dashboard code {
   background-color: #f7f7f9;
 }
 
