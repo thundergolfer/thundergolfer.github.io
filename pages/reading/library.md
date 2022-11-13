@@ -12,7 +12,7 @@ To see things I haven't yet read browse the [Antilibrary]({{ site.baseurl }}/ant
 All my book reviews are at [/reviews]({{ site.baseurl }}/reviews).
 
 <section style="display: flex; justify-content: space-between; flex-wrap: wrap">
-{% for member in site.data.library | limit:120 %}
+{% for member in site.data.library limit:120 %}
     {% if member.review_path %}
         <a target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}/reviews/{{ member.review_path }}" style="color: #333333; flex: 1; width: 100%; min-width: 200px; padding-top: 5%;">
     {% else %}
