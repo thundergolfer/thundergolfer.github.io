@@ -231,6 +231,10 @@ I avoid this how-to post getting too long, I won't go into detail on this bit of
 
 todo
 
+## A stats-filled `about_me()`
+
+todo
+
 ## Add pinch of \<script\> 
 
 That's the JSON web endpoint accounted for, but my static HTML page at [thundergolfer.com/about](https://thundergolfer.com) needs to actually _use it_. I make that happen with a standalone `<script>` in the Markdown page.
