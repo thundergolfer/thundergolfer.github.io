@@ -29,9 +29,10 @@ When not doing Data or ML Platform stuff, I spent quite a bit of time working wi
 
 Previous to Canva I worked at [Zendesk](https://www.zendesk.com/) on their [Answer Bot](https://www.zendesk.com/answer-bot/) machine learning product, and at [Atlassian](https://www.atlassian.com) as an application developer intern in their reliability/monitoring team.
 
----
-
 <div id="stats" class="hidden">
+
+<h3 id="stats-title"><code>#dashboard</code></h3>
+
 <h2>Just finished.</h2>
 
 <p>Curious what I'm reading? Here's my most recent reads, updating daily. And my <a href="https://www.goodreads.com/user/show/88184044-jonathon-belotti)" target="_blank" rel="noopener noreferrer">Goodreads profile</a> has more history.</p>
@@ -112,6 +113,21 @@ fetch(
 </script>
 
 <style>
+#stats {
+  background-color: #f7f7f9;
+  border-radius: 1rem; 
+  padding: 1.5em;
+  margin-top: 2.5em;
+}
+
+#stats-title {
+  margin: 0rem;
+}
+
+#stats-title code {
+  background-color: #f7f7f9;
+}
+
 #recent-finished-books {
     display: flex;
     flex-direction: row;
@@ -150,7 +166,7 @@ fetch(
 }
 
 #top-spotify-tracks {
-    padding-left: 0.5em;
+    padding-left: 1em;
 }
 
 #top-spotify-tracks li {
