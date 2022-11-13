@@ -1,10 +1,10 @@
 ---
 layout: about
 permalink: /about/
+title: A little bit about me.
 tags: about
 headshot: /images/headshot.jpg
 ---
-## A little bit about me.
 
 ### Where I'm from
 
