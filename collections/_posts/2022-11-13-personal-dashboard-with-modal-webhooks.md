@@ -11,47 +11,46 @@ This is a how-to post about [adding a dashboard](/about/#dashboard) to your pers
 ![screenshot of the new dashboard component](/images/personal-dashboard-with-modal/screenshot.png)
 
 I have long admired [the website](https://leerob.io/) of Vercel's Lee Robinson, particularly his personal dashboard.
-His dashboard shows you various auto-updating metrics, including Github stars, Youtube views, and most listened Spotify tracks.
-I love this. It's exactly the kind of website early internet-adopters thought would be common in the future. 
+The dashboard shows you various auto-updating metrics, including Github stars, Youtube views, and most listened Spotify tracks.
+I love this. It's exactly the kind of website early and optimisitic internet-adopters thought would predominate in the future. 
 
 However, it takes a lot of
-skill, love, and time to build up a personal website this feature-packed and polished. I wanted a dashboard myself, but this personal
-website is a patchwork [Jekyll](https://jekyllrb.com/) static site first setup eight years ago, and rewriting it to adopt Robinson's [Next.js API routes](https://leerob.io/blog/fetching-data-with-swr)
+skill, love, and time to build up a personal website this feature-packed and polished. I wanted a dashboard myself, but my personal
+website — the one you're on right now — is a patchwork [Jekyll](https://jekyllrb.com/) static site first setup eight years ago, and rewriting it to adopt Robinson's [Next.js API routes](https://leerob.io/blog/fetching-data-with-swr)
 solution was just too much effort.
 
-Enter [_Modal web endpoints_](https://modal.com/docs/guide/webhooks).
+But then came [Modal web endpoints](https://modal.com/docs/guide/webhooks).
 
 ## Solution overview
 
-I made and shipped this personal dashboard solution only because it is very
+I was able to sit down and ship this personal dashboard solution only because it is very
 easy to develop and very low maintenance. It uses tools I already know and regularly use: Jekyll, Python, HTML, Javascript.
 
-* The web endpoint is a single `.py` file, and is deployed with _zero_ infra code or config to [Modal](https://modal.com).
-* The dashboard page component is plain HTML stuck into my existing `about.md` Markdown file at [github.com/thundergolfer/thundergolfer.github.io](https://github.com/thundergolfer/thundergolfer.github.io).
+* The dash stats are served by a JSON web endpoint defined by a single `.py` module and deployed with _zero_ infra code or config to [Modal](https://modal.com).
+* The dashboard UI component is plain HTML and JS stuck at the end of my existing `about.md` Markdown file in [github.com/thundergolfer/thundergolfer.github.io](https://github.com/thundergolfer/thundergolfer.github.io).
 
 In about half a day I had a nice new dashboard up on this website, and it's as easy to maintain as the boring
 and simple Github Pages + Jekyll website foundation. 
 
 <h2>
-    <span style="color: rgb(187, 255, 170); background-color: rgb(27, 27, 27); padding: 3px; border-radius: 4px">Modal webhook</span>
+    <span style="color: rgb(187, 255, 170); background-color: rgb(27, 27, 27); padding: 3px; border-radius: 4px">Modal web endpoint</span>
 </h2>
 
 The basic problem to solve is that static sites can't show users dynamic data, such as my constantly changing
 Spotify listen history or the reading history I maintain in Goodreads. The Jekyll framework builds a fixed set
-of `.html` and `.css` files on push to Github, and that's all users get until I push another change.
+of `.html` and `.css` files on push to Github, and nothing updates until I `git push` another change.
 
-What I need is something my static HTML 'About me' page can send an XMLHTTPRequest to on load, which will return
-up-to-date data for rendering. That something should be simple and cheap to run. A webhook, basically.
+What I need is something my static HTML 'About me' page can fire an XMLHTTPRequest request at on load, which will return up-to-date data for rendering. That something should be simple and cheap to run.
 
-A Modal webhook is a serverless endpoint that run Python code, supporting the excellent FastAPI out-of-the-box.
+A Modal webhook is a serverless endpoint that executes Python code, supporting the excellent FastAPI out-of-the-box.
 My dashboard webhook application does just two things. It accepts a GET request at `/`, and uses a Python function
-called `about_me()` to gather dashboard stats as a dictionary for FastAPI to send back to the client as JSON.
+called `about_me()` to gather dashboard stats as a `dict` for FastAPI to send back to the client as JSON.
 
 Let's get a bit more into the details.
 
 ### Responding to GET requests
 
-The following is all the code needed to get a serverless Modal endpoint to return JSON.
+The following is all the code needed to have a serverless Modal endpoint return some JSON to clients.
 
 ```python
 import modal
@@ -83,24 +82,24 @@ def web():
 A asynchronous server gateway interface ([ASGI](https://asgi.readthedocs.io/en/latest/)) app is instantiated
 and hooked into Modal by returning it from a function decorated with `@stub.asgi`. 
 
-Deploy this on Modal and you'll immediately be able to hit the endpoint with `curl`. You'll get this:
+Deploy this on Modal and you'll immediately be able to hit the endpoint with `curl`.
 
 ```bash
 curl https://thundergolfer-cgflgpx.modal.run/
 {"dummy": "data"}%
 ```
 
-That ain't interactive dashboard data because all `about_me()` does is return static placeholder data. Soon
+That ain't interactive dashboard stats because all `about_me()` does is return static placeholder data. Soon
 I'll show how that function becomes extended to make authenticated requests against Spotify to retrieve top tracks.
 But it's a start!
 
 #### Making the browser happy: CORS, caching
 
-Most of the complexity in the above snippet comes from needing to support [CORS](https://fastapi.tiangolo.com/tutorial/cors/) and caching the JSON response in the browser for 12 hours (43,200 seconds).
+Most of the complexity in the above snippet comes from needing to support [CORS](https://fastapi.tiangolo.com/tutorial/cors/) and cache the JSON response in the browser for 12 hours (43,200 seconds).
 
 My website is served from the `thundergolfer.com` domain but the webhook is served from a Modal domain (`modal.run`).
-By default the browser will prevent data (ie. resource) sharing between different domains because it's insecure.
-But with the `CORSMiddleware` the web endpoitn can communicate that it allows sharing with my domains.
+By default the browser will prevent data sharing between different domains because it's insecure.
+But with the `CORSMiddleware` the web endpoint can communicate that it allows data sharing with my domains.
 
 The `Cache-Control` header is set to minimize re-requests to the web endpoint. With this header, your browser
 will disk cache the endpoint's JSON response for 12 hours. Try repeatedly refreshing [my about page](/about#dashboard) to see this working; the dashboard component loads instantly from the 2nd request onwards.
@@ -122,19 +121,181 @@ will disk cache the endpoint's JSON response for 12 hours. Try repeatedly refres
 
 ## Getting access to Spotify
 
-todo
+For the web endpoint to up-to-date Spotify listening info to client's, it needs to authenticate against
+Spotify's APIs and access my private account data. 
+
+Getting this done will require creating a Spotify developer app, setting a Modal secret, and crudely implementing
+an OAuth flow. This should all take about 10 minutes.
+
+### Spotify developer app setup
+
+![Spotify developers apps webpage](/images/personal-dashboard-with-modal/spotify-dev-app.png)
+
+First, we need to create a Spotify application to give us credentials to authenticate with the API.
+
+1. Go to your [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/) and log in.
+2. Click **Create an App**.
+3. Fill out the name and description and click **create**.
+4. Click **Show Client Secret**.
+5. Save your Client ID and Secret. You'll need these soon.
+6. Click **Edit Settings**.
+7. Add `http://localhost:3000` as a **redirect URI**. (This address won't be used, but it needs to match what's in our code)
+
+Done! You now have a properly configured Spotify application and the correct credentials to make requests.
+
+(Don't worry about the app being in _developer mode_. That mode is fine for our purposes.)
+
+<h3>
+    <span style="color: rgb(187, 255, 170); background-color: rgb(27, 27, 27); padding: 3px; border-radius: 4px">Modal secret</span>
+</h3>
+
+With the Client ID and Secret you saved just before, populate and execute the following command:
+
+```bash
+modal secret create spotify-about SPOTIFY_CLIENT_ID="..." SPOTIFY_CLIENT_SECRET="..."
+```
+
+With that done, we'll be able to run some code to complete an OAuth flow for the Spotify app
+and acquire a `refresh_token` which will allow the webhook to access private personal listening information
+via API.
+
+### Doing the OAuth flow to get a refresh_token
+
+```python
+import base64
+import json
+import os
+import urllib.parse
+import urllib.request
+
+
+def manual_spotify_auth() -> None:
+    redirect_uri = urllib.parse.quote("http://localhost:3000/callback", safe="")
+    authorize_url = (
+        "https://accounts.spotify.com/"
+        f"authorize?client_id={SPOTIFY_CLIENT_ID}&response_type=code&redirect_uri={redirect_uri}"
+        "&scope=user-read-currently-playing%20user-top-read"
+    )
+
+    code = input(
+        f"Visit \n{authorize_url}\n and then paste back the code found in the URL.\nCode: "
+    ).strip()
+
+    with stub.run():
+        refresh_token = create_spotify_refresh_token(code)
+    print(f"SPOTIFY_REFRESH_TOKEN: {refresh_token}")
+    print(
+        "Save the refresh_token back into the `spotify-aboutme` secret in Modal as SPOTIFY_REFRESH_TOKEN"
+    )
+
+
+@stub.function(secret=modal.Secret.from_name("spotify-aboutme"))
+def create_spotify_refresh_token(code: str):
+    auth_str = os.environ["SPOTIFY_CLIENT_ID"] + ":" + os.environ["SPOTIFY_CLIENT_SECRET"]
+    encoded_client_id_and_secret = base64.b64encode(auth_str.encode()).decode()
+    req = urllib.request.Request(
+        "https://accounts.spotify.com/api/token",
+        data=urllib.parse.urlencode(
+            {
+                "code": code,
+                "grant_type": "authorization_code",
+                "redirect_uri": "http://localhost:3000/callback",
+            }
+        ).encode(),
+        headers={
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36",
+            "Authorization": f"Basic {encoded_client_id_and_secret}",
+        },
+    )
+    response = urllib.request.urlopen(req).read().decode()
+    return json.load(response)["refresh_token"]
+
+if __name__ == "__main__":
+    manual_spotify_auth()
+```
+
+We only need to do this step once, so it's fine that it is human-in-the-loop. Notice that the second function
+is a Modal function, with access to the `spotify-aboutme` secret created earlier. This means that when you do
+`python3 main.py` the first function, `manual_spotify_auth()`, will run on your computer and the second will
+_run in the cloud_.
+
+We could have had this function run locally and populated our terminal environment with the `SPOTIFY_*` variables, but it's nice to test that our Modal Secret is setup properly.
+
+If you've done things correctly, you should see a `SPOTIFY_REFRESH_TOKEN` in your terminal output. 
+Go to [modal.com/secrets](https://modal.com/secrets) and update the `spotify-aboutme` secret to include this
+new value. 
 
 ## Scraping Goodreads
+
+I avoid this how-to post getting too long, I won't go into detail on this bit of the dashboard.
 
 todo
 
 ## Add pinch of \<script\> 
 
-todo
+That's the JSON web endpoint accounted for, but my static HTML page at [thundergolfer.com/about](https://thundergolfer.com) needs to actually _use it_. I make that happen with a standalone `<script>` in the Markdown page.
+
+```html
+<div id="stats" class="hidden">
+    <div id="recent-finished-books"></div>
+    <ol id="top-spotify-tracks"></ol>
+</div>
+
+<script>
+function htmlToElement(html) {
+    var template = document.createElement('template');
+    html = html.trim();
+    template.innerHTML = html;
+    return template.content.firstChild;
+}
+
+function populateDashboardHTML(data) {
+    const topSpotifyTracksList = document.querySelector('#top-spotify-tracks');
+    data.spotify.forEach(track => {
+        topSpotifyTracksList.appendChild(htmlToElement(`
+            <li>
+                <a href="${track.link}">
+                    <strong>${track.name}</strong>
+                </a> 
+                <p>${track.artist}</p>
+            </li>
+        `));
+    });
+    const recentFinishedBooks = document.querySelector('#recent-finished-books');
+    data.goodreads.slice(0, 3).forEach(book => { ... });
+}
+
+fetch(
+    'https://thundergolfer-cgflgpx.modal.run', {
+        mode: 'cors',
+        'Access-Control-Allowed-Origin': '*',
+        'accept': 'application/json',
+    }
+)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    populateDashboardHTML(data);
+    /* Reveal the now populated stats section. */
+    document.getElementById("stats").classList.remove("hidden");
+  });
+</script>
+```
+
+The Goodreads HTML hydration code and some CSS is omitted for brevity, but this is basically everything!
+On page load `fetch` issues an XMLHTTPRequest to my deployed web endpoint and once this is complete a JS
+function is called to populate the a `<div>` before it is revealed on the page.
 
 ## Extensions
 
-todo
+There's so many additions we could make to this personal dashboard: [Strava](https://www.strava.com/), Youtube,
+[Letterboxd](https://letterboxd.com/), Pocket, Twitter, Apple Photos, the list goes on. 
+
+The next move for me is Github, but that's a project for another weekend :)
 
 <style>
 .callout-panel {
