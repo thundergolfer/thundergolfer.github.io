@@ -22,7 +22,7 @@ Scroll down to see some personal dashboard stats powered by Modal!
 
 ### What I used to do
 
-I spent 3.5 years at [Canva](https://www.canva.com/), joining when it had about 300 engineers and leaving when it had about 1800. I joined as a graduate, hobbling around with a broken leg, and ended up as team lead
+I spent 3.5 years at [Canva](https://www.canva.com/), joining when it had almost 300 engineers and leaving when it had about 1800. I joined as a graduate, hobbling around with a broken leg, and ended up as team lead
 of ML Platform. The whole way through I grew under the mentorship of [Greg Roodt](https://www.linkedin.com/in/groodt/).
 
 When not doing Data or ML Platform stuff, I spent quite a bit of time working with the [Bazel](https://bazel.build/) build system, and helped maintain the [Python rules](https://github.com/bazelbuild/rules_python) for Bazel. It's the future, get on it.
