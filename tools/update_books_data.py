@@ -28,6 +28,17 @@ IGNORED_AUTHORS = {
 # For some reason Goodreads left out ISBN information for some of the books in my collection,
 # even though the ISBN info is available in Goodreads if you look up the data on their website.
 TITLE_TO_ISBN = {
+    "China in Ten Words": "9780307739797",
+    "Priestdaddy": "9780399573262",
+    "The Man in the High Castle": "9780141186672",
+    "A Children's Bible": "9781324005032",
+    "When We Cease to Understand the World": "9781681375663",
+    "Operating Systems: Three Easy Pieces": "9781985086593",
+    "The Rust Programming Language": "9781593278281",
+    "The Glass Teat": "9780759230309",
+    "A Farewell to Arms": "9780684174693",
+    "Public Citizens: The Attack on Big Government and the Remaking of American Liberalism": "",
+    "Losing the Signal: The Untold Story Behind the Extraordinary Rise and Spectacular Fall of BlackBerry": "9781443436182",
     "A Cyborg Manifesto: Science, Technology, and Socialist-Feminism in the Late Twentieth Century": "9788807460012",
     "For Whom the Bell Tolls": "1439571481",
     "A Moveable Feast": "0684833638",

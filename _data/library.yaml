@@ -1,11 +1,195 @@
 [
     {
+        "title": "China in Ten Words",
+        "author": "Yu Hua",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9780307739797",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Priestdaddy",
+        "author": "Patricia Lockwood",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780399573262",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "The Man in the High Castle",
+        "author": "Philip K. Dick",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "9780141186672",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Foundation and Empire (Foundation, #2)",
+        "author": "Isaac Asimov",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0553803727",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Gun Seller",
+        "author": "Hugh Laurie",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "067102082X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Children's Bible",
+        "author": "Lydia Millet",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9781324005032",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "East of Eden",
+        "author": "John Steinbeck",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0142000655",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "No One Is Talking About This",
+        "author": "Patricia Lockwood",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0593189582",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "When We Cease to Understand the World",
+        "author": "Benjam\u00edn Labatut",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9781681375663",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Goal: A Process of Ongoing Improvement",
+        "author": "Eliyahu M. Goldratt",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0884271781",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Operating Systems: Three Easy Pieces",
+        "author": "Remzi H. Arpaci-Dusseau",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9781985086593",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Computer Systems: A Programmer's Perspective",
+        "author": "Randal E. Bryant",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "013034074X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Rust Programming Language",
+        "author": "Steve Klabnik",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9781593278281",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Design of Everyday Things",
+        "author": "Donald A. Norman",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0465067107",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "How to Blow Up a Pipeline",
+        "author": "Andreas Malm",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1839760257",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Candy House",
+        "author": "Jennifer Egan",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1476716765",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Crafting Interpreters",
+        "author": "Robert Nystrom",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0990582930",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Little Women",
+        "author": "Louisa May Alcott",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780451529305",
+        "review_path": "little-women-louisa-may-alcott/",
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Coders at Work: Reflections on the Craft of Programming",
+        "author": "Peter Seibel",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1430219483",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers",
+        "author": "Geoffrey A. Moore",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0060517123",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "API Design Patterns",
+        "author": "JJ Geewax",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "161729585X",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "A Moveable Feast",
+        "author": "Ernest Hemingway",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0684833638",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+        "author": "Gene Kim",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "9781942788300",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
         "title": "Do Androids Dream of Electric Sheep?",
         "author": "Philip K. Dick",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780575094185",
         "review_path": "do-androids-dream-of-electric-sheep?-philip-k-dick/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "The Little Prince",
@@ -13,7 +197,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780156012195",
         "review_path": "the-little-prince-antoine-de-saint-exup\u00e9ry/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "Engines of Creation: The Coming Era of Nanotechnology",
@@ -37,7 +221,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0593135202",
         "review_path": "project-hail-mary-andy-weir/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "Steppenwolf",
@@ -67,7 +251,7 @@
         "title": "The Call of the Wild",
         "author": "Jack London",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0439227143",
+        "isbn": "",
         "review_path": "the-call-of-the-wild-jack-london/",
         "year_i_finished_reading": null
     },
@@ -117,7 +301,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0578675862",
         "review_path": "working-in-public-the-making-and-maintenance-of-open-source-software-nadia-eghbal/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "The Psychology of Computer Programming",
@@ -149,7 +333,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9781584230700",
         "review_path": "the-medium-is-the-message-marshall-mcluhan/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "Showstopper! the Breakneck Race to Create Windows NT and the Next Generation at Microsoft",
@@ -168,20 +352,12 @@
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "Little Women",
-        "author": "Louisa May Alcott",
-        "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780451529305",
-        "review_path": "little-women-louisa-may-alcott/",
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary",
         "author": "Eric S. Raymond",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0596001088",
         "review_path": "the-cathedral-&-the-bazaar-musings-on-linux-and-open-source-by-an-accidental-revolutionary-eric-s-raymond/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "Hackers & Painters: Big Ideas from the Computer Age",
@@ -189,7 +365,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0596006624",
         "review_path": "hackers-&-painters-big-ideas-from-the-computer-age-paul-graham/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "Flowers for Algernon",
@@ -229,7 +405,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0307592839",
         "review_path": "a-visit-from-the-goon-squad-jennifer-egan/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "Jazz (Beloved Trilogy, #2)",
@@ -237,7 +413,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0452269652",
         "review_path": "jazz-(beloved-trilogy,-#2)-toni-morrison/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "The Quiet Revolution",
@@ -248,12 +424,12 @@
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "The Age of Spiritual Machines: When Computers Exceed Human Intelligence ",
+        "title": "The Age of Spiritual Machines: When Computers Exceed Human Intelligence",
         "author": "Ray Kurzweil",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0140282025",
         "review_path": "the-age-of-spiritual-machines-when-computers-exceed-human-intelligence-ray-kurzweil/",
-        "year_i_finished_reading": "2021"
+        "year_i_finished_reading": null
     },
     {
         "title": "The Mythical Man-Month: Essays on Software Engineering",
@@ -336,7 +512,7 @@
         "year_i_finished_reading": "2020"
     },
     {
-        "title": "Children of Dune (Dune Chronicles, #3)",
+        "title": "Children of Dune (Dune, #3)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0593098242",
@@ -424,10 +600,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Dune Messiah (Dune Chronicles, #2)",
+        "title": "Dune Messiah (Dune, #2)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780425035856",
+        "isbn": "0593098234",
         "review_path": null,
         "year_i_finished_reading": "2020"
     },
@@ -632,10 +808,10 @@
         "year_i_finished_reading": "2019"
     },
     {
-        "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+        "title": "The Hitchhiker's Guide to the Galaxy (The Hitchhiker's Guide to the Galaxy, #1)",
         "author": "Douglas Adams",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780434023394",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": "2019"
     },
@@ -752,7 +928,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Maus: Un survivant raconte, tome 1: Mon p\u00e8re saigne l'histoire (Maus, #1)",
+        "title": "Maus I: Un Survivant Raconte: Mon P\u00e8re Saigne L'histoire",
         "author": "Art Spiegelman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "2080660292",
@@ -1011,7 +1187,7 @@
         "title": "Infinite Jest",
         "author": "David Foster Wallace",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0316921173",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1040,7 +1216,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Hobbit, or There and Back Again",
+        "title": "The Hobbit (The Lord of the Rings, #0)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "",

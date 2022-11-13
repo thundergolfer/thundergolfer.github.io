@@ -1,5 +1,317 @@
 [
     {
+        "title": "Database Internals: A deep-dive into how distributed data systems work",
+        "author": "Alex Petrov",
+        "rating": "",
+        "isbn": "1492040347",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Farewell to Arms",
+        "author": "Ernest Hemingway",
+        "rating": "",
+        "isbn": "9780684174693",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Nixon Agonistes: The Crisis of the Self-Made Man",
+        "author": "Garry Wills",
+        "rating": "",
+        "isbn": "0618134328",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Public Citizens: The Attack on Big Government and the Remaking of American Liberalism",
+        "author": "Paul Sabin",
+        "rating": "",
+        "isbn": "0393634043",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Works: Anatomy of a City",
+        "author": "Kate Ascher",
+        "rating": "",
+        "isbn": "1594200718",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Losing the Signal: The Untold Story Behind the Extraordinary Rise and Spectacular Fall of BlackBerry",
+        "author": "Jacquie McNish",
+        "rating": "",
+        "isbn": "9781443436182",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Cyberville: Clicks, Culture, and the Creation of an Online Town",
+        "author": "Stacy Horn",
+        "rating": "",
+        "isbn": "044651909X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Antifragile: Things That Gain from Disorder",
+        "author": "Nassim Nicholas Taleb",
+        "rating": "",
+        "isbn": "1400067820",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Nickel and Dimed: On (Not) Getting by in America",
+        "author": "Barbara Ehrenreich",
+        "rating": "",
+        "isbn": "0805063897",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Glass Teat",
+        "author": "Harlan Ellison",
+        "rating": "",
+        "isbn": "9780759230309",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "rating": "",
+        "isbn": "0330426648",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Ways of Seeing",
+        "author": "John Berger",
+        "rating": "",
+        "isbn": "0140135154",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Autobiography of Malcolm X",
+        "author": "Malcolm X",
+        "rating": "",
+        "isbn": "9780345350688",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines",
+        "author": "Luiz Andr\u00e9 Barroso",
+        "rating": "",
+        "isbn": "159829556X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Mort (Discworld, #4; Death, #1)",
+        "author": "Terry Pratchett",
+        "rating": "",
+        "isbn": "0061020680",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Dawn of Everything: A New History of Humanity",
+        "author": "David Graeber",
+        "rating": "",
+        "isbn": "0374157359",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Container Security: Fundamental Technology Concepts That Protect Containerized Applications",
+        "author": "Liz Rice",
+        "rating": "",
+        "isbn": "1492056707",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Bowling Alone: The Collapse and Revival of American Community",
+        "author": "Robert D. Putnam",
+        "rating": "",
+        "isbn": "0743203046",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Expert Political Judgment: How Good Is It? How Can We Know?",
+        "author": "Philip E. Tetlock",
+        "rating": "",
+        "isbn": "0691128715",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Confederacy of Dunces",
+        "author": "John Kennedy Toole",
+        "rating": "",
+        "isbn": "0802130208",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Prize: The Epic Quest for Oil, Money, and Power",
+        "author": "Daniel Yergin",
+        "rating": "",
+        "isbn": "0671799320",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Bitcoin Standard: The Decentralized Alternative to Central Banking",
+        "author": "Saifedean Ammous",
+        "rating": "",
+        "isbn": "1119473861",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Data and Reality",
+        "author": "William Kent",
+        "rating": "",
+        "isbn": "1585009709",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Shoe Dog: A Memoir by the Creator of Nike",
+        "author": "Phil Knight",
+        "rating": "",
+        "isbn": "1501135910",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Java Concurrency in Practice",
+        "author": "Brian Goetz",
+        "rating": "",
+        "isbn": "0321349601",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Philosophy of Software Design",
+        "author": "John Ousterhout",
+        "rating": "",
+        "isbn": "1732102201",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Atrocity Archives (Laundry Files, #1)",
+        "author": "Charles Stross",
+        "rating": "",
+        "isbn": "0441013651",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Accelerando",
+        "author": "Charles Stross",
+        "rating": "",
+        "isbn": "0441014151",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Hackers: Heroes of the Computer Revolution",
+        "author": "Steven Levy",
+        "rating": "",
+        "isbn": "0141000511",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "T-SQL Querying",
+        "author": "Itzik Ben-Gan",
+        "rating": "",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Contrarian: Peter Thiel and Silicon Valley's Pursuit of Power",
+        "author": "Max Chafkin",
+        "rating": "",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Doors of Perception / Heaven and Hell",
+        "author": "Aldous Huxley",
+        "rating": "",
+        "isbn": "0060595183",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Breaks of the Game",
+        "author": "David Halberstam",
+        "rating": "",
+        "isbn": "0345296257",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Book of Basketball: The NBA According to The Sports Guy",
+        "author": "Bill Simmons",
+        "rating": "",
+        "isbn": "034551176X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Michael Jordan: The Life",
+        "author": "Roland Lazenby",
+        "rating": "",
+        "isbn": "0316194778",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Jordan Rules: The Inside Story of One Turbulent Season with Michael Jordan and the Chicago Bulls",
+        "author": "Sam  Smith",
+        "rating": "",
+        "isbn": "0671796666",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Playing for Keeps: Michael Jordan and the World He Made",
+        "author": "David Halberstam",
+        "rating": "",
+        "isbn": "0767904443",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Eleven Rings: The Soul of Success",
+        "author": "Phil Jackson",
+        "rating": "",
+        "isbn": "1611761670",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Bewilderment",
+        "author": "Richard Powers",
+        "rating": "",
+        "isbn": "0393881148",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "The Martian",
         "author": "Andy Weir",
         "rating": "",
@@ -12,14 +324,6 @@
         "author": "Ursula K. Le Guin",
         "rating": "",
         "isbn": "0553383043",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Stories of Your Life and Others",
-        "author": "Ted Chiang",
-        "rating": "",
-        "isbn": "0330426648",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -112,14 +416,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Container Security: Fundamental Technology Concepts That Protect Containerized Applications",
-        "author": "Liz Rice",
-        "rating": "",
-        "isbn": "1492056707",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Programmer's Brain",
         "author": "Felienne Hermans",
         "rating": "",
@@ -136,7 +432,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Hyperion",
+        "title": "Hyperion (Hyperion Cantos, #1)",
         "author": "Dan Simmons",
         "rating": "",
         "isbn": "0553283685",
@@ -197,18 +493,10 @@
         "rating": "",
         "isbn": "1587263890",
         "review_path": null,
-        "year_i_finished_reading": "2021"
-    },
-    {
-        "title": "Mort (Discworld, #4; Death, #1)",
-        "author": "Terry Pratchett",
-        "rating": "",
-        "isbn": "0061020680",
-        "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "Wyrd Sisters (Discworld, #6; Witches #2)",
+        "title": "Wyrd Sisters (Discworld, #6; Witches, #2)",
         "author": "Terry Pratchett",
         "rating": "",
         "isbn": "0061020664",
@@ -288,14 +576,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Dawn of Everything: A New History of Humanity",
-        "author": "David Graeber",
-        "rating": "",
-        "isbn": "0374157359",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Thinking in Systems: A Primer",
         "author": "Donella H. Meadows",
         "rating": "",
@@ -328,22 +608,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Goal: A Process of Ongoing Improvement",
-        "author": "Eliyahu M. Goldratt",
-        "rating": "",
-        "isbn": "0884271781",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
-        "author": "Gene Kim",
-        "rating": "",
-        "isbn": "9781942788300",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Peopleware: Productive Projects and Teams",
         "author": "Tom DeMarco",
         "rating": "",
@@ -352,18 +616,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Fidelity: Five stories",
+        "title": "Fidelity: Five Stories",
         "author": "Wendell Berry",
         "rating": "",
         "isbn": "0679748318",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Coders at Work: Reflections on the Craft of Programming",
-        "author": "Peter Seibel",
-        "rating": "",
-        "isbn": "1430219483",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -412,14 +668,6 @@
         "author": "Bryan Burrough",
         "rating": "",
         "isbn": "0060536357",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines",
-        "author": "Luiz Andr\u00e9 Barroso",
-        "rating": "",
-        "isbn": "159829556X",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -536,14 +784,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "China in Ten Words",
-        "author": "Yu Hua",
-        "rating": "",
-        "isbn": "0307379353",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Key Thinkers of the Radical Right: Behind the New Threat to Liberal Democracy",
         "author": "Mark Sedgwick",
         "rating": "",
@@ -592,34 +832,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Foundation and Empire (Foundation #2)",
-        "author": "Isaac Asimov",
-        "rating": "",
-        "isbn": "0553803727",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Doors of Perception",
-        "author": "Aldous Huxley",
-        "rating": "",
-        "isbn": "9780060801717",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "A People's History of the United States",
         "author": "Howard Zinn",
         "rating": "",
         "isbn": "0060838655",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "East of Eden",
-        "author": "John Steinbeck",
-        "rating": "",
-        "isbn": "0142000655",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -696,14 +912,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "A Children's Bible",
-        "author": "Lydia Millet",
-        "rating": "",
-        "isbn": "0393867382",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Just Mercy: A Story of Justice and Redemption",
         "author": "Bryan Stevenson",
         "rating": "",
@@ -760,7 +968,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Why We Love Dogs, Eat Pigs, and Wear Cows: An Introduction to Carnism: The Belief System That Enables Us to Eat Some Animals and Not Others",
+        "title": "Why We Love Dogs, Eat Pigs, and Wear Cows: An Introduction to Carnism",
         "author": "Melanie Joy",
         "rating": "",
         "isbn": "1573244619",
@@ -772,14 +980,6 @@
         "author": "Jonathan Safran Foer",
         "rating": "",
         "isbn": "0316069906",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Hackers: Heroes of the Computer Revolution",
-        "author": "Steven Levy",
-        "rating": "",
-        "isbn": "0141000511",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -796,14 +996,6 @@
         "author": "Ernest Hemingway",
         "rating": "",
         "isbn": "1439571481",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "A Moveable Feast",
-        "author": "Ernest Hemingway",
-        "rating": "",
-        "isbn": "0684833638",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -832,10 +1024,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Ishmael",
+        "title": "Ishmael (Ishmael, #1)",
         "author": "Daniel Quinn",
         "rating": "",
-        "isbn": "0553375407",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -936,14 +1128,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Autobiography of Malcolm X",
-        "author": "Malcolm X",
-        "rating": "",
-        "isbn": "9780345350688",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "I Know Why the Caged Bird Sings (Maya Angelou's Autobiography, #1)",
         "author": "Maya Angelou",
         "rating": "",
@@ -952,7 +1136,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "My Brilliant Friend (The Neapolitan Novels #1)",
+        "title": "My Brilliant Friend (The Neapolitan Novels, #1)",
         "author": "Elena Ferrante",
         "rating": "",
         "isbn": "",
@@ -1060,14 +1244,6 @@
         "author": "John Dewey",
         "rating": "",
         "isbn": "0684836319",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers",
-        "author": "Geoffrey A. Moore",
-        "rating": "",
-        "isbn": "0060517123",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1240,7 +1416,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Warmth of Other Suns: The Epic Story of America's Great Migration",
+        "title": "The Warmth of Other Suns: the Epic Story of America's Great Migration",
         "author": "Isabel Wilkerson",
         "rating": "",
         "isbn": "0679444327",
