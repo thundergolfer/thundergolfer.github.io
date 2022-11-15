@@ -87,17 +87,8 @@ function populateDashboardHTML(data) {
     });
 }
 
-const url = 'https://thundergolfer-cgflgpx.modal.run';
-
-fetch(
-    url, {
-        mode: 'cors',
-        'Access-Control-Allowed-Origin': '*',
-        'accept': 'application/json',
-    }
-)
+fetch('https://thundergolfer-cgflgpx.modal.run')
   .then((response) => {
-    console.log(response);
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
