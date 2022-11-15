@@ -347,6 +347,8 @@ There's so many additions we could make to this personal dashboard: [Strava](htt
 
 The next move for me is Github, but that's a project for another weekend :)
 
+![icons of possible dashboard stats sources](/images/personal-dashboard-with-modal/extensions.png)
+
 <style>
 .callout-panel {
     border-radius: 3px;
