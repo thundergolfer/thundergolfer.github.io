@@ -6,7 +6,7 @@ Just my website. The theme is [thundergolfer/**junior-theme**](https://github.co
 
 ### What it looks like
 
-![homepage preview](homepage_preview.jpg)
+![homepage preview](homepage-preview.png)
 
 ### What you can find there
 
