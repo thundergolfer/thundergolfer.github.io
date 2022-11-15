@@ -15,7 +15,7 @@ The dashboard shows you various auto-updating metrics, including Github stars, Y
 I love this. It's exactly the kind of website early and optimisitic netizens thought would predominate in the future. 
 
 However, it takes a lot of
-skill, love, and time to build up a personal website this feature-packed and polished. I wanted a dashboard myself, but my personal
+skill, love, and time to build up a personal website that feature-packed and polished. I wanted a dashboard myself, but my personal
 website — the one you're on right now — is a patchwork [Jekyll](https://jekyllrb.com/) static site first setup eight years ago, and rewriting it to adopt Robinson's [Next.js API routes](https://leerob.io/blog/fetching-data-with-swr)
 solution was just too much effort.
 
@@ -38,7 +38,7 @@ and simple Github Pages + Jekyll foundation.
     <span style="color: rgb(187, 255, 170); background-color: rgb(27, 27, 27); padding: 3px; border-radius: 4px">Modal web endpoint</span>
 </h2>
 
-The basic data problem to solve is that static sites can't show users dynamic data, such as my constantly changing
+The basic data problem to solve is that static sites can't show a user's dynamic data, such as my constantly changing
 Spotify listen history or the reading history I maintain in Goodreads. The Jekyll framework builds a fixed set
 of `.html` and `.css` files on push to Github, and nothing updates until I `git push` another change.
 
