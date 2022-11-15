@@ -12,7 +12,7 @@ This is a how-to post about [adding a dashboard](/about/#dashboard) to your pers
 
 I have long admired [the website](https://leerob.io/) of Vercel's Lee Robinson, particularly his personal dashboard.
 The dashboard shows you various auto-updating metrics, including Github stars, Youtube views, and most listened Spotify tracks.
-I love this. It's exactly the kind of website early and optimisitic internet-adopters thought would predominate in the future. 
+I love this. It's exactly the kind of website early and optimisitic netizens thought would predominate in the future. 
 
 However, it takes a lot of
 skill, love, and time to build up a personal website this feature-packed and polished. I wanted a dashboard myself, but my personal
@@ -24,27 +24,46 @@ But then came [Modal web endpoints](https://modal.com/docs/guide/webhooks).
 ## Solution overview
 
 I was able to sit down and ship this personal dashboard solution only because it is very
-easy to develop and very low maintenance. It uses tools I already know and regularly use: Jekyll, Python, HTML, Javascript.
+easy to develop and very low maintenance. It uses tools I already know and regularly use: Jekyll, Python, HTML, Javascript. You probably know all these too.
 
-* The dash stats are served by a JSON web endpoint defined by a single `.py` module and deployed with _zero_ infra code or config to [Modal](https://modal.com).
-* The dashboard UI component is plain HTML and JS stuck at the end of my existing `about.md` Markdown file in [github.com/thundergolfer/thundergolfer.github.io](https://github.com/thundergolfer/thundergolfer.github.io).
+The setup is two parts: the **data**, provided by a web endpoint, and the **view**, implemented by HTML and JS.
 
-In about half a day I had a nice new dashboard up on this website, and it's as easy to maintain as the boring
-and simple Github Pages + Jekyll website foundation. 
+* **data:** the dash stats are served by a JSON web endpoint defined by a single `.py` module and deployed with _zero_ infra code or config to [Modal](https://modal.com).
+* **view:** the dashboard UI component is plain HTML and JS stuck at the end of my existing `about.md` Markdown file in [github.com/thundergolfer/thundergolfer.github.io](https://github.com/thundergolfer/thundergolfer.github.io).
+
+In about half a day I had a nice new dashboard up on this website, and it's as easy to maintain as the website's boring
+and simple Github Pages + Jekyll foundation. 
 
 <h2>
     <span style="color: rgb(187, 255, 170); background-color: rgb(27, 27, 27); padding: 3px; border-radius: 4px">Modal web endpoint</span>
 </h2>
 
-The basic problem to solve is that static sites can't show users dynamic data, such as my constantly changing
+The basic data problem to solve is that static sites can't show users dynamic data, such as my constantly changing
 Spotify listen history or the reading history I maintain in Goodreads. The Jekyll framework builds a fixed set
 of `.html` and `.css` files on push to Github, and nothing updates until I `git push` another change.
 
-What I need is something my static HTML 'About me' page can fire an XMLHTTPRequest request at on load, which will return up-to-date data for rendering. That something should be simple and cheap to run.
+Needed is something a static HTML 'About me' page can fire an XMLHTTPRequest request at on load, returning up-to-date data for rendering by the view. That something should be simple and cheap to run.
 
 A Modal webhook is a serverless endpoint that executes Python code, supporting the excellent FastAPI out-of-the-box.
 My dashboard webhook application does just two things. It accepts a GET request at `/`, and uses a Python function
 called `about_me()` to gather dashboard stats as a `dict` for FastAPI to send back to the client as JSON.
+
+<aside>
+<div class="callout-panel callout-panel-info">
+    <span class="callout-panel-icon callout-panel-info-icon">
+        <span class="" role="img" aria-label="Panel info">
+            <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                <path d="M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-8.5a1 1 0 0 0-1 1V15a1 1 0 0 0 2 0v-2.5a1 1 0 0 0-1-1zm0-1.125a1.375 1.375 0 1 0 0-2.75 1.375 1.375 0 0 0 0 2.75z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+        </span>
+    </span>
+    <div class="ak-editor-panel__content">
+        <p data-renderer-start-pos="97">
+            A <a target="_blank" rel="noopener noreferrer" href="https://workers.cloudflare.com/">Cloudflare Webworker</a> is an alternate option here. Doesn't support Python though.
+        </p>
+    </div>
+</div>
+</aside>
 
 Let's get a bit more into the details.
 
@@ -89,7 +108,7 @@ curl https://thundergolfer-cgflgpx.modal.run/
 {"dummy": "data"}%
 ```
 
-That ain't interactive dashboard stats because all `about_me()` does is return static placeholder data. Soon
+No interactive dashboard stats yet because all `about_me()` does is return static placeholder data. Soon
 I'll show how that function becomes extended to make authenticated requests against Spotify to retrieve top tracks.
 But it's a start!
 
@@ -112,7 +131,7 @@ will disk cache the endpoint's JSON response for 12 hours. Try repeatedly refres
     </span>
     <div class="ak-editor-panel__content">
         <p data-renderer-start-pos="97">
-            Code for the webhook is at <a target="_blank" rel="noopener noreferrer" href="https://github.com/thundergolfer/modal-fun/blob/main/thundergolferdotcom-dash/">github.com/thundergolfer/modal-fun</a>.
+            All code for the webhook is at <a target="_blank" rel="noopener noreferrer" href="https://github.com/thundergolfer/modal-fun/blob/main/thundergolferdotcom-dash/">github.com/thundergolfer/modal-fun</a>.
         </p>
     </div>
 </div>
@@ -121,7 +140,7 @@ will disk cache the endpoint's JSON response for 12 hours. Try repeatedly refres
 
 ## Getting access to Spotify
 
-For the web endpoint to up-to-date Spotify listening info to client's, it needs to authenticate against
+For the web endpoint provide to up-to-date listening stats to client's, it needs to authenticate against
 Spotify's APIs and access my private account data. 
 
 Getting this done will require creating a Spotify developer app, setting a Modal secret, and crudely implementing
@@ -162,6 +181,7 @@ via API.
 ### Doing the OAuth flow to get a refresh_token
 
 ```python
+# main.py
 import base64
 import json
 import os
@@ -214,9 +234,10 @@ if __name__ == "__main__":
     manual_spotify_auth()
 ```
 
+Run this module and follow the URLs and printed instructions.
 We only need to do this step once, so it's fine that it is human-in-the-loop. Notice that the second function
 is a Modal function, with access to the `spotify-aboutme` secret created earlier. This means that when you do
-`python3 main.py` the first function, `manual_spotify_auth()`, will run on your computer and the second will
+`python3 main.py` the first function, `manual_spotify_auth()`, will run on your computer and the second function will
 _run in the cloud_.
 
 We could have had this function run locally and populated our terminal environment with the `SPOTIFY_*` variables, but it's nice to test that our Modal Secret is setup properly.
@@ -224,6 +245,14 @@ We could have had this function run locally and populated our terminal environme
 If you've done things correctly, you should see a `SPOTIFY_REFRESH_TOKEN` in your terminal output. 
 Go to [modal.com/secrets](https://modal.com/secrets) and update the `spotify-aboutme` secret to include this
 new value. 
+
+Now with the Modal Secret having all three `SPOTIFY_` values, you're web endpoint is able to retreive personal listening 
+stats. I won't copy in all the code that does that into the post. Just go to the full source and check out this function:
+
+```python
+def request_spotify_top_tracks(max_tracks=5) -> list[SpotifyTrack]:
+    ...
+```
 
 ## Scraping Goodreads
 
@@ -241,14 +270,28 @@ def request_goodreads_reads(max_books=3) -> list[Book]:
 
 The rest is just classic DOM munging, aided by the Modal Function's `interactive=True` feature which lets you drop into an IPython terminal in the middle of a remotely executing function.
 
+<aside>
+<div class="callout-panel callout-panel-info">
+    <span class="callout-panel-icon callout-panel-info-icon">
+        <span class="" role="img" aria-label="Heads up">👋</span>
+    </span>
+    <div class="ak-editor-panel__content">
+        <p data-renderer-start-pos="97">
+            <strong>Reminder:</strong> All code for the webhook is at <a target="_blank" rel="noopener noreferrer" href="https://github.com/thundergolfer/modal-fun/blob/main/thundergolferdotcom-dash/">github.com/thundergolfer/modal-fun</a>, including the <code>request_goodreads_reads()</code> fn.
+        </p>
+    </div>
+</div>
+</aside>
+
+
 ## A stats-filled `about_me()`
 
-Once I had Modal functions that acquired my Spotify and Goodreads stats, the webhook is almost done.
+Once you have Modal functions that acquire Spotify and Goodreads stats, the webhook is almost done.
 The main thing remaining was to add some caching. I found that the `about_me()` function took 600-1000ms
 to finish, probably because sequential requests to Spotify's API and then Goodreads is slow.
 
 Because my reading and track listening stats are very slow changing, there's no need to keep calculating them.
-We can cache every with a `modal.Dict`:
+We can cache every with a [`modal.Dict`](https://modal.com/docs/reference/modal.Dict):
 
 ```python
 stub = modal.Stub(name="thundergolferdotcom-about-page")
@@ -276,12 +319,12 @@ def about_me():
     return response
 ```
 
-This is how you cache a result for 12 hours using a `modal.Dict`. With this caching in place, end-to-end
+This is how you cache a result for 12 hours using a [`modal.Dict`](https://modal.com/docs/reference/modal.Dict). With this caching in place, end-to-end
 latency on a warm webhook request was about 60ms, rather than 600ms.
 
 ## Add pinch of \<script\> 
 
-That's the JSON web endpoint accounted for, but my static HTML page at [thundergolfer.com/about](https://thundergolfer.com) needs to actually _use it_. I make that happen with a standalone `<script>` in the Markdown page.
+That's the JSON web endpoint accounted for, but the static HTML page at [thundergolfer.com/about](https://thundergolfer.com) needs to actually _use it_. This happens with a standalone `<script>` in the Markdown page.
 
 ```html
 <!-- /about.md -->
@@ -315,17 +358,12 @@ function populateDashboardHTML(data) {
     data.goodreads.slice(0, 3).forEach(book => { ... });
 }
 
-fetch(
-    'https://thundergolfer-cgflgpx.modal.run', {
-        mode: 'cors',
-        'Access-Control-Allowed-Origin': '*',
-        'accept': 'application/json',
-    }
-)
+fetch('https://thundergolfer-cgflgpx.modal.run')
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
+
     return response.json();
   })
   .then((data) => {
