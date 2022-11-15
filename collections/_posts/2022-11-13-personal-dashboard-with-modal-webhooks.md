@@ -337,3 +337,11 @@ The next move for me is Github, but that's a project for another weekend :)
     color: blue;
 }
 </style>
+
+<script>
+var dashLinks = document.querySelectorAll("a[href='/about/#dashboard']");
+dashLinks.forEach((link) => link.addEventListener("mouseover", wakeWebhook));
+async function wakeWebhook(event) {
+    await fetch('https://thundergolfer-cgflgpx.modal.run');
+};
+</script>
