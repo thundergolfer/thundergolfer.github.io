@@ -152,7 +152,7 @@ Done! You now have a properly configured Spotify application and the correct cre
 With the Client ID and Secret you saved just before, populate and execute the following command:
 
 ```bash
-modal secret create spotify-about SPOTIFY_CLIENT_ID="..." SPOTIFY_CLIENT_SECRET="..."
+modal secret create "spotify-about" SPOTIFY_CLIENT_ID="..." SPOTIFY_CLIENT_SECRET="..."
 ```
 
 With that done, we'll be able to run some code to complete an OAuth flow for the Spotify app
@@ -227,19 +227,65 @@ new value.
 
 ## Scraping Goodreads
 
-I avoid this how-to post getting too long, I won't go into detail on this bit of the dashboard.
+In the interest of brevity, I won't go into detail on this bit of the dashboard. I needed a PyPi package, _BeautifulSoup_,
+so I created a `modal.Image` and attached that to the function that scrapes my Goodreads profile:
 
-todo
+```python
+bs4_image = modal.Image.debian_slim().pip_install(["beautifulsoup4"])
+# >--SNIP--<
+@stub.function(image=bs4_image)
+def request_goodreads_reads(max_books=3) -> list[Book]:
+    from bs4 import BeautifulSoup
+    ...
+```
+
+The rest is just classic DOM munging, aided by the Modal Function's `interactive=True` feature which lets you drop into an IPython terminal in the middle of a remotely executing function.
 
 ## A stats-filled `about_me()`
 
-todo
+Once I had Modal functions that acquired my Spotify and Goodreads stats, the webhook is almost done.
+The main thing remaining was to add some caching. I found that the `about_me()` function took 600-1000ms
+to finish, probably because sequential requests to Spotify's API and then Goodreads is slow.
+
+Because my reading and track listening stats are very slow changing, there's no need to keep calculating them.
+We can cache every with a `modal.Dict`:
+
+```python
+stub = modal.Stub(name="thundergolferdotcom-about-page")
+stub.cache = modal.Dict()
+CACHE_TIME_SECS = 60 * 60 * 12
+
+# >--SNIP--<
+
+@stub.function(secret=modal.Secret.from_name("spotify-aboutme"))
+def about_me():
+    from modal import container_app
+    # Cache the retrieved data for 10x faster endpoint performance.
+    now = int(time.time())
+    try:
+        (store_time, response) = container_app.cache["response"]
+        if now - store_time <= CACHE_TIME_SECS:
+            return response
+    except KeyError:
+        pass
+
+    # >--SNIP--<
+    
+    response = dataclasses.asdict(stats)
+    container_app.cache["response"] = (now, response)
+    return response
+```
+
+This is how you cache a result for 12 hours using a `modal.Dict`. With this caching in place, end-to-end
+latency on a warm webhook request was about 60ms, rather than 600ms.
 
 ## Add pinch of \<script\> 
 
 That's the JSON web endpoint accounted for, but my static HTML page at [thundergolfer.com/about](https://thundergolfer.com) needs to actually _use it_. I make that happen with a standalone `<script>` in the Markdown page.
 
 ```html
+<!-- /about.md -->
+
 <div id="stats" class="hidden">
     <div id="recent-finished-books"></div>
     <ol id="top-spotify-tracks"></ol>
