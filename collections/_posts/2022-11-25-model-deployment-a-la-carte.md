@@ -50,7 +50,7 @@ Starting with the absolute basics, you can just not deploy your model. Imagine y
 
 ### Running on a server
 
-![running-as-lib-on-server.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9bb18bd-ae32-44f4-9d8c-5d89a198e758/running-as-lib-on-server.svg)
+![running-as-lib-on-server.svg](/images/model_deployment_a_la_carte/running-as-lib-on-server.svg)
 
 If you’ve got a trained model that can run alongside the rest of your product’s application code in a single runtime, an obvious move is just build the trained model into your application package and ship it to prod.
 
@@ -78,7 +78,7 @@ However, even if you can get your trained model to execute within your applicati
 
 ### Client/edge device
 
-![client-device-ml.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9323c934-8ce8-40e8-a82b-04a2e4cbfb32/client-device-ml.svg)
+![client-device-ml.svg](/images/model_deployment_a_la_carte/client-device-ml.svg)
 
 In this subcategory, the client process is still the same process as the model’s, but the _location_ of that process is different and interesting. The process is running in an end-user’s internet browser, mobile phone, laptop, or on some other non-personal computer tech: a thermostat, weather sensor, or video camera.
 
@@ -106,7 +106,7 @@ todo
 
 ## 2. **Deployed as local subprocess**
 
-![local-subprocess.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dcce04c7-8f09-431e-98f5-c528cd3814e3/local-subprocess.svg)
+![local-subprocess.svg](/images/model_deployment_a_la_carte/local-subprocess.svg)
 
 This is probably not a common deployment pattern, but it is available to you. In this scenario, you don’t want to or cannot run the trained model in the same process as the client. So you do inter-process communication but only local and relatively simple file-based or socket-based communication. The client process and the model process still run within the same machine/VM.
 
@@ -128,11 +128,11 @@ A centralized RPC ‘scoring service’ or ‘inference service’ is a ...
 
 To further complicate things, there are at least two different styles of centralized inference service.
 
-[https://doordash.engineering/2020/06/29/doordashs-new-prediction-service/](https://doordash.engineering/2020/06/29/doordashs-new-prediction-service/)
+[https://doordash.engineering/2020/06/29/doordashs-new-prediction-service/](doordash.engineering/2020/06/29/doordashs-new-prediction-service/)
 
 **Unified**
 
-![inference-service-unified.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2f07ae02-dcd3-4dcf-bdc5-f479298c04cb/inference-service-unified.svg)
+![inference-service-unified.svg](/images/model_deployment_a_la_carte/)
 
 A ‘unified’ inference service is one where the service’s business logic and the models deployed within that service share an instance host. A high-level, the centralized inference service can be horizontally scaled by just stamping out more copies of a single inference service server application. The service architecture would look something like this:
 
@@ -142,7 +142,7 @@ A ‘decomposed’ inference service separates the service’s business logic co
 
 The service architecture would look something like this:
 
-![inference-service-decomposed.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fbf89ea5-827d-45c0-8bc1-e54ce2afc5e5/inference-service-decomposed.svg)
+![inference-service-decomposed.svg](/images/model_deployment_a_la_carte/inference-service-decomposed.svg)
 
 In this structure the inference service’s business logic is fulfilled by what very closely resembles the common _API frontend_ architecture component. This inference service API frontend is responsible for:
 
@@ -158,7 +158,7 @@ The major trade-offs of the centralized service approach are:
 
 ### Service-oriented, encapsulated
 
-![service-oriented-ml-server.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58909813-fcd4-47e7-a9af-d4f936bba1e4/service-oriented-ml-server.svg)
+![service-oriented-ml-server.svg](/images/model_deployment_a_la_carte/service-oriented-ml-server.svg)
 
 A significant aspect of the service-oriented approach to RPC server model deployment is that it likely better respects _Conway’s Law_.
 
@@ -169,7 +169,7 @@ The major trade-offs of this approach are:
 
 ### Managed/vendor API
 
-![ml-vendor.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0d9c7f94-8ec6-4460-a5f0-4e6a6331f916/ml-vendor.svg)
+![ml-vendor.svg](/images/model_deployment_a_la_carte/ml-vendor.svg)
 
 The third and final choice, as I see it, is to pay someone some money to handle servers for you. You pay money to X vendor, and they make your trained model available to you via API, hopefully cheaply and reliably.
 
