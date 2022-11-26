@@ -6,6 +6,8 @@ summary: A survey of ML model deployment system design space.
 categories: machine-learning mlops
 ---
 
+![hero image generated with stable diffusion using the following prompt: a table dinner of robots where robots are dressed like the characters from the midsommar movie, realistic detailed digital art by maxwell boas jessica rossier christian dimitrov anton fadeev trending on artstation cgsociety rendered in unreal engine 4 k hq](/images/model_deployment_a_la_carte/stable-diffusion-hero.png)
+
 What are all the viable ways of deploying a machine learning model?
 In the interest of avoiding system design tunnel vision, I’ve been thinking about this question in recent months.
 To expel the nagging question from my mind, I’ve written this quick overview.
