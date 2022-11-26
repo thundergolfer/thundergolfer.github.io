@@ -229,6 +229,8 @@ The major trade-offs of this approach are:
 
 ### Serverless web endpoints
 
+![serverless-cloud-ml-deployment.svg](/images/model_deployment_a_la_carte/serverless-cloud-ml-deployment.svg)
+
 The best known serverless web endpoint solution is AWS Lambda, and when it launched in 2014 it was a poor
 fit for model deployment. It only supported Node.JS, had a max memory limit of 1GB, and didn't support HTTP.
 Fast-forward to 2022, and AWS Lambda now supports containers and has a memory limit of 10GB, and of
