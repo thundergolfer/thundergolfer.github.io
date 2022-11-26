@@ -60,8 +60,8 @@ ONNX brings neural networks to the JVM by defining a _serialization_ format for 
 ![Doing MLOps with 1 Macbook and a Juptyer Notebook](/images/model_deployment_a_la_carte/notebook-mlops-xkcd.png)
 
 Starting with the absolute basics, you can just not deploy your model.
-Imagine your write some program to produce the model and run inference on it, probably in Python.
-For whatever reason, you and your company doesn’t care enough to do the work to make that model work off your machine, so the model’s inference requests are brought to that one machine.
+Imagine you write some program to produce the model and run inference on it, probably in Python.
+For whatever reason, you and your company don't care enough to do the work to make that model work off your machine, so the model’s inference requests are brought to that one machine.
 If this sounds like a massive tech debt issue, that’s because it is.
 
 ### Running on a server
@@ -71,7 +71,7 @@ If this sounds like a massive tech debt issue, that’s because it is.
 If you’ve got a trained model that can run alongside the rest of your product’s application code in a single runtime,
 an obvious move is just build the trained model into your application package and ship it to prod.
 
-As said above, being able to treat model artefacts as quite like normal first-party library dependencies is
+As said above, being able to treat model artefacts as just like normal first-party library dependencies is
 quite an operational load-off. A lot of problems just don’t exist.
 
 ```python
@@ -92,14 +92,14 @@ def handle_order_creation(req):
     }, 200)
 ```
 
-However, even if you can get your trained model to execute within your application runtime alongside all the rest of your product’s code, you may not want to.
+However, even if you _can_ get your trained model to execute within your application runtime alongside all the rest of your product’s code, you may not want to.
 
 ### Client/edge device
 
 ![client-device-ml.svg](/images/model_deployment_a_la_carte/client-device-ml.svg)
 
 In this subcategory, the client process is still the same process as the model’s, but the _location_ of that process is different and interesting.
-The process is running in an end-user’s internet browser, mobile phone, laptop, or on some other non-personal computer tech: a thermostat, weather sensor, or video camera.
+The process is running in an end-user’s internet browser, mobile phone, laptop, or on some other consumer computer digital device: a thermostat, weather sensor, or video camera.
 
 **Browser**
 
@@ -143,10 +143,11 @@ This setup is probably the most commonly talked about in the ML ecosystem. The �
 TODO describe why you’d want to do RPC style deployment TODO
 
 I see three major choices within this category, each with pretty interesting implications and tradeoffs.
-The first is to have all your models deployed to a centralized and typically platform/infra supported ‘inference service’ or ‘scoring service’.
-The second is to instead ‘colocate’ deployed models as servers responding _only_ to some parent service client;
-the model server is encapsulated by the parent service just as the parent service’s DB is.
-The third option is to serialize your trained model and ship it to some third-party that will run the model for you and expose it via a HTTP API.
+
+- The first is to have all your models deployed to a centralized and typically platform/infra owned ‘inference service’ or ‘scoring service’.
+- The second is to instead co-locate deployed models as servers responding _only_ to some specific parent service client —
+  the model server is encapsulated by the parent service just as the parent service’s DB is encapsulated.
+- The third option is to serialize your trained model and ship it to some third-party that will run the model for you and expose it via a HTTP API.
 
 ### Centralized RPC scoring/inference service
 
@@ -156,15 +157,22 @@ To further complicate things, there are at least two different styles of central
 
 [https://doordash.engineering/2020/06/29/doordashs-new-prediction-service/](doordash.engineering/2020/06/29/doordashs-new-prediction-service/)
 
-**Unified**
+#### **Unified**
 
-![inference-service-unified.svg](/images/model_deployment_a_la_carte/)
-
-A ‘unified’ inference service is one where the service’s business logic and the models deployed within that service share an instance host.
-A high-level, the centralized inference service can be horizontally scaled by just stamping out more copies of a single inference service server application.
+A ‘unified’ inference service is one where the inference service’s business logic (access control, rollbacks, feature retreival) and the models deployed within that service share an instance host.
+This service may internally be known as the 'scoring service' or the 'inference service'.
+At a high-level, the centralized inference service can be horizontally scaled by just stamping out more copies of a single inference service server application.
 The service architecture would look something like this:
 
-**Decomposed**
+![inference-service-unified.svg](/images/model_deployment_a_la_carte/inference-service-unified.svg)
+
+<p>
+<strong style="color: #635bff">Stripe</strong> an example of a company with a unified inference service, which they call 
+<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=HyYpMJNVoVk">Diorama</a>  — because a diorama is a kind of model, get it? 
+<strong style="color: #FF3008">Doordash</strong> is another company following this path. They call their service <a target="_blank" rel="noopener noreferrer" href="https://doordash.engineering/2020/06/29/doordashs-new-prediction-service/">Sibyll</a> (an ancient Greek oracle).
+</p>
+
+#### **Decomposed**
 
 A ‘decomposed’ inference service separates the service’s business logic concerns from the execution of the deployed models it manages.
 Business logic and models run on different kinds of host instances.
@@ -187,6 +195,11 @@ The major trade-offs of the centralized service approach are:
 2. The operational and organization complexity of an organization’s machine learning functionality is mostly borne by one team who owns and runs the centralized service.
    This is a single point of failure, and a communication bottleneck.
 
+<p>
+<strong style="color: #FF4500">Reddit</strong> is a company that deploys their ML like this, and they call the decomposed service the 
+<a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/RedditEng/comments/q14tsw/evolving_reddits_ml_model_deployment_and_serving/">Gazette Inference Service</a>.
+</p>
+
 ### Service-oriented, encapsulated
 
 ![service-oriented-ml-server.svg](/images/model_deployment_a_la_carte/service-oriented-ml-server.svg)
@@ -197,6 +210,10 @@ The major trade-offs of this approach are:
 
 1. foo
 2. bar
+
+<p>
+<strong style="color: #04aeb5">Canva</strong> is a company that deploys their ML models like this.
+</p>
 
 ### Managed/vendor API
 
@@ -209,6 +226,15 @@ The major trade-offs of this approach are:
 
 1. Flexibility.
 2. Cost. You’ll be paying a large premium over the base cloud/datacenter costs of running your own model serving.
+
+### Serverless web endpoints
+
+The best known serverless web endpoint solution is AWS Lambda, and when it launched in 2014 it was a poor
+fit for model deployment. It only supported Node.JS, had a max memory limit of 1GB, and didn't support HTTP.
+Fast-forward to 2022, and AWS Lambda now supports containers and has a memory limit of 10GB, and of
+course supports HTTP — even without the painful API Gateway!
+
+Open-source Function-as-a-Service (FaaS) systems have also been released, such as [Knative](https://knative.dev/docs/).
 
 ## Any more?
 
