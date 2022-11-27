@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "The first 99,999 writes are ‘free’: Or, why lazy StringIO.write() may sprint into a memmove wall"
+title:      "The first 99,999 writes are free: Or, why lazy StringIO.write() may sprint into a memmove wall"
 date:       2022-08-05
 summary:    Debugging a Python StringIO performance oddity for fun and practice. 
 categories: performance profiling
