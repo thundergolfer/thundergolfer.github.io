@@ -18,7 +18,7 @@ Engaging with these three things — a lecture, a podcast, and a website — can
 
 > “The most important thing about your writing _is that it be valuable_, and I would argue that not only have you not learned how to do this, you’ve learned habits that work _against_ your ability to make your writing valuable.”
 
-You people who are so keen to have you read something, or play something, or watch something, that they become annoying? That’s me with this lecture.
+You know people who are so keen to have you read something, or play something, or watch something, that they become annoying? That’s me with this lecture.
 
 The lecture is given Larry McErnerney in the best kind of professory fashion; he’s confident, didactic, dramatic, and passionate. He’s also offering the most exciting kind of lecture: the lecture that tells you everything you’ve been taught is wrong, but I have here this red pill.
 
