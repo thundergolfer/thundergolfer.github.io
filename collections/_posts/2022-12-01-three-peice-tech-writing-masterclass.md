@@ -20,9 +20,9 @@ Engaging with these three things — a lecture, a podcast, and a website — can
 
 You know people who are so keen to have you read something, or play something, or watch something, that they become annoying? That’s me with this lecture.
 
-The lecture is given Larry McErnerney in the best kind of professory fashion; he’s confident, didactic, dramatic, and passionate. He’s also offering the most exciting kind of lecture: the lecture that tells you everything you’ve been taught is wrong, but I have here this red pill.
+The lecture is given by Larry McErnerney in the best kind of professory fashion. He’s confident, didactic, dramatic, and passionate. He’s also offering the most exciting kind of lecture: the lecture that tells you "everything you’ve been taught is wrong, but I have here this red pill…"
 
-Watch this, and then keep rewatching until adherence to its edits are your default setting.
+Watch this, and then keep rewatching until adherence to its edicts is your default setting.
 
 ## A podcast: Writing, Technically _with James Somers_
 
