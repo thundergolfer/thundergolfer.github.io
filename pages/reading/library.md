@@ -30,6 +30,20 @@ All my book reviews are at [/reviews]({{ site.baseurl }}/reviews).
 {% endfor %}
 </section>
 
+<script>
+    const placeholderCoverImg = "/images/placeholder-book-cover.png";
+    Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+        let imgs = Array.from(document.images);
+        for (let i = 0; i < imgs.length; i++) {
+            let current = imgs[i];
+            if (current.width === 16 || current.width === 0) {
+                /* Image failed to be found. Replace with placeholder. */
+                current.src = placeholderCoverImg;
+            }
+        }
+    });
+</script>
+
 <style>
 .grow-me {
   border-radius: 4px;
