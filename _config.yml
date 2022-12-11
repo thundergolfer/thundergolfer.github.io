@@ -1,9 +1,9 @@
 # Site settings
-title:       Jonathon Belotti [thundergolfer]
-author:      Jonathon Belotti
+title: Jonathon Belotti [thundergolfer]
+author: Jonathon Belotti
 description: "No hugs, some learning"
-baseurl:     ""
-url:         "https://thundergolfer.github.io/"
+baseurl: ""
+url: "https://thundergolfer.github.io/"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -16,9 +16,9 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-show_related_posts:   True
-show_post_footers:    True
-show_social_icons:    True
+show_related_posts: True
+show_post_footers: True
+show_social_icons: True
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
@@ -32,22 +32,22 @@ linkedin_username: jonathonbelotti
 
 text:
   pagination:
-    newer: 'Newer'
-    older: 'Older'
+    newer: "Newer"
+    older: "Older"
   post:
-    updated:        'Updated'
-    minute_read:    'minute read'
-    related_posts:  'More to read'
+    updated: "Updated"
+    minute_read: "minute read"
+    related_posts: "More to read"
   index:
-    coming_soon: 'Coming soon...'
-  og_locale: 'en_US'
+    coming_soon: "Coming soon..."
+  og_locale: "en_US"
 
 # Build settings
-markdown:     kramdown
+markdown: kramdown
 redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
-permalink:    pretty
-paginate:     20
+  extensions: ["smart", "tables", "with_toc_data", "footnotes"]
+permalink: pretty
+paginate: 12
 paginate_path: "/blog/:num/"
 sass:
   compressed: true
