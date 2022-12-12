@@ -53,15 +53,66 @@ input[type=submit]:hover {
     /* TODO: This is $blue. Incorporate this style into site's scss. */
     background-color: #0076df;
 }
+
+input[type=submit]:disabled {
+    cursor: not-allowed;
+    /* TODO: This is $blue. Incorporate this style into site's scss. */
+    background-color: #444;
+}
+
+
+.pulse {
+  background-color: #222;
+  animation-name: pulsecolor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulsecolor {
+  0% {
+    background-color: #222;
+  }
+  50% {
+    background-color: #4285f4;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+
+.error {
+    background-color: red !important;
+}
 </style>
 
 <script>
+    const subscribeEndpoint = "https://thundergolfer--thundergolferdotcom-email-subs-web.modal.run/subscribe";
     const form = document.querySelector('#subscribe-cta');
+    const submitButton = form.querySelector('input[type=submit]');
     form.addEventListener('submit', event => {
         event.preventDefault();
         const formData = new FormData(event.target);
         const formProps = Object.fromEntries(formData);
         console.log("Form submitted!");
         console.log(formProps);
-    })
+        submitButton.classList.add("pulse");
+        submitButton.classList.remove("error");
+        submitButton.innerText = "Wait…";
+        fetch(`${subscribeEndpoint}?email=${formProps.useremail}`)
+            .then((response) => {
+                if (!response.ok) {
+                    submitButton.classList.add("error");
+                    submitButton.disabled = false;
+                    submitButton.innerText = "Submit";
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                return response.json();
+            })
+            .then((data) => {
+                submitButton.classList.remove("pulse");
+                submitButton.disabled = true;
+                submitButton.innerText = "Done!";
+            });
+    });
 </script>
