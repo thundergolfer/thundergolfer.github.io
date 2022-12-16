@@ -50,7 +50,8 @@ layout: default
 
 <article class="post-content">{{ content }}</article>
 
-{% if site.show_post_footers %} {% include post_footer.html %} {% endif %}
+{% if site.show_post_footers %} {% include post_footer.html %} {% endif %} {% if
+site.show_subscribe_cta %} {% include subscribe.html %} {% endif %}
 
 <hr />
 
@@ -103,5 +104,4 @@ layout: default
 
 <hr />
 
-{% endif %} {% if site.show_subscribe_cta %} {% include subscribe.html %} {%
-endif %}
+{% endif %}
