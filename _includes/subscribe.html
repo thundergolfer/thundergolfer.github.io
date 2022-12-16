@@ -115,12 +115,32 @@
 
     let $form = document.querySelector(elemSelector);
     const $submitButton = $form.querySelector("input[type=submit]");
+    const errorMessageId = "subscription-signup-error";
+
+    const clearError = () => {
+      $submitButton.classList.remove("error");
+      let errMsg = document.getElementById(errorMessageId);
+      if (errMsg !== null) errMsg.outerHTML = "";
+    };
+
+    const showError = (err) => {
+      $submitButton.classList.add("error");
+      const errorParaStyle =
+        "color: #f70f1c; display: flex; align-items: center; margin-top: 1em;";
+      $form.appendChild(
+        htmlToElement(`
+            <p id="${errorMessageId}" style="${errorParaStyle}">${err}</p>
+        `)
+      );
+    };
 
     const render = () => {
       if (state.loading) {
         $submitButton.classList.add("pulse");
         $submitButton.innerText = "Wait…";
+        clearError();
       } else if (state.success) {
+        clearError();
         $submitButton.classList.remove("pulse");
         $submitButton.innerText = "Done!";
         $submitButton.disabled = true;
@@ -129,17 +149,16 @@
         const successSvgStyle = "height: 20px; padding-right: 4px";
         $form.appendChild(
           htmlToElement(`
-                    <p style="${successStyle}">
+                    <p style="${successParaStyle}">
                         <svg style="${successSvgStyle}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="mr-2 h-4 w-4"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                         Hooray! You're now on the list.
                     </p>
                 `)
         );
       } else if (state.error) {
-        /* Add error box */
         $submitButton.classList.remove("pulse");
-        $submitButton.classList.add("error");
         $submitButton.disabled = false;
+        showError(state.error);
       } else {
         $submitButton.classList.remove("pulse");
         $submitButton.innerText = "Submit";
@@ -171,11 +190,12 @@
         .then((response) => {
           state.loading = false;
           if (!response.ok) {
-            state.error = `HTTP error! Status: ${response.status}`;
+            state.error = `HTTP error! Apologies for the poor service (status: ${response.status}).`;
+            render();
+            throw new Error(state.error);
           } else {
             state.error = null;
           }
-          render();
           return response.json();
         })
         .then((data) => {
