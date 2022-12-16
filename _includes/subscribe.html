@@ -1,0 +1,213 @@
+<section id="subscribe-cta">
+  <h3>Want to get blog posts over email?</h3>
+  <p>Enter your email address and get notified when there's a new post!</p>
+  <form>
+    <input
+      type="email"
+      id="useremail"
+      name="useremail"
+      placeholder="helmholtzwatson@gmail.com"
+    /><br />
+    <input type="submit" text="Subscribe" />
+  </form>
+</section>
+
+<style>
+  #subscribe-cta {
+    background-color: #f7f7f9;
+    border-radius: 1rem;
+    padding: 1.5em;
+    margin-top: 2.5em;
+  }
+
+  h3 {
+    margin-top: 0.5em;
+  }
+
+  p {
+    color: #444;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  input[type="email"] {
+    border-style: none;
+    font-size: 1em;
+    border-radius: 0.5rem;
+    min-width: 5rem;
+    width: 90%;
+    margin-right: 1rem;
+  }
+
+  input[type="submit"] {
+    background-color: black;
+    border-radius: 0.5rem;
+    border-style: none;
+    color: white;
+    padding: 0.4rem;
+    font-size: 1em;
+  }
+
+  input[type="submit"]:hover {
+    cursor: pointer;
+    /* TODO: This is $blue. Incorporate this style into site's scss. */
+    background-color: #0076df;
+  }
+
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    /* TODO: This is $blue. Incorporate this style into site's scss. */
+    background-color: #444;
+  }
+
+  .pulse {
+    background-color: #222;
+    animation-name: pulsecolor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes pulsecolor {
+    0% {
+      background-color: #222;
+    }
+    50% {
+      background-color: #4285f4;
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+
+  .error {
+    background-color: red !important;
+  }
+</style>
+
+<script>
+  /**
+   * @param {String} HTML representing a single element
+   * @return {Element}
+   */
+  const htmlToElement = (html) => {
+    var template = document.createElement("template");
+    /* Never return a text node of whitespace as the result */
+    html = html.trim();
+    template.innerHTML = html;
+    return template.content.firstChild;
+  };
+
+  let subscriptionSignupForm = (
+    elemSelector,
+    subscriptionCreateEndpoint,
+    wakeEndpoint
+  ) => {
+    let state = {
+      loading: true,
+      woke: false,
+      success: false,
+    };
+
+    let $form = document.querySelector(elemSelector);
+    const $submitButton = $form.querySelector("input[type=submit]");
+    const errorMessageId = "subscription-signup-error";
+
+    const clearError = () => {
+      $submitButton.classList.remove("error");
+      let errMsg = document.getElementById(errorMessageId);
+      if (errMsg !== null) errMsg.outerHTML = "";
+    };
+
+    const showError = (err) => {
+      $submitButton.classList.add("error");
+      const errorParaStyle =
+        "color: #f70f1c; display: flex; align-items: center; margin-top: 1em;";
+      $form.appendChild(
+        htmlToElement(`
+            <p id="${errorMessageId}" style="${errorParaStyle}">${err}</p>
+        `)
+      );
+    };
+
+    const render = () => {
+      if (state.loading) {
+        $submitButton.classList.add("pulse");
+        $submitButton.innerText = "Wait…";
+        clearError();
+      } else if (state.success) {
+        clearError();
+        $submitButton.classList.remove("pulse");
+        $submitButton.innerText = "Done!";
+        $submitButton.disabled = true;
+        const successParaStyle =
+          "color: rgb(21 128 61); display: flex; align-items: center; margin-top: 1em;";
+        const successSvgStyle = "height: 20px; padding-right: 4px";
+        $form.appendChild(
+          htmlToElement(`
+                    <p style="${successParaStyle}">
+                        <svg style="${successSvgStyle}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="mr-2 h-4 w-4"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Hooray! You're now on the list.
+                    </p>
+                `)
+        );
+      } else if (state.error) {
+        $submitButton.classList.remove("pulse");
+        $submitButton.disabled = false;
+        showError(state.error);
+      } else {
+        $submitButton.classList.remove("pulse");
+        $submitButton.innerText = "Submit";
+      }
+    };
+
+    $form.addEventListener("mouseover", (event) => {
+      if (state.woke) return;
+
+      state.woke = true;
+      fetch(wakeEndpoint).then((response) => {
+        if (!response.ok) {
+          console.log("Failed to wake serverless endpoint.");
+        }
+      });
+    });
+
+    $form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      const formProps = Object.fromEntries(formData);
+      console.log("Form submitted!");
+      console.log(formProps);
+      state.loading = true;
+
+      render();
+
+      fetch(`${subscriptionCreateEndpoint}?email=${formProps.useremail}`)
+        .then((response) => {
+          state.loading = false;
+          if (!response.ok) {
+            state.error = `HTTP error! Apologies for the poor service (status: ${response.status}).`;
+            render();
+            throw new Error(state.error);
+          } else {
+            state.error = null;
+          }
+          return response.json();
+        })
+        .then((data) => {
+          state.success = true;
+          render();
+        });
+    });
+  };
+
+  const endpointRootURL =
+    "https://thundergolfer--thundergolferdotcom-email-subs-web.modal.run";
+  const subscribeEndpoint = `${endpointRootURL}/subscribe`;
+  const wakeEndpoint = `${endpointRootURL}/wake`;
+  subscriptionSignupForm("#subscribe-cta", subscribeEndpoint, wakeEndpoint);
+</script>
