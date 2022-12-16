@@ -3,119 +3,105 @@ layout: default
 ---
 
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
-{% if minutes == 0 %}
-{% assign minutes = 1 %}
-{% endif %}
+{% if minutes == 0 %} {% assign minutes = 1 %} {% endif %}
 
 <style>
-p a
-{
-  color: black !important;
-  text-decoration: none;
-  border-bottom: .0625em solid #dcf3ff;
-  box-shadow: 0 -.4em 0 #dcf3ff inset;
-}
+  p a {
+    color: black !important;
+    text-decoration: none;
+    border-bottom: 0.0625em solid #dcf3ff;
+    box-shadow: 0 -0.4em 0 #dcf3ff inset;
+  }
 
-p a:hover, p a:active, p a:focus {
-  border-color: #aedbf9;
-  box-shadow: 0 -.75em 0 #aedbf9 inset;
-}
+  p a:hover,
+  p a:active,
+  p a:focus {
+    border-color: #aedbf9;
+    box-shadow: 0 -0.75em 0 #aedbf9 inset;
+  }
 
-p .reversefootnote {
-  border: none;
-  box-shadow: none;
-}
+  p .reversefootnote {
+    border: none;
+    box-shadow: none;
+  }
 
-p .reversefootnote:hover, p .reversefootnote:active, p .reversefootnote:focus {
-  border-color: none;
-  box-shadow: none;
-}
-
+  p .reversefootnote:hover,
+  p .reversefootnote:active,
+  p .reversefootnote:focus {
+    border-color: none;
+    box-shadow: none;
+  }
 </style>
 
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
+  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br />
   {% if page.update_date %}
-    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
+  <span class="post-meta"
+    >{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format
+    }}</span
+  ><br />
   {% endif %}
   <span class="post-meta small">
-  {% if page.minutes %}
-    {{ page.minutes }} {{ site.text.post.minute_read }}
-  {% else %}
-    {{ minutes }} {{ site.text.post.minute_read }}
-  {% endif %}
+    {% if page.minutes %} {{ page.minutes }} {{ site.text.post.minute_read }} {%
+    else %} {{ minutes }} {{ site.text.post.minute_read }} {% endif %}
   </span>
 </div>
 
-<article class="post-content">
-  {{ content }}
-</article>
+<article class="post-content">{{ content }}</article>
 
-{% if site.show_post_footers %}
-  {% include post_footer.html %}
-{% endif %}
+{% if site.show_post_footers %} {% include post_footer.html %} {% endif %}
 
-<hr>
+<hr />
 
 {% if site.show_related_posts %}
-  <div class="relatedPosts">
+<div class="relatedPosts">
+  <h2>{{ site.text.post.related_posts }}</h2>
 
-    <h2>{{ site.text.post.related_posts }}</h2>
-
-    {% assign maxRelated = 4 %}
-    {% assign minCommonTags =  1 %}
-    {% assign maxRelatedCounter = 0 %}
-
-    {% for post in site.posts %}
-
-      {% assign sameTagCount = 0 %}
-      {% assign commonTags = '' %}
-
-      {% for category in post.categories %}
-        {% if post.url != page.url %}
-          {% if page.categories contains category %}
-            {% assign sameTagCount = sameTagCount | plus: 1 %}
-            {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-            {% assign commonTags = commonTags | append: tagmarkup %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% if sameTagCount >= minCommonTags %}
-        <div>
-          <h4>
-            <a class="dark-gray" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <span class="post-meta" style="display: inline-block">({{ post.date | date: site.date_format }})</span>
-          </h4>
-        </div>
-        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-        {% if maxRelatedCounter >= maxRelated %}
-          {% break %}
-        {% endif %}
-      {% endif %}
-
-    {% endfor %}
-
-    {% if maxRelatedCounter == 0 %}
-        {% if page.next.url %}
-        <div>
-          <h4>
-            <a class="dark-gray" href="{{page.next.url}}">{{page.next.title}}</a>
-            <span class="post-meta" style="display: inline-block">({{ page.next.date | date: site.date_format }})</span>
-          </h4>
-        </div>
-        {% endif %}
-        {% if page.previous.url %}
-          <div>
-            <h4>
-              <a class="dark-gray" href="{{page.previous.url}}">{{page.previous.title}}</a>
-              <span class="post-meta" style="display: inline-block">({{ page.previous.date | date: site.date_format }})</span>
-            </h4>
-          </div>
-        {% endif %}
-    {% endif %}
-
+  {% assign maxRelated = 4 %} {% assign minCommonTags = 1 %} {% assign
+  maxRelatedCounter = 0 %} {% for post in site.posts %} {% assign sameTagCount =
+  0 %} {% assign commonTags = '' %} {% for category in post.categories %} {% if
+  post.url != page.url %} {% if page.categories contains category %} {% assign
+  sameTagCount = sameTagCount | plus: 1 %} {% capture tagmarkup %}
+  <span class="label label-default">{{ category }}</span> {% endcapture %} {%
+  assign commonTags = commonTags | append: tagmarkup %} {% endif %} {% endif %}
+  {% endfor %} {% if sameTagCount >= minCommonTags %}
+  <div>
+    <h4>
+      <a class="dark-gray" href="{{ site.baseurl }}{{ post.url }}"
+        >{{ post.title }}</a
+      >
+      <span class="post-meta" style="display: inline-block"
+        >({{ post.date | date: site.date_format }})</span
+      >
+    </h4>
   </div>
+  {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %} {% if
+  maxRelatedCounter >= maxRelated %} {% break %} {% endif %} {% endif %} {%
+  endfor %} {% if maxRelatedCounter == 0 %} {% if page.next.url %}
+  <div>
+    <h4>
+      <a class="dark-gray" href="{{page.next.url}}">{{page.next.title}}</a>
+      <span class="post-meta" style="display: inline-block"
+        >({{ page.next.date | date: site.date_format }})</span
+      >
+    </h4>
+  </div>
+  {% endif %} {% if page.previous.url %}
+  <div>
+    <h4>
+      <a class="dark-gray" href="{{page.previous.url}}"
+        >{{page.previous.title}}</a
+      >
+      <span class="post-meta" style="display: inline-block"
+        >({{ page.previous.date | date: site.date_format }})</span
+      >
+    </h4>
+  </div>
+  {% endif %} {% endif %}
+</div>
 
-{% endif %}
+<hr />
+
+{% endif %} {% if site.show_subscribe_cta %} {% include subscribe.html %} {%
+endif %}
