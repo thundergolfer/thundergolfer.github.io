@@ -109,7 +109,8 @@ TITLE_TO_ISBN = {
     "Do Androids Dream of Electric Sheep?": "9780575094185",
     "Tender Is the Night": "9780684801544",
     "Between the World and Me": "9780812993547",
-
+    "No One Is Talking About This": "9780593332542",
+    "God Bless You, Mr. Rosewater": "9780440129295",
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.
