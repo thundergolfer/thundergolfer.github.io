@@ -1,5 +1,85 @@
 [
     {
+        "title": "The Martian",
+        "author": "Andy Weir",
+        "rating": "\u2605",
+        "isbn": "0804139024",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "The Black Swan: The Impact of the Highly Improbable",
+        "author": "Nassim Nicholas Taleb",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Mother Night",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0385334141",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Treasure Island",
+        "author": "Robert Louis Stevenson",
+        "rating": "\u2605\u2605",
+        "isbn": "0753453800",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Capitalist Realism: Is There No Alternative?",
+        "author": "Mark Fisher",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1846943175",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets",
+        "author": "Nassim Nicholas Taleb",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0812975219",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Working in Public: The Making and Maintenance of Open Source Software",
+        "author": "Nadia Eghbal",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0578675862",
+        "review_path": "working-in-public-the-making-and-maintenance-of-open-source-software-nadia-eghbal/",
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Ways of Seeing",
+        "author": "John Berger",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0140135154",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "God Bless You, Mr. Rosewater",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9780440129295",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
+        "title": "Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0330426648",
+        "review_path": null,
+        "year_i_finished_reading": "2022"
+    },
+    {
         "title": "China in Ten Words",
         "author": "Yu Hua",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -53,15 +133,15 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0142000655",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "No One Is Talking About This",
         "author": "Patricia Lockwood",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0593189582",
+        "isbn": "9780593332542",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "When We Cease to Understand the World",
@@ -69,7 +149,7 @@
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9781681375663",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "The Goal: A Process of Ongoing Improvement",
@@ -77,7 +157,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0884271781",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "Operating Systems: Three Easy Pieces",
@@ -93,7 +173,7 @@
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "013034074X",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "The Rust Programming Language",
@@ -101,7 +181,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9781593278281",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "The Design of Everyday Things",
@@ -117,7 +197,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "1839760257",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "The Candy House",
