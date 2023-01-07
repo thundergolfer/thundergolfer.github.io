@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A 3-piece <em>Masterclass</em> on technical writing
-date: 2022-12-01
+date: 2023-01-07
 summary: And this info-tainment doesn't even cost $30 a month.
 categories: technical-writing
 ---
