@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Create an email newsletter from an RSS feed with Modal"
-date: 2022-12-10
+date: 2023-01-07
 summary: I built an automated email newsletter feature for my blog. Learn how to set it up for yourself.
 categories: modal newsletter email
 ---
@@ -75,11 +75,23 @@ fields into a [Modal Secret](https://modal.com/docs/reference/modal.Secret) call
 
 Done! The Modal application will use this populated `gmail`
 
+### Put your Google Cloud app 'in production'
+
+![ensure the Google Cloud app is 'in production'](/images/email-subs-with-modal/in-production.png)
+
+This last step is quick and _very important_. If you don't do it, your unexpiring `refresh_token` will actually expire in 7 days.
+Go to the _OAuth Consent Screen_ tab and under "Publishing Status" change your app from being in "testing" mode to being "in production".
+
+Now, Google will then say your app needs verification, but you can ignore this. What matters is that a production app's refresh tokens
+will not expire and so the Modal email subscribers app won't break after seven days.
+
+For background on this crucial step, check out [this StackOverflow answer](https://stackoverflow.com/a/65936387/4885590).
+
 ## 2. Modal app setup
 
 While I would prefer to inline all the code for this solution into the blog post, it would be too much, so I will
 just provide a summary of its structure. The code is heavily documented so as to be beginner friendly, and shouldn't
-require modification besides changing some configuration values according to the commented instructions.
+require modification besides changing some configuration values according to the commented instructions within.
 
 ### App structure
 
@@ -181,8 +193,8 @@ is accept a (valid) email address and pass that to the web endpoint's `/subscrib
 
 If you're a frontend afficianado you might be want write this functionality yourself into your website, maybe in React, Vue.js, or Svelte.
 
-As this website is boring old Jekyll, the web component and I wrote and provide in the source code is a rudimentary
-HTML and vanilla Javascript component, with CSS style. The file is called `subscribe.html`. You should be able to just copy paste this into your site, just update the endpoint URL and maybe tweak the CSS a bit 👍.
+As this website is boring old Jekyll, the web component I wrote and provide in the source code is a rudimentary
+HTML and vanilla Javascript component, with CSS style. The file is called `subscribe.html`. You should be able to just copy paste this into your site; just update the endpoint URL and maybe tweak the CSS a bit 👍.
 
 ## Testing, and launch
 
@@ -190,6 +202,11 @@ HTML and vanilla Javascript component, with CSS style. The file is called `subsc
 
 I released the functionality on my site recently and now have four, count em, four (4) subscribers! Gmail's SREs feel trouble in the air
 whenever I push a new blog post.
+
+Here's what the last sent email looked like. I published a new post on my website around 5PM on the day, and an hour or so later than cronjob ran and delivered
+this email to each subscriber.
+
+![example sent email](/images/email-subs-with-modal/example-sent-email.png)
 
 If you set this up and need a first subscriber to test things, hit me up on Twitter or Reddit and I'll
 be happy to be a testcase!
