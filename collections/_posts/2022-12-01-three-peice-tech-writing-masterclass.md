@@ -10,7 +10,7 @@ categories: technical-writing
 
 The title of this is a dig at the ‘get smart quick’ scheme peddled by [Masterclass.com](http://Masterclass.com), but the post itself exists to share the three best pieces of technical writing infotainment that I know. I’ve recommended this stuff to many, many software engineers in the past two years, in 1on1s and during the design docs onboarding session that I used to run at [Canva](https://www.canva.com/).
 
-Engaging with these three things — a lecture, a podcast, and a website — can create a spark of new perspective on what writing is for and how you can better use it in your work. They won’t make you a good technical writer, for that you merely need hundreds of hours of practice, but they should grab you the shoulders and twist you to face the path that leads to better writing and happier readers.
+Engaging with these three things — a lecture, a podcast, and a website — can create a spark of new perspective on what writing is for and how you can better use it in your work. They won’t make you a good technical writer, for that you merely need hundreds of hours of practice, but they should grab you by the shoulders and push you down a path to better writing and happier readers.
 
 ## A lecture: Writing beyond the academy, _University of Chicago Writing Program_
 
@@ -32,9 +32,9 @@ This episode is from the _Signals and Threads_ podcast, possibly the best softwa
 
 James Somers is an uncommonly strong combo of writer and programmer. His day job is at Jane Street, and in his spare time he contributes articles to [_The New Yorker_ (and The Atlantic)](https://jsomers.net/).
 
-The host, Jane Street CTO Ron Minsky, brings his typical depth of knowledge and care to the topic, and so the two combine to provide the best discussion of writing in the software industry I think you’ll find. Writing used to seem like a chore to me, but conversations like this have moved me to start seeing writing as just as enjoyable and worthy as typing out programs in code.
+The host, Jane Street CTO Ron Minsky, brings his typical depth of knowledge and care to the topic, and so the two combine to provide the best discussion of writing in the software industry that I think you’ll find. Writing used to seem like a chore to me, but conversations like this have moved me to start seeing writing as just as enjoyable and worthy as typing out programs in code.
 
-Highlights of this include the discussion of ‘self-documenting’ code, the notion of **\***genre**\*** in technical writing, and the episode’s coda, which one mans success using prose to categorize the scale of wind.
+Highlights of this include the discussion of ‘self-documenting’ code, the notion of _genre_ in technical writing, and the episode’s coda, which shares one man's success using prose to categorize the scale of wind.
 
 ## A website: The Documentation System
 
@@ -46,7 +46,7 @@ This third piece of the puzzle is likely familiar to you: Divio and their 4-type
 
 To me the core lesson of this framework is that each technical document you write exists to solve a practical problem of a particular reader. As is appropriately hammered home by Larry in the lecture, your writing must be _valuable_, and solving the problems of others is exactly that.
 
-Documents which aren’t written with an eye on this framework hurt the writer and the reader. For the writer, the selection of a document type narrows you in while creating and makes review and edit more straightforward. For the reader, documentation which breaks down into familiar types is much easier to navigate and digest. As a simple example, the experienced React core contributor is not looking for tutorials, and the web newbie is not initially looking for references.
+Documents which aren’t written with an eye on this framework hurt the writer and the reader. For the writer, the selection of a document type narrows you in while creating and makes review and edit more straightforward. For the reader, documentation which breaks down into familiar types is much easier to navigate and digest. As a simple example, the experienced React core contributor is not looking for React tutorials, and the web newbie is not initially looking for React's API references.
 
 ## That’s it
 
