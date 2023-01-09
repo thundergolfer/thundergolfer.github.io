@@ -180,7 +180,7 @@ HTML emails using the `email_copy.py` module, and sends them to subscribers.
     </span>
     <div class="ak-editor-panel__content">
         <p data-renderer-start-pos="97">
-            <strong>Reminder:</strong> All code for the app is at <a target="_blank" rel="noopener noreferrer" href="https://github.com/thundergolfer/modal-fun/blob/main/thundergolferdotcom-dash/">github.com/thundergolfer/modal-fun</a>.
+            <strong>Reminder:</strong> All code for the app is at <a target="_blank" rel="noopener noreferrer" href="https://github.com/thundergolfer/modal-fun/blob/main/thundergolferdotcom-email-subs/">github.com/thundergolfer/modal-fun</a>.
         </p>
     </div>
 </div>
