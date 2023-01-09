@@ -1,13 +1,9 @@
-/*
-  Table styles copied from Bootstrap
-  Copyright (c) 2013 Twitter, Inc
-*/
-
 table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1.5;
-  font-size: 1.125rem;
+  margin-bottom: 0.6rem;
+  border-spacing: 0;
+
   // Cells
   > thead,
   > tbody,
@@ -18,28 +14,9 @@ table {
         padding: 12px;
         line-height: 1.2;
         vertical-align: top;
-        border-top: 1px solid #111;
+        border: 1px solid #dddddd;
+        text-align: left;
       }
     }
-  }
-  // Bottom align for column headings
-  > thead > tr > th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #111;
-  }
-  // Remove top border from thead by default
-  > caption + thead,
-  > colgroup + thead,
-  > thead:first-child {
-    > tr:first-child {
-      > th,
-      > td {
-        border-top: 0;
-      }
-    }
-  }
-  // Account for multiple tbody instances
-  > tbody + tbody {
-    border-top: 2px solid #111;
   }
 }
