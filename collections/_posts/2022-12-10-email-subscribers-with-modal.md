@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Create an email newsletter from an RSS feed with Modal"
-date: 2023-01-07
+date: 2023-01-09
 summary: I built an automated email newsletter feature for my blog. Learn how to set it up for yourself.
 categories: modal newsletter email
 ---
