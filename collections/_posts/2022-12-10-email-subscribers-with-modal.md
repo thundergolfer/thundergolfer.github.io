@@ -73,7 +73,8 @@ fields into a [Modal Secret](https://modal.com/docs/reference/modal.Secret) call
 | `client_secret` | `GMAIL_AUTH_CLIENT_SECRET` |
 | `refresh_token` | `GMAIL_AUTH_REFRESH_TOKEN` |
 
-Done! The Modal application will use this populated `gmail`
+Done! The Modal application will use this populated `gmail` secret to
+authenticate with the GMail API.
 
 ### Put your Google Cloud app 'in production'
 
