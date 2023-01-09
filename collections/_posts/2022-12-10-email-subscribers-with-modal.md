@@ -203,7 +203,7 @@ HTML and vanilla Javascript component, with CSS style. The file is called `subsc
 I released the functionality on my site recently and now have four, count em, four (4) subscribers! Gmail's SREs feel trouble in the air
 whenever I push a new blog post.
 
-Here's what the last sent email looked like. I published a new post on my website around 5PM on the day, and an hour or so later than cronjob ran and delivered
+Here's what the last sent email looked like. I published a new post on my website around 5PM on the day, and an hour or so later the Modal cronjob ran and delivered
 this email to each subscriber.
 
 ![example sent email](/images/email-subs-with-modal/example-sent-email.png)
