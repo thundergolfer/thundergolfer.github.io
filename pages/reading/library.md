@@ -36,7 +36,7 @@ All my book reviews are at [/reviews]({{ site.baseurl }}/reviews).
         let imgs = Array.from(document.images);
         for (let i = 0; i < imgs.length; i++) {
             let current = imgs[i];
-            if (current.width === 16 || current.width === 0) {
+            if (current.width < 20) {
                 /* Image failed to be found. Replace with placeholder. */
                 current.src = placeholderCoverImg;
             }
