@@ -35,3 +35,46 @@ Following the the lead of the original book, here’s an attempt at a list of es
 As with the original list, “knowing” something implies familiarity but not expertise.
 
 The original list was also made collaboratively, and so is this one! The culture always moves, thinking left-to-right, at the right we have what’s slipping out of view and at the left is what is entering the core but remains fringe. You can indicate `left` when you find something to be ‘too left’, that is, exiting our culture into the past. Indicate `right` for the opposite, when something is ‘too right’, or too new.
+
+### ¶ The list
+
+<div class="flex-container">
+    <div class="flex-left">
+        <p>+1</p>
+        <p>1969</p>
+        <p>1984 (advertisement)</p>
+        <p>2001, January 1st</p>
+        <p>2007, June 29</p>
+        <p>10x programmer</p>
+        <p>9 women can't produce a baby in 1 month</p>
+        <p>abstract data type</p>
+        <p>abstraction</p>
+    </div>
+    <div class="flex-right">
+        <p>mulitasking</p>
+        <p>mutex</p>
+        <p>MVP</p>
+        <p>Netscape</p>
+        <p>network</p>
+        <p>nits</p>
+        <p>No modes</p>
+        <p>No silver bullet</p>
+        <p>No one ever got fired for buying IBM</p>
+    </div>
+</div>
+
+<style>
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container div {
+    margin-right: 2.5em;
+    width: 100%;
+}
+
+.flex-container div p {
+    margin-bottom: 0.1em;
+}
+</style>
