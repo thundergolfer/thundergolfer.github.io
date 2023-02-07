@@ -20,7 +20,7 @@ But I have found that I’m on Kay’s side; there’s just so much back there, 
 
 , and of course, people—a lot of people takingacid and soldering tools of enlightment, Turing award winners sitting in alone in college offices writing tomes all come to love and never read; Turing, who you’ll know made an eponymous machine and an AI test and was gay, but that’s not enough to know; couples spending nights at the Microsoft office, one at a keyboard one in a cot beside; people still _right_ _here_, in old file systems billions still use commenting things like "Error, skip block and hope for the best.”
 
-Advancing cultural literacy is not revanchist. It does not want a rvtvrn to the old days when the term “software” sounded funny and it’s not a homework assignment. Let’s even concede that no one really **\***needs**\*** to know this stuff. But we should want to, because it’s just more fun, and with the knowledge we’ll do better work together. So—
+Advancing cultural literacy is not revanchist. It does not want a rvtvrn to the old days when the term “software” sounded funny and it’s not a homework assignment. Let’s even concede that no one really _needs_ to know this stuff. But we should want to, because it’s just more fun, and with the knowledge we’ll do better work together. So—
 
 [lest a whole new generation of programmers](http://www.catb.org/jargon/html/story-of-mel.html)
 
