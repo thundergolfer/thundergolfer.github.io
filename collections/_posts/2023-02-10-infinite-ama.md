@@ -40,13 +40,15 @@ tailwind.config = {
         const extraMsgClassNames = message.isChatBot ? "bg-zinc-100 text-zinc-900" : "";
         const extraIconClassNames = message.isChatBot ? "" : "";
         return (
-            <div className={"flex flex-row p-2 mt-2 mb-2 mr-2 items-center"}>
+            <div className="flex flex-row p-2 mt-2 mb-2 mr-2 items-center">
                 <span className={`rounded-md p-1 h-8 w-8 items-center ${extraIconClassNames}`}>{icon}</span>
                 <span className={`rounded-lg ml-4 p-2 border border-zinc-300 w-full ${extraMsgClassNames}`}>{message.text}</span>
             </div>
         );
     };
     const App = () => {
+        const [error, setError] = React.useState("");
+        const [loading, setLoading] = React.useState(false);
         const [textInput, setTextInput] = React.useState("");
         const [messages, setMessages] = React.useState([
             {
@@ -60,6 +62,27 @@ tailwind.config = {
                 isChatBot: true,
             }
         ]);
+        React.useEffect(() => {
+            if (messages.length === 0) return;
+            setLoading(true);
+            async function updateStatus() {
+                const userMessage = messages[messages.length-1];
+                console.log(`User's message is '${userMessage.text}'`);
+                const resp = await fetch(`/api/idontexist`);
+                if (!resp.ok) {
+                    setError(resp.status + " Failed to get answer from backend.");
+                } else {
+                    const body = await resp.json();
+                    if (body.error) {
+                        setError(body.error);
+                    } else {
+                        addMessage("Fake chatbot response. Hello world, goodbye world, do I pass the test and all that", true);
+                    }
+                }
+                setLoading(false);
+            }
+            updateStatus();
+        }, [messages]);
         const addMessage = (text, isChatBot) => {
             setMessages((prevMsgs) => [...prevMsgs, { text, isChatBot }]);
         };
@@ -75,12 +98,11 @@ tailwind.config = {
             event.preventDefault();
             addMessage(textInput, false);
             console.log("TODO: Need to call chatbot!");
-            addMessage("Fake chatbot response. Hello world, goodbye world, do I pass the test and all that", true);
             setTextInput("");
         };
         return (
             <div>
-                <div className="grid grid-cols-3 gap-4 text-md mt-4">
+                <div className="grid grid-cols-3 gap-4 text-md mt-8">
                     <div className="flex items-center justify-center ">
                     <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
                         <span className="m-4 font-medium">Examples</span>
@@ -128,6 +150,21 @@ tailwind.config = {
                     <Message message={message} index={index} />
                 ))}
                 </section>
+                {error ?
+                    <div class="flex flex-row p-2 mt-2 mb-2 mr-2 items-center" role="alert">
+                        <span className="rounded-md p-1 h-8 w-8 items-center">
+                            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b91c1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                        </span>
+                        <div className="bg-red-100 border text-red-700 border-red-400 w-full ml-4 p-2 rounded-md relative">
+                            <strong class="font-bold">Error:</strong>
+                            <span class="block sm:inline">{error}</span>
+                            <button class="absolute top-0 bottom-0 right-0 m-2" onClick={() => setError("")}>
+                                <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    : undefined
+                }
                 <div>
                     <form className="mt-12 mb-20 min-w-full rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)]">
                         <div className="min-w-full flex items-center py-2">
