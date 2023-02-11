@@ -114,13 +114,13 @@ tailwind.config = {
                         <span className="m-4">Trained to decline inappropriate requests</span>
                     </div>
                     <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">May occasionally generate incorrect information</span>
+                        <span className="m-4">May faithfully reproduce my mistakes, or unfaithfully represent my true thoughts.</span>
                     </div>
                     <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">May occasionally produce harmful instructions or biased content</span>
+                        <span className="m-4">Constrained by OpenAI's lame but understandble corporate-friendly answer filtering.</span>
                     </div>
                     <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">Limited knowledge of world and events after 2021</span>
+                        <span className="m-4">Trained on one man's knowledge and writing. I can't answer everything.</span>
                     </div>
                 </div>
                 <section id="#messages" className="mt-6">
