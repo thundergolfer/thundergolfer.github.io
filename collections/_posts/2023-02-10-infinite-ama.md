@@ -27,8 +27,8 @@ tailwind.config = {
     <div id="wrap"></div>
 </section>
 
-<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
-<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+<script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
 <script type="text/babel">
     const App = () => {
