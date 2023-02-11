@@ -67,17 +67,32 @@ tailwind.config = {
             setLoading(true);
             async function updateStatus() {
                 const userMessage = messages[messages.length-1];
+                const requestBody = {
+                    text: userMessage.text,
+                };
                 console.log(`User's message is '${userMessage.text}'`);
-                const resp = await fetch(`/api/idontexist`);
-                if (!resp.ok) {
-                    setError(resp.status + " Failed to get answer from backend.");
-                } else {
-                    const body = await resp.json();
-                    if (body.error) {
-                        setError(body.error);
+                try {
+                    const resp = await fetch("https://thundergolfer--idontexistyet.modal.run", {
+                        method: "POST",
+                        mode: 'no-cors',
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(requestBody)
+                    });
+                    if (!resp.ok) {
+                        setError(`HTTP error '${resp.status}'. Failed to get answer from API backend. Please try again.`);
                     } else {
-                        addMessage("Fake chatbot response. Hello world, goodbye world, do I pass the test and all that", true);
+                        const body = await resp.json();
+                        if (body.error) {
+                            setError(body.error);
+                        } else {
+                            addMessage("Fake chatbot response. Hello world, goodbye world, do I pass the test and all that", true);
+                        }
                     }
+                } catch (error) {
+                    const errMsg = error ? String(error) : "";
+                    setError(error + " Failed to get answer from API backend. Please try again.");
                 }
                 setLoading(false);
             }
@@ -97,7 +112,6 @@ tailwind.config = {
         const handleSubmit = async (event) => {
             event.preventDefault();
             addMessage(textInput, false);
-            console.log("TODO: Need to call chatbot!");
             setTextInput("");
         };
         return (
@@ -150,6 +164,17 @@ tailwind.config = {
                     <Message message={message} index={index} />
                 ))}
                 </section>
+                {loading ?
+                    <div class="flex flex-row p-2 mt-2 mb-2 mr-2 items-center" role="alert">
+                        <span className="rounded-md p-1 h-8 w-8 items-center">
+                            <svg className="h-6 w-6 animate-spin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+                        </span>
+                        <div className="bg-blue-100 border text-blue-700 border-blue-400 w-full ml-4 p-2 rounded-md relative">
+                            <strong class="font-bold">Jonathon's bot is typing...</strong>
+                        </div>
+                    </div>
+                    : undefined
+                }
                 {error ?
                     <div class="flex flex-row p-2 mt-2 mb-2 mr-2 items-center" role="alert">
                         <span className="rounded-md p-1 h-8 w-8 items-center">
