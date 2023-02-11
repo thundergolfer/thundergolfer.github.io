@@ -30,9 +30,44 @@ tailwind.config = {
 <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+<!-- NOTE: This JS code has no linebreaks between definitions because linebreaks confuse my IDE's syntax highlighting. -->
 <script type="text/babel">
+    const Message = ({ message, index }) => {
+        const icon = (message.isChatBot ? 
+            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9aee86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+            : <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        );
+        const extraMsgClassNames = message.isChatBot ? "bg-zinc-100 text-zinc-900" : "";
+        const extraIconClassNames = message.isChatBot ? "" : "";
+        return (
+            <div className={"flex flex-row p-2 m-2 items-center"}>
+                <span className={`rounded-md p-1 h-8 w-8 items-center ${extraIconClassNames}`}>{icon}</span>
+                <span className={`rounded-lg ml-4 p-2 border border-zinc-300 w-full ${extraMsgClassNames}`}>{message.text}</span>
+            </div>
+        );
+    };
     const App = () => {
-        const message = "Jono here!!";
+        const [messages, setMessages] = React.useState([
+            {
+                text: "This is a sample question message. What's the meaning of life?",
+                isDone: false,
+                isChatBot: false,
+            },
+            {
+                text: "I've been told it's 42, but that's a stupid answer, if you're asking me. Instead, I'd say that the meaning of life is what you make it, or increasingly, what other people make it for you.",
+                isDone: false,
+                isChatBot: true,
+            }
+        ]);
+        const addMessage = (text, isChatBot) => {
+            const newMsgs = [...msgs, { text, isChatBot }];
+            setMessages(newMsgs);
+        };
+        const markDone = index => {
+            const newMessages = [...messages];
+            newMessages[index].isDone = true;
+            setMessages(newMessages);
+        };
         return (
             <div>
                 <div className="grid grid-cols-3 gap-4 text-md mt-4">
@@ -78,8 +113,13 @@ tailwind.config = {
                         <span className="m-4">Limited knowledge of world and events after 2021</span>
                     </div>
                 </div>
+                <section id="#messages" className="mt-6">
+                {messages.map((message, index) => (
+                    <Message message={message} index={index} />
+                ))}
+                </section>
                 <div>
-                    <form className="mt-12 min-w-full rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)]">
+                    <form className="mt-12 mb-20 min-w-full rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)]">
                         <div className="min-w-full flex items-center py-2">
                             <input className="appearance-none bg-transparent border-none w-full text-gray-700 ml-2 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Jane Doe" aria-label="Full name"></input>
                             <button className="flex-shrink-0 bg-stone-900 border-stone-900 hover:bg-blue-600 hover:border-blue-600 text-sm border-4 text-white py-1 px-2 rounded mr-2" type="button">
