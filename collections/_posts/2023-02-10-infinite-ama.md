@@ -40,13 +40,14 @@ tailwind.config = {
         const extraMsgClassNames = message.isChatBot ? "bg-zinc-100 text-zinc-900" : "";
         const extraIconClassNames = message.isChatBot ? "" : "";
         return (
-            <div className={"flex flex-row p-2 m-2 items-center"}>
+            <div className={"flex flex-row p-2 mt-2 mb-2 mr-2 items-center"}>
                 <span className={`rounded-md p-1 h-8 w-8 items-center ${extraIconClassNames}`}>{icon}</span>
                 <span className={`rounded-lg ml-4 p-2 border border-zinc-300 w-full ${extraMsgClassNames}`}>{message.text}</span>
             </div>
         );
     };
     const App = () => {
+        const [textInput, setTextInput] = React.useState("");
         const [messages, setMessages] = React.useState([
             {
                 text: "This is a sample question message. What's the meaning of life?",
@@ -60,13 +61,22 @@ tailwind.config = {
             }
         ]);
         const addMessage = (text, isChatBot) => {
-            const newMsgs = [...msgs, { text, isChatBot }];
-            setMessages(newMsgs);
+            setMessages((prevMsgs) => [...prevMsgs, { text, isChatBot }]);
         };
         const markDone = index => {
             const newMessages = [...messages];
             newMessages[index].isDone = true;
             setMessages(newMessages);
+        };
+        const onChange = (event) => {
+            setTextInput(event.target.value);
+        };
+        const handleSubmit = async (event) => {
+            event.preventDefault();
+            addMessage(textInput, false);
+            console.log("TODO: Need to call chatbot!");
+            addMessage("Fake chatbot response. Hello world, goodbye world, do I pass the test and all that", true);
+            setTextInput("");
         };
         return (
             <div>
@@ -121,8 +131,8 @@ tailwind.config = {
                 <div>
                     <form className="mt-12 mb-20 min-w-full rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)]">
                         <div className="min-w-full flex items-center py-2">
-                            <input className="appearance-none bg-transparent border-none w-full text-gray-700 ml-2 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Jane Doe" aria-label="Full name"></input>
-                            <button className="flex-shrink-0 bg-stone-900 border-stone-900 hover:bg-blue-600 hover:border-blue-600 text-sm border-4 text-white py-1 px-2 rounded mr-2" type="button">
+                            <input className="appearance-none bg-transparent border-none w-full text-gray-700 ml-2 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Ask me anything, anytime" aria-label="Full name" value={textInput} onChange={onChange}></input>
+                            <button className="flex-shrink-0 bg-stone-900 border-stone-900 hover:bg-blue-600 hover:border-blue-600 text-sm border-4 text-white py-1 px-2 rounded mr-2" type="button" onClick={handleSubmit}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                             </button>
                         </div>
