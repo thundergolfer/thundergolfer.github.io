@@ -64,17 +64,18 @@ tailwind.config = {
         ]);
         React.useEffect(() => {
             if (messages.length === 0) return;
+            const lastMessage = messages[messages.length-1];
+            if (lastMessage.isChatBot) return;
+            const userMessage = lastMessage;
             setLoading(true);
-            async function updateStatus() {
-                const userMessage = messages[messages.length-1];
+            async function updateStatus(userMessage) {
                 const requestBody = {
                     text: userMessage.text,
                 };
                 console.log(`User's message is '${userMessage.text}'`);
                 try {
-                    const resp = await fetch("https://thundergolfer--idontexistyet.modal.run", {
+                    const resp = await fetch("https://thundergolfer--infinite-ama.modal.run", {
                         method: "POST",
-                        mode: 'no-cors',
                         headers: {
                             "Content-Type": "application/json"
                         },
@@ -96,7 +97,7 @@ tailwind.config = {
                 }
                 setLoading(false);
             }
-            updateStatus();
+            updateStatus(userMessage);
         }, [messages]);
         const addMessage = (text, isChatBot) => {
             setMessages((prevMsgs) => [...prevMsgs, { text, isChatBot }]);
