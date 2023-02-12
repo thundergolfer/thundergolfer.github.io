@@ -238,9 +238,50 @@ kbd{
         setSuggestionsBtnState();
     };
 
+    apiRoot = "https://thundergolfer--comp-lit-stats-web.modal.run";
+    addSuggestionsEndpoint = `${apiRoot}/add`;
     function onSubmitSuggestions() {
-        console.log(`Submitted ${itemToState.size} suggestions`);
-        $submitSuggestionsBtn.innerText = `📨 Submitted ${itemToState.size} suggestions. Thanks!`;
+        console.log(`Submitting ${itemToState.size} suggestions`);
+        let requestBody = {
+            left: [],
+            right: [],
+            trash: [],
+        };
+        for (let [key, value] of itemToState) {
+            switch (value) {
+                case ITEM_STATE.LEFT:
+                    requestBody.left.push(key);
+                    break;
+                case ITEM_STATE.RIGHT:
+                    requestBody.right.push(key);
+                    break;
+                case ITEM_STATE.TRASH:
+                    requestBody.trash.push(key);
+                    break;
+                default:
+                    console.log(`Unknown state for key '${key}' ${value}`);
+            }
+        }
+        $submitSuggestionsBtn.innerText = `⏳ Submitting ${itemToState.size} suggestions...`;
+        try {
+            fetch(addSuggestionsEndpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(requestBody),
+            }).then((response) => {
+                if (!response.ok) {
+                    $submitSuggestionsBtn.innerText = `❌ Failed to submit ${itemToState.size} suggestions. Please try again!`;
+                } else {
+                    $submitSuggestionsBtn.innerText = `📨 Submitted ${itemToState.size} suggestions. Thanks!`;
+                    /* TODO: Disable button. */
+                }
+            });
+        } catch (error) {
+            $submitSuggestionsBtn.innerText = `❌ Failed to submit ${itemToState.size} suggestions. Please try again!`;
+        }
+
     }
 
     document.addEventListener("keydown", function(e) {
