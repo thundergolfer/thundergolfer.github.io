@@ -126,13 +126,13 @@ tailwind.config = {
                             </div>
                         </div>
                         <div className="grid grid-rows-3 grid-flow-col gap-4 text-sm">
-                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200 cursor-pointer" onClick={() => setTextInput("Explain quantum computing in simple terms")}>
                                 <span className="m-4">"Explain quantum computing in simple terms" →</span>
                             </div>
-                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
-                                <span className="m-4">"Got any creative ideas for a 10 year olds birthday?" →</span>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200 cursor-pointer" onClick={() => setTextInput("Got any creative ideas for a 10 years old's birthday?")}>
+                                <span className="m-4">"Got any creative ideas for a 10 year old's birthday?" →</span>
                             </div>
-                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200 cursor-pointer" onClick={() => setTextInput("How do I build this AMA app in Modal?")}>
                                 <span className="m-4">"How do I build this AMA app in Modal?" →</span>
                             </div>
                             <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
