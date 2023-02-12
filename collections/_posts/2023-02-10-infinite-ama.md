@@ -50,18 +50,7 @@ tailwind.config = {
         const [error, setError] = React.useState("");
         const [loading, setLoading] = React.useState(false);
         const [textInput, setTextInput] = React.useState("");
-        const [messages, setMessages] = React.useState([
-            {
-                text: "This is a sample question message. What's the meaning of life?",
-                isDone: false,
-                isChatBot: false,
-            },
-            {
-                text: "I've been told it's 42, but that's a stupid answer, if you're asking me. Instead, I'd say that the meaning of life is what you make it, or increasingly, what other people make it for you.",
-                isDone: false,
-                isChatBot: true,
-            }
-        ]);
+        const [messages, setMessages] = React.useState([]);
         React.useEffect(() => {
             if (messages.length === 0) return;
             const lastMessage = messages[messages.length-1];
@@ -120,49 +109,53 @@ tailwind.config = {
         };
         return (
             <div>
-                <div className="grid grid-cols-3 gap-4 text-md mt-8">
-                    <div className="flex items-center justify-center ">
-                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
-                        <span className="m-4 font-medium">Examples</span>
-                    </div>
-                    <div className="flex items-center justify-center">
-                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
-                        <span className="m-4 font-medium">Capabilities</span>
-                    </div>
-                    <div className="flex items-center justify-center ">
-                        <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="11.4" y1="17" x2="12.60" y2="17"></line></svg>
-                        <span className="m-4 font-medium">Limitations</span>
-                    </div>
-                </div>
-                <div className="grid grid-rows-3 grid-flow-col gap-4 text-sm">
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
-                        <span className="m-4">"Explain quantum computing in simple terms" →</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
-                        <span className="m-4">"Got any creative ideas for a 10 year olds birthday?" →</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
-                        <span className="m-4">"How do I build this AMA app in Modal?" →</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">Remembers what user said earlier in the conversation</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">Allows user to provide follow-up corrections</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">Trained to decline inappropriate requests</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">May faithfully reproduce my mistakes, or unfaithfully represent my true thoughts.</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">Constrained by OpenAI's lame but understandble corporate-friendly answer filtering.</span>
-                    </div>
-                    <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                        <span className="m-4">Trained on one man's knowledge and writing. I can't answer everything.</span>
-                    </div>
-                </div>
+                {messages.length === 0 ?
+                    <section id="intro">
+                        <div className="grid grid-cols-3 gap-4 text-md mt-8">
+                            <div className="flex items-center justify-center ">
+                            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                                <span className="m-4 font-medium">Examples</span>
+                            </div>
+                            <div className="flex items-center justify-center">
+                            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+                                <span className="m-4 font-medium">Capabilities</span>
+                            </div>
+                            <div className="flex items-center justify-center ">
+                                <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="11.4" y1="17" x2="12.60" y2="17"></line></svg>
+                                <span className="m-4 font-medium">Limitations</span>
+                            </div>
+                        </div>
+                        <div className="grid grid-rows-3 grid-flow-col gap-4 text-sm">
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
+                                <span className="m-4">"Explain quantum computing in simple terms" →</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
+                                <span className="m-4">"Got any creative ideas for a 10 year olds birthday?" →</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md hover:bg-zinc-200">
+                                <span className="m-4">"How do I build this AMA app in Modal?" →</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
+                                <span className="m-4">Remembers what user said earlier in the conversation</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
+                                <span className="m-4">Allows user to provide follow-up corrections</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
+                                <span className="m-4">Trained to decline inappropriate requests</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
+                                <span className="m-4">May faithfully reproduce my mistakes, or unfaithfully represent my true thoughts.</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
+                                <span className="m-4">Constrained by OpenAI's lame but understandble corporate-friendly answer filtering.</span>
+                            </div>
+                            <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
+                                <span className="m-4">Trained on one man's knowledge and writing. I can't answer everything.</span>
+                            </div>
+                        </div>
+                    </section>
+                : undefined }
                 <section id="#messages" className="mt-6">
                 {messages.map((message, index) => (
                     <Message message={message} index={index} />
