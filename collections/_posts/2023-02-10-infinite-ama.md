@@ -136,13 +136,13 @@ tailwind.config = {
                                 <span className="m-4">"How do I build this AMA app in Modal?" →</span>
                             </div>
                             <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                                <span className="m-4">Remembers what user said earlier in the conversation</span>
+                                <span className="m-4">Remembers what user said earlier in the conversation.</span>
                             </div>
                             <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                                <span className="m-4">Allows user to provide follow-up corrections</span>
+                                <span className="m-4">Allows user to provide follow-up corrections.</span>
                             </div>
                             <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
-                                <span className="m-4">Trained to decline inappropriate requests</span>
+                                <span className="m-4">Trained to decline inappropriate requests.</span>
                             </div>
                             <div className="h-20 flex items-center  bg-zinc-100 rounded-md">
                                 <span className="m-4">May faithfully reproduce my mistakes, or unfaithfully represent my true thoughts.</span>
