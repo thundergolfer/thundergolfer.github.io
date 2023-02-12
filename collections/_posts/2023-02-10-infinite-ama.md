@@ -2,7 +2,7 @@
 layout: page
 title: Infinite AMA
 date: 2023-02-10
-summary: A ChatGPT that answers questions just like me
+summary: A ChatGPT that answers questions just like me.
 categories: chatbot llm
 permalink: infinite-ama
 ---
