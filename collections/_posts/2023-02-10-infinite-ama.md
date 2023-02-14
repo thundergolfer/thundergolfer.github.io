@@ -46,12 +46,21 @@ tailwind.config = {
             </div>
         );
     };
+    const toChatHistory = (messages) => {
+        /* The first is always from the human user */
+        return messages.reduce(function(result, value, index, array) {
+            if (index % 2 === 0 && (index + 1) < array.length) {
+                result.push([array[index].text, array[index+1].text]);
+            }
+            return result;
+        }, []);
+    };
     const App = () => {
         const [error, setError] = React.useState("");
         const [loading, setLoading] = React.useState(false);
         const [textInput, setTextInput] = React.useState("");
         const [messages, setMessages] = React.useState([]);
-        const prod = false;
+        const prod = true;
         const apiEndpoint = prod ? "https://thundergolfer--infinite-ama.modal.run" : "https://thundergolfer--infinite-ama-dev.modal.run";
         React.useEffect(() => {
             if (messages.length === 0) return;
@@ -62,6 +71,7 @@ tailwind.config = {
             async function updateStatus(userMessage) {
                 const requestBody = {
                     text: userMessage.text,
+                    history: toChatHistory(messages),
                 };
                 console.log(`User's message is '${userMessage.text}'`);
                 try {
