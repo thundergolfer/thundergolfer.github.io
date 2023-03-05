@@ -30,6 +30,7 @@ tailwind.config = {
 <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <!-- NOTE: This JS code has no linebreaks between definitions because linebreaks confuse my IDE's syntax highlighting. -->
 <script type="text/babel">
     const Message = ({ message, index }) => {
@@ -39,10 +40,15 @@ tailwind.config = {
         );
         const extraMsgClassNames = message.isChatBot ? "bg-zinc-100 text-zinc-900" : "";
         const extraIconClassNames = message.isChatBot ? "" : "";
+        let formattedMessage = message.text;
+        if (message.isChatBot) {
+            const markup = { __html: marked.parse(message.text) };
+            formattedMessage = <div dangerouslySetInnerHTML={markup} />
+        }
         return (
             <div className="flex flex-row p-2 mt-2 mb-2 mr-2 items-center">
                 <span className={`rounded-md p-1 h-8 w-8 items-center ${extraIconClassNames}`}>{icon}</span>
-                <span className={`rounded-lg ml-4 p-2 border border-zinc-300 w-full ${extraMsgClassNames}`}>{message.text}</span>
+                <span className={`rounded-lg ml-4 p-2 border border-zinc-300 w-full ${extraMsgClassNames}`}>{formattedMessage}</span>
             </div>
         );
     };
@@ -73,7 +79,6 @@ tailwind.config = {
                     text: userMessage.text,
                     history: toChatHistory(messages),
                 };
-                console.log(`User's message is '${userMessage.text}'`);
                 try {
                     const resp = await fetch(apiEndpoint, {
                         method: "POST",
