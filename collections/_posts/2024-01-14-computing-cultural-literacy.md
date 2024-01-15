@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Computing Cultural Literacy
-date: 2023-02-03
-summary: What every programmer needs to know
+date: 2024-01-14
+summary: What every programmer needs to know.
 categories: software culture
 ---
 
@@ -17,7 +17,7 @@ Cultural literacy is an idea taken directly from E. D. Hirsch Junior’s 1987 bo
 Pop culture may, as Alan says, have a disdain for the past, but coders don’t shout a proud, rebuffing “we ain’t got no history”. Programmers tend to approach questions of providence and prior art as not so much unimportant but unnecessary. If you come across people in the street tearing money out of a clear blue sky, ask them where it came from. You’ll feel as a software historian may do, interrupting a party and asking if not for answers at least for someone to please take some notes.
 
 But I have found that I’m on Kay’s side. There is just so much back there, in the past. There’s radio-controlled torpedoes, Usenet, computers in their own room, booms and busts, brb and ttyl, lessons, less than 640K of RAM, and only 140 characters.
-And of course, people—a lot of people taking acid and soldering tools of enlightment, tall Turing award winners sitting alone in college offices writing tomes all come to love and never read; Turing, who you’ll know made an eponymous machine and an AI test and was gay, but that’s not enough to know; couples spending nights at the Microsoft office, one at a keyboard, one in a cot beside; people still _right_ _here_, in old file systems billions still use commenting things like "Error, skip block and hope for the best.”
+And of course, people—a lot of people taking acid and soldering tools of enlightment; Turing award winners sitting alone in college offices writing tomes all come to love and never read; Turing, who you’ll know made an eponymous machine and an AI test and was gay, but that’s not enough to know; couples spending nights at the Microsoft office, one at a keyboard, one in a cot beside; people still _right_ _here_, in old file systems used by billions, commenting things like "Error, skip block and hope for the best.”
 
 Advancing cultural literacy is not revanchist. It does not want a rvtvrn to the old days when the term “software” sounded funny, and it’s not a homework assignment. Let’s even concede that no one really _needs_ to know this stuff. But we should want to, because it’s just more fun, and with the knowledge we’ll do better work together. So…
 
@@ -29,11 +29,11 @@ Advancing cultural literacy is not revanchist. It does not want a rvtvrn to the 
 
 ## … 400 essential names, dates, and concepts
 
-Following the the lead of Hirsch Junior’s original book, here’s an attempt at a list of essential names, phrases, dates, and concepts in the computing and software community. E. D. Hirsch Junior’s list was an absurd 5,000 items; here I bother with only 400.
+Following the lead of Hirsch Junior’s original book, here’s an attempt at a list of essential names, phrases, dates, and concepts in the computing and software community. E. D. Hirsch Junior’s list was an absurd 5,000 items; here I bother with only 400.
 
 As with the original list, “knowing” something implies familiarity but not expertise.
 
-The original list was also made collaboratively, and so is this one! The culture always moves, thinking left-to-right, at the right we have what’s slipping out of view and at the left is what is entering the core but remains fringe. You can indicate `left` when you find something to be ‘too left’, that is, exiting our culture into the past. Indicate `right` for the opposite, when something is ‘too right’, or too new. You can also just trash an item.
+The original list was also made collaboratively, and so is this one! Our culture always moves. Thinking left-to-right, at the left we have what’s slipping out of view and at the right is what is entering the core but remains fringe. You can indicate `left` when you find something to be ‘too left’, that is, exiting our culture into the past. Indicate `right` for the opposite, when something is ‘too right’, or too new. You can also just trash an item.
 <!-- Undo with <kbd>⌘</kbd>+<kbd>z</kbd>, and submit suggestions with the button at the bottom. -->
 
 ### ¶ The list
