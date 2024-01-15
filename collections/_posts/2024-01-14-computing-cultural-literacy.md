@@ -6,6 +6,8 @@ summary: What every programmer needs to know.
 categories: software culture
 ---
 
+![Picture of PDP-1 from my recent visit to the Computer History Museum in Mountain View, California](/images/computing_cultural_lit/pdp-1-palo-alto-min.png)
+
 > Computing is pop culture. [...] Pop culture holds a disdain for history. Pop culture is all about identity and feeling like you're participating, It has nothing to do with cooperation, the past or the future—it's living in the present. I think the same is true of most people who write code for money. They have no idea where [their culture came from]. - Alan Kay
 
 > We have ignored cultural literacy in thinking about education. We ignore the air we breathe until it is thin or foul. Cultural literacy is the oxygen of social intercourse. - E. D. Hirsch Jr
