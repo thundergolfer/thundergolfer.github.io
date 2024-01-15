@@ -175,7 +175,7 @@ kbd{
                 ${items[i]}
                 <span>
                     <button class="button" onclick="onLeft(this)">←</button>
-                    <button class="button" onclick="onTrash(this)">🗑️</button>
+                    <button class="button" onclick="onMiddle(this)">🗑️</button>
                     <button class="button" onclick="onRight(this)">→</button>
                 </span>
             </p>
@@ -210,9 +210,13 @@ kbd{
         console.log(elem.parentNode.parentNode);
         /* WARN: coupled to HTML structure. */
         let itemText = elem.parentNode.parentNode.firstChild.textContent.trim();
-        itemToState.set(itemText, ITEM_STATE.LEFT);
-        elem.parentNode.parentNode.classList.add("faded");
-        console.log(itemToState);
+        if (itemToState.has(itemText)) {
+            itemToState.delete(itemText);
+            elem.parentNode.parentNode.classList.remove("faded");
+        } else {
+            itemToState.set(itemText, ITEM_STATE.LEFT);
+            elem.parentNode.parentNode.classList.add("faded");
+        }
         setSuggestionsBtnState();
     };
 
@@ -221,20 +225,28 @@ kbd{
         console.log(elem.parentNode.parentNode);
         /* WARN: coupled to HTML structure. */
         let itemText = elem.parentNode.parentNode.firstChild.textContent.trim();
-        itemToState.set(itemText, ITEM_STATE.RIGHT);
-        elem.parentNode.parentNode.classList.add("faded");
-        console.log(itemToState);
+        if (itemToState.has(itemText)) {
+            itemToState.delete(itemText);
+            elem.parentNode.parentNode.classList.remove("faded");
+        } else {
+            itemToState.set(itemText, ITEM_STATE.RIGHT);
+            elem.parentNode.parentNode.classList.add("faded");
+        }
         setSuggestionsBtnState();
     };
 
-    function onTrash(elem) {
-        console.log("clicked TRASH");
+    function onMiddle(elem) {
+        console.log("clicked MIDDLE");
         console.log(elem.parentNode.parentNode);
         /* WARN: coupled to HTML structure. */
         let itemText = elem.parentNode.parentNode.firstChild.textContent.trim();
-        itemToState.set(itemText, ITEM_STATE.TRASH);
-        elem.parentNode.parentNode.classList.add("faded");
-        console.log(itemToState);
+        if (itemToState.has(itemText)) {
+            itemToState.delete(itemText);
+            elem.parentNode.parentNode.classList.remove("faded");
+        } else {
+            itemToState.set(itemText, ITEM_STATE.TRASH);
+            elem.parentNode.parentNode.classList.add("faded");
+        }
         setSuggestionsBtnState();
     };
 
