@@ -2,7 +2,7 @@
 layout: post
 title: The Wonderful LLMs
 date: 2024-01-14
-summary: Praise for Chat-GPT after one year of use.
+summary: Praise for ChatGPT after one year of use.
 categories: software culture llms ai
 ---
 
