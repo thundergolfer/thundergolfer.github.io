@@ -26,7 +26,7 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
 
 <!-- Quiz -->
 <div class="quiz-container">
-    <div class="score-container">
+    <div class="score-container" id="score-container">
         <strong>Score:</strong> <span id="score">0</span>/<span id="answered">0</span><br>
         <strong>Unanswered:</strong> <span id="unanswered">0</span>
     </div>
@@ -64,7 +64,7 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
             options.forEach(option => {
                 const button = document.createElement('button');
                 button.textContent = option;
-                button.onclick = () => checkAnswer(button, question.answer);
+                button.onclick = () => checkAnswer(button, question.answer, question.estimated_n, questionDiv);
                 optionsDiv.appendChild(button);
             });
             questionDiv.appendChild(optionsDiv);
@@ -72,7 +72,7 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
         });
         document.getElementById('unanswered').textContent = unanswered;
     }
-    function checkAnswer(button, correctAnswer) {
+    function checkAnswer(button, correctAnswer, exactAnswer, questionDiv) {
         const allButtons = button.parentElement.children;
         for (let btn of allButtons) {
             btn.disabled = true;
@@ -91,6 +91,23 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
         document.getElementById('score').textContent = score;
         document.getElementById('answered').textContent = answered;
         document.getElementById('unanswered').textContent = unanswered;
+        /* Show exact answer now that user has submitted their guess */ 
+        const exactAnswerText = document.createElement('p');
+        exactAnswerText.className = 'exact-answer';
+        exactAnswerText.innerHTML = `<strong>Answer:</strong> ${exactAnswer.toLocaleString()}`;
+        questionDiv.appendChild(exactAnswerText);
+        updateScoreColor();
+    }
+    /* 
+    Give user feedback on their performance by coloring the score box according to % of
+    correct guesses.
+    */
+    function updateScoreColor() {
+        const scoreElement = document.getElementById('score-container');
+        const percentage = score / answered;
+        const green = Math.floor(percentage * 200);
+        const red = Math.floor((1 - percentage) * 200);
+        scoreElement.style.color = `rgb(${red}, ${green}, 50)`;
     }
     createQuiz();
     hljs.highlightAll();
@@ -147,5 +164,9 @@ program performance.
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         font-size: 18px;
+    }
+    .exact-answer {
+        margin-top: 10px;
+        color: #333;
     }
 </style>
