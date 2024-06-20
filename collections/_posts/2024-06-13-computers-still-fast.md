@@ -25,6 +25,10 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
 
 <!-- Quiz -->
 <div class="quiz-container">
+    <div id="language-selector">
+        <div id="btn-rust" class="toggle-button" onclick="handleButtonClick('rust')"><strong>Rust</strong></div>
+        <div id="btn-python" class="toggle-button" onclick="handleButtonClick('python')"><strong>Python</strong></div>
+    </div>
     <div class="score-container" id="score-container">
         <strong>Score:</strong> <span id="score">0</span>/<span id="answered">0</span><br>
         <strong>Unanswered:</strong> <span id="unanswered">0</span>
@@ -36,13 +40,27 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
 <script>
-    const questions = [{"name": "bench_dict_mutation", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 10000000, "answer_duration_ms": 998.5780334100127, "estimated_n": 29654986, "bench_source": "d = {}\nmax_entries = 1000\nfor i in range(n):\n    d[i % max_entries] = i", "bench_doc": "Number to guess: How many entries can we add to a dictionary in a second?", "hints": []}, {"name": "bench_loop", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 100000000, "answer_duration_ms": 999.0589584223926, "estimated_n": 111447253, "bench_source": "for _ in range(n):\n    pass", "bench_doc": "Number to guess: How many iterations of an empty loop can we go through in a second?\n\nHints:\n- todo", "hints": ["A CPU can execute around a few billion instructions per second."]}, {"name": "bench_parse_http_request", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 10000, "answer_duration_ms": 1016.977958381176, "estimated_n": 81029, "bench_source": "class HTTPRequest(BaseHTTPRequestHandler):\n    def __init__(self, request_text):\n        self.rfile = BytesIO(request_text)\n        self.raw_requestline = self.rfile.readline()\n        self.error_code = self.error_message = None\n        self.parse_request()\n\n    def send_error(self, code, message):\n        self.error_code = code\n        self.error_message = message\n\nrequest_text = b\"\"\"GET / HTTP/1.1\nHost: localhost:8001\nConnection: keep-alive\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nUpgrade-Insecure-Requests: 1\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36\nAccept-Encoding: gzip, deflate, sdch\nAccept-Language: en-GB,en-US;q=0.8,en;q=0.6\n\"\"\"\nfor _ in range(n):\n    _ = HTTPRequest(request_text)", "bench_doc": "Number to guess: How many HTTP GET requests can we parse in a second?", "hints": []}, {"name": "bench_run_python", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 10, "answer_duration_ms": 939.4294084049761, "estimated_n": 82, "bench_source": "for _ in range(n):\n    subprocess.run(\"python3 -c ''\", shell=True, check=True)", "bench_doc": "Number to guess: How many times can we start the Python interpreter in a second?", "hints": ["This is much less than 100 million :)"]}, {"name": "bench_write_to_disk", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 1000000000, "answer_duration_ms": 1080.6438165716827, "estimated_n": 3862626348, "bench_source": "def cleanup(f, name):\n    f.flush()\n    os.fsync(f.fileno())\n    f.close()\n    try:\n        os.remove(name)\n    except OSError:\n        pass\n\nchunk_size = 1_000_000  # 1 megabyte\ndata_chunk = b\"a\" * chunk_size\nname = \"/tmp/bench-write-to-disk\"\nbytes_written = 0\nwith open(name, 'wb') as f:\n    while bytes_written < n:\n        written = f.write(data_chunk)\n        bytes_written += chunk_size\n        assert written == chunk_size, \"incomplete disk write\"\n    cleanup(f, name)", "bench_doc": "Number to guess: How many bytes can we write to an output file in a second?", "hints": ["we make sure everything is sync'd to disk before exiting"]}, {"name": "bench_write_to_memory", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 1000000000, "answer_duration_ms": 1060.419808421284, "estimated_n": 10281010020, "bench_source": "chunk_size = 1_000_000  # 1 megabyte\ndata_chunk = \"a\" * chunk_size\noutput = StringIO()\nbytes_written = 0\nwhile bytes_written < n:\n    _ = output.write(data_chunk)\n    bytes_written += chunk_size\noutput.getvalue()", "bench_doc": "Number to guess: How many bytes can we write to a string in memory in a second?", "hints": []}];
+    const pyQuestions = [{"name": "bench_dict_mutation", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 10000000, "answer_duration_ms": 998.5780334100127, "estimated_n": 29654986, "bench_source": "d = {}\nmax_entries = 1000\nfor i in range(n):\n    d[i % max_entries] = i", "bench_doc": "Number to guess: How many entries can we add to a dictionary in a second?", "hints": []}, {"name": "bench_loop", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 100000000, "answer_duration_ms": 999.0589584223926, "estimated_n": 111447253, "bench_source": "for _ in range(n):\n    pass", "bench_doc": "Number to guess: How many iterations of an empty loop can we go through in a second?\n\nHints:\n- todo", "hints": ["A CPU can execute around a few billion instructions per second."]}, {"name": "bench_parse_http_request", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 10000, "answer_duration_ms": 1016.977958381176, "estimated_n": 81029, "bench_source": "class HTTPRequest(BaseHTTPRequestHandler):\n    def __init__(self, request_text):\n        self.rfile = BytesIO(request_text)\n        self.raw_requestline = self.rfile.readline()\n        self.error_code = self.error_message = None\n        self.parse_request()\n\n    def send_error(self, code, message):\n        self.error_code = code\n        self.error_message = message\n\nrequest_text = b\"\"\"GET / HTTP/1.1\nHost: localhost:8001\nConnection: keep-alive\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nUpgrade-Insecure-Requests: 1\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36\nAccept-Encoding: gzip, deflate, sdch\nAccept-Language: en-GB,en-US;q=0.8,en;q=0.6\n\"\"\"\nfor _ in range(n):\n    _ = HTTPRequest(request_text)", "bench_doc": "Number to guess: How many HTTP GET requests can we parse in a second?", "hints": []}, {"name": "bench_run_python", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 10, "answer_duration_ms": 939.4294084049761, "estimated_n": 82, "bench_source": "for _ in range(n):\n    subprocess.run(\"python3 -c ''\", shell=True, check=True)", "bench_doc": "Number to guess: How many times can we start the Python interpreter in a second?", "hints": ["This is much less than 100 million :)"]}, {"name": "bench_write_to_disk", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 1000000000, "answer_duration_ms": 1080.6438165716827, "estimated_n": 3862626348, "bench_source": "def cleanup(f, name):\n    f.flush()\n    os.fsync(f.fileno())\n    f.close()\n    try:\n        os.remove(name)\n    except OSError:\n        pass\n\nchunk_size = 1_000_000  # 1 megabyte\ndata_chunk = b\"a\" * chunk_size\nname = \"/tmp/bench-write-to-disk\"\nbytes_written = 0\nwith open(name, 'wb') as f:\n    while bytes_written < n:\n        written = f.write(data_chunk)\n        bytes_written += chunk_size\n        assert written == chunk_size, \"incomplete disk write\"\n    cleanup(f, name)", "bench_doc": "Number to guess: How many bytes can we write to an output file in a second?", "hints": ["we make sure everything is sync'd to disk before exiting"]}, {"name": "bench_write_to_memory", "platform": "macOS-13.4-arm64-arm-64bit", "py_version": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]", "py_version_trio": "3.11.7", "answer": 1000000000, "answer_duration_ms": 1060.419808421284, "estimated_n": 10281010020, "bench_source": "chunk_size = 1_000_000  # 1 megabyte\ndata_chunk = \"a\" * chunk_size\noutput = StringIO()\nbytes_written = 0\nwhile bytes_written < n:\n    _ = output.write(data_chunk)\n    bytes_written += chunk_size\noutput.getvalue()", "bench_doc": "Number to guess: How many bytes can we write to a string in memory in a second?", "hints": []}];
+    const rustQuestions = [];
     const options = [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000].map((n) => n.toLocaleString());
     let score = 0;
     let answered = 0;
-    let unanswered = questions.length;
-    function createQuiz() {
+    let unanswered = 0;
+    function handleButtonClick(language) {
+        const buttons = document.querySelectorAll('.toggle-button');
+        buttons.forEach(button => button.classList.remove('selected'));
+        const selectedButton = document.getElementById(`btn-${language}`);
+        selectedButton.classList.add('selected');
+        createQuiz(language);
+    }
+    function createQuiz(language) {
+        const questions = language == 'python' ? pyQuestions : rustQuestions;
+        /* Reset counters */
+        score = 0;
+        answered = 0;
+        unanswered = questions.length;
         const quizContainer = document.getElementById('quiz');
+        quizContainer.innerHTML = ''; /* reset */
         questions.forEach((question, index) => {
             const questionDiv = document.createElement('div');
             questionDiv.className = 'question';
@@ -140,7 +158,7 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
         if (result.length === 1) return result[0];
         return result;
     }
-    createQuiz();
+    createQuiz('python');
     hljs.highlightAll();
 </script>
 <!-- End Quiz -->
@@ -228,5 +246,24 @@ program performance.
     .hover-reveal ul {
         margin-bottom: 0;
         padding-right: 0.5em;
+    }
+    #language-selector {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+    }
+    .toggle-button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        user-select: none;
+        width: 43%;
+    }
+    .selected {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
     }
 </style>
