@@ -198,6 +198,21 @@ Disappointed in your score? I'd recommend checking out [teachyourselfcs.com](htt
 By studying napkin math, operating systems, and computer architecture I got a lot better at estimating
 program performance.
 
+<div class="callout-panel callout-panel-info">
+    <span class="callout-panel-icon callout-panel-info-icon">
+        <span class="" role="img" aria-label="Panel info">
+            <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                <path d="M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-8.5a1 1 0 0 0-1 1V15a1 1 0 0 0 2 0v-2.5a1 1 0 0 0-1-1zm0-1.125a1.375 1.375 0 1 0 0-2.75 1.375 1.375 0 0 0 0 2.75z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+        </span>
+    </span>
+    <div class="ak-editor-panel__content">
+        <p data-renderer-start-pos="97">
+            The code for these benchmarks is at <a href="https://github.com/thundergolfer/uni/tree/main/performance/computers-are-fast">github.com/thundergolfer/uni/tree/main/performance/computers-are-fast</a>
+        </p>
+    </div>
+</div>
+
 <style>
     .quiz-container {
         margin: 0 auto;
@@ -305,4 +320,51 @@ program performance.
             display: none;
         }
     }
+</style>
+
+<style>
+.callout-panel {
+    border-radius: 3px;
+    margin: 1.2rem 0px 1.2rem 0px;
+    padding: 20px;
+    min-width: 48px;
+    display: flex;
+    /*-webkit-box-align: baseline;*/
+    /*align-items: baseline;*/
+    word-break: break-word;
+    border: none;
+}
+
+.callout-panel p {
+    margin-bottom: 0;
+    line-height: 24px;
+}
+
+.callout-panel-icon {
+    display: block;
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+    box-sizing: content-box;
+    padding-right: 8px;
+    color: rgb(0, 82, 204);
+}
+
+
+.callout-panel-info {
+    background-color: rgb(250, 250, 255);
+}
+
+.callout-panel-info-icon {
+    color: blue;
+}
+
+.callout-panel-warning {
+    background-color: rgb(255, 250, 200);
+}
+
+.callout-panel-warning-icon {
+    color: orange;
+}
+
 </style>
