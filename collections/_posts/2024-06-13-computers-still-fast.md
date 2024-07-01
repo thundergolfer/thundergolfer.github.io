@@ -191,6 +191,8 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
 </script>
 <!-- End Quiz -->
 
+Disappointed in your score? I'd recommend checking out [teachyourselfcs.com](https://teachyourselfcs.com/) and [sirupsen/napkin-math](https://github.com/sirupsen/napkin-math).
+
 By studying napkin math, operating systems, and computer architecture I got a lot better at estimating
 program performance.
 
@@ -255,6 +257,8 @@ program performance.
         display: none;
         z-index: 1;
         color: #f9f9f9;
+        padding: 5px;
+        margin-left: 15px;
     }
 
     .hover-reveal:hover .hover-content {
@@ -293,5 +297,10 @@ program performance.
         background-color: #007bff;
         color: white;
         border-color: #007bff;
+    }
+    @media screen and (max-width: 1268px) {
+        #score-container {
+            display: none;
+        }
     }
 </style>
