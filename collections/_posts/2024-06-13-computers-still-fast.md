@@ -8,7 +8,7 @@ categories: performance programming modal
 
 Let's find out how well you know computers!
 
-All of these programs have a variable `N` in them. Your mission: guess how big `N` needs to get before the program takes 1 second to run.
+All of these programs have a variable **`N`** in them. Your mission: guess how big **`N`** must get before the program takes 1 second to run.
 
 You don't need to guess exactly. Just try to guess the right order of magnitude!
 The options are all between 1 and one billion.
@@ -17,11 +17,11 @@ The options are all between 1 and one billion.
 
 - If the answer is 38,400, both 10,000 and 100,000 are considered correct answers.
   The goal is to not be wrong by more than 10x, one order of magnitude 🤓.
-- We know computers have different disk & network & CPU speeds! We're trying to get understand difference between code that can run ten times a second (10 Hz) and 100,000 times a second (100 KHz). A newer computer won't make any of the benchmark code run 1000x faster.
-    - That said, the results are from running on an 2023 Mac M2 Max.
-- The 🦀 code was compiled with `--release`, of course!.
+- We know computers have different disk & network & CPU speeds! We're trying to understand the difference between code that can run ten times a second (10 Hz) and 100,000 times a second (100 KHz). A newer computer won't make any of the benchmark code run 1000x faster.
+  - That said, the results are from running on an 2023 Mac M2 Max.
+- The 🦀 code was compiled with `--release`, of course.
 
-Good luck! The first time I tried [the original quiz](https://computers-are-fast.github.io/) I did decently but got a handful wrong. Each surprise is an invitation to question assumptions, learn something new.
+Good luck! The first time I tried [**the original quiz**](https://computers-are-fast.github.io/) (2014) I did decently but got a handful wrong. Each surprise is an invitation to question assumptions, and learn something new!
 
 <!-- Quiz -->
 <div class="quiz-container">
@@ -102,7 +102,7 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
             options.forEach(option => {
                 const button = document.createElement('button');
                 button.textContent = option;
-                button.onclick = () => checkAnswer(button, question.answer, question.estimated_n, questionDiv);
+                button.onclick = () => checkAnswer(language, button, question.answer, question.estimated_n, questionDiv);
                 optionsDiv.appendChild(button);
             });
             questionDiv.appendChild(optionsDiv);
@@ -111,7 +111,7 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
         document.getElementById('unanswered').textContent = unanswered;
         hljs.highlightAll();
     }
-    function checkAnswer(button, correctAnswer, exactAnswer, questionDiv) {
+    function checkAnswer(language, button, correctAnswer, exactAnswer, questionDiv) {
         const allButtons = button.parentElement.children;
         for (let btn of allButtons) {
             const btnAnswer = parseInt(btn.textContent.replace(/,/g, ''));
@@ -152,10 +152,12 @@ Good luck! The first time I tried [the original quiz](https://computers-are-fast
         updateScoreColor();
         /* Celebrate perfect score! */
         if (unanswered === 0 && score === answered) {
+            const langColors = language == "python" ? ["FFDE57", "4584B6"] : ["B7410E", "0EB7A1", "0A8071", "B77F0E"];
             confetti({
                 particleCount: 100,
                 spread: 70,
                 origin: { y: 0.6 },
+                colors: langColors,
             });
         }
     }
