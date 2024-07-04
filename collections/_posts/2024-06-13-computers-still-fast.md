@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Computers are fast
-date: 2024-06-13
+date: 2024-07-4
 summary: Do you know how much your computer can do in one second?
 categories: performance programming modal
 permalink: computers-are-fast
