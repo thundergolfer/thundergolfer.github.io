@@ -1,9 +1,10 @@
 ---
 layout: post
 title: The Wonderful LLMs
-date: 2024-01-14
+date: 2024-05-12
 summary: Praise for ChatGPT after one year of use.
 categories: software culture llms ai
+permalink: the-wonderful-llms
 ---
 
 ![Charles Lindbergh lands in Paris, France](/images/the_wonderful_llms/Charles_Lindbergh_Lands_in_France.jpg)
