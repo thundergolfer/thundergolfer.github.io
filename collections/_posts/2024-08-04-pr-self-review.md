@@ -9,7 +9,7 @@ permalink: pr-self-review
 
 ![illustration of the self-review process on a git diff](/images/zune-diff-2.jpg)
 
-> "I am not a great programmer, I am just a programmer with great habits" — Kent Beck. 
+> "I am not a great programmer, I am just a good programmer with great habits" — Kent Beck. 
 
 The pull request self-review is something I have proselytized to junior colleagues enough times now that I ought to write down the pitch. It is a simple thing: before you get someone to review your pull request (a.k.a change list, abbrev. PR), review it yourself. It may seem painfully obvious, but almost all material on the pull request process [elides this useful step](https://www.atlassian.com/git/tutorials/making-a-pull-request). The self-review is both less obvious and more difficult than it sounds.
 
