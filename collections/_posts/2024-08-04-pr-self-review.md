@@ -33,4 +33,4 @@ Self-reviewing engineers take more responsibility for their work, ship fewer bug
 Self-reviewing engineers exercise that meta-cognition muscle which has them pay attention to the ways they fool themselves. 
 [The first principle is that you must not fool yourself and you are the easiest person to fool.](https://www.goodreads.com/quotes/193533-the-first-principle-is-that-you-must-not-fool-yourself)
 
-That’s the pitch. If you wish you could more often put up flawless PRs which receive no comments and merges into production like cream into coffee, practice the self-review. Divide for a short while against yourself and see the bugs.
+That’s the pitch. If you wish you could more often put up flawless PRs which receive no comments and merge into production like cream into coffee, practice the self-review. Divide for a short while against yourself and see the bugs.
