@@ -87,7 +87,7 @@ function populateDashboardHTML(data) {
     });
 }
 
-fetch('https://thundergolfer-cgflgpx.modal.run')
+fetch('https://thundergolfer--thundergolferdotcom-about-page-web.modal.run')
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
