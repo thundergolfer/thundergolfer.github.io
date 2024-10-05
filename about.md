@@ -205,6 +205,7 @@ fetch('https://thundergolfer--thundergolferdotcom-about-page-web.modal.run')
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 80%;
   }
 
   #top-spotify-tracks {
