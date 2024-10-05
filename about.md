@@ -183,6 +183,8 @@ fetch('https://thundergolfer--thundergolferdotcom-about-page-web.modal.run')
 }
 
 @media screen and (max-width: 900px) {
+
+
   #recent-finished-books {
     flex-direction: column;
     justify-content: center;

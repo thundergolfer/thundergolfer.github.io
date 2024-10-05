@@ -3,6 +3,7 @@ layout: default
 ---
 <div>
   <img 
+    id="headshot"
     style="border-radius: 1em; max-width: 250px; float: right; margin: 1.25em;" 
     src="{{ page.headshot }}"
   >
@@ -15,3 +16,11 @@ layout: default
   {{ content }}
   </article>
 </div>
+
+<style>
+@media screen and (max-width: 900px) {
+  #headshot {
+    display: none;
+  }
+}
+</style>
