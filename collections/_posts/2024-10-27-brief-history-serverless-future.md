@@ -85,7 +85,7 @@ No, Lambda is rightly thought of as the preeminent serverless offering because i
 
 ### **On the origin of the name**
 
-“We had no idea it was going to be this whole thing.” \- Chad Arimura, Iron.io founder
+> “We had no idea it was going to be this whole thing.” \- Chad Arimura, Iron.io founder
 
 Enter any internet thread where serverless is being acrimoniously discussed, and you’ll more often than not find the negativity directed not at serverless per se, but at its name.
 
