@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A brief history of our serverless future
-date: 2024-10-05
+date: 2024-10-27
 categories: story history serverless aws modal
 summary: Just over ten years ago, Tim Wagner walked down a chain-link fenced office corridor towards The Chop…
 permalink: our-serverless-futur
