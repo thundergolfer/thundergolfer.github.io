@@ -18,7 +18,7 @@ tags: blog
         <span class="post-meta-popular-tag">Popular</span>
         {% endif %}
       </p>
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"
+      <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" class="post-link"
         ><h3 class="h2 post-title">{{ post.title }}</h3></a
       >
       <p class="post-summary">
