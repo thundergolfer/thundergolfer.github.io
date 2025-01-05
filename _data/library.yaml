@@ -1,5 +1,453 @@
 [
     {
+        "title": "The Bacchae",
+        "author": "Euripides",
+        "rating": "",
+        "isbn": "1854594117",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "Orbital",
+        "author": "Samantha Harvey",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0802161545",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "How to Watch TV News",
+        "author": "Neil Postman",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0140132317",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "The Culture of Narcissism: American Life in An Age of Diminishing Expectations",
+        "author": "Christopher Lasch",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0393356175",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "The Things They Carried",
+        "author": "Tim O'Brien",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0767902890",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "Shakespearean Tragedy",
+        "author": "A.C. Bradley",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "A Man's Place",
+        "author": "Annie Ernaux",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "1609804031",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "No Country for Old Men",
+        "author": "Cormac McCarthy",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0375706674",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "Transit",
+        "author": "Rachel Cusk",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0374278628",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "Homage to Catalonia",
+        "author": "George Orwell",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0156421178",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "High Output Management",
+        "author": "Andrew S. Grove",
+        "rating": "\u2605\u2605",
+        "isbn": "0679762884",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "The Corpse Walker: Real Life Stories, China from the Bottom Up",
+        "author": "Liao Yiwu",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "037542542X",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "The Great Divide: Australia's Housing Mess and How to Fix It (Quarterly Essay #92)",
+        "author": "Alan Kohler",
+        "rating": "",
+        "isbn": "1743823347",
+        "review_path": null,
+        "year_i_finished_reading": "2024"
+    },
+    {
+        "title": "Flames",
+        "author": "Robbie Arnott",
+        "rating": "",
+        "isbn": "1925603520",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Revolt of the Elites and the Betrayal of Democracy",
+        "author": "Christopher Lasch",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0393313719",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Years",
+        "author": "Annie Ernaux",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1609807871",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Plot Against America",
+        "author": "Philip Roth",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1400079497",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Parable of the Sower (Earthseed, #1)",
+        "author": "Octavia E. Butler",
+        "rating": "",
+        "isbn": "0446675504",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Circe",
+        "author": "Madeline Miller",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0316556343",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Piranesi",
+        "author": "Susanna Clarke",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "163557563X",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Burnout Society",
+        "author": "Byung-Chul Han",
+        "rating": "",
+        "isbn": "0804795096",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Netanyahus",
+        "author": "Joshua Cohen",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1913097609",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Guest",
+        "author": "Emma Cline",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0812998626",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Uncanny Valley",
+        "author": "Anna Wiener",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0374278016",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Close to the Machine: Technophilia and Its Discontents",
+        "author": "Ellen Ullman",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0872863328",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Tinker, Tailor, Soldier, Spy (George Smiley, #5; Karla Trilogy, #1)",
+        "author": "John Le Carr\u00e9",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Spy Who Came In from the Cold (George Smiley, #3)",
+        "author": "John Le Carr\u00e9",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9780743442534",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Road to Serfdom",
+        "author": "Friedrich A. Hayek",
+        "rating": "\u2605\u2605",
+        "isbn": "0226320618",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Eating Animals",
+        "author": "Jonathan Safran Foer",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0316069906",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Story of a New Name (Neapolitan Novels, #2)",
+        "author": "Elena Ferrante",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Flowers for Algernon",
+        "author": "Daniel Keyes",
+        "rating": "\u2605\u2605\u2605\u2605\u2606",
+        "isbn": "9781474605731",
+        "review_path": "flowers-for-algernon-daniel-keyes/",
+        "year_i_finished_reading": "2021"
+    },
+    {
+        "title": "The Adventures of Huckleberry Finn",
+        "author": "Mark Twain",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0142437174",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Bewilderment",
+        "author": "Richard Powers",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0393881148",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "My Brilliant Friend (Neapolitan Novels, #1)",
+        "author": "Elena Ferrante",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Understanding Media: The Extensions of Man",
+        "author": "Marshall McLuhan",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0262631598",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Pirate Enlightenment, or the Real Libertalia",
+        "author": "David Graeber",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0374610193",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Illustrated Man",
+        "author": "Ray Bradbury",
+        "rating": "\u2605\u2605",
+        "isbn": "000712774X",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America",
+        "author": "Nancy MacLean",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1101980966",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "God, Human, Animal, Machine: Technology, Metaphor, and the Search for Meaning",
+        "author": "Meghan O'Gieblyn",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Trust",
+        "author": "Hernan Diaz",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0593420314",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "This Side of Paradise",
+        "author": "F. Scott Fitzgerald",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0684843781",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Player Piano",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605",
+        "isbn": "0385333781",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Secret History",
+        "author": "Donna Tartt",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1400031702",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Sellout",
+        "author": "Paul Beatty",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0374260508",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Lolita",
+        "author": "Vladimir Nabokov",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Shallows: What the Internet Is Doing to Our Brains",
+        "author": "Nicholas Carr",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0393339750",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Rules of Attraction",
+        "author": "Bret Easton Ellis",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "067978148X",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character",
+        "author": "Richard P. Feynman",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0393355624",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "On Photography",
+        "author": "Susan Sontag",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0141187166",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "How to Win Friends & Influence People",
+        "author": "Dale Carnegie",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Class: A Guide Through the American Status System",
+        "author": "Paul Fussell",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0671792253",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "God Emperor of Dune (Dune #4)",
+        "author": "Frank Herbert",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0593098250",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Nickel and Dimed: On (Not) Getting By in America",
+        "author": "Barbara Ehrenreich",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0805063897",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Station Eleven",
+        "author": "Emily St. John Mandel",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0385353308",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "Cultural Literacy: What Every American Needs to Know",
+        "author": "E.D. Hirsch Jr.",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0394758439",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The End of Education: Redefining the Value of School",
+        "author": "Neil Postman",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0679750312",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
         "title": "The Martian",
         "author": "Andy Weir",
         "rating": "\u2605",
@@ -11,7 +459,7 @@
         "title": "The Black Swan: The Impact of the Highly Improbable",
         "author": "Nassim Nicholas Taleb",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "1400063515",
         "review_path": null,
         "year_i_finished_reading": "2022"
     },
@@ -40,7 +488,7 @@
         "year_i_finished_reading": "2022"
     },
     {
-        "title": "Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets",
+        "title": "Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Incerto)",
         "author": "Nassim Nicholas Taleb",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0812975219",
@@ -53,7 +501,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0578675862",
         "review_path": "working-in-public-the-making-and-maintenance-of-open-source-software-nadia-eghbal/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Ways of Seeing",
@@ -109,7 +557,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0553803727",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "The Gun Seller",
@@ -125,7 +573,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9781324005032",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "East of Eden",
@@ -221,7 +669,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780451529305",
         "review_path": "little-women-louisa-may-alcott/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Coders at Work: Reflections on the Craft of Programming",
@@ -269,7 +717,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780575094185",
         "review_path": "do-androids-dream-of-electric-sheep?-philip-k-dick/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "The Little Prince",
@@ -277,11 +725,11 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780156012195",
         "review_path": "the-little-prince-antoine-de-saint-exup\u00e9ry/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
-        "title": "Engines of Creation: The Coming Era of Nanotechnology",
-        "author": "K. Eric Drexler",
+        "title": "Engines of Creation: The Coming Era of Nanotechnology (Anchor Library of Science)",
+        "author": "Eric Drexler",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0385199732",
         "review_path": null,
@@ -293,7 +741,7 @@
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0441569595",
         "review_path": "neuromancer-(sprawl,-#1)-william-gibson/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Project Hail Mary",
@@ -301,7 +749,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0593135202",
         "review_path": "project-hail-mary-andy-weir/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Steppenwolf",
@@ -320,11 +768,11 @@
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "Zen in the Art of Writing",
+        "title": "Zen in the Art of Writing: Releasing the Creative Genius Within You",
         "author": "Ray Bradbury",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0553296345",
-        "review_path": "zen-in-the-art-of-writing-ray-bradbury/",
+        "review_path": null,
         "year_i_finished_reading": "2021"
     },
     {
@@ -333,10 +781,10 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "",
         "review_path": "the-call-of-the-wild-jack-london/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
-        "title": "The Dispossessed (Hainish Cycle, #6)",
+        "title": "The Dispossessed: An Ambiguous Utopia",
         "author": "Ursula K. Le Guin",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9781857988826",
@@ -344,7 +792,7 @@
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "The Left Hand of Darkness (Hainish Cycle, #4)",
+        "title": "The Left Hand of Darkness",
         "author": "Ursula K. Le Guin",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9780441478125",
@@ -374,14 +822,6 @@
         "isbn": "9781732265189",
         "review_path": "an-elegant-puzzle-systems-of-engineering-management-will-larson/",
         "year_i_finished_reading": "2021"
-    },
-    {
-        "title": "Working in Public: The Making and Maintenance of Open Source Software",
-        "author": "Nadia Eghbal",
-        "rating": "\u2605\u2605\u2605",
-        "isbn": "0578675862",
-        "review_path": "working-in-public-the-making-and-maintenance-of-open-source-software-nadia-eghbal/",
-        "year_i_finished_reading": null
     },
     {
         "title": "The Psychology of Computer Programming",
@@ -437,7 +877,7 @@
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0596001088",
         "review_path": "the-cathedral-&-the-bazaar-musings-on-linux-and-open-source-by-an-accidental-revolutionary-eric-s-raymond/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Hackers & Painters: Big Ideas from the Computer Age",
@@ -445,14 +885,6 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0596006624",
         "review_path": "hackers-&-painters-big-ideas-from-the-computer-age-paul-graham/",
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Flowers for Algernon",
-        "author": "Daniel Keyes",
-        "rating": "\u2605\u2605\u2605\u2605\u2606",
-        "isbn": "9781474605731",
-        "review_path": "flowers-for-algernon-daniel-keyes/",
         "year_i_finished_reading": "2021"
     },
     {
@@ -485,7 +917,7 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0307592839",
         "review_path": "a-visit-from-the-goon-squad-jennifer-egan/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Jazz (Beloved Trilogy, #2)",
@@ -493,10 +925,10 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0452269652",
         "review_path": "jazz-(beloved-trilogy,-#2)-toni-morrison/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2021"
     },
     {
-        "title": "The Quiet Revolution",
+        "title": "The quiet revolution",
         "author": "Jim Cairns",
         "rating": "\u2605\u2605",
         "isbn": "0869320076",
@@ -536,7 +968,7 @@
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "100 Plus: How the Coming Age of Longevity Will Change Everything, from Careers and Relationships to Family and Faith",
+        "title": "100 Plus: How the Coming Age of Longevity Will Change Everything, From Careers and Relationships to Family and Faith",
         "author": "Sonia Arrison",
         "rating": "\u2605",
         "isbn": "0465019668",
@@ -677,7 +1109,7 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "1491973897",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Dune Messiah (Dune, #2)",
@@ -1008,6 +1440,38 @@
         "year_i_finished_reading": null
     },
     {
+        "title": "Digital Fortress",
+        "author": "Dan    Brown",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Deception Point",
+        "author": "Dan    Brown",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0671027387",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Angels & Demons (Robert Langdon, #1)",
+        "author": "Dan    Brown",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "1416524797",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The da Vinci Code (Robert Langdon, #2)",
+        "author": "Dan    Brown",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "5550155184",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "Maus I: Un Survivant Raconte: Mon P\u00e8re Saigne L'histoire",
         "author": "Art Spiegelman",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -1085,7 +1549,7 @@
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0060929871",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2010"
     },
     {
         "title": "Startupland: How Three Guys Risked Everything to Turn an Idea into a Global Business",
@@ -1296,7 +1760,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Hobbit (The Lord of the Rings, #0)",
+        "title": "The Hobbit, or There and Back Again (The Lord of the Rings, #0)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "",
