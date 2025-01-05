@@ -1,18 +1,18 @@
 // Typography
-$base-font-size: 14px !default;
+$base-font-size: 16px !default;
 $bold-font-weight: bold !default;
-$font-family: 'Inter', sans-serif !default;
+$font-family: 'Cabin', sans-serif !default;
 $line-height: 1.75 !default;
-$heading-font-family: 'Inter', sans-serif !default;
+$heading-font-family: 'Cabin', sans-serif !default;
 $heading-font-weight: 700 !default;
 $heading-line-height: 1.25 !default;
 $monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
-$h1: 2.5rem !default;
-$h2: 1.5rem !default;
-$h3: 1.25rem !default;
-$h4: 1rem !default;
-$h5: .875rem !default;
-$h6: .75rem !default;
+$h1: 2.8rem !default;
+$h2: 1.6rem !default;
+$h3: 1.35rem !default;
+$h4: 1.2rem !default;
+$h5: .975rem !default;
+$h6: .85rem !default;
 $h00: 4rem !default;
 $h0: 3rem !default;
 $h00-responsive: 8vw !default;
@@ -31,11 +31,8 @@ $viewport-small: 32em;
 $viewport-medium: 48em;
 $viewport-large: 64em;
 
-// Header Colors
-$header-bg: white !default;
-$header-fg: black !default;
-
 // Colors
+$black: rgb(53, 53, 52) !default;
 $blue: #0076df !default;
 $red: #f95020 !default;
 $green: #00cf26 !default;
@@ -56,9 +53,13 @@ $darken-2: rgba(#000,.125) !default;
 $darken-3: rgba(#000,.25) !default;
 $darken-4: rgba(#000,.5) !default;
 
+// Header Colors
+$header-bg: white !default;
+$header-fg: $black !default;
+
 // Links
 $link-color: $blue;
-$link-hover-color: darken($blue, 40%);
+$link-hover-color: $dark-blue;
 
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';
@@ -121,4 +122,4 @@ $footer-padding: $space-3;
 $footer-color: #000;
 $footer-bg-color: #fff;
 $footer-font-weight: 300;
-$footer-font-size: .75rem;
+$footer-font-size: .85rem;

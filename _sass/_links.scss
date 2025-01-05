@@ -1,5 +1,9 @@
 a {
   color: $link-color;
+  text-decoration: underline;
+  text-decoration-color: $lighter-gray;
+  text-underline-offset: 5px; // Adding vertical gap between the text and the underline
+  transition: text-decoration-color 0.3s ease, text-underline-offset 0.3s ease, text-decoration-thickness 0.3s ease;
 }
 
 a:hover,
@@ -7,7 +11,10 @@ a:focus,
 a:active {
   border: 0;
   color: $link-hover-color;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: darken($lighter-gray, 20%);
+  text-underline-offset: 7px; // Drop down the underline a bit more
+  text-decoration-thickness: 2px; // Make the underline thicker
 }
 
 // Correct issues with buttons
