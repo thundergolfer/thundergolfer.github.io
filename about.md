@@ -8,10 +8,16 @@ headshot: /images/headshot.jpg
 
 ### Where I'm from
 
-🇦🇺 I was born and raised in the southeast suburbs of Victoria, Australia — a place almost perfecting the ['surbubia as giant nursery'](http://www.paulgraham.com/nerds.html) vision of urban development.
+I was born and raised in the southeast suburbs of Victoria, Australia — a place almost perfecting the ['surbubia as giant nursery'](http://www.paulgraham.com/nerds.html) vision of urban development.
 
 I was raised by a tireless single mother, kept up good grades, and played way too much Call of Duty. I never wanted to program computers, right up until around 23 years old when programming computers became all I wanted to do.
 ### What I do now
+
+<figure style="margin: 0; margin-bottom: 1em;">
+  <img src="/images/portugal-offsite.jpeg" alt="Portugal Offsite" style="border-radius: 0.4em;">
+  <figcaption style="color: #777;">The team is bigger than this now, but in that photo my eyes are closed!</figcaption>
+</figure>
+
 
 Currently, I help build [**modal.com**](https://modal.com), a serverless cloud platform built for developers and data scientists sick of wrestling Kubernetes.
 Scroll down to see some personal dashboard stats powered by Modal!
@@ -22,7 +28,7 @@ Scroll down to see some personal dashboard stats powered by Modal!
 
 ### What I used to do
 
-I spent 3.5 years at [Canva](https://www.canva.com/), joining when it had almost 300 engineers and leaving when it had about 1800. I joined as a graduate, hobbling around with a broken leg, and ended up as team lead
+I spent 3.5 years at [Canva](https://www.canva.com/), joining when it had almost 300 engineers and leaving when it had about 1,800. I joined as a graduate, hobbling around with a broken leg, and ended up as team lead
 of ML Platform. The whole way through I grew under the mentorship of [Greg Roodt](https://www.linkedin.com/in/groodt/).
 
 When not doing Data or ML Platform stuff, I spent quite a bit of time working with the [Bazel](https://bazel.build/) build system, and helped maintain the [Python rules](https://github.com/bazelbuild/rules_python) for Bazel. It's the future, get on it.
