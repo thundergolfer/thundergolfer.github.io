@@ -111,6 +111,11 @@ TITLE_TO_ISBN = {
     "Between the World and Me": "9780812993547",
     "No One Is Talking About This": "9780593332542",
     "God Bless You, Mr. Rosewater": "9780440129295",
+    "Flames": "9781786496294",
+    "Shakespearean Tragedy": "9780230001893",
+    "The Culture of Narcissism: American Life in An Age of Diminishing Expectations": "9780393307382",
+    "A Man's Place": "0345378954",
+    "Tinker, Tailor, Soldier, Spy (George Smiley, #5; Karla Trilogy, #1)": "9780143119784",
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.
