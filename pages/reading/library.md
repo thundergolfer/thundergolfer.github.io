@@ -3,13 +3,18 @@ layout: page
 title: Library
 permalink: /library/
 tags: library read_list
+update_date: 2025-01-05
 ---
+
+<div class="post-header mb2">
+  <span class="post-meta">Last updated: {{ page.update_date | date: site.date_format }}</span><br />
+</div>
 
 Selected books that I've read for enjoyment or learning. I also wrote [a post]({{ site.baseurl }}/read) about how I read.
 
 To see things I haven't yet read browse the [/anti-library]({{ site.baseurl }}/anti-library).
 
-All my book reviews are at [/reviews]({{ site.baseurl }}/reviews).
+All my (crappy) book reviews are at [/reviews]({{ site.baseurl }}/reviews).
 
 <section style="display: flex; justify-content: space-between; flex-wrap: wrap">
 {% for member in site.data.library limit:120 %}

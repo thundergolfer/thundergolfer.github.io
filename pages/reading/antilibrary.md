@@ -3,7 +3,12 @@ layout: page
 title: Anti-Library
 permalink: /anti-library/
 tags: antilibrary library
+update_date: 2025-01-05
 ---
+
+<div class="post-header mb2">
+  <span class="post-meta">Last updated: {{ page.update_date | date: site.date_format }}</span><br />
+</div>
 
 Books I haven't read, but like the idea of having read, and plan to read in the future.
 
