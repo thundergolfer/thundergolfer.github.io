@@ -36,7 +36,7 @@ In the spirit of this All Souls fun, I’ll contribute below a series of essay q
 4. “Man becomes, as it were, the sex organs of the machine world” (McLuhan, 1964). Is man here as a parent is to a child or a bee to a flower?
 5. What, if anything, should be done about the ‘obesity epidemic’ in software? (software bloat)
 
-As implicitly directed by the All Souls exam administers. Go forth and have fun with it.
+As implicitly directed by the All Souls exam administrators: go forth and have fun with it.
 
 ---
 
