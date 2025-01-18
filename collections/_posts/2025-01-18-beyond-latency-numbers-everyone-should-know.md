@@ -84,7 +84,7 @@ In my day to day I’ve collected more numbers that I try to keep in memory with
 
 - A **blink** is an intuitive, human-oriented sense of a fast action. “Blink and you’ll miss it.” A number of human-computer interface elements aim for latencies in this range: frame refresh (~33ms), [“perceptual processing”](https://dl.acm.org/doi/pdf/10.1145/108844.108874) (100ms), reaction time (150-250ms).
 - This is a personal guessimate I’m throwing out there because I’d love to get more serious information on the **idle attention spans** of engineers. For me, if I’m waiting on some process (e.g. compiling) and it doesn’t give me interesting output or indicate it will finish presently, I switch away to Slack or something. Although it’s fuzzy, I think this ~20 second boundary is the difference between `uv` and `pip`. The former is always under it, and is loved, and the latter is rarely under it.
-- The length in seconds of **one day** is another human-oriented duration which is often handy to relate to software performance. When doing napkin math you can approximate it as 100,000 seconds and get quick, rough estimates of job processing time.
+- The length in seconds of **one day** is another human-oriented duration which is often handy to relate to software performance. When doing napkin math you can approximate it as 100,000 seconds and get quick, rough estimates of job processing time at human-scale.
 
 ### Cost
 
