@@ -19,7 +19,7 @@ permalink: latency-numbers
 Peter Norvig’s sixteen latency numbers, also popularized by Jeff Dean, are entering into the industry’s canon and acquiring even a little mystique as the typical developer’s distance from the L1 cache increases.
 
 Thereabouts every year a new spin on the numbers blows up on HN and interrupts our forgetting curves. 
-This refreshing encounter with the numbers is always welcome, but it’s unfortunate that these new editions exhibit [maddening UI](https://news.ycombinator.com/item?id=39657675) or offer extrapolated, [wildly incorrect data](https://www.notion.so/180-A-post-about-going-beyond-latency-numbers-everyone-should-know-17c99ea4b26f80a5b8c5caf52d55d942?pvs=21).
+This refreshing encounter with the numbers is always welcome, but it’s unfortunate that these new editions exhibit [maddening UI](https://news.ycombinator.com/item?id=39657675) or offer extrapolated, [wildly incorrect data](https://news.ycombinator.com/item?id=30549139).
 
 I just like getting the original plaintext table. I read it, remember it, and then wonder: OK, what *other* numbers must I learn?
 
