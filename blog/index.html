@@ -3,6 +3,7 @@ layout: default
 tags: blog
 ---
 
+
 {% assign posts_count = site.posts | size %}
 
 <h1>Blog</h1>
@@ -11,21 +12,21 @@ tags: blog
   {% if posts_count > 0 %}
   <div class="posts">
     {% for post in paginator.posts %}
-    <div class="post py3">
-      <p class="post-meta">
-        <span>{{ post.date | date: site.date_format }}</span>
-        {% if post.tags contains "popular" %}
-        <span class="post-meta-popular-tag">Popular</span>
-        {% endif %}
-      </p>
-      <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" class="post-link"
-        ><h3 class="h2 post-title">{{ post.title }}</h3></a
-      >
-      <p class="post-summary">
-        {% if post.summary %} {{ post.summary }} {% else %} {{ post.excerpt }}
-        {% endif %}
-      </p>
-    </div>
+      <div class="post py3" {% if post.hidden == true %}style="display: none;"{% endif %}>
+        <p class="post-meta">
+          <span>{{ post.date | date: site.date_format }}</span>
+          {% if post.tags contains "popular" %}
+          <span class="post-meta-popular-tag">Popular</span>
+          {% endif %}
+        </p>
+        <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" class="post-link"
+          ><h3 class="h2 post-title">{{ post.title }}</h3></a
+        >
+        <p class="post-summary">
+          {% if post.summary %} {{ post.summary }} {% else %} {{ post.excerpt }}
+          {% endif %}
+        </p>
+      </div>
     {% endfor %}
   </div>
   {% include pagination.html %} {% if site.show_subscribe_cta %} {% include
