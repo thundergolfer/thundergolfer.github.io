@@ -16,7 +16,7 @@ permalink: /blog/nvidia-gpu-memory-capacity
   <figcaption style="color: #777;">In the shadow lies dead memory cells.</figcaption>
 </figure>
 
-Modal just brought NVIDIA’s L40S GPU to the platform. This GPU’s datasheet lists it as offering 48GB of VRAM. A customer yesterday [asked about](https://modal-com.slack.com/archives/C069RAH7X4M/p1737562964448029) why he was only seeing 46,068 MiB out of the `nvidia-smi` report. He thought we might have short changed him, kept 2GB for ourselves!
+<a href="https://modal.com/" target="_blank" rel="noopener noreferrer" style="color: #29b81f !important;"><strong>Modal</strong></a> just brought NVIDIA's L40S GPU to the platform. This GPU's datasheet lists it as offering 48GB of VRAM. A customer yesterday [asked about](https://modal-com.slack.com/archives/C069RAH7X4M/p1737562964448029) why he was only seeing 46,068 MiB out of the `nvidia-smi` report. He thought we might have short changed him, kept 2GB for ourselves!
 
 We don’t take [secret slices](https://www.youtube.com/watch?v=vrYa3G2IxTA) out of customer’s GPUs. You get a full, unadulterated, dedicated device.
 
@@ -24,7 +24,7 @@ The first thing to understand is that mebibyte (MiB) ≠ megabyte (MB), and 1 gi
 
 Internally I point at Oxide’s [Standard Units For Counting Bits](https://rfd.shared.oxide.computer/rfd/0203) public RFD when we run into unit communication issues. (It’s so nice that Oxide publicizes their high quality discussion documents!) This is something that engineers should just get right, even if computer product marketers have long preferred rounding up and saying the bigger number (GB). 
 
-NVIDIA’s product marketing follows the computer storage industry tradition of using nice, round gigabyte numbers. Here’s a table showing the product marketing memory size for every NVIDIA GPU we offer at Modal, alongside the actual memory capacity as reported by NVML (via `nvidia-smi`).
+NVIDIA’s product marketing follows the computer storage industry tradition of using nice, round gigabyte numbers. Here’s a table showing the product marketing memory size for every NVIDIA GPU we offer at [Modal](https://modal.com/), alongside the actual memory capacity as reported by NVML (via `nvidia-smi`).
 
 | GPU | Product size | Actual, MiB | Actual, GiB | Actual, GB | Diff % |
 | --- | ---: | ---: | ---: | ---: | ---: |
