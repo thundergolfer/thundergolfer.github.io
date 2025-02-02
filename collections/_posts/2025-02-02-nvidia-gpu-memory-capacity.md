@@ -232,7 +232,7 @@ Now the question becomes: why does NVIDIA overdeliver on memory, and especially 
   <figcaption style="color: #777;">The H100’s HBM3 memory is from SK Hynix.</figcaption>
 </figure>
 
-The Hopper H100s [HBM3 memory](https://www.anandtech.com/show/17022/sk-hynix-announces-its-first-hbm3-memory-24gb-stacks-at-up-to-64gbps) is amongst the most expensive components of the roughly $25,000 USD GPU. At NVIDIA’s scale a 6% overhead on cost of components is billions of dollars, so what’s going on? 
+The NVIDIA H100's [HBM3 memory](https://www.anandtech.com/show/17022/sk-hynix-announces-its-first-hbm3-memory-24gb-stacks-at-up-to-64gbps) is amongst the most expensive components of the roughly $25,000 USD GPU. At NVIDIA’s scale a 6% overhead on cost of components is billions of dollars, so what’s going on? 
 
 We’re now pushing to ask questions of hardware parts in an H100 chip, and it’s at this point that Google (and sure, Claude) started to turn up thin gruel. I almost always operate at the ‘cloud layer’ and so my knowledge and search capabilities are poor when it comes to hardware, but I think [Anandtech](https://www.anandtech.com/show/18780/nvidia-announces-h100-nvl-max-memory-server-card-for-large-language-models) and SemiAnalysis offered a semi-satisying answer.
 
