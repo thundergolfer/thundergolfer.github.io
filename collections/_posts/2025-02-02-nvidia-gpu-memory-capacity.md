@@ -24,7 +24,7 @@ The first thing to understand is that mebibyte (MiB) ≠ megabyte (MB), and 1 gi
 
 Internally I point at Oxide’s [Standard Units For Counting Bits](https://rfd.shared.oxide.computer/rfd/0203) public RFD when we run into unit communication issues. (It’s so nice that Oxide publicizes their high quality discussion documents!) This is something that engineers should just get right, even if computer product marketers have long preferred rounding up and saying the bigger number (GB). 
 
-NVIDIA’s product marketing follows the long computer storage industry tradition of using nice, round gigabyte numbers. Here’s a table showing the product marketing memory size for every NVIDIA GPU we offer at Modal, alongside the actual memory capacity as reported by NVML (via `nvidia-smi`).
+NVIDIA’s product marketing follows the computer storage industry tradition of using nice, round gigabyte numbers. Here’s a table showing the product marketing memory size for every NVIDIA GPU we offer at Modal, alongside the actual memory capacity as reported by NVML (via `nvidia-smi`).
 
 | GPU | Product size | Actual, MiB | Actual, GiB | Actual, GB | Diff % |
 | --- | ---: | ---: | ---: | ---: | ---: |
