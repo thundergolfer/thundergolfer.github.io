@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Why does an NVIDIA H100 80GB card offer 85.52 GB?
-date: 2025-01-31
+date: 2025-02-02
 categories: software performance nvidia cuda
 summary: Digging into the memory capacity of NVIDIA GPUs.
 permalink: /blog/nvidia-gpu-memory-capacity
-hidden: true
 ---
 
 <figure style="margin: 0; margin-bottom: 1em;">
