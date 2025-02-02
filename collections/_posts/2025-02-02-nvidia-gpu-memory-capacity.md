@@ -16,7 +16,7 @@ permalink: /blog/nvidia-gpu-memory-capacity
   <figcaption style="color: #777;">In the shadow lies dead memory cells.</figcaption>
 </figure>
 
-Modal just brought NVIDIA’s L40S GPU to the platform. This GPU’s datasheet lists it as offering 48GB of VRAM. A customer yesterday [asked about](https://modal-com.slack.com/archives/C069RAH7X4M/p1737562964448029) why he was only seeing 46068 MiB out of the `nvidia-smi` report. He thought we might have short changed him, kept 2GB for ourselves!
+Modal just brought NVIDIA’s L40S GPU to the platform. This GPU’s datasheet lists it as offering 48GB of VRAM. A customer yesterday [asked about](https://modal-com.slack.com/archives/C069RAH7X4M/p1737562964448029) why he was only seeing 46,068 MiB out of the `nvidia-smi` report. He thought we might have short changed him, kept 2GB for ourselves!
 
 We don’t take [secret slices](https://www.youtube.com/watch?v=vrYa3G2IxTA) out of customer’s GPUs. You get a full, unadulterated, dedicated device.
 
