@@ -193,7 +193,7 @@ def measure_max_gpu_memory():
 
 `modal run` this script repeatedly and (on the same cloud) you'll consistently see the same numbers printed after the GPU rejects a 10KiB allocation with an OOM error. (Doing 10KiB allocations is kinda slow, but gives us a higher resolution.)
 
-This ran below was on GCP so we expected to allocate `85.52 - 0.591 = 84.929 GB`, because we found that 591.4 MB (564.06 MiB) is reserved on GCP. 
+The terminal logging below was from a GCP run, so we expected to allocate `85.52 - 0.591 = 84.929 GB`, because we found that 591.4 MB (564.06 MiB) is reserved on GCP. 
 
 
 <figure style="margin: 0; margin-bottom: 1em;">
