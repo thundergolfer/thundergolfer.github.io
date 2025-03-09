@@ -30,7 +30,7 @@ When the 'first LLM' was born I was wrapping up an internship on a team building
 
 The team had made summarizer models which went “Return return return return return return shipment shipment…“ and a genuinely state-of-the-art chat bot which genuinely sucked at chatting. I lost faith.
 
-<figure style="margin: 0; margin-bottom: 1em;">
+<figure style="margin: 0; margin-bottom: 1.4em;">
   <img 
     src="/images/gpt-timeline-2.png" 
     alt="Timeline of GPT-1 through GPT-3.5" 
@@ -71,7 +71,7 @@ If you read the GPT-2 and GPT-3 papers they proceed almost straightforwardly fro
 
 ## Are any of CoVE, ELMo, and ULMFit LLMs?
 
-<figure style="margin: 0; margin-bottom: 1em;">
+<figure style="margin: 0; margin-bottom: 1.4em;">
   <img 
     src="/images/gpt-timeline.png" 
     alt="Timeline of GPT-1 showing its relationship to references discussed in this post." 
@@ -100,7 +100,7 @@ Neither of these is an LLM in my opinion, though for Alec Radford they were clea
 
 Universal Language Model Fine-tuning for Text Classification (ULMFit) is a next-word predictor LSTM self-supervisedly trained on WikiText, adaptable cheaply and without architecture changes to perform a number of text classification tasks with state-of-the-art performance. (Seeing how well ULMFit performed on the IMDb movie review dataset was a 🤯 moment for its author, Jeremy Howard.)
 
-<figure style="margin: 0; margin-bottom: 1em;">
+<figure style="margin: 0; margin-bottom: 1.4em;">
   <img 
     src="/images/ulmfit-architecture.png" 
     alt="Overview of the ULMFit architecture, with its quote 'intricate learning schemes' at middle and right." 
@@ -123,7 +123,20 @@ Does being first even matter? I think it does, a bit. The software industry and 
 
 ## The last LLM
 
-Having gone back to the start of the LLM craze, it’s made me curious at to when we’ll see the end of it. GPT-4V was the introduction of image understanding capabilities to the previously text-only model, and since then the ‘frontier labs’ have gone multimodal. With ChatGPT, Claude, and Gemini adding image and audio processing, it not longer feels apt to call these language models. In place of LLM, we’re increasing seeing the usage of “foundation model”. 
-
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4017_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"LLM","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=LLM&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
+Having gone back to the start of the LLM craze, it’s made me curious as to when we’ll see the end of it. GPT-4V was the introduction of image understanding capabilities to the previously text-only model family, and since then the ‘frontier labs’ have gone multimodal. With ChatGPT, Claude, and Gemini adding image and audio processing, it not longer feels apt to call these language models. In place of LLM, we’re seeing increasing (but still minor) usage of “foundation model”. 
+
+If I had to guess, I'd say that the term LLM sticks around. It will become like the graphics processing unit (GPU). The general public will be using these models as video-in video-out, and they'll call them LLMs.
+What started as a term for something that analyzed IMDb movie reviews will become a term for something that makes movies. At least, that's how I'll think about it. 
+
+The first LLM was an LSTM pre-trained on Wikipedia and fine-tuned on IMDb movie reviews. GPT-1 crucially subbed in the transformer architecture, cutting out ULMFit's complexity and offering the industry a scaling ramp that will extend to [at least 2030](https://epoch.ai/blog/can-ai-scaling-continue-through-2030). Strap in, and maintain attention on the road ahead.
+
+
+<figure style="margin: 0; margin-bottom: 1.4em;">
+  <img 
+    src="/images/scaling-till-2030.png" 
+    alt="Extended LLM timeline till 2020, showing how much road is ahead." 
+    style="border-radius: 0.4em; border: 2px solid #ddd;"
+  >
+</figure>
