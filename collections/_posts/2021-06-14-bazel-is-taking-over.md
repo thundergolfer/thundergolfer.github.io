@@ -4,6 +4,7 @@ title:      Bazel is taking over
 date:       2021-06-14
 summary:    On the Bazel build system's potential to become a category-killer.  
 categories: build-systems software-engineering bazel
+permalink: bazel-is-taking-over
 ---
 
 > "I really think that Bazel has the opportunity to be a Linux-like project"  - [Oscar Boykin](https://youtu.be/t_Omlhh7IJc?t=172s)
