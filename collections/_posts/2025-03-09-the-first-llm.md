@@ -19,16 +19,70 @@ permalink: /blog/the-first-llm
   <figcaption style="color: #777;">Illustration: Ben Barry</figcaption>
 </figure>
 
-What were you doing while the LLM revolution was birthed and in a few short years remade the computing industry? Was the first LLM really made by an Australian, in between surfs? 
-These questions have sat with me since I revisited, chronologically, the research papers which scaled up language modelling and the market capitalization of our juggernaut industry by more trillions of dollars. Hindsight is 20/20, and reading just the three GPT papers back-to-back you can feel the excitement of coming great acheivement. 
+<div id="toc" style="background: #f8f9fa; padding: 1em; border-radius: 0.4em; position: absolute; right: calc(50% - 45em); top: 54em; width: 15em; max-height: 80vh; overflow-y: auto;">
+  <div id="toc-content"></div>
+</div>
 
-‘We’ did it. Today, dozens of new benchmarks measure the shape of AI accomplishment—can it win Pokémon?—because the most important, the greatest benchmark in computing history, Turing’s, is now _too easy_. 
+<script>document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth < 768) {
+    document.getElementById('toc').style.display = 'none';
+    return;
+  }
 
-In 2016, one year before the 'first LLM' was born I was sitting in computer science classes hearing professors talk of Chomsky’s hierarchy of the grammars. In these lectures, they used Turing’s test to inject a little wonder, a little mysticism into the dry mechanics of push-down automata. Would we ever make a program that passed the test? 
+  const toc = document.getElementById('toc');
+  const headings = document.querySelectorAll('h2, h3');
+  const tocContent = document.getElementById('toc-content');
+  const lastTwoHeadingIndexes = new Set([headings.length - 1, headings.length - 2]);
 
-When the 'first LLM' was born I was wrapping up an internship on a team building a language model. It was not large, and wasn’t a transformer, but with hindsight I was relatively close to the LLM revolution. *Attention is All You Need* (June 2017) may have come up in Wednesday’s paper club. My excitement about language modelling had landed me on the team, but it was a naive excitement and I had frankly not the skillset, knowledge, or boldness to spot the coming wave. 
+  headings.forEach((heading, index) => {
+    if (lastTwoHeadingIndexes.has(index)) {
+      return;
+    }
+    if (!heading.id) {
+      heading.id = `heading-${index}`;
+    }
+    const link = document.createElement('a');
+    link.href = `#${heading.id}`;
+    link.textContent = heading.textContent;
+    link.style.color = '#777';
+    const div = document.createElement('div');
+    div.appendChild(link);
+    if (heading.tagName === 'h3') {
+      div.style.marginLeft = '1.5em';
+    }
+    div.style.marginBottom = '0.5em';
+    tocContent.appendChild(div);
+  });
 
-The team had made summarizer models which went “Return return return return return return shipment shipment…“ and a genuinely state-of-the-art chat bot which genuinely sucked at chatting. I lost faith.
+  /* Update TOC visibility on window resize */
+  window.addEventListener('resize', function() {
+    document.getElementById('toc').style.display = window.innerWidth < 768 ? 'none' : 'block';
+  });
+});</script>
+
+
+What were you doing while the LLM revolution was birthed and in a few short years remade the computing industry? 
+
+Was the first LLM really made by an Australian, in between surfs? 
+
+
+These questions have sat with me since I revisited, chronologically, the research papers which scaled up language modelling and the 
+market capitalization of our juggernaut industry by more trillions of dollars.
+
+‘We’ did it. The most famous benchmark in computing history, Turing’s, is now _too easy_.  
+Today, dozens of new benchmarks measure the expanding frontier of AI accomplishment: can it win the Putnam, can it beat Pokémon?
+
+In 2016, one year before the 'first LLM' was born I was sitting in computer science classes hearing professors talk of Chomsky’s hierarchy of the grammars. 
+In these lectures, they used Turing’s test to inject a little wonder, a little mysticism into the dry mechanics of push-down automata. 
+Would we ever make a program that passed this test? 
+
+When the 'first LLM' was born I was wrapping up an internship on a team building a language model. 
+It was not large, and wasn’t a transformer, but with hindsight I was relatively close to the LLM revolution. 
+But I wasn't really paying attention. Most of us weren't.
+
+In 2016 my teammates made summarizer models which went “Return return return return return return shipment shipment…“, as well as a genuinely state-of-the-art chat bot which genuinely sucked at chatting. I lost faith.
+
+In January 2018, as I wrestled with Golang in my second internship, Australian Jeremy Howard published *ULMFit*, the first LLM.
 
 <figure style="margin: 0; margin-bottom: 1.4em;">
   <img 
@@ -38,36 +92,38 @@ The team had made summarizer models which went “Return return return return re
   >
 </figure>
 
-In January 2018, as I wrestled with Golang in my second internship, Australian Jeremy Howard published *ULMFit*, the first LLM.
+Alec Radford published *Improving Language Understanding by Generative Pre-Training* (GPT-1) on June 11, 2018. 
 
-Alec Radford has become industry famous for GPT-1 and GPT-2. He is regarded by many as the inventor of the “LLM”. If Alec is not the inventor, you might think that surely the *Attention* paper authors should stake a claim. Well, science is a relay race and Alec Radford himself laid out on publish of GPT-1 from who he’d taken the baton.
+GPT-1 (Generative Pre-Train One) is widely accepted as an LLM. 
+According to many it _is_ the first. But Jeremy Howard claims otherwise. 
+If we’re to understand the LLM birth, we’ll have to mark down what exactly makes an LLM an LLM.
 
 <div style="display: flex; justify-content: center;">
 <blockquote class="twitter-tweet" data-lang="en" data-dnt="true"><p lang="en" dir="ltr">What I&#39;ve been working on for the past year! <a href="https://t.co/CAQMYS1rR7">https://t.co/CAQMYS1rR7</a><br><br>Inspired by CoVE, ELMo, and ULMFiT we show that a single transformer language model can be finetuned to a wide variety of NLP tasks and performs very well with little tuning/tweaking.</p>&mdash; Alec Radford (@AlecRad) <a href="https://twitter.com/AlecRad/status/1006247734691545089?ref_src=twsrc%5Etfw">June 11, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-Alec Radford published *Improving Language Understanding by Generative Pre-Training*, or GPT-1, on June 11, 2018. GPT-1 (Generative Pre-Train One) is widely accepted as an LLM. According to many it iss the first. But Jeremy Howard claims otherwise. If we’re to understand the LLM birth, we’ll have to mark down what exactly makes an LLM an LLM.
-
 ## What is an LLM?
 
-An LLM is a language model which has been so effectively self-supervisedly trained as a ‘next word predictor’ that it can be easily and successfully adapted to many specific text-based tasks.
+**LLM** <span style="color: #546E7A;">(_**noun**_)</span>: a language model which has been so effectively self-supervisedly trained as a 'next word predictor' that it can be easily and successfully adapted to many specific text-based tasks.
 
-Having read GPT-1, 2, 3, and a few other papers, this is the definition I like. It’s not a trivial definition, so I will break it down and give specifics.
+Having read GPT-1, 2, 3, and a few other papers, this is the definition I like. It’s not a trivial definition, so let's break it down:
 
 - **"is a language model"** → the inputs and predicted outputs are components of human written language (e.g. English). These components are not necessarily, and not typically, words. They may be characters, or character sequences (tokens).
-- **"self-supervisedly trained"** → the dataset is *unlabelled* text from which (x,y) examples are produced. This was an important departure from task-specific, labelled text datasets.
+- **"self-supervisedly trained"** → the dataset is *unlabelled* text from which (x,y) examples are produced. This was an important departure from task-specific, exspesive, labelled text datasets.
 - **"next word predictor"** → the model is given a sequence of words/characters/tokens and must predict what comes next. "The cat in the" → "hat".
-- **"easily adapted"** → no architectural changes are made to the model, and few-shot capabilities.
+- **"easily adapted"** → no architectural changes are made to the model; model has few-shot, even one-shot capabilities.
 - **"successfully adapted"** → achieve state of the art performance
 - **"many specific text-based tasks"** → the model can perform classification, question-answering, parsing, and other text challenges with state-of-the-art performance. This is an important leap beyond task-specific language models which are good at one thing and bad at basically everything else.
 
 I’ve conspicuously left out the “large” part of the LLM definition, but it’s implied by the success of the self-supervised generative training. Before a certain parameter size, this language model architecture didn’t work. Nowadays, the largest LLMs are 1000x larger than the smallest. 
 
-I’ve also left out any tying down of the LLM category to the transformer architecture. Despite that being the most dominant LLM architecture, others exist.
+I’ve also left out any tying down of the LLM category to the transformer architecture. Despite that being the most dominant LLM architecture, others exist (LSTM, Mamba, [Diffusion](https://x.com/InceptionAILabs/status/1894847919624462794)).
 
 Everything else in the definition was I think key to GPT-1 and the ‘LLM moment’.
 
-If you read the GPT-2 and GPT-3 papers they proceed almost straightforwardly from the success of GPT-1. Although GPT-1 does not include the words “large language model” at all, the latter papers do and refer to GPT-1 as such. So GPT-1 is an early LLM, and maybe the first, if its precendents ULMFit, ELMo, and CoVE can’t make the claim.
+If you read the GPT-2 and GPT-3 papers they proceed almost straightforwardly from the success of GPT-1. 
+Although GPT-1 does not include the words “large language model” at all, the latter papers do and refer to GPT-1 as such. 
+So GPT-1 is an early LLM, and maybe the first, if its precedents—ULMFit, ELMo, and CoVE—can’t make the claim.
 
 ## Are any of CoVE, ELMo, and ULMFit LLMs?
 
@@ -80,7 +136,7 @@ If you read the GPT-2 and GPT-3 papers they proceed almost straightforwardly fro
   <figcaption style="color: #777;">Timeline of GPT-1 showing its relationship to references discussed in this post.</figcaption>
 </figure>
 
-[Contextualized Word Vectors (CoVE)](https://arxiv.org/pdf/1708.00107) were an important innovation in transfer learning but are not much like GPT-1. The CoVE vectors were created with supervised learning (on English to German translation) not self-supervised learning, and the vectors only become an initial component in a task-specific model.
+[Contextualized Word Vectors (CoVE)](https://arxiv.org/pdf/1708.00107) were an important innovation in transfer learning but are not much like GPT-1. The CoVE vectors were created with supervised learning (on English to German translation) not self-supervised learning, and the vectors only become an initial component in a larger task-specific model.
 
 <figure style="margin: 0; margin-bottom: 1em;">
   <img 
@@ -109,7 +165,9 @@ Universal Language Model Fine-tuning for Text Classification (ULMFit) is a next-
   <figcaption style="color: #777;">Overview of the ULMFit architecture, with its "intricate learning schemes” at middle and right.</figcaption>
 </figure>
 
-This ULMFit seems a lot like GPT-1 and the above definition of an LLM. The only parts that are arguably not GPT-like are the ease of finetuning and the breadth of applied tasks. The GPT-1 paper calls out that ULMFit’s “triangular learning rates” and “gradual unfreezing” of parameters is complicated. The GPT-1 paper also claims that by swapping at the LSTM architecture for the transformer they unlock wider task-specific competency than ULMFit by lengthening the prediction ability of the pre-trained model. 
+This ULMFit seems a lot like GPT-1 and the above definition of an LLM. The only parts that are arguably not GPT-like are the ease of finetuning and the breadth of applied tasks. 
+The GPT-1 paper fairly calls out the complexity of ULMFit’s “triangular learning rates” and “gradual unfreezing” of parameters. 
+The GPT-1 paper also claims that by swapping at the LSTM architecture for the transformer they unlock wider task-specific competency than ULMFit by lengthening the prediction ability of the pre-trained model. 
 
 After trawling back into the past, I’m satisified to call ULMFit the first LLM. This is surely arguable. I’ve not given much attention to Dai and Le’s 2015 [*Semi-supervised Sequence Learning*](https://arxiv.org/pdf/1511.01432) paper which was the other “closest line of work” called out in the GPT-1 paper. It’s also given more prominence than ULMFit in Radford’s [own 2020 history](https://www.youtube.com/watch?v=BnpB3GrpsfM) of the GPT moment.
 
@@ -120,6 +178,10 @@ Does being first even matter? I think it does, a bit. The software industry and 
 <blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">ofc the real reason I&#39;m pushing back on this is that I&#39;m worried some folks might realise I didn&#39;t actually create the first LLM at on my own at <a href="https://t.co/GEOZunWoXj">https://t.co/GEOZunWoXj</a>, but that actually I&#39;m just a token figurehead for a CCP conspiracy that created it &amp; had me take credit</p>&mdash; Jeremy Howard (@jeremyphoward) <a href="https://twitter.com/jeremyphoward/status/1882964239520071926?ref_src=twsrc%5Etfw">January 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
+Further to the point, understanding the non-OpenAI lineage of LLMs helps understand the competitive dynamics of the industry. 
+Although OpenAI caught their competitors flatfooted, the LLM story was always multi-polar, multi-generational, and geographically diverse. 
+With hindsight we may ask: if Australians can push forward the state-of-the-art, why not China?
+
 
 ## The last LLM
 
@@ -127,16 +189,79 @@ Does being first even matter? I think it does, a bit. The software industry and 
 
 Having gone back to the start of the LLM craze, it’s made me curious as to when we’ll see the end of it. GPT-4V was the introduction of image understanding capabilities to the previously text-only model family, and since then the ‘frontier labs’ have gone multimodal. With ChatGPT, Claude, and Gemini adding image and audio processing, it not longer feels apt to call these language models. In place of LLM, we’re seeing increasing (but still minor) usage of “foundation model”. 
 
-If I had to guess, I'd say that the term LLM sticks around. It will become like the graphics processing unit (GPU). The general public will be using these models as video-in video-out, and they'll call them LLMs.
-What started as a term for something that analyzed IMDb movie reviews will become a term for something that makes movies. At least, that's how I'll think about it. 
+If I had to guess, I'd say that the term LLM sticks around. It will become like the graphics processing unit (GPU). 
+The general public will eventually be using these models as video-in video-out, and they'll call them LLMs.
+What started as a term for something that analyzed IMDb movie reviews will become a term for something that makes movies. 
+At least, that's how I'll think about it. 
 
-The first LLM was an LSTM pre-trained on Wikipedia and fine-tuned on IMDb movie reviews. GPT-1 crucially subbed in the transformer architecture, cutting out ULMFit's complexity and offering the industry a scaling ramp that will extend to [at least 2030](https://epoch.ai/blog/can-ai-scaling-continue-through-2030). Strap in, and maintain attention on the road ahead.
+The first LLM was an LSTM pre-trained on Wikipedia and fine-tuned on IMDb movie reviews. 
+GPT-1 crucially subbed in the transformer architecture, cutting out ULMFit's complexity and offering the industry a scaling ramp that will extend to [at least 2030](https://epoch.ai/blog/can-ai-scaling-continue-through-2030). 
+Many, many more LLMs to come.
+
+Strap in, and maintain attention on the road ahead.
 
 
-<figure style="margin: 0; margin-bottom: 1.4em;">
+<figure style="margin: 0; margin-top: 1.4em; margin-bottom: 1.4em;" class="magnify-container">
   <img 
     src="/images/scaling-till-2030.png" 
     alt="Extended LLM timeline till 2020, showing how much road is ahead." 
     style="border-radius: 0.4em; border: 2px solid #ddd;"
+    class="magnify-image"
   >
+  <div class="magnifying-glass"></div>
+  <style>
+    @media (hover: hover) {
+      .magnify-container {
+        position: relative;
+        overflow: visible;
+      }
+      
+      .magnifying-glass {
+        display: none;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+                    0 0 7px 7px rgba(0, 0, 0, 0.25),
+                    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+      }
+
+      .magnify-container:hover .magnifying-glass {
+        display: block;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const containers = document.querySelectorAll('.magnify-container');
+      
+      containers.forEach(container => {
+        const img = container.querySelector('.magnify-image');
+        const glass = container.querySelector('.magnifying-glass');
+        
+        container.addEventListener('mousemove', function(e) {
+          const bounds = container.getBoundingClientRect();
+          const x = e.clientX - bounds.left;
+          const y = e.clientY - bounds.top;
+          
+          const magnification = 2;
+          const glassRadius = glass.offsetWidth / 2;
+          
+          glass.style.left = `${x - glassRadius}px`;
+          glass.style.top = `${y - glassRadius}px`;
+          
+          const bgX = x * magnification - glassRadius;
+          const bgY = y * magnification - glassRadius;
+          
+          glass.style.backgroundImage = `url(${img.src})`;
+          glass.style.backgroundSize = `${img.width * magnification}px ${img.height * magnification}px`;
+          glass.style.backgroundPosition = `-${bgX}px -${bgY}px`;
+        });
+      });
+    });
+  </script>
 </figure>
