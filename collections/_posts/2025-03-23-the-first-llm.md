@@ -265,3 +265,9 @@ Strap in, and maintain attention on the road ahead.
     });
   </script>
 </figure>
+
+
+----
+
+**Update:** @levelsio and Jeremy Howard [got into it over this question](https://x.com/jonobelotti_IO/status/1906086472349786595) on March 29th 2025. 
+Out of that came feedback that I should pay more attention in the post to BERT ("ULMFiT's first demo predated BERT.") and the 2015 *Semi-supervised Sequence Learning* paper.
