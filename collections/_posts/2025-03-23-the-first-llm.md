@@ -3,7 +3,7 @@ layout: post
 title: "The First LLM"
 date: 2025-03-23
 categories: genai llm machine-learning
-summary: A tracing of the history of GPT-1 and its predecessors.
+summary: Jeremy Howard and Sebastian Ruder created the first LLM.
 permalink: /blog/the-first-llm
 ---
 
