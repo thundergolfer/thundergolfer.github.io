@@ -76,7 +76,7 @@ import modal
 from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
 
-stub = modal.Stub("dash")
+app = modal.App(name="dash")
 web_app = FastAPI()
 
 def about_me():
@@ -88,7 +88,8 @@ def hook(response: Response):
     response.headers["Cache-Control"] = "max-age=43200"
     return about_me()
 
-@stub.asgi
+@app.function()
+@modal.asgi_app()
 def web():
     web_app.add_middleware(
         CORSMiddleware,
@@ -99,7 +100,7 @@ def web():
 ```
 
 In the code above, an asynchronous server gateway interface ([ASGI](https://asgi.readthedocs.io/en/latest/)) app is instantiated
-and hooked into Modal by returning the app from a function decorated with Modal's `@stub.asgi` decorator.
+and hooked into Modal by returning the app from a function decorated with Modal's `@app.asgi` decorator.
 
 Deploy this on Modal and you'll immediately be able to hit the endpoint with `curl`.
 
@@ -199,7 +200,7 @@ def manual_spotify_auth() -> None:
         f"Visit \n{authorize_url}\n and then paste back the code found in the URL.\nCode: "
     ).strip()
 
-    with stub.run():
+    with app.run():
         refresh_token = create_spotify_refresh_token(code)
     print(f"SPOTIFY_REFRESH_TOKEN: {refresh_token}")
     print(
@@ -207,7 +208,7 @@ def manual_spotify_auth() -> None:
     )
 
 
-@stub.function(secret=modal.Secret.from_name("spotify-aboutme"))
+@app.function(secret=modal.Secret.from_name("spotify-aboutme"))
 def create_spotify_refresh_token(code: str):
     auth_str = os.environ["SPOTIFY_CLIENT_ID"] + ":" + os.environ["SPOTIFY_CLIENT_SECRET"]
     encoded_client_id_and_secret = base64.b64encode(auth_str.encode()).decode()
@@ -260,7 +261,7 @@ so I created a `modal.Image` and attached that to the function that scrapes my G
 ```python
 bs4_image = modal.Image.debian_slim().pip_install(["beautifulsoup4"])
 # >--SNIP--<
-@stub.function(image=bs4_image)
+@app.function(image=bs4_image)
 def request_goodreads_reads(max_books=3) -> list[Book]:
     from bs4 import BeautifulSoup
     ...
@@ -291,13 +292,13 @@ Because my reading and track listening stats are very slow changing, there's no 
 We can cache every with a [`modal.Dict`](https://modal.com/docs/reference/modal.Dict):
 
 ```python
-stub = modal.Stub(name="thundergolferdotcom-about-page")
-stub.cache = modal.Dict()
+app = modal.App(name="thundergolferdotcom-about-page")
+app.cache = modal.Dict()
 CACHE_TIME_SECS = 60 * 60 * 12
 
 # >--SNIP--<
 
-@stub.function(secret=modal.Secret.from_name("spotify-aboutme"))
+@app.function(secret=modal.Secret.from_name("spotify-aboutme"))
 def about_me():
     from modal import container_app
     # Cache the retrieved data for 10x faster endpoint performance.
