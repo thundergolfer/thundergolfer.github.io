@@ -59,9 +59,8 @@ permalink: /blog/private-evals
       const scrollY = window.scrollY;
       const bars = document.querySelectorAll('.redaction-bar');
       bars.forEach(bar => {
-        const offsetX = scrollY * 0.05;
-        const offsetY = scrollY * 0.02;
-        bar.style.boxShadow = `${offsetX}px ${2 + offsetY}px 4px rgba(0, 0, 0, 0.3)`;
+        const offsetY = scrollY * 0.05;
+        bar.style.boxShadow = `0px ${2 + offsetY}px 4px rgba(0, 0, 0, 0.3)`;
       });
     });
   });
