@@ -190,7 +190,7 @@ Excitingly, I’ve found that LLMs are good at review. I have an eval involving 
 
 Automated evals for coding should be obvious to any programmer. You write a prompt, you write a test. The LLM reads the prompt, it expels some code, and you run the test. 
 
-There’s two interesting bit though. First, you should sandbox the code execution. Second, how do you automate evaluation of code which produces *visual* output.
+There’s two interesting bits though. First, you should sandbox the code execution. Second, how do you automate evaluation of code which produces *visual* output.
 
 Sandboxed code execution I’ll take up down below. For visual evaluation, [Nicholas Carlini](https://github.com/carlini/yet-another-applied-llm-benchmark) has a great example of using visual LLMs as judges:
 
@@ -240,7 +240,7 @@ My basic private eval system is, [like Edward Yang’s](https://blog.ezyang.com/
 
 Instead you can take a look at my significantly stripped down repo: [github.com/**thundergolfer/private-llm-bench**](http://github.com/thundergolfer/private-llm-bench). 
 
-See the `README` for full and up-to-date instructions, but I’ll right now it only depends on `uv`, [`modal`](https://modal.com/use-cases/sandboxes), and an API key for all the frontier LLM providers you’d expect.
+See the `README` for full and up-to-date instructions, but right now it only depends on `uv`, [`modal`](https://modal.com/use-cases/sandboxes), and an API key for all the frontier LLM providers you’d expect.
 
 The cost to run this is peanuts. Across a dozen or so tests, running on a weekly cron, I’ve spendt 48 *cents* on OpenAI.
 
