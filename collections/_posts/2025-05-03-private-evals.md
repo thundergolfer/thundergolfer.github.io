@@ -238,7 +238,7 @@ My basic private eval system is, [like Edward Yang’s](https://blog.ezyang.com/
 2. A lot of the code within is LLM generated and frankly janky.
 3. It relies on a brittle shim to a local Docker or Podman engine.
 
-Instead you can take a look at my significantly stripped down repo: [github.com/thundergolfer/private-evals**](https://github.com/thundergolfer/private-evals). 
+Instead you can take a look at my significantly stripped down repo: [github.com/**thundergolfer/private-evals**](https://github.com/thundergolfer/private-evals). 
 
 See the `README` for full and up-to-date instructions, but right now it only depends on `uv`, [`modal`](https://modal.com/use-cases/sandboxes), and an API key for all the frontier LLM providers you’d expect.
 
