@@ -269,4 +269,4 @@ The cost to run this is peanuts. Across a dozen or so tests, running on a weekly
 
 A key behavior of strong engineers is ‘looking under the hood’ and learning how tools work so that they may be better exploited. Looking under the hood is also how you see tools *as* *tools*, and not dark magic. Docker images aren’t magic, they’re just [a stack of tarballs](https://fly.io/blog/docker-without-docker/).
 
-Given the state of frontier LLM software—very private, very complicated, stochastic, poorly understood—you unfortunately can’t handle them like the rest of your toolkit. But with private evals you can do something that looks more like proper wrench work. And that’s a start.
+Given the state of frontier LLM software—very private, very complicated, schotastic, poorly understood—you unfortunately can’t handle them like the rest of your toolkit. But with private evals you can do something that looks more like proper wrench work. And that’s a start.
