@@ -238,11 +238,11 @@ My basic private eval system is, [like Edward Yang’s](https://blog.ezyang.com/
 2. A lot of the code within is LLM generated and frankly janky.
 3. It relies on a brittle shim to a local Docker or Podman engine.
 
-Instead you can take a look at my significantly stripped down repo: [github.com/**thundergolfer/private-llm-bench**](http://github.com/thundergolfer/private-llm-bench). 
+Instead you can take a look at my significantly stripped down repo: [github.com/thundergolfer/private-evals**](https://github.com/thundergolfer/private-evals). 
 
 See the `README` for full and up-to-date instructions, but right now it only depends on `uv`, [`modal`](https://modal.com/use-cases/sandboxes), and an API key for all the frontier LLM providers you’d expect.
 
-The cost to run this is peanuts. Across a dozen or so tests, running on a weekly cron, I’ve spendt 48 *cents* on OpenAI.
+The cost to run this is peanuts. Across a dozen or so tests, running on a weekly cron, I’ve spent 48 *cents* on OpenAI.
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
   <img 
@@ -269,4 +269,4 @@ The cost to run this is peanuts. Across a dozen or so tests, running on a weekly
 
 A key behavior of strong engineers is ‘looking under the hood’ and learning how tools work so that they may be better exploited. Looking under the hood is also how you see tools *as* *tools*, and not dark magic. Docker images aren’t magic, they’re just [a stack of tarballs](https://fly.io/blog/docker-without-docker/).
 
-Given the state of frontier LLM software—very private, very complicated, schotastic, poorly understood—you unfortunately can’t handle them like the rest of your toolkit. But with private evals you can do something that looks more like proper wrench work. And that’s a start.
+Given the state of frontier LLM software—very private, very complicated, stochastic, poorly understood—you unfortunately can’t handle them like the rest of your toolkit. But with private evals you can do something that looks more like proper wrench work. And that’s a start.
