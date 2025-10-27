@@ -73,7 +73,7 @@ The plan being applied by the slow Enactor fell out of the `N` generations safet
 
 Now, back to the TOCTOU issue. Why is an Enactor allowed to make only one plan staleness check for N plan mutations? I suspect it’s because querying the DNS Planner for staleness is magnitudes more expensive than making a plan mutation. It would be non-performant, and *seemingly* unnecessary*,* to make N checks for N fast plan mutations.[^1]
 
-Without this TOCTOU bug, there’s no ‘stale DNS plan’ degradation and thus no opportunity to mistakenly delete an old plan.[^2]
+Without this TOCTOU bug, there’s no ‘stale DNS plan’ degradation and thus no opportunity to mistakenly delete an active plan.[^2]
 
 We’re at two faults so far, but there’s more. Using the [Swiss cheese model](https://en.wikipedia.org/wiki/Swiss_cheese_model) of accident causation we can pass through a couple more Emmental holes.
 
