@@ -78,8 +78,6 @@ We’re at two faults so far, but there’s more. Using the [Swiss cheese model]
 
 ![@XTOTL thespinoff.co.nz, adapted from James Reason, Ian Mackay, Sketchplanations](/images/aws_outage/swiss_cheese.png)
 
-@XTOTL thespinoff.co.nz, adapted from James Reason, Ian Mackay, Sketchplanations
-
 Deleting the active plan is a disaster, but the Enactor’s cleanup phase didn’t check for it. This absent guard appears to be another fault. 
 
 Some have pointed out that the Enactor deleting the Planner’s plans is weird, but I think it makes sense. The Planner is allowed to be a straightforward append-only system of outputs. The Enactor makes forward progress against the plan log and maintains the window of active DNS records. If the Planner is deleting plans, it’s also making writes against Route53.
@@ -120,17 +118,23 @@ Looking for a control problem, we see not just the race condition deletion, but 
 
 ![Reminder of the incident timeline.](/images/aws_outage/timeline.png)
 
-Reminder of the incident timeline.
-
 This incident summary contains perhaps [the first public reference](https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=%22aws%20droplet%22&sort=byPopularity&type=story) to an *AWS Droplet* and the DropletWorkflow Manager (DWFM). Droplets are physical servers upon which all EC2 instances run.
 
 The DWFM depends on DynamoDB to complete “state checks”, which are heartbeats between DWFM and every physical server managed. If the heartbeat with a server stops, the DWFM’s control of the server is cut off. Without this control, no creation or state transition can occur on an EC2 instance, affecting every EC2 user in us-east-1 except those which left all their instances `RUNNING` between 6:48AM and 8:50PM UTC. Yikes.
 
 DynamoDB is a critical dependency of the DWFM and triggered the EC2 service failure. But it gets interesting once DynamoDB recovers around 9:40AM UTC. EC2 is down or degraded for *another 11 hours*.
 
-![States and transitions of a system experiencing a metastable failure. From *Metastable Failures in Distributed Systems.*](/images/aws_outage/metastable.png)
-
-States and transitions of a system experiencing a metastable failure. From *Metastable Failures in Distributed Systems.*
+<figure style="margin: 0; margin-bottom: 1em;">
+  <img 
+    src="/images/aws_outage/metastable.png" 
+    alt="States and transitions of a system experiencing a metastable failure. From Metastable Failures in Distributed Systems." 
+    style="border-radius: 0.4em;"
+    width="100%"
+    height="auto"
+    style="aspect-ratio: 16/9; object-fit: cover; border-radius: 0.4em;"
+  >
+  <figcaption style="color: #777;">States and transitions of a system experiencing a metastable failure. From *Metastable Failures in Distributed Systems.</figcaption>
+</figure>
 
 In normal operation of EC2, the DWFM maintains a large number (~10^6) of active leases against physical servers and a very small number (~10^2) of broken leases, the latter of which the manager is actively attempting to reestablish. 
 
