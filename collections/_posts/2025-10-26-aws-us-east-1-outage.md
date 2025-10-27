@@ -100,7 +100,7 @@ conditions could always be added. — [Engineering a safer world](http://sunnyda
 
 Having read the DynamoDB section of the summary, [some are tempted](https://news.ycombinator.com/item?id=45677745) to declare discovery of the root cause: a race condition.
 
-The software industry today holds the root cause analysis (RCA) as a primary activity of postmortem write ups. Google “postmortem template” and almost every offered template includes a section for root cause(s) analysis. The top result, Atlassian’s, includes it. A couple year’s ago Atlassian’s is what I found and copied as Modal’s internal template.
+The software industry today holds the root cause analysis (RCA) as a primary activity of postmortem write ups. Google “postmortem template” and almost every offered template includes a section for root cause(s) analysis. The top result, Atlassian’s, includes it. A couple years ago Atlassian’s is what I found and copied as Modal’s internal template.
 
 But leading reliability engineers have moved on from centering root cause analysis. It is useful, but an inadequate model of incident occurrence. 
 
