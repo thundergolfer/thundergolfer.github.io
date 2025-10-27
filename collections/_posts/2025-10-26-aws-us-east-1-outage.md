@@ -56,7 +56,7 @@ What *is* surprising is that a classic [Time-of-check-time-of-use (TOCTOU)](http
 
 In an eye straining 786 word mega-paragraph, they outline their issues, which I will try summarize.
 
-To maintain population of all DNS entries for dynamodb.us-east-1.amazonaws.com, they run three DNS Enactors, one in each of in `us-east-1a`, `us-east-1b`, `us-east1c`. Each of these three Enactors performs mutations *without* coordination.
+To maintain population of all DNS entries for dynamodb.us-east-1.amazonaws.com, they run three DNS Enactors, one in each of `us-east-1a`, `us-east-1b`, `us-east1c`. Each of these three Enactors performs mutations *without* coordination.
 
 > For resiliency, the DNS Enactor operates redundantly and fully independently in three different Availability Zones (AZs).
 > 
