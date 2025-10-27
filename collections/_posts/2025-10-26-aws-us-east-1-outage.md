@@ -24,7 +24,7 @@ On Monday the AWS us-east-1 region had its worst outage in over 10 years. The wh
 
 What the hell happened?
 
-A number of smart engineers have come to this major bust-up and covered it with the blanket of a simple explanation: brain drain; race condition; it’s always DNS; the cloud is unreliable, go on-prem. You’re not going to understand software reliability if you can summarize an outage of this scale in an internet comment. Frankly, I’m not even going to understand it after reading AWS’s 4000 word summary and thinking about it for hours. But I’m going to hold the hot takes and try.
+A number of smart engineers have come to this major bust-up and covered it with the blanket of a simple explanation: brain drain; race condition; it’s always DNS; the cloud is unreliable, go on-prem. You’re not going to understand software reliability if you summarize an outage of this scale in an internet comment. Frankly, I’m not even going to understand it after reading AWS’s 4000 word summary and thinking about it for hours. But I’m going to hold the hot takes and try.
 
 I wrote [Modal’s](https://modal.com/) internal us-east-1 incident postmortem before AWS published their “service disruption summary”: [https://aws.amazon.com/message/101925](https://aws.amazon.com/message/101925/). Our control plane being in us-east-1, we got hit hard. Along with hundreds of other affected companies, we’re interested in a peek under the hood of the IaaS we depend on.
 
