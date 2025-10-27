@@ -127,11 +127,11 @@ DynamoDB is a critical dependency of the DWFM and triggered the EC2 service fail
 <figure style="margin: 0; margin-bottom: 1em;">
   <img 
     src="/images/aws_outage/metastable.png" 
-    alt="States and transitions of a system experiencing a metastable failure. From Metastable Failures in Distributed Systems." 
+    alt="States and transitions of a system experiencing a metastable failure. From *Metastable Failures in Distributed Systems." 
     style="border-radius: 0.4em;"
     width="100%"
     height="auto"
-    style="aspect-ratio: 16/9; object-fit: cover; border-radius: 0.4em;"
+    style="border-radius: 0.4em;"
   >
   <figcaption style="color: #777;">States and transitions of a system experiencing a metastable failure. From *Metastable Failures in Distributed Systems.</figcaption>
 </figure>
