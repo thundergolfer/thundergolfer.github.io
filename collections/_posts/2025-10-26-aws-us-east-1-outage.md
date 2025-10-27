@@ -61,7 +61,7 @@ To maintain population of all DNS entries for dynamodb.us-east-1.amazonaws.com, 
 > For resiliency, the DNS Enactor operates redundantly and fully independently in three different Availability Zones (AZs).
 > 
 
-One of these Enactors, say `us-east-1a`, became *extremely slow*. They don’t say anything about the cause of the latency, but it believe it was extreme (10-100x) because the system design seems to allow for some deviation from mean latency.
+One of these Enactors, say `us-east-1a`, became *extremely slow*. They don’t say anything about the cause of the latency, but I believe it was extreme (10-100x) because the system design seems to allow for some deviation from mean latency.
 
 They use a typical “keep last N” garbage collection mechanism to remove old DNS plans. We also do this at Modal to garbage collect old machine images. Crucially, the last N must *never* include an active resource. I assume the DynamoDB team picked a large N to ensure they ‘never’ delete an active plan, which implies the Enactor’s latency in `us-east-1a` was extreme.
 
