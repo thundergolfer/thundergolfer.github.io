@@ -102,9 +102,9 @@ Having read the DynamoDB section of the summary, [some are tempted](https://news
 
 The software industry today holds the root cause analysis (RCA) as a primary activity of postmortem write ups. Google “postmortem template” and almost every offered template includes a section for root cause(s) analysis. The top result, Atlassian’s, includes it. A couple years ago Atlassian’s is what I found and copied as Modal’s internal template.
 
-But leading reliability engineers have moved on from centering root cause analysis. It is useful, but an inadequate model of incident occurrence. 
+But leading reliability engineers have moved on from centering root cause analysis. It is a useful but inadequate model of incident occurrence. 
 
-Most obviously, RCA has an infinite regress problem. The cause of the extreme Enactor latency in one AZ is unexplained, but it is is antecedent to the race condition and could be considered a root cause. But, say the latency was causes by high packet drop, what caused *that?* On and on we go, boast against the current—
+Most obviously, RCA has an infinite regress problem. The cause of the extreme Enactor latency in one AZ is unexplained, but it is is antecedent to the race condition and could be considered a root cause. But, say the latency was causes by high packet drop, what caused *that?* On and on we go, boats against the current—
 
 More interestingly, however, is the myopia induced by RCA. Yes, the extreme latency trigger the race condition bug. It was a *precipitating event*, but it is just one of many latent faults that could emerge from the dynamics of the DynamoDB system. And as shown above by the Swiss cheese analysis, multiple control mechanisms combined into an unrecoverable failure once the latency emerged.
 
