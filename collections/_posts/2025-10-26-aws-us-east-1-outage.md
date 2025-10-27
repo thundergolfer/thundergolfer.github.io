@@ -154,7 +154,7 @@ The congestive collapse of EC2 could only be restored by manual intervention by 
 
 For a while now I’ve eagerly followed the public blogging of Marc Brooker, a distinguished engineer at AWS with key contributions to Lambda, EBS, and EC2. I’m sure he’s wired up after this outage, because he has been [evangelizing the analysis of metastable failure for years now](https://brooker.co.za/blog/2021/05/24/metastable.html).
 
-The presence and peril of the metastable failure state has likely been widely known within AWS engineering leadership for around 4 years. And yet it bit them in their darling EC2. I eagerly await the blog post, Marc.
+The presence and peril of the metastable failure state has likely been widely known within AWS engineering leadership for around 4 years. And yet it bit them in their darling EC2. I eagerly await Marc's blog post.
 
 ## NLB
 
