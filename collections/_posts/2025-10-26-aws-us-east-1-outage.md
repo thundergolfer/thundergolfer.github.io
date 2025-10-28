@@ -128,13 +128,13 @@ DynamoDB is a critical dependency of the DWFM and triggered the EC2 service fail
 <figure style="margin: 0; margin-bottom: 1em;">
   <img 
     src="/images/aws_outage/metastable.png" 
-    alt="States and transitions of a system experiencing a metastable failure. From *Metastable Failures in Distributed Systems." 
+    alt="States and transitions of a system experiencing a metastable failure. From Metastable Failures in Distributed Systems." 
     style="border-radius: 0.4em;"
     width="100%"
     height="auto"
     style="border-radius: 0.4em;"
   >
-  <figcaption style="color: #777;">States and transitions of a system experiencing a metastable failure. From *Metastable Failures in Distributed Systems.</figcaption>
+  <figcaption style="color: #777;">States and transitions of a system experiencing a metastable failure. From Metastable Failures in Distributed Systems.</figcaption>
 </figure>
 
 In normal operation of EC2, the DWFM maintains a large number (~10^6) of active leases against physical servers and a very small number (~10^2) of broken leases, the latter of which the manager is actively attempting to reestablish. 
