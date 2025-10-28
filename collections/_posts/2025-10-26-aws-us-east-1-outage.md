@@ -106,7 +106,7 @@ But leading reliability engineers have moved on from centering root cause analys
 
 Most obviously, RCA has an infinite regress problem. The cause of the extreme Enactor latency in one AZ is unexplained, but it is is antecedent to the race condition and could be considered a root cause. But, say the latency was causes by high packet drop, what caused *that?* On and on we go, boats against the current—
 
-More interestingly, however, is the myopia induced by RCA. Yes, the extreme latency trigger the race condition bug. It was a *precipitating event*, but it is just one of many latent faults that could emerge from the dynamics of the DynamoDB system. And as shown above by the Swiss cheese analysis, multiple control mechanisms combined into an unrecoverable failure once the latency emerged.
+More interestingly, however, is the myopia induced by RCA. Yes, the extreme latency triggered the race condition bug. It was a *precipitating event*, but it is just one of many latent faults that could emerge from the dynamics of the DynamoDB system. And as shown above by the Swiss cheese analysis, multiple control mechanisms combined into an unrecoverable failure once the latency emerged.
 
 Today’s leading distributed systems engineers, including the SRE’s at Google, analyze failure as a [control problem](https://www.usenix.org/publications/loginonline/evolution-sre-google).
 
