@@ -43,7 +43,7 @@ This document structure is suitable as it matches the structure of the outage.
 
 DynamoDB precipitated all other service failures because it is used by EC2 and caused EC2 to go down, or because a service depended on DynamoDB directly. EC2 and DynamoDB are used extensively within AWS for service implementation, thus the wildfire spread to around 70% of all AWS services in the us-east-1 region.
 
-It is widely known that AWS dogfoods its own cloud services, e.g. DynamoDB, for the implementation of [Amazon.com](http://Amazon.com) *and* other AWS services. DynamoDB and EC2 are ‘layer zero’ bedrock services within AWS. If they go down, basically everything else does.
+It is widely known that AWS dogfoods its own cloud services, e.g. DynamoDB, for the implementation of [Amazon.com](http://Amazon.com) *and* other AWS services. DynamoDB and EC2 are ‘layer one’[^1] foundation services within AWS. If they go down, basically everything else does.
 
 ## A simple race condition
 
@@ -71,9 +71,9 @@ result of incorrect estimates of the likelihood of one or more things. — *Why 
 
 The plan being applied by the slow Enactor fell out of the `N` generations safety window and became old, eligible for deletion. It was the old plan deletion which turned a ‘stale DNS plan’ degradation into a full-blown ‘zero DNS entries’ outage.
 
-Now, back to the TOCTOU issue. Why is an Enactor allowed to make only one plan staleness check for N plan mutations? I suspect it’s because querying the DNS Planner for staleness is magnitudes more expensive than making a plan mutation. It would be non-performant, and *seemingly* unnecessary*,* to make N checks for N fast plan mutations.[^1]
+Now, back to the TOCTOU issue. Why is an Enactor allowed to make only one plan staleness check for N plan mutations? I suspect it's because querying the DNS Planner for staleness is magnitudes more expensive than making a plan mutation. It would be non-performant, and *seemingly* unnecessary*,* to make N checks for N fast plan mutations.[^2]
 
-Without this TOCTOU bug, there’s no ‘stale DNS plan’ degradation and thus no opportunity to mistakenly delete an active plan.[^2]
+Without this TOCTOU bug, there's no 'stale DNS plan' degradation and thus no opportunity to mistakenly delete an active plan.[^3]
 
 We’re at two faults so far, but there’s more. Using the [Swiss cheese model](https://en.wikipedia.org/wiki/Swiss_cheese_model) of accident causation we can pass through a couple more Emmental holes.
 
@@ -81,7 +81,7 @@ We’re at two faults so far, but there’s more. Using the [Swiss cheese model]
 
 Deleting the active plan is a disaster, but the Enactor’s cleanup phase didn’t check for it. This absent guard appears to be another fault. 
 
-Some have pointed out that the Enactor deleting the Planner’s plans is weird, but I think it makes sense. The Planner is allowed to be a straightforward append-only system of outputs. The Enactor makes forward progress against the plan log and maintains the window of active DNS records. If the Planner is deleting plans, it’s also making writes against Route53.[^3]
+Some have pointed out that the Enactor deleting the Planner's plans is weird, but I think it makes sense. The Planner is allowed to be a straightforward append-only system of outputs. The Enactor makes forward progress against the plan log and maintains the window of active DNS records. If the Planner is deleting plans, it's also making writes against Route53.[^4]
 
 After deleting the ‘active’ plan, the Enactor state was corrupted and unrecoverable without “manual operation intervention”, which took over 2 hours to be done. 
 
@@ -178,7 +178,7 @@ In their discussion of remediations, the line item for NLB is about control for 
 
 You only get so many major AWS incidents in your career, so appreciate the ones that you get. AWS’s reliability is the best in the world. I have used all major US cloud providers for years now, and until Monday’s us-east-1 outage AWS was *clearly* the most reliable. This is perhaps their biggest reliability failure in a decade. We should learn something from it.
 
-I disagree with the popular early explanations. The [“brain drain”](https://www.theregister.com/2025/10/20/aws_outage_amazon_brain_drain_corey_quinn/) theory has a high burden of proof and very little evidence. It possible that brain drain delayed remediation—this was a 14 hour outage—but we can’t see their response timeline. There’s also no evidence that us-east-1, being the oldest region, suffered from its age.[^4] The systems involved (DynamoDB, DNS Enactor, DWFM) are probably running globally. Also, those suggesting AWS’s reliability has fallen behind its competitors are too hasty. GCP had a severe global outage just [last June](https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW).
+I disagree with the popular early explanations. The ["brain drain"](https://www.theregister.com/2025/10/20/aws_outage_amazon_brain_drain_corey_quinn/) theory has a high burden of proof and very little evidence. It possible that brain drain delayed remediation—this was a 14 hour outage—but we can't see their response timeline. There's also no evidence that us-east-1, being the oldest region, suffered from its age.[^5] The systems involved (DynamoDB, DNS Enactor, DWFM) are probably running globally. Also, those suggesting AWS's reliability has fallen behind its competitors are too hasty. GCP had a severe global outage just [last June](https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW).
 
 My main takeaway is that in our industry the design, implementation, and operation of production systems still regularly falls short of what we think we’re capable of. DynamoDB hit a fairly straightforward race condition and entered into unrecoverable state corruption. EC2 went into congestion collapse. NLB’s healthcheck system got misdirected by bad data. We’ve seen these before, we’ll see them again. [We’re still early with the cloud](https://erikbern.com/2022/10/19/we-are-still-early-with-the-cloud.html).
 
@@ -186,7 +186,9 @@ Software systems are far more complex and buggy than we realize. Useful software
 
 Monday was a bad day for hyper-scaled distributed systems. But in in the long run the public cloud industry will root out its unsound design and operation. Today’s [advanced correctness and reliability practices](https://assets.amazon.science/67/f9/92733d574c11ba1a11bd08bfb8ae/how-amazon-web-services-uses-formal-methods.pdf) will become normal.
 
-[^1]: After writing this, I’m now doubting it. It’s also plausible that the TOCTOU bug existed for no good reason.
-[^2]: Some commentators on the incident have noted that stale writes would be avoided with [locking and fencing tokens](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html), but AWS did note that for “resilience” the enactors are not allowed to coordinate (via a distributed locking service).
-[^3]: Since publishing there's been [indication from an AWS engineer](https://x.com/WesEklund/status/1981455898984825322) that the Enactor cleanup didn't directly delete anything from Route53. Instead, it deleted the plan of the slow Enactor making the plan not absent (`None`) but *empty* (`[]`). The slow Enactor then applied this empty plan, causing DNS record deletions. 
-[^4]: I would say however that us-east-1 has notably more outages than other regions (eg. us-east-2) and should be avoided where possible. I believe it’s relevant that us-east-1 is by far the biggest and most complex AWS region. In future I will avoid us-east-1 when capacity and new features aren’t important concerns.
+[^1]: I originally said "layer zero", but Brad Knowles, ex-AWS, [corrected me](https://www.linkedin.com/feed/update/urn:li:activity:7388747844003991552/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7388747844003991552%2C7388989179097071636%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287388989179097071636%2Curn%3Ali%3Aactivity%3A7388747844003991552%29) that NTP and DHCP are layer zero, not EC2 and DynamoDB. 
+[^2]: After writing this, I'm now doubting it. It's also plausible that the TOCTOU bug existed for no good reason.
+[^3]: Some commentators on the incident have noted that stale writes would be avoided with [locking and fencing tokens](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html), but AWS did note that for "resilience" the enactors are not allowed to coordinate (via a distributed locking service).
+[^4]: Since publishing there's been [indication from an AWS engineer](https://x.com/WesEklund/status/1981455898984825322) that the Enactor cleanup didn't directly delete anything from Route53. Instead, it deleted the plan of the slow Enactor making the plan not absent (`None`) but *empty* (`[]`). The slow Enactor then applied this empty plan, causing DNS record deletions. 
+[^5]: I would say however that us-east-1 has notably more outages than other regions (eg. us-east-2) and should be avoided where possible. I believe it's relevant that us-east-1 is by far the biggest and most complex AWS region. In future I will avoid us-east-1 when capacity and new features aren't important concerns.
+
