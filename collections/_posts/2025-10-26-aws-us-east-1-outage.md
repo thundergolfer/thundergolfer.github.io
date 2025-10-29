@@ -21,7 +21,7 @@ image: /images/aws_outage/together.png
 </figure>
 
 
-On Monday the AWS us-east-1 region had its worst outage in over 10 years. The whole thing lasted over 16 hours and affected 140 AWS services, including, critically, EC2. SLAs were blown, an eight-figure revenue reduction will follow. Before Monday, I’d spent around 7 years in industry and never personally had production nuked by a public cloud outage. I generally regarded AWS’s reliability as excellent, industry-leading.
+On Monday the AWS us-east-1 region had its worst outage in over 10 years. The whole thing lasted over 14 hours and affected 140 AWS services, including, critically, EC2. SLAs were blown, an eight-figure revenue reduction will follow. Before Monday, I’d spent around 7 years in industry and never personally had production nuked by a public cloud outage. I generally regarded AWS’s reliability as excellent, industry-leading.
 
 What the hell happened?
 
