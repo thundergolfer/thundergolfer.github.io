@@ -6,6 +6,7 @@ categories: reliability aws incident postmortem
 summary: A thorough review of a major cloud outage.
 permalink: /blog/aws-us-east-1-outage-oct20
 image: /images/aws_outage/together.png
+tags: popular
 ---
 
 <figure style="margin: 0; margin-bottom: 1em;">
