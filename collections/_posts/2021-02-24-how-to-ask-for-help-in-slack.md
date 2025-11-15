@@ -4,6 +4,7 @@ title:      How To Ask For Help In Slack
 date:       2021-02-24
 summary:    The help-needer's and question-asker's checklist 
 categories: communication slack
+permalink: help-in-slack
 ---
 
 ## The Checklist
