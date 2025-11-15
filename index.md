@@ -3,7 +3,7 @@ layout: default
 tags: home
 ---
 
-# 👋 Hi there, <br/> I'm Jonathon Belotti.
+# <span class="wave">👋</span> Hi there, <br/> I'm Jonathon Belotti.
 
 ### I'm a software engineer with a focus on data & platform engineering.
 
@@ -11,7 +11,7 @@ tags: home
 
 <br>
 
-I can usually be found in a programming IDE or reading.
+I can usually be found programming or reading.
 I'm bullish on, and a big booster of:
 
 - [@bazelbuild](https://github.com/bazelbuild/) and generally using functional principles to keep things sane. I was a main contributor to Bazel's Python tooling, including [rules_python](https://github.com/bazel-contrib/rules_python).

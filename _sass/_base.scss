@@ -32,3 +32,19 @@ body {
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+.wave {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    animation: wave-animation 1.2s ease-in-out;
+  }
+}
+
+@keyframes wave-animation {
+  0%, 100% { transform: rotate(0deg); }
+  10%, 30%, 50%, 70%, 90% { transform: rotate(14deg); }
+  20%, 40%, 60%, 80% { transform: rotate(-8deg); }
+}
