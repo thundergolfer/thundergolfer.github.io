@@ -25,7 +25,7 @@ Scroll down to see some personal dashboard stats powered by Modal!
 
 ### Where I'm at now
 
-🗽 Today, I live in NYC. When I'm not working, you can find me walking a new part of the five boroughs, or stopped in a park to read. There's a lot to love in this vast, grubby city, and I hope to see all of it by foot.
+Today, I live in NYC. When I'm not working, you can find me walking a new part of the five boroughs, or stopped in a park to read. There's a lot to love in this vast, grubby city, and I hope to see all of it by foot.
 
 ### What I used to do
 
