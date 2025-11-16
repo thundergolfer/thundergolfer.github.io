@@ -31,7 +31,7 @@ Not a lot! A megabyte of Tandem main memory cost $5,000 and could be used to cac
 If Gray bought too much RAM he’d have overspent, under-loading his relatively cheaper disk storage devices. 
 If he bought too little his disks overload and performance degrades. This is an optimization problem, but one that felt quite strange to me when first reading it.
 
-It’s now 2025—[forty years on](https://www.youtube.com/watch?v=SNXJAD3yCaQ)[^1]—and cloud computing has completely upended 
+It’s now 2025—forty years on[^1]—and cloud computing has completely upended 
 the typical engineer’s relationship with computing economics. 
 What Gray is doing is capacity planning, and in the era of hyperscaler clouds very few of us need to do it. 
 
@@ -142,7 +142,7 @@ Pretty neat!
 
 ----
 
-[^1]: My Australian school liked to borrow prestige from fancy British schools. [This song](https://en.wikipedia.org/wiki/Forty_Years_On_(song)) is sung before graduation, in an effort to make kids sentimental before their time. Andy Bernard, [someone did write a song about that.](https://www.youtube.com/watch?v=ujJQyhB0dws)
+[^1]: My Australian school liked to borrow prestige from fancy British schools. [This song](https://en.wikipedia.org/wiki/Forty_Years_On_(song)) is [sung before graduation](https://www.youtube.com/watch?v=SNXJAD3yCaQ), in an effort to make kids sentimental before their time. Andy Bernard, [someone did write a song about that.](https://www.youtube.com/watch?v=ujJQyhB0dws)
 
 [^2]: Gray and Shenoy, [*Rules of Thumb in Data Engineering*](https://www.cs.cmu.edu/~natassa/courses/15-721/papers/MS_TR_99_100_Rules_of_Thumb_in_Data_Engineering.pdf) (2000)
 
