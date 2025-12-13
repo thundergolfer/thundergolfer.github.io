@@ -40,7 +40,7 @@ But why can’t this be out in the open? For the same reason that we nowadays te
 
 ## Sorted
 
-I decided to write this ‘Zen of Slack’ follow-up after hearing that my [original Slack checklist](/communication/slack/2021/02/24/how-to-ask-for-help-in-slack/) still gets passed around my last joint, Canva. That post is possibly more enduringly useful than whatever of my code remains! 
+I decided to write this ‘Zen of Slack’ follow-up after hearing that my [original Slack checklist](/help-in-slack) still gets passed around my last joint, Canva. That post is possibly more enduringly useful than whatever of my code remains! 
 
 When done well, a Slack workspace is exactly what it wants to be, a S.L.A.C.K, and it’s great. I’ll never like email, and there’s something just not quite right about Discord. I’m a Slack stan, and I’d love to chat with you there—in a channel, let’s keep out of DMs :)
 

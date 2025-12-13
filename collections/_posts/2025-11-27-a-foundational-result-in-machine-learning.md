@@ -1,9 +1,10 @@
 ---
 layout:     post
-title:      "\"A Foundation Result in Machine Learning...\""
-date:       2017-07-07
-summary:    Diving into single-layer perceptrons and information theory
+title:      "\"A Foundational Result in Machine Learning\""
+date:       2025-11-27
+summary:    Diving into single-layer perceptrons and basic information theory.
 categories: machine-learning information-theory rnn
+mathjax: true
 ---
 
 > A foundational result in machine learning is that a single-layer perceptron with N<sup>2</sup> parameters can store at least 2 bits of information per parameter ([Cover, 1965](http://webcourse.cs.technion.ac.il/236941/Winter2012-2013/ho/WCFiles/Cover65.pdf); [Gardner, 1988](http://iopscience.iop.org/article/10.1088/0305-4470/21/1/030/pdf); [Baldi & Venkatesh, 1987](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.913)). More precisely, a perceptron can implement a mapping from 2N, N-dimensional, input vectors to arbitrary N-dimensional binary output vectors, subject only to the extremely weak restriction that the input vectors be in general position.
@@ -25,7 +26,7 @@ I didn't get it, but this is apparently a foundational result, so off I went try
 
 The network described looks like this:
 
-### <IMAGE OF NETWORK />
+![images/single-layer-perceptron-2n.png](/images/single-layer-perceptron-2n.png)
 
 It is single-layer, so there are no intermediate (hidden) layers between the input nodes and the output nodes. Because it receives `N` dimensional vectors, and outputs `N` dimensional vectors we have `2N` nodes with `N X N` (or N<sup>2</sup>) connections. Each of these connections has an associated *weight*, and it is these N<sup>2</sup> weights that are our N<sup>2</sup> "parameters".
 
@@ -33,7 +34,7 @@ This is the network that can store `2 X N X N` bits of information utilising `N 
 
 > 2 bits of information per parameter
 
-It is important to understand what it means for the neural network to store information, and it may be quite a foreign idea to those who are used to thinking of neural network's ability to decide sentiment, recognise faces, or translate languages, rather than think about their relationship with the mathematical idea of *information* and it's storage in parametric models like neural networks.
+It is important to understand what it means for the neural network to store information, and it may be quite a foreign idea to those who are used to thinking of neural network's ability to decide sentiment, recognise faces, or translate languages, rather than think about their relationship with the mathematical idea of *information* and its storage in parametric models like neural networks.
 
 I will quickly give an intro to Information Theory, but see [this from Stanford University](https://web.stanford.edu/~montanar/RESEARCH/BOOK/partA.pdf) for something more comprehensive.
 
@@ -41,15 +42,15 @@ Information exists in contrast to uncertainty. Given a unknown variable or set o
 
 A 8-sided die on the other hand has `8` equally possible outcomes. So for a die throw, predicting the value of the unknown variable is 'harder'. How is this extra uncertainty quantified? *Entropy* is the equation that defines uncertainty. This is the equation for Entropy, where `X` is the uncertain outcome, and `p(x)` is the probability distribution over the values that outcome can take. In our examples things are simple, because all potential values of the outcome are equally likely.
 
-H<sub>X</sub> ≡ − (SUM over x∈X) p(x) log2 p(x)
+$$
+H_X \equiv - \sum_{x \in X} p(x) \log_2 p(x)
+$$
 
 Each outcome of the die throw has a probability of `1/8` so summing over each outcome in `X` we get 3 (it becomes `-((1/8 * -3) + (1/8 * -3) + ...)` ). The entropy of a die throw is `3`. The entropy of a coin is `1`, because we sum over two outcomes of probability `1/2`. With outcome sets of equal probability, the entropy value is nice and clean, the logarithm (base 2) of the number of outcomes.
 
-..... more stuff ... more stuff
-
 It was said before that information contrasts with uncertainty. To be specific, information is contained in that which reduces entropy. It is the thing that takes a variable which could be a number of ways, and reduces those number of ways such that we can more easily predict that variable. Most simply, if you can perfectly predict the outcome of an unknown variable, you have perfect information, and *that information is precisely equal to the entropy of that random variable*. If you have a variable space of `K` uncertainty, then to have the power to predict perfectly the values of that space is to have `K` information. This is crucial for soon understanding how each parameter has `2` *bits* of information.
 
-Now there’s a subtle jump from saying “this random discrete variable has an entropy of 3” to saying “this random discrete variable has 3 **bits** of entropy. All that it means to tack on the notion of there being bits of entropy is that we are using base 2 in our calculations (see the log base in equation above). We could quantify our entropy in another base if we wanted, but neural networks run on computers and so it’s “bits of entropy”.
+Now there’s a subtle jump from saying “this random discrete variable has an entropy of 3” to saying “this random discrete variable has 3 **bits** of entropy. The unit “bits” comes entirely from the choice of logarithm base: using log base 2 means entropy is measured in bits. If we used natural logs, the entropy would be in nats; if we used log base 10, it would be in bans. We typically use bits because information theory and digital computation are built around binary encoding—not because the underlying math requires it.
 
 So for our network to have `2` bits of information per parameter, `2 X N X N` bits of information in total, it would have to provide perfect information of a variable space with `2 X N X N` entropy. Like above, we assume that all outcomes are equally likely. This means that entropy is equal to the logarithm of the number of possible outcomes. Let **B** be the number of outcomes.
 
@@ -81,46 +82,499 @@ General position can be a characteristic of any set of points or geometric objec
 
 (Note: The network under discussion here has no ‘bias value’ for simplicity, but ignoring that does not compromise generality)
 
-[INCLUDE PICTURE HERE B/C READING RIGHT NOW IT'S CONFUSING ME THAT WE'VE
-SWITCHED CONTEXT TO A NEW TYPE OF NETWORK]
+<figure style="margin: 0; margin-bottom: 1em; text-align: center;">
+  <img src="/images/bool-perceptron.jpg" alt="Boolean Perceptron Dichotomies" style="border-radius: 0.4em; width: 60%;">
+  <figcaption style="color: #777;">Illustration of a Boolean perceptron dichotomising points.</figcaption>
+</figure>
+
 
 Our small set of low-dimensional vectors looks like this: `{[0,1], [2, 2], [0,5]}`. These `3` vectors with dimension `N = 2` could map to one of `8` possible outcomes: `[0,0,0], [0,0,1], [0,1,0] ... [1, 1, 1]`. The entropy of this variable space is thus `3` (log<sub>2</sub>2<sup>3</sup>). The function of our neural network must be able to dichotomise these 3 points in those 8 ways. If it doesn’t, then it hasn’t completely removed the entropy of the variable space, and thus can’t claim the full `3` bits of information.
 
-### DIAGRAM OF 3 VECTORS IN GENERAL POSITION
+<figure style="margin: 0; margin-bottom: 1em; text-align: center;">
+  <img src="/images/general-position.png" alt="general position" style="border-radius: 0.4em; width: 60%;">
+  <figcaption style="color: #777;">Three vectors in general position. A dotted line shows a possible dichotomy.</figcaption>
+</figure>
 
 What happens though if we change `[0, 5]` to `[4, 4]`? Our new set becomes `{[0,1], [2, 2], [4,4]}` and our plot looks like this:
 
-### DIAGRAM OF 3 VECTORS **NOT** IN GENERAL POSITION
+<figure style="margin: 0; margin-bottom: 1em; text-align: center;">
+  <img src="/images/not-general-position.png" alt="not in general position" style="border-radius: 0.4em; width: 60%;">
+  <figcaption style="color: #777;">Three vectors NOT in general position. A dotted line shows a possible dichotomy.</figcaption>
+</figure>
 
-It should be quite clear that the network can no longer implement functions that dichotomise the 3 inputs in 8 different ways. Imagine trying to drawing a line that separates (dichotomises) these vectors. Our new input space has imposed a restriction on the network such that it *cannot implement a mapping to "arbitrary [2]-dimensional binary output vectors"*. This directly impacts the information storage capacity of the network because the linear dependence of `[2, 2]` and `[4, 4]` ensure that they *must share the same outcome*. If they share an outcome, then the uncertainty about the system is reduced. (TODO: Check if that preceding sentence makes sense).
+It should be quite clear that the network can no longer implement functions that dichotomise the 3 inputs in 8 different ways. Imagine trying to drawing a line that separates (dichotomises) these vectors. Our new input space has imposed a restriction on the network such that it *cannot implement a mapping to "arbitrary [2]-dimensional binary output vectors"*. This directly impacts the information storage capacity of the network because the linear dependence of `[2, 2]` and `[4, 4]` ensure that they *must share the same outcome*. If they share an outcome, then the uncertainty about the system is reduced.
 
-Now it was called as an “extremely weak restriction” this need for general position-ality. Why? Well, because in some space `d` dimensional space it is [almost certain that any random set of real valued points from  `d`  will be in general position](https://math.stackexchange.com/a/1065352). You’d have to carefully design your variable space to *not* have this quality.
+Now it was called an “extremely weak restriction”, this need for general positionality. Why? Well, because in some space `d` dimensional space it is [almost certain that any random set of real valued points from  `d`  will be in general position](https://math.stackexchange.com/a/1065352). You’d have to carefully design your variable space to *not* have this quality.
 
-This idea of a variable space having a ‘complexity’ that enables a neural network to implement the full complement of possible dichotomies can be solidified by further learning into [*Cover’s Function Counting Theorem*](http://www.cns.nyu.edu/~eorhan/notes/covers-theorem.pdf).
+<!-- 3D Point Classifier Component - Can be embedded in Jekyll blog post -->
+<div id="point-classifier-3d" class="point-classifier-container">
+    <style>
+        .point-classifier-container {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            position: relative;
+            margin: 20px auto;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .point-classifier-container .pc-canvas-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .point-classifier-container .pc-controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            max-width: 280px;
+        }
+        
+        .point-classifier-container .pc-controls h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.3em;
+            font-family: Arial, sans-serif;
+        }
+        
+        .point-classifier-container .pc-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 3px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+        }
+        
+        .point-classifier-container .pc-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .point-classifier-container .pc-button:active {
+            transform: translateY(0);
+        }
+        
+        .point-classifier-container .pc-info {
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(240, 240, 240, 0.9);
+            border-radius: 5px;
+            font-size: 13px;
+            color: #555;
+            font-family: Arial, sans-serif;
+        }
+        
+        .point-classifier-container .pc-info p {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+        
+        .point-classifier-container .pc-stats {
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        
+        .point-classifier-container .pc-red-count {
+            color: #ff4444;
+        }
+        
+        .point-classifier-container .pc-blue-count {
+            color: #4444ff;
+        }
 
-#### ! - Explain Cover’s function theorem (or maybe don’t)
+        @media (max-width: 768px) {
+            .point-classifier-container {
+                height: 500px;
+            }
+            
+            .point-classifier-container .pc-controls {
+                max-width: 200px;
+                padding: 15px;
+            }
+            
+            .point-classifier-container .pc-button {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
+    
+    <div class="pc-canvas-container" id="pc-canvas-container"></div>
+    <div class="pc-controls">
+        <button class="pc-button" id="pc-generate-plane">Generate Random Plane</button>
+        <button class="pc-button" id="pc-reset-points">Reset Points</button>
+            <div class="pc-stats">
+                <span class="pc-red-count">Red: <span id="pc-red-count">0</span></span> | 
+                <span class="pc-blue-count">Blue: <span id="pc-blue-count">0</span></span>
+            </div>
+    </div>
+</div>
 
-#### ! - Talk about how it's possible that the neural network is guaranteed to find the correct mapping
+This idea of a variable space having a ‘complexity’ that enables a neural network to implement the full complement of possible dichotomies can be solidified by further reading into [*Cover’s Function Counting Theorem*](http://www.cns.nyu.edu/~eorhan/notes/covers-theorem.pdf).
 
 Exactly *how* a neural network’s group of weights is able to implement these arbitrary function mappings is outside the scope of this blogpost. Maybe I’ll do it in a follow-up. If you want to go into yourself, the “Perceptron Learning Algorithm” is explored under heading 3 in  [*Introduction: The Perceptron*, Haim Sompolinsky, MIT](http://web.mit.edu/course/other/i2course/www/vision_and_learning/perceptron_notes.pdf).
 
-#### ! - Talk about how it's "at least" 2 bits of information. How can it be more?
+### "At least 2"
 
 Now there’s one last thing to note about the quote introduced at the start. It says “at least” `2` bits. So it can be more? For a quick answer let’s dip into one of the physics papers linked in our top quote,  [*The Space of Interactions in Neural Network Models* - E Gardner, Dep. of Physics, Edinburgh University.](http://iopscience.iop.org/article/10.1088/0305-4470/21/1/030/pdf)
 
 > In the random case, the maximum number of patterns is 2N (Cover 1965, Venkatesh 1986a, b, Baldi and Venkatesh 1987) and we will show that this increases for **correlated patterns**.  [emphasis mine]
 
-For random patterns, the storage capacity is `2` bits, but when input patterns are correlated, the network is able to exploit the correlation to store more pattern -> output mappings. The correlation between inputs means that the storage of each individual pattern represents *less* information storage, but overall the storage capacity of the network is increased beyond `2` bits per parameter because of a relatively larger increase in the number of stored patterns. I don’t understand that physics paper very well at all, and it’s exploring neural networks in an unfamiliar context where apparently “magnetism -> *m*”  is a thing, but I think the high-level intuition can be gathered.
+For random patterns, the storage capacity is `2` bits, but when input patterns are correlated, the network is able to exploit the correlation to store more pattern -> output mappings. The correlation between inputs means that the storage of each individual pattern represents *less* information storage, but overall the storage capacity of the network is increased beyond `2` bits per parameter because of a relatively larger increase in the number of stored patterns. I don’t understand that physics paper very well at all, and its exploring neural networks in an unfamiliar context where apparently “magnetism -> *m*”  is a thing, but I think the high-level intuition can be gathered.
 
-----
 
-So there you have it. It became a bit of a rabbit hole for me, but it was rewarding. I hope if you yourself were initially perplexed by the quote that started this off,  my writing that followed was able to do some demystifying.  
-
-#### Footnotes / References
+### References
 
 - [Introduction to Information Theory](https://web.stanford.edu/~montanar/RESEARCH/BOOK/partA.pdf)
 - [Information Theory, Inference, and Learning Algorithms](http://www.inference.org.uk/itprnn/book.pdf) - David J.C MacKay
 - [Capacity and Trainability in Recurrent Neural Networks - Arxiv.com](https://arxiv.org/abs/1611.09913)
-- [Introduction: The Perceptron Haim](http://web.mit.edu/course/other/i2course/www/vision_and_learning/perceptron_notes.pdf) - Haim Sompolinsky, MIT
+- [Introduction: The Perceptron Haim](http://web.mit.edu/course/other/i2course/www/vision_and_learning/perceptron_notes.pdf) - Haim Sompolinsky, MIT (October 2013)
+- [Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws](https://arxiv.org/pdf/2404.05405) (April, 2024)
+- [Capacity and Trainability in Recurrent Neural Networks](https://arxiv.org/pdf/1611.09913) (ICLR 2017)
 
 ------
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function() {
+    /* Encapsulate everything in an IIFE to avoid global namespace pollution */
+    let pcScene, pcCamera, pcRenderer;
+    let pcPoints, pcPointsMaterial;
+    let pcPlane, pcPlaneMesh;
+    let pcPointsData = [];
+    let pcColors = [];
+    const PC_NUM_POINTS = 200;
+    let pcContainer;
+    let pcAnimationId;
+
+    function pcInit() {
+        pcContainer = document.getElementById('pc-canvas-container');
+        if (!pcContainer) return;
+        
+        const containerRect = pcContainer.getBoundingClientRect();
+        const width = containerRect.width;
+        const height = containerRect.height;
+
+        pcScene = new THREE.Scene();
+        pcScene.background = new THREE.Color(0xf0f0f0);
+        pcScene.fog = new THREE.Fog(0xf0f0f0, 10, 50);
+        pcCamera = new THREE.PerspectiveCamera(
+            75,
+            width / height,
+            0.1,
+            1000
+        );
+        pcCamera.position.set(10, 10, 10);
+        pcCamera.lookAt(0, 0, 0);
+
+        /* Renderer setup */
+        pcRenderer = new THREE.WebGLRenderer({ antialias: true });
+        pcRenderer.setSize(width, height);
+        pcRenderer.shadowMap.enabled = true;
+        pcRenderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        pcContainer.appendChild(pcRenderer.domElement);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        pcScene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
+        directionalLight.position.set(5, 10, 5);
+        directionalLight.castShadow = true;
+        pcScene.add(directionalLight);
+        const gridHelper = new THREE.GridHelper(20, 20, 0x888888, 0xcccccc);
+        pcScene.add(gridHelper);
+        const axesHelper = new THREE.AxesHelper(5);
+        pcScene.add(axesHelper);
+        pcCreatePoints();
+        pcCreateBoundingBox();
+
+        /* Controls (basic orbit controls implementation) */
+        pcAddControls();
+        window.addEventListener('resize', pcOnWindowResize, false);
+
+        /* Setup button event listeners */
+        document.getElementById('pc-generate-plane').addEventListener('click', pcGeneratePlane);
+        document.getElementById('pc-reset-points').addEventListener('click', pcResetPoints);
+
+        /* Start animation loop */
+        pcAnimate();
+    }
+
+    function pcCreateBoundingBox() {
+        const geometry = new THREE.BoxGeometry(10, 10, 10);
+        const edges = new THREE.EdgesGeometry(geometry);
+        const line = new THREE.LineSegments(
+            edges,
+            new THREE.LineBasicMaterial({ color: 0x999999, opacity: 0.3, transparent: true })
+        );
+        pcScene.add(line);
+    }
+
+    function pcCreatePoints() {
+        /* Clear existing points if any */
+        if (pcPoints) {
+            pcScene.remove(pcPoints);
+        }
+
+        pcPointsData = [];
+        const geometry = new THREE.BufferGeometry();
+        const positions = [];
+        pcColors = [];
+
+        for (let i = 0; i < PC_NUM_POINTS; i++) {
+            const x = (Math.random() - 0.5) * 10;
+            const y = (Math.random() - 0.5) * 10;
+            const z = (Math.random() - 0.5) * 10;
+            
+            positions.push(x, y, z);
+            pcPointsData.push(new THREE.Vector3(x, y, z));
+            
+            /* Initially all points are white */
+            pcColors.push(0.8, 0.8, 0.8);
+        }
+
+        geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+        geometry.setAttribute('color', new THREE.Float32BufferAttribute(pcColors, 3));
+
+        pcPointsMaterial = new THREE.PointsMaterial({
+            size: 0.3,
+            vertexColors: true,
+            sizeAttenuation: true
+        });
+
+        pcPoints = new THREE.Points(geometry, pcPointsMaterial);
+        pcPoints.castShadow = true;
+        pcScene.add(pcPoints);
+
+        pcUpdateStats(0, 0);
+    }
+
+    function pcGeneratePlane() {
+        /* Remove existing plane if any */
+        if (pcPlaneMesh) {
+            pcScene.remove(pcPlaneMesh);
+        }
+
+        /* Generate random plane parameters (ax + by + cz + d = 0) */
+        const normal = new THREE.Vector3(
+            Math.random() - 0.5,
+            Math.random() - 0.5,
+            Math.random() - 0.5
+        ).normalize();
+
+        /* Random distance from origin */
+        const d = (Math.random() - 0.5) * 3;
+
+        /* Create visual representation of plane */
+        const planeGeometry = new THREE.PlaneGeometry(15, 15);
+        const planeMaterial = new THREE.MeshBasicMaterial({
+            color: 0x00ff00,
+            side: THREE.DoubleSide,
+            opacity: 0.3,
+            transparent: true
+        });
+
+        pcPlaneMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+        
+        /* Position and orient the plane */
+        pcPlaneMesh.lookAt(normal);
+        pcPlaneMesh.position.copy(normal.clone().multiplyScalar(-d));
+        
+        pcScene.add(pcPlaneMesh);
+
+        /* Classify points */
+        pcClassifyPoints(normal, d);
+    }
+
+    function pcClassifyPoints(normal, d) {
+        const colorAttribute = pcPoints.geometry.getAttribute('color');
+        const colors = colorAttribute.array;
+        let redCount = 0;
+        let blueCount = 0;
+
+        for (let i = 0; i < pcPointsData.length; i++) {
+            const point = pcPointsData[i];
+            
+            /* Calculate which side of plane the point is on */
+            const distance = normal.dot(point) + d;
+            
+            if (distance > 0) {
+                /* Red side */
+                colors[i * 3] = 1;
+                colors[i * 3 + 1] = 0.2;
+                colors[i * 3 + 2] = 0.2;
+                redCount++;
+            } else {
+                /* Blue side */
+                colors[i * 3] = 0.2;    
+                colors[i * 3 + 1] = 0.2;
+                colors[i * 3 + 2] = 1; 
+                blueCount++;
+            }
+        }
+
+        colorAttribute.needsUpdate = true;
+        pcUpdateStats(redCount, blueCount);
+
+        /* Add animation effect */
+        pcAnimatePlane();
+    }
+
+    function pcAnimatePlane() {
+        if (!pcPlaneMesh) return;
+        
+        let scale = 0.1;
+        const animatePlaneScale = () => {
+            if (scale < 1) {
+                scale += 0.05;
+                pcPlaneMesh.scale.set(scale, scale, scale);
+                requestAnimationFrame(animatePlaneScale);
+            }
+        };
+        animatePlaneScale();
+    }
+
+    function pcResetPoints() {
+        if (pcPlaneMesh) {
+            pcScene.remove(pcPlaneMesh);
+            pcPlaneMesh = null;
+        }
+
+        const colorAttribute = pcPoints.geometry.getAttribute('color');
+        const colors = colorAttribute.array;
+
+        for (let i = 0; i < colors.length; i += 3) {
+            colors[i] = 0.8;
+            colors[i + 1] = 0.8;
+            colors[i + 2] = 0.8;
+        }
+
+        colorAttribute.needsUpdate = true;
+        pcUpdateStats(0, 0);
+    }
+
+    function pcUpdateStats(red, blue) {
+        const redEl = document.getElementById('pc-red-count');
+        const blueEl = document.getElementById('pc-blue-count');
+        if (redEl) redEl.textContent = red;
+        if (blueEl) blueEl.textContent = blue;
+    }
+
+    function pcAddControls() {
+        let mouseX = 0, mouseY = 0;
+        let targetX = 0, targetY = 0;
+        let isMouseDown = false;
+        let isRightButton = false;
+        let panX = 0, panY = 0;
+
+        pcRenderer.domElement.addEventListener('mousedown', (e) => {
+            isMouseDown = true;
+            isRightButton = e.button === 2;
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        pcRenderer.domElement.addEventListener('mouseup', () => {
+            isMouseDown = false;
+        });
+
+        pcRenderer.domElement.addEventListener('mousemove', (e) => {
+            if (!isMouseDown) return;
+
+            const deltaX = e.clientX - mouseX;
+            const deltaY = e.clientY - mouseY;
+
+            if (isRightButton) {
+                /* Pan */
+                panX += deltaX * 0.01;
+                panY -= deltaY * 0.01;
+                pcCamera.position.x += deltaX * 0.01;
+                pcCamera.position.y -= deltaY * 0.01;
+            } else {
+                /* Rotate */
+                targetX += deltaX * 0.01;
+                targetY += deltaY * 0.01;
+            }
+
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        pcRenderer.domElement.addEventListener('wheel', (e) => {
+            const zoom = e.deltaY > 0 ? 1.1 : 0.9;
+            pcCamera.position.multiplyScalar(zoom);
+        });
+
+        pcRenderer.domElement.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+
+        /* Smooth camera movement */
+        setInterval(() => {
+            if (!isMouseDown || isRightButton) {
+                const radius = Math.sqrt(
+                    pcCamera.position.x * pcCamera.position.x +
+                    pcCamera.position.z * pcCamera.position.z
+                );
+                pcCamera.position.x = radius * Math.sin(targetX);
+                pcCamera.position.z = radius * Math.cos(targetX);
+                pcCamera.position.y += (targetY * 10 - pcCamera.position.y) * 0.05;
+                pcCamera.lookAt(0, 0, 0);
+            }
+        }, 16);
+    }
+
+    function pcOnWindowResize() {
+        if (!pcContainer) return;
+        const containerRect = pcContainer.getBoundingClientRect();
+        pcCamera.aspect = containerRect.width / containerRect.height;
+        pcCamera.updateProjectionMatrix();
+        pcRenderer.setSize(containerRect.width, containerRect.height);
+    }
+
+    function pcAnimate() {
+        pcAnimationId = requestAnimationFrame(pcAnimate);
+        
+        /* Rotate plane slightly if it exists */
+        if (pcPlaneMesh) {
+            pcPlaneMesh.rotation.z += 0.001;
+        }
+        
+        pcRenderer.render(pcScene, pcCamera);
+    }
+
+    /* Initialize when DOM is ready */
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', pcInit);
+    } else {
+        /* DOM is already loaded */
+        pcInit();
+    }
+    window.pcCleanup = function() {
+        if (pcAnimationId) {
+            cancelAnimationFrame(pcAnimationId);
+        }
+        window.removeEventListener('resize', pcOnWindowResize);
+        if (pcRenderer) {
+            pcRenderer.dispose();
+        }
+    };
+})();
+</script>
+<!-- End of 3D Point Classifier Component -->
