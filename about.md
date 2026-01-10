@@ -3,31 +3,194 @@ layout: about
 permalink: /about/
 title: A little bit about me.
 tags: about
-headshot: /images/headshot.jpg
 ---
 
-### Where I'm from
+### Origins
 
 I was born and raised in the southeast suburbs of Victoria, Australia — a place almost perfecting the ['surbubia as giant nursery'](http://www.paulgraham.com/nerds.html) vision of urban development.
 
+<div class="hero-images-container">
+  <div class="hero-images">
+    <div>
+      <img src="/images/about/brighton-beach-melbourne.png" alt="Brighton Beach, Melbourne" style="border-radius: 0.4em;">
+      <div style="color: #777; font-size: 0.96em; padding-top: 0.4em; text-align: center;">
+        Brighton Beach, Melbourne &mdash; famous for its colorful beach boxes.
+      </div>
+    </div>
+    <div>
+      <img src="/images/about/bentleigh-birds-eye-view.jpg" alt="Bentleigh Bird's Eye View" style="border-radius: 0.4em;">
+      <div style="color: #777; font-size: 0.96em; padding-top: 0.4em; text-align: center;">
+        A bird’s-eye view of Bentleigh, the suburb where I grew up in Victoria, Australia.
+      </div>
+    </div>
+  </div>
+</div>
+
+Until I found programming I could usually be found at Brighton Beach, our local spot. You can buy one of those 'beach boxes' pictured for around
+$300k. The most expensive deck chair and jet ski storage you can find. Fortunately, broke uni kids can use their decks for free.
+
+<style>
+.hero-images-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 2em;
+}
+
+.hero-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-images img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-images {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-images img {
+    height: 300px;
+  }
+}
+
+.modal-images-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 2em;
+}
+
+.modal-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.modal-images img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.modal-captions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0.5rem auto 0;
+  padding: 0 1rem;
+}
+
+.modal-captions figcaption {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-images {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-images img {
+    height: 300px;
+  }
+
+  .modal-captions {
+    grid-template-columns: 1fr;
+  }
+}
+
+.highlight-face {
+  position: relative;
+}
+
+.highlight-face img {
+  position: relative;
+}
+
+.highlight-face::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 87, 34, 0.9);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+}
+
+.highlight-face:hover::after {
+  opacity: 1;
+}
+</style>
 
 
-### What I do now
+
+
+
+### Day-by-day
+
+Currently, I help build [**modal.com**](https://modal.com), AI infrastructure that developers love.
+I joined in August 2022 as lucky #7. At the time the company was pre-PMF and pre-revenue, but full of 
+shockingly capable engineers with whom I still enthusiastically struggle to keep up with. 
+
+In August 2025 Modal announced its $1.1B Series B, and by year end we'd hit 70+ people and 9-figure ARR.
+
+<span style="color: #777; cursor: pointer; text-decoration: underline;" onclick="document.getElementById('dashboard').scrollIntoView({ behavior: 'smooth' });">
+  (Scroll down to see some personal dashboard stats powered by Modal!)
+</span>
+
+<div class="modal-images-container">
+  <div class="modal-images">
+    <div class="highlight-face">
+      <img src="/images/portugal-offsite.jpeg" alt="Portugal Offsite" style="border-radius: 0.4em;">
+    </div>
+    <img src="/images/about/modal-office-view.jpeg" alt="Modal Office View" style="border-radius: 0.4em;">
+  </div>
+  <div class="modal-captions">
+    <figcaption style="color: #777;">The team is bigger than this now, but in that photo my eyes are closed!</figcaption>
+    <figcaption style="color: #777;">This office view will never get old.</figcaption>
+  </div>
+</div>
+
+
+
+I have been at Modal for almost 3.5 years now, and these days do mostly engineering management. Necessarily, my coding pace has slipped a bit, from #2 committer
+to around #5. Alas.
+
+### Where
 
 <figure style="margin: 0; margin-bottom: 1em;">
-  <img src="/images/portugal-offsite.jpeg" alt="Portugal Offsite" style="border-radius: 0.4em;">
-  <figcaption style="color: #777;">The team is bigger than this now, but in that photo my eyes are closed!</figcaption>
+  <img src="/images/about/fort-greene.avif" alt="Fort Greene Park, Brooklyn" style="border-radius: 0.4em;">
 </figure>
-
-
-Currently, I help build [**modal.com**](https://modal.com), a serverless cloud platform built for developers and data scientists sick of wrestling Kubernetes.
-Scroll down to see some personal dashboard stats powered by Modal!
-
-### Where I'm at now
 
 Today, I live in NYC. When I'm not working, you can find me walking a new part of the five boroughs, or stopped in a park to read. There's a lot to love in this vast, grubby city, and I hope to see all of it by foot.
 
-### What I used to do
+
+More specifically, I live in East Village. It's great, but my paradise is still Fort Greene and I'll move back there in the midyear.
+### Past
 
 I spent 3.5 years at [Canva](https://www.canva.com/), joining when it had almost 300 engineers and leaving when it had about 1,800. I joined as a graduate, hobbling around with a broken leg, and ended up as team lead
 of ML Platform. The whole way through I grew under the mentorship of [Greg Roodt](https://www.linkedin.com/in/groodt/).
@@ -35,6 +198,17 @@ of ML Platform. The whole way through I grew under the mentorship of [Greg Roodt
 When not doing Data or ML Platform stuff, I spent quite a bit of time working with the [Bazel](https://bazel.build/) build system, and helped maintain the [Python rules](https://github.com/bazelbuild/rules_python) for Bazel. It's the future, get on it.
 
 Previous to Canva I worked at [Zendesk](https://www.zendesk.com/) on their [Answer Bot](https://www.zendesk.com/answer-bot/) machine learning product, and at [Atlassian](https://www.atlassian.com) as an application developer intern in their reliability/monitoring team.
+
+### Life
+
+2025 was capped off with a proposal to Keeli, my girlfriend of 8 years. We're pretty excited about what's next. 
+
+A litore ad astra.
+
+<figure style="margin: 0; margin-bottom: 1em;">
+  <img src="/images/about/proposal.jpg" alt="Proposal"
+       style="border-radius: 0.4em; object-fit: cover; object-position: bottom; width: 100%; height: 600px;">
+</figure>
 
 <div id="stats" class="hidden">
 
@@ -72,7 +246,7 @@ function populateDashboardHTML(data) {
     data.spotify.forEach(track => {
         topSpotifyTracksList.appendChild(htmlToElement(`
             <li>
-                <a target="_blank" rel="noopener noreferrer" href="${track.link}"><strong>${track.name}</strong></a> 
+                <a target="_blank" rel="noopener noreferrer" href="${track.link}"><strong>${track.name}</strong></a>
                 <p>${track.artist}</p>
             </li>
         `));
@@ -112,8 +286,8 @@ fetch('https://thundergolfer--thundergolferdotcom-about-page-web.modal.run')
 
 <style>
 #stats {
-  background-color: #f7f7f9;
-  border-radius: 1rem; 
+  background-color: #e8e4d9;
+  border-radius: 1rem;
   padding: 1.5em;
   margin-top: 2.5em;
 }
@@ -123,7 +297,7 @@ fetch('https://thundergolfer--thundergolferdotcom-about-page-web.modal.run')
 }
 
 #dashboard code {
-  background-color: #f7f7f9;
+  background-color: #e8e4d9;
 }
 
 #recent-finished-books {
@@ -207,7 +381,7 @@ fetch('https://thundergolfer--thundergolferdotcom-about-page-web.modal.run')
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cover-container, .book-info {
     display: flex;
     flex-direction: column;

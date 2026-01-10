@@ -20,7 +20,7 @@ tags: blog
           {% endif %}
         </p>
         <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" class="post-link"
-          ><h3 class="h2 post-title">{{ post.title }}</h3></a
+          ><h3 class="h2 post-title">{{ post.title }}{% if post.redirect %} <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-arrow-up-right inline text-neutral-400"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>{% endif %}</h3></a
         >
         <p class="post-summary">
           {% if post.summary %} {{ post.summary }} {% else %} {{ post.excerpt }}

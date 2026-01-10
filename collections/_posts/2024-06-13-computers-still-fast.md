@@ -317,9 +317,9 @@ Good luck! The first time I tried [**the original quiz**](https://computers-are-
         width: 43%;
     }
     .selected {
-        background-color: #007bff;
+        background-color: #2323ff;
         color: white;
-        border-color: #007bff;
+        border-color: #2323ff;
     }
     @media screen and (max-width: 1268px) {
         #score-container {

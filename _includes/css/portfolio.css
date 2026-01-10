@@ -53,18 +53,18 @@ body, button, input, select, textarea {
 }
 
 a {
-  color: #00e;
+  color: #0085CA;
   -webkit-transition: color 200ms linear;
   -moz-transition: color 200ms linear;
   transition: color 200ms linear;
 }
 
 a:visited {
-  color: #551a8b;
+  color: #00689F;
 }
 
 a:hover {
-  color: #06e;
+  color: #00689F;
 }
 
 a:focus {

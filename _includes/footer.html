@@ -91,3 +91,93 @@ footer .footer-each a:active, footer .footer-each a:hover {
     anchors.add('article h2, article h3, article h5, article h5, article h6');
 </script>{% endif %}
 <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+
+{% if page.tags contains 'home' %}
+<!-- Punch Tape SVG Generator -->
+<div id="punch-tape-container" style="position: fixed; bottom: 0; left: 0; width: 100%; height: 150px; z-index: 9999; pointer-events: none; background: #f4f1e8;"></div>
+<script>
+(function() {
+    function initPunchTape() {
+        const container = document.getElementById('punch-tape-container');
+        if (!container) {
+            console.error('Punch tape container not found');
+            return;
+        }
+        
+        const dotSize = 12;
+        const spacing = 30;
+        const rowHeight = 15;
+        const numRows = 10;
+        /* Seeded random number generator */
+        function seededRandom(seed) {
+            let state = seed;
+            return function() {
+                state = (state * 1664525 + 1013904223) % 4294967296;
+                return state / 4294967296;
+            };
+        }
+        
+        function generatePunchTape() {
+            const random = seededRandom(42);
+            const width = window.innerWidth;
+            const numCols = Math.ceil(width / spacing);
+            const height = numRows * rowHeight;
+            
+            let svg = `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">`;
+            
+            for (let row = 0; row < numRows; row++) {
+                const y = row * rowHeight + rowHeight / 2;
+                const currentDotSize = (row === 3) ? dotSize * 0.7 : dotSize;
+                
+                for (let col = 0; col < numCols; col++) {
+                    const x = col * spacing + spacing / 2;
+                    let showDot = true;
+                    
+                    /* Apply dropout patterns based on row */
+                    if (row === 0) {
+                        /* Row 1: 40% dropout */
+                        showDot = random() > 0.4;
+                    } else if (row === 1 || row === 2) {
+                        /* Rows 2-3: 60% dropout */
+                        showDot = random() > 0.6;
+                    } else if (row === 3) {
+                        /* Row 4: Guideline, no dropout */
+                        showDot = true;
+                    } else if (row === 4) {
+                        /* Row 5: 90% dropout */
+                        showDot = random() > 0.9;
+                    } else if (row === 5) {
+                        /* Row 6: Like row 3 (60% dropout) */
+                        showDot = random() > 0.6;
+                    } else if (row === 6 || row === 7) {
+                        /* Rows 7-8: Blocks of 4 or 10 dots */
+                        const blockSize = random() > 0.5 ? 4 : 10;
+                        const gapSize = Math.floor(random() * 3) + 2;
+                        const position = col % (blockSize + gapSize);
+                        showDot = position < blockSize;
+                    } else if (row === 8 || row === 9) {
+                        showDot = random() > 0.6;
+                    }
+                    
+                    if (showDot) {
+                        svg += `<circle cx="${x}" cy="${y}" r="${currentDotSize / 2}" fill="#000" opacity="0.3"/>`;
+                    }
+                }
+            }
+            
+            svg += '</svg>';
+            container.innerHTML = svg;
+        }
+        
+        generatePunchTape();
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(generatePunchTape, 250);
+        });
+    }
+    
+    initPunchTape();
+})();
+</script>
+{% endif %}

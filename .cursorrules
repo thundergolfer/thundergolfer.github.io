@@ -1,0 +1,6 @@
+# Cursor AI Agent Rules
+
+## JavaScript Code Style
+
+- All generated JavaScript code should use `/* */` style block comments instead of `//` single-line comments.
+

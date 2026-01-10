@@ -6,7 +6,7 @@ tags: review
 ---
 
 It's possibly a bit embarrassing how much art, literature, and poetry I've become engaged with because it was
-feature in a James Bond movie. Well, I'm sorry, but I finally got into Jack London after one of his quotes was used
+featured in a James Bond movie. Well, I'm sorry, but I finally got into Jack London after one of his quotes was used
 at the end of _No Time To Die_:
 
 > “The proper function of man is to live, not to exist. I shall not waste my days in trying to prolong them. I shall use my time.”

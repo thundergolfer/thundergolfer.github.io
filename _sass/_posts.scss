@@ -4,7 +4,7 @@
 }
 
 .posts .post {
-  background-color: white;
+  background-color: #f4f0e5;
   margin-bottom: 0.75em;
   border-bottom: thin solid #f3f3f3;
 }
@@ -17,8 +17,14 @@
 
 .post-link .post-title {
   margin-top: 0;
+  font-family: var(--font-new-york);
   font-weight: 600;
   color: $black;
+}
+
+.post-header h1 {
+  font-family: var(--font-new-york);
+  font-weight: 700;
 }
 
 .post-content {
@@ -50,11 +56,19 @@
 .post-meta-popular-tag {
   margin-left: 0.5em;
   color: white;
-  background-color: #aedbf9;
+  background-color: $blue;
+  font-family: $monospace-font-family;
+  font-size: 0.75em;
   text-align: center;
-  padding: 0.25em;
+  text-transform: lowercase;
+  padding: 0.2em 0.4em;
+  vertical-align: middle;
 }
 
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
+}
+
+.relatedPosts h2 {
+  font-family: var(--font-new-york);
 }

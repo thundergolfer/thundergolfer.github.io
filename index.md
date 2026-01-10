@@ -3,7 +3,7 @@ layout: default
 tags: home
 ---
 
-# <span class="wave">👋</span> Hi there, <br/> I'm Jonathon Belotti.
+# Hi there, <br/> I'm Jonathon Belotti.
 
 ### I'm a software engineer with a focus on data & platform engineering.
 

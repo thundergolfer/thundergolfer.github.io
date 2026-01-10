@@ -28,7 +28,7 @@ To see things I haven't yet read browse the [/anti-library]({{ site.baseurl }}/a
             <a target="_blank" rel="noopener noreferrer" href="https://openlibrary.org/isbn/{{ member.isbn }}" style="color: #333333; flex: 1; max-width: 200px; padding-top: 5%;" data-original-order="{{ forloop.index }}">
         {% endif %}
             <div style="width: 200px">
-                <img class="grow-me" src="http://covers.openlibrary.org/b/ISBN/{{ member.isbn }}-L.jpg">
+                <img class="grow-me" src="/images/book-covers/{{ member.isbn }}.jpg" onerror="this.onerror=null; this.src='http://covers.openlibrary.org/b/ISBN/{{ member.isbn }}-L.jpg'">
             </div>
             <div style="width: 200px">
                 <h4>{{ member.title }}</h4>

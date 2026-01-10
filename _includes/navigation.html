@@ -4,19 +4,19 @@
   {% assign current = page.url | downcase | split: '/' %}
   <div class="flexbox-parent" style="display: flex; flex-wrap: wrap">
       <li class="about-anc" style="display: inline">
-        <a class="nav-underline home {% if page.url == '/' %}current{% endif %}" href="{{site.url}}">Home</a>
+        <a class="nav-underline home {% if page.url == '/' %}current{% endif %}" href="{{ '/' | relative_url }}">Home</a>
       </li>
       <li style="display: inline">
-        <a class="nav-underline blog {% if page.url == '/blog/' %}current{% endif %}" href="{{site.url}}/blog">Blog</a>
+        <a class="nav-underline blog {% if page.url == '/blog/' %}current{% endif %}" href="{{ '/blog' | relative_url }}">Blog</a>
       </li>
       <li class="about-anc" style="display: inline">
-        <a class="nav-underline about {% if page.url == '/about/' %}current{% endif %}" href="{{site.url}}/about">About</a>
+        <a class="nav-underline about {% if page.url == '/about/' %}current{% endif %}" href="{{ '/about' | relative_url }}">About</a>
       </li>
       <!-- <li class="beliefs-anc" style="display: inline">
-        <a class="nav-underline open-source {% if page.url == '/projects/' %}current{% endif %}" href="{{site.url}}/projects">Projects & Open Source</a>
+        <a class="nav-underline open-source {% if page.url == '/projects/' %}current{% endif %}" href="{{ '/projects' | relative_url }}">Projects & Open Source</a>
       </li> -->
       <li class="team-anc" style="display: inline">
-        <a class="nav-underline library {% if page.url == '/library/' %}current{% endif %}" href="{{site.url}}/library">Library</a>
+        <a class="nav-underline library {% if page.url == '/library/' %}current{% endif %}" href="{{ '/library' | relative_url }}">Library</a>
       </li>
       <li>
         {% if site.show_social_icons %}

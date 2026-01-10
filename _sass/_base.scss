@@ -12,6 +12,14 @@ MIT License http://opensource.org/licenses/MIT
 
 */
 
+:root {
+  --font-new-york: "New York", "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-new-york);
+}
+
 html, body {
   z-index: -10;
   height: auto;
