@@ -95,5 +95,5 @@ Because the now old advice really is true: if you're [customer obsessed, you hav
 ---
 
 [^1]: I have not become good at most of these, but it's been great to try, great to learn.
-[^2]: I have two related posts on Slack skills. (1) [Against DMs](/against-slack-dms), and (2) [how to ask for help](/help-in-slack).
+[^2]: I have two related posts on Slack skills. (1) [Against DMs](/blog/against-slack-dms), and (2) [how to ask for help](/help-in-slack).
 [^3]: Customer calls are one of the heartbeats of a startup engineer's work life. If you haven't been on a customer call in the last month or so, something might be wrong. Come out of the cave.
