@@ -29,7 +29,7 @@ Skeptics became converts, and converts became bulls.
 </div>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-* **Linus Torvalds** is [letting AI review Linux patches](https://www.zdnet.com/article/linus-torvalds-ai-tool-maintaining-linux-code/).
+* **Linus Torvalds** is [letting AI review Linux patches](https://www.zdnet.com/article/linus-torvalds-ai-tool-maintaining-linux-code/). (Update: [he's also vibe coding](https://github.com/torvalds/AudioNoise))
 * **Andrej Karpathy** (of course) tweeted that he's ["never felt this much behind as a programmer"](https://x.com/karpathy/status/2004607146781278521?s=20).
 * Rails' **DHH** [became a convert](https://x.com/dhh/status/2007504187568074843?s=20).
 * **Salvatore Sanfilippo (antirez)**, creator of Redis, said just a few hours ago that ["it is simply impossible not to see the reality of what is happening."](https://antirez.com/news/158)
