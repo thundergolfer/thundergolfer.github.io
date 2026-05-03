@@ -22,10 +22,10 @@ side_footnotes: true
         alt=""
       />
     </div>
-    <span class="abilene-hero__handle" aria-hidden="true"></span>W
+    <span class="abilene-hero__handle" aria-hidden="true"></span>
   </div>
   <figcaption>
-    One of eight building in the ongoing OpenAI Stargate Abilene project. (Move across the image to slide from ugly to beautiful.)
+    One of eight buildings in the ongoing OpenAI Stargate Abilene project. (Move across the image to slide from ugly to beautiful.)
   </figcaption>
 </figure>
 
@@ -110,10 +110,10 @@ My simple and approximate financial model puts the GPU-hour cost of Stargate Abi
 
 [^server-amortization]: Five years is a simplifying assumption for useful economic life, not a claim that the servers physically stop working after five years. In 2024 analysts were claiming that the NVIDIA H100 SXM5 had a depreciation term of only 3-4 years. This turned out to be very wrong. H100s are _increasing_ in price in early 2026, almost 4 years after release.
 
-The bones of this breakdown come from the latest (7th) edition of the quantative [Computer Architecture](https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-443-15406-5) textbook from Patterson, Hennesey, and Kozyrakis. What's important to notice is that the capital
+The bones of this breakdown come from the latest (7th) edition of the quantitative [Computer Architecture](https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-443-15406-5) textbook from Patterson, Hennessy, and Kozyrakis. What's important to notice is that the capital
 expenditure (CAPEX) for the IT equipment nearly dwarfs the cost of facilities, _and_ the IT equipment has a much shorter depreciation time.
 
-To get to a per-GPU-hour cost we need to translate from CAPEX to operation expenditure (OPEX). Upfront costs combine with depreciation to become costs-over-time, and we add in ongoing service, maintenance, and operations cost, e.g. people! Assume 300 fully loaded staff at $250,000/year (generous). CAPEX costs are converted to monthly costs using a 5% capital recovery factor over each amortization period.
+To get to a per-GPU-hour cost we need to translate from CAPEX to operating expenditure (OPEX). Upfront costs combine with depreciation to become costs-over-time, and we add in ongoing service, maintenance, and operations cost, e.g. people! Assume 300 fully loaded staff at $250,000/year (generous). CAPEX costs are converted to monthly costs using a 5% capital recovery factor over each amortization period.
 
 ### Converting to OPEX
 
@@ -126,7 +126,7 @@ To get to a per-GPU-hour cost we need to translate from CAPEX to operation expen
 |                       | Monthly people costs | $6.3M            | 1.5%               |
 |                       | Total OPEX           | $51.2M           | 12.0%              |
 
-Ugly Stargate Abeline is spending _75%_ of its OPEX on IT equipment alone. We're going to see just how cheap it is to buy beauty when your
+Ugly Stargate Abeline is spending _75%_ of its monthlys on IT equipment alone. We're going to see just how cheap it is to buy beauty when your
 datacenter cost sheet looks like this.
 
 ## Beautiful Stargate Abilene
@@ -149,7 +149,7 @@ To turn this cluster of buildings into a soul warmer you need only raise the GPU
 Yes, half of one percent.
 
 I've chosen here to beautify Stargate Abeline using the work of New York's [Monumental Labs](https://www.monumentallabs.co/). They use robotics
-to dramatically drop the cost of producing stone ornamention. They've recently completed restoration work at Carnegie Hall and The Frick in Manhattan.
+to dramatically drop the cost of producing stone ornamentation. They've recently completed restoration work at Carnegie Hall and The Frick in Manhattan.
 
 | ------------------------------------------ | -------------- |
 | Building wall surface area (square meters) | 240,000 |
@@ -182,7 +182,7 @@ With the stone cladding range, beautification adds $0.00422–$0.00847 per GPU-h
 </figure>
 
 Even if my analysis is off by 10x, architectural beautification is absurdly cheap when GPU capital expenditure is at this scale.
-I beleive it does reinforce a sense of blindness and meagreness in Silicon Valley. In San Francisco one is surrounded by so much beauty—the Painted Lady's, the Palace of Fine Arts, of course the bridge. But tech made none of that. They adore the bridge, as they should, but it is a bridge they did not build.
+I believe it does reinforce a sense of blindness and meagreness in Silicon Valley. In San Francisco one is surrounded by so much beauty—the Painted Ladies, the Palace of Fine Arts, of course the bridge. But tech made none of that. They adore the bridge, as they should, but it is a bridge they did not build.
 
 It is plausible that this industry of immense wealth, one that can make a 22 year old in college sweatpants a billionaire, may fail to leave a legacy of public works. In my city, I walk with millions of others by the good works of a grocer (Woolworth), an automaker (Chrysler), and a steel magnate (Frick). In Brooklyn a sugar refinery is proudly restored next to a park named for it. Just five years ago a New York billionaire put in $200M for a [little park](https://en.wikipedia.org/wiki/Little_Island_at_Pier_55).
 
