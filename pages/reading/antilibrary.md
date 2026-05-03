@@ -3,7 +3,7 @@ layout: page
 title: Anti-Library
 permalink: /anti-library/
 tags: antilibrary library
-update_date: 2025-01-05
+update_date: 2026-05-02
 ---
 
 <div class="post-header mb2">

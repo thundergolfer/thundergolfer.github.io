@@ -3,7 +3,7 @@ layout: page
 title: Library
 permalink: /library/
 tags: library read_list
-update_date: 2025-01-05
+update_date: 2026-05-02
 ---
 
 <div class="post-header mb2">
@@ -21,7 +21,7 @@ To see things I haven't yet read browse the [/anti-library]({{ site.baseurl }}/a
 
 <section id="library-section" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px;">
     {% assign sorted_library = site.data.library %}
-    {% for member in sorted_library limit:120 %}
+    {% for member in sorted_library limit:150 %}
         {% if member.review_path %}
             <a target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}/reviews/{{ member.review_path }}" style="color: #333333; flex: 1; max-width: 200px; padding-top: 5%;" data-original-order="{{ forloop.index }}">
         {% else %}

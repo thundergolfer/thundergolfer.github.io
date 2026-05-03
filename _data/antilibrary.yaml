@@ -1,23 +1,183 @@
 [
     {
-        "title": "The Perfectionists: How Precision Engineers Created the Modern World",
-        "author": "Simon Winchester",
+        "title": "The Printing Press as an Agent of Change: Communications and Cultural Transformations in Early Modern Europe (Complete in One Volume)",
+        "author": "Elizabeth L. Eisenstein",
         "rating": "",
-        "isbn": "0062652575",
+        "isbn": "0521299551",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "Middlemarch",
-        "author": "George Eliot",
+        "title": "When Old Technologies Were New: Thinking About Electric Communication in the Late Nineteenth Century",
+        "author": "Carolyn  Marvin",
         "rating": "",
-        "isbn": "0451529170",
+        "isbn": "0195063414",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Moral Mazes: The World of Corporate Managers",
+        "author": "Robert Jackall",
+        "rating": "",
+        "isbn": "0195060806",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Diary of a Madman and Other Stories",
+        "author": "Lu Xun",
+        "rating": "",
+        "isbn": "0824813170",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Engineering a Safer World: Systems Thinking Applied to Safety (Engineering Systems)",
+        "author": "Nancy G. Leveson",
+        "rating": "",
+        "isbn": "0262016621",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Levels of the Game",
+        "author": "John McPhee",
+        "rating": "",
+        "isbn": "0374515263",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Call of the Wild / White Fang",
+        "author": "Jack London",
+        "rating": "",
+        "isbn": "1587263890",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Will There Ever Be Another You",
+        "author": "Patricia Lockwood",
+        "rating": "",
+        "isbn": "9780593718551",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Technics and Civilization",
+        "author": "Lewis Mumford",
+        "rating": "",
+        "isbn": "015688254X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A New History of Greek Mathematics",
+        "author": "Reviel Netz",
+        "rating": "",
+        "isbn": "1108833845",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Capitalism and Material Life, 1400-1800 (English and French Edition)",
+        "author": "Fernand Braudel",
+        "rating": "",
+        "isbn": "0060104546",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Failure is Not an Option: Mission Control From Mercury to Apollo 13 and Beyond",
+        "author": "Gene Kranz",
+        "rating": "",
+        "isbn": "0425179877",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Artful Sentences: Syntax as Style",
+        "author": "Virginia Tufte",
+        "rating": "",
+        "isbn": "0961392185",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Distinction",
+        "author": "Pierre Bourdieu",
+        "rating": "",
+        "isbn": "0674212770",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Companion to Marx's Capital, Volume 1",
+        "author": "David Harvey",
+        "rating": "",
+        "isbn": "1844673588",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Abolition of Man",
+        "author": "C.S. Lewis",
+        "rating": "",
+        "isbn": "9780020867906",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Swann\u2019s Way (In Search of Lost Time, #1)",
+        "author": "Marcel Proust",
+        "rating": "",
+        "isbn": "0142437964",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Differential Equations with Applications and Historical Notes, 2nd Edition",
+        "author": "George F. Simmons",
+        "rating": "",
+        "isbn": "0070575401",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Pattern Language: Towns, Buildings, Construction (Center for Environmental Structure Series)",
+        "author": "Christopher W. Alexander",
+        "rating": "",
+        "isbn": "0195019199",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Image of the City",
+        "author": "Kevin  Lynch",
+        "rating": "",
+        "isbn": "0262620014",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "On Language: Chomsky's Classic Works Language and Responsibility and Reflections on Language in One Volume",
+        "author": "Noam Chomsky",
+        "rating": "",
+        "isbn": "9781565844759",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Perfectionists: How Precision Engineers Created the Modern World",
+        "author": "Simon Winchester",
+        "rating": "",
+        "isbn": "9780062931962",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
         "title": "How to Solve It: A New Aspect of Mathematical Method (Princeton Science Library)",
-        "author": "G. P\u00f3lya",
+        "author": "George P\u00f3lya",
         "rating": "",
         "isbn": "069111966X",
         "review_path": null,
@@ -35,7 +195,7 @@
         "title": "The Emperor of All Maladies: A Biography of Cancer",
         "author": "Siddhartha Mukherjee",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781508279327",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -107,7 +267,7 @@
         "title": "Wolf Hall (Thomas Cromwell, #1)",
         "author": "Hilary Mantel",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781408461259",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -152,14 +312,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Distinction: A Social Critique of the Judgement of Taste",
-        "author": "Pierre Bourdieu",
-        "rating": "",
-        "isbn": "0674212770",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Genetic Lottery: Why DNA Matters for Social Equality",
         "author": "Kathryn Paige Harden",
         "rating": "",
@@ -187,7 +339,7 @@
         "title": "The Bonfire of the Vanities",
         "author": "Tom Wolfe",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781433288432",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -195,7 +347,7 @@
         "title": "Red Dragon (Hannibal Lecter, #1)",
         "author": "Thomas  Harris",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780553227468",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -203,7 +355,7 @@
         "title": "Analogie: de kern van ons denken (Dutch Edition)",
         "author": "Douglas R. Hofstadter",
         "rating": "",
-        "isbn": "9045026570",
+        "isbn": "9780465018475",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -219,12 +371,12 @@
         "title": "This is Going to Hurt: Secret Diaries of a Junior Doctor",
         "author": "Adam Kay",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781509899470",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "Undoing the Demos: Neoliberalism\u2019s Stealth Revolution (Near Future Series)",
+        "title": "Undoing the Demos: Neoliberalism\u2019s Stealth Revolution (Near Futures, 4)",
         "author": "Wendy Brown",
         "rating": "",
         "isbn": "1935408534",
@@ -256,14 +408,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Death and Life of Great American Cities",
-        "author": "Jane Jacobs",
-        "rating": "",
-        "isbn": "0375508732",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Exploratory Data Analysis",
         "author": "John W. Tukey",
         "rating": "",
@@ -288,18 +432,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "From the Soil: The Foundations of Chinese Society",
-        "author": "Fei Xiaotong",
-        "rating": "",
-        "isbn": "0520077962",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Fatal Shore: The Epic of Australia's Founding",
         "author": "Robert Hughes",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780099448549",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -323,7 +459,7 @@
         "title": "High-Rise",
         "author": "J.G. Ballard",
         "rating": "",
-        "isbn": "0871404028",
+        "isbn": "9781631492686",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -339,7 +475,7 @@
         "title": "Demon Copperhead",
         "author": "Barbara Kingsolver",
         "rating": "",
-        "isbn": "",
+        "isbn": "9788248934721",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -411,12 +547,12 @@
         "title": "The Woman Destroyed",
         "author": "Simone de Beauvoir",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781299035515",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "A Swim in a Pond in the Rain: In Which Four Russians Give a Master Class on Writing, Reading, and Life",
+        "title": "A Swim in a Pond in the Rain",
         "author": "George Saunders",
         "rating": "",
         "isbn": "1984856049",
@@ -475,7 +611,7 @@
         "title": "An Actor's Work",
         "author": "Constantin Stanislavski",
         "rating": "",
-        "isbn": "041555120X",
+        "isbn": "9780203936153",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -489,7 +625,7 @@
     },
     {
         "title": "Annihilation (Southern Reach, #1)",
-        "author": "Jeff VanderMeer",
+        "author": "Jeff Vandermeer",
         "rating": "",
         "isbn": "0374104093",
         "review_path": null,
@@ -515,7 +651,7 @@
         "title": "There Is No Antimemetics Division",
         "author": "qntm",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781529953176",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -667,7 +803,7 @@
         "title": "K-punk: The Collected and Unpublished Writings of Mark Fisher",
         "author": "Mark Fisher",
         "rating": "",
-        "isbn": "1912248298",
+        "isbn": "9781912248285",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -675,7 +811,7 @@
         "title": "One Child: The Story of China's Most Radical Experiment",
         "author": "Mei Fong",
         "rating": "",
-        "isbn": "054427539X",
+        "isbn": "9781515952435",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -715,7 +851,7 @@
         "title": "Anna Karenina",
         "author": "Leo Tolstoy",
         "rating": "",
-        "isbn": "",
+        "isbn": "9788497941648",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -723,7 +859,7 @@
         "title": "Pale Fire",
         "author": "Vladimir Nabokov",
         "rating": "",
-        "isbn": "",
+        "isbn": "9782070383634",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -731,7 +867,7 @@
         "title": "The Brothers Karamazov",
         "author": "Fyodor Dostoevsky",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781731705525",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -747,7 +883,7 @@
         "title": "Industrial Society and Its Future",
         "author": "Theodore John Kaczynski",
         "rating": "",
-        "isbn": "",
+        "isbn": "9781726763714",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -771,7 +907,7 @@
         "title": "Myra Breckenridge/Myron",
         "author": "Gore Vidal",
         "rating": "",
-        "isbn": "0394754441",
+        "isbn": "9780525566502",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -827,7 +963,7 @@
         "title": "An Immense World: How Animal Senses Reveal the Hidden Realms Around Us",
         "author": "Ed Yong",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780593133231",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -992,7 +1128,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Data Center as a Computer: An Introduction to the Design of Warehouse- Scale Machines (Synthesis Lectures on Computer Architecture)",
+        "title": "The Data Center as a Computer: An Introduction to the Design of Warehouse- Scale Machines (Synthesis Lectures on Computer Architecture) (Volume 0)",
         "author": "Luiz Andr\u00e9 Barroso",
         "rating": "",
         "isbn": "159829556X",
@@ -1019,7 +1155,7 @@
         "title": "Container Security: Fundamental Technology Concepts that Protect Containerized Applications",
         "author": "Liz Rice",
         "rating": "",
-        "isbn": "1492056707",
+        "isbn": "9781492056706",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1051,7 +1187,7 @@
         "title": "The Bitcoin Standard: The Decentralized Alternative to Central Banking",
         "author": "Saifedean Ammous",
         "rating": "",
-        "isbn": "1119473861",
+        "isbn": "9781978651043",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1115,15 +1251,15 @@
         "title": "T-SQL Querying",
         "author": "Ben-Gan Itzik",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780735685048",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "The Contrarian: Peter Thiel and Silicon Valley's Pursuit of Power",
+        "title": "The Contrarian: Peter Thiel and the Rise of the Silicon Valley Oligarchs",
         "author": "Max Chafkin",
         "rating": "",
-        "isbn": "1984878549",
+        "isbn": "9781984878533",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1187,15 +1323,7 @@
         "title": "A Wizard of Earthsea (Earthsea Cycle, #1)",
         "author": "Ursula K. Le Guin",
         "rating": "",
-        "isbn": "0553383043",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "7 Powers: The Foundations of Business Strategy",
-        "author": "Hamilton Wright Helmer",
-        "rating": "",
-        "isbn": "0998116319",
+        "isbn": "9780606005739",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1307,7 +1435,7 @@
         "title": "Combat Liberalism",
         "author": "Mao Zedong",
         "rating": "",
-        "isbn": "",
+        "isbn": "9782758701057",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1344,14 +1472,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Call of the Wild / White Fang",
-        "author": "Jack London",
-        "rating": "",
-        "isbn": "1587263890",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Wyrd Sisters (Discworld, #6; Witches, #2)",
         "author": "Terry Pratchett",
         "rating": "",
@@ -1384,7 +1504,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Uses of Literacy (Classics in Communication and Mass Culture Series)",
+        "title": "The Uses of Literacy",
         "author": "Richard Hoggart",
         "rating": "",
         "isbn": "0765804212",
@@ -1408,7 +1528,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Art of the Short Story, The",
+        "title": "The Art of the Short Story",
         "author": "Dana Gioia",
         "rating": "",
         "isbn": "0321363639",
@@ -1443,7 +1563,7 @@
         "title": "The Steppenwolf",
         "author": "Clifford Meyer",
         "rating": "",
-        "isbn": "1440405832",
+        "isbn": "9780793533275",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1491,7 +1611,7 @@
         "title": "Programming Languages: History and Fundamentals",
         "author": "Jean E. Sammet",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780137299881",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1560,7 +1680,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Programming On Purpose III: Essays On Software Technology",
+        "title": "Programming on Purpose, Vol. III: Essays on Software Technology",
         "author": "P.J. Plauger",
         "rating": "",
         "isbn": "0133281132",
@@ -1568,7 +1688,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Programming On Purpose II: Essays On Software People",
+        "title": "Programming on Purpose, Vol. II: Essays on Software People",
         "author": "P.J. Plauger",
         "rating": "",
         "isbn": "0133281051",
@@ -1635,7 +1755,7 @@
         "title": "Key Thinkers of the Radical Right: Behind the New Threat to Liberal Democracy",
         "author": "Mark Sedgwick",
         "rating": "",
-        "isbn": "0190877596",
+        "isbn": "0190877588",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1672,7 +1792,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "A People's History of the United States",
+        "title": "A People\u2019s History of the United States: 1492 - Present",
         "author": "Howard Zinn",
         "rating": "",
         "isbn": "0060838655",
@@ -1747,7 +1867,7 @@
         "title": "Just Mercy",
         "author": "Bryan Stevenson",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780812994537",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1755,7 +1875,7 @@
         "title": "Why Socialism?",
         "author": "Albert Einstein",
         "rating": "",
-        "isbn": "",
+        "isbn": "9789724409450",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1771,7 +1891,7 @@
         "title": "What Is to Be Done: political engagement and saving the planet",
         "author": "Barry Jones",
         "rating": "",
-        "isbn": "1913348032",
+        "isbn": "9781913348038",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1784,7 +1904,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Hacking Capitalism: The Free and Open Source Software Movement",
+        "title": "Hacking Capitalism (Routledge Research in Information Technology and Society)",
         "author": "Johan S\u00f6derberg",
         "rating": "",
         "isbn": "0415955432",
@@ -1792,7 +1912,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "An Introduction to Statistical Learning: With Applications in R",
+        "title": "An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics)",
         "author": "Gareth James",
         "rating": "",
         "isbn": "1461471370",
@@ -1801,7 +1921,7 @@
     },
     {
         "title": "Why We Love Dogs, Eat Pigs, and Wear Cows: An Introduction to Carnism",
-        "author": "Melanie Joy",
+        "author": "Melanie  Joy",
         "rating": "",
         "isbn": "1573244619",
         "review_path": null,
@@ -1819,12 +1939,12 @@
         "title": "For Whom the Bell Tolls",
         "author": "Ernest Hemingway",
         "rating": "",
-        "isbn": "1439571481",
+        "isbn": "9788422610373",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "Refactoring: Improving the Design of Existing Code",
+        "title": "Refactoring: Improving the Design of Existing Code (Addison-wesley Object Technology Series)",
         "author": "Martin Fowler",
         "rating": "",
         "isbn": "0201485672",
@@ -1840,7 +1960,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Sophie's World",
+        "title": "Sophie\u2019s World",
         "author": "Jostein Gaarder",
         "rating": "",
         "isbn": "1857993284",
@@ -1851,13 +1971,13 @@
         "title": "Ishmael (Ishmael, #1)",
         "author": "Daniel Quinn",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780553078756",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
         "title": "Free Culture: The Nature and Future of Creativity",
-        "author": "Lawrence Lessig",
+        "author": "Lawrence  Lessig",
         "rating": "",
         "isbn": "0143034650",
         "review_path": null,
@@ -1875,7 +1995,7 @@
         "title": "The Unlucky Australians (Australian Aborigines)",
         "author": "Frank J. Hardy",
         "rating": "",
-        "isbn": "0726000124",
+        "isbn": "9780975770832",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1883,7 +2003,7 @@
         "title": "Power Without Glory",
         "author": "Frank J. Hardy",
         "rating": "",
-        "isbn": "9780207147241",
+        "isbn": "9780522848885",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1891,12 +2011,12 @@
         "title": "Living",
         "author": "Henry Green",
         "rating": "",
-        "isbn": "0781200377",
+        "isbn": "9780002711845",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "The Conquest of Bread",
+        "title": "The Conquest of Bread (Working Classics)",
         "author": "Pyotr Kropotkin",
         "rating": "",
         "isbn": "1904859100",
@@ -1904,7 +2024,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Meaning of Freedom: And Other Difficult Dialogues",
+        "title": "The Meaning of Freedom: And Other Difficult Dialogues (City Lights Open Media)",
         "author": "Angela Y. Davis",
         "rating": "",
         "isbn": "0872865800",
@@ -1947,7 +2067,7 @@
         "title": "The Federalist Papers",
         "author": "Alexander Hamilton",
         "rating": "",
-        "isbn": "9780143121978",
+        "isbn": "9781404302303",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2003,7 +2123,7 @@
         "title": "Stranger in a Strange Land",
         "author": "Robert A. Heinlein",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780340938348",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2019,7 +2139,7 @@
         "title": "As I Lay Dying",
         "author": "William Faulkner",
         "rating": "",
-        "isbn": "",
+        "isbn": "9780606021715",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2027,7 +2147,7 @@
         "title": "The Ministry for the Future",
         "author": "Kim Stanley Robinson",
         "rating": "",
-        "isbn": "9780316300162",
+        "isbn": "9780316300148",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2083,7 +2203,7 @@
         "title": "Entitled: How Male Privilege Hurts Women",
         "author": "Kate Manne",
         "rating": "",
-        "isbn": "9780141990743",
+        "isbn": "9781984826572",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2096,7 +2216,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Mathematics and Its History",
+        "title": "Mathematics and Its History (Undergraduate Texts in Mathematics)",
         "author": "John Stillwell",
         "rating": "",
         "isbn": "0387953361",
@@ -2121,7 +2241,7 @@
     },
     {
         "title": "The Rickover Effect: How One Man Made a Difference",
-        "author": "Theodore Rockwell",
+        "author": "Estate of Theodore Rockwell",
         "rating": "",
         "isbn": "1557507023",
         "review_path": null,
@@ -2155,7 +2275,7 @@
         "title": "Bit Tyrants: The Political Economy of Silicon Valley",
         "author": "Rob Larson",
         "rating": "",
-        "isbn": "9781642590319",
+        "isbn": "9781642591798",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2184,10 +2304,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Handmaid's Tale (The Handmaid's Tale, #1)",
+        "title": "The Handmaid\u2019s Tale (The Handmaid's Tale, #1)",
         "author": "Margaret Atwood",
         "rating": "",
-        "isbn": "9780449212608",
+        "isbn": "9783596259878",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2209,7 +2329,7 @@
     },
     {
         "title": "From Hell",
-        "author": "Alan Moore",
+        "author": "Alan             Moore",
         "rating": "",
         "isbn": "0861661419",
         "review_path": null,
@@ -2235,7 +2355,7 @@
         "title": "Messengers of the Right: Conservative Media and the Transformation of American Politics",
         "author": "Nicole Hemmer",
         "rating": "",
-        "isbn": "081229307X",
+        "isbn": "9780812248395",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2243,7 +2363,7 @@
         "title": "Crime and Punishment",
         "author": "Fyodor Dostoevsky",
         "rating": "",
-        "isbn": "0143058142",
+        "isbn": "9781435131828",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -2280,7 +2400,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Gravity's Rainbow",
+        "title": "Gravity\u2019s Rainbow",
         "author": "Thomas Pynchon",
         "rating": "",
         "isbn": "0143039946",
@@ -2315,7 +2435,7 @@
         "title": "Robinson Kruso",
         "author": "Daniel Defoe",
         "rating": "",
-        "isbn": "2940005929365",
+        "isbn": "9789754052510",
         "review_path": null,
         "year_i_finished_reading": null
     }

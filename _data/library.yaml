@@ -1,5 +1,101 @@
 [
     {
+        "title": "An Introduction to the Three Volumes of Karl Marx\u2019s Capital",
+        "author": "Michael Heinrich",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1583672885",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "Data & Reality",
+        "author": "William Kent",
+        "rating": "",
+        "isbn": "9781935504214",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "From the Soil: The Foundations of Chinese Society",
+        "author": "Fei Xiaotong",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0520077962",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "The Checklist Manifesto: How to Get Things Right",
+        "author": "Atul Gawande",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0805091742",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "Chip War: The Fight for the World's Most Critical Technology",
+        "author": "Chris   Miller",
+        "rating": "\u2605\u2605",
+        "isbn": "1982172002",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "The Story of the Lost Child (Neapolitan Novels, #4)",
+        "author": "Elena Ferrante",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1609452860",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "Those Who Leave and Those Who Stay (Neapolitan Novels, #3)",
+        "author": "Elena Ferrante",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9781609452339",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "Flames",
+        "author": "Robbie Arnott",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "9781786496294",
+        "review_path": null,
+        "year_i_finished_reading": "2023"
+    },
+    {
+        "title": "The Death and Life of Great American Cities",
+        "author": "Jane Jacobs",
+        "rating": "",
+        "isbn": "0375508732",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "author": "Hamilton Wright Helmer",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0998116319",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
+        "title": "The Soul of a New Machine",
+        "author": "Tracy Kidder",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0316491977",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Middlemarch",
+        "author": "George Eliot",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0451529170",
+        "review_path": null,
+        "year_i_finished_reading": "2025"
+    },
+    {
         "title": "The Bacchae",
         "author": "Euripides",
         "rating": "",
@@ -99,17 +195,9 @@
         "title": "The Great Divide: Australia's Housing Mess and How to Fix It (Quarterly Essay #92)",
         "author": "Alan Kohler",
         "rating": "",
-        "isbn": "1743823347",
+        "isbn": "9781760644239",
         "review_path": null,
         "year_i_finished_reading": "2024"
-    },
-    {
-        "title": "Flames",
-        "author": "Robbie Arnott",
-        "rating": "",
-        "isbn": "9781786496294",
-        "review_path": null,
-        "year_i_finished_reading": "2023"
     },
     {
         "title": "The Revolt of the Elites and the Betrayal of Democracy",
@@ -201,7 +289,7 @@
     },
     {
         "title": "Tinker, Tailor, Soldier, Spy (George Smiley, #5; Karla Trilogy, #1)",
-        "author": "John Le Carr\u00e9",
+        "author": "John le Carr\u00e9",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780143119784",
         "review_path": null,
@@ -209,7 +297,7 @@
     },
     {
         "title": "The Spy Who Came In from the Cold (George Smiley, #3)",
-        "author": "John Le Carr\u00e9",
+        "author": "John le Carr\u00e9",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9780743442534",
         "review_path": null,
@@ -235,7 +323,7 @@
         "title": "The Story of a New Name (Neapolitan Novels, #2)",
         "author": "Elena Ferrante",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781787535169",
         "review_path": null,
         "year_i_finished_reading": "2023"
     },
@@ -248,7 +336,7 @@
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "The Adventures of Huckleberry Finn",
+        "title": "The Adventures of Huckleberry Finn (Adventures of Tom and Huck, #2)",
         "author": "Mark Twain",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0142437174",
@@ -267,7 +355,7 @@
         "title": "My Brilliant Friend (Neapolitan Novels, #1)",
         "author": "Elena Ferrante",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781609459468",
         "review_path": null,
         "year_i_finished_reading": "2023"
     },
@@ -299,7 +387,7 @@
         "title": "Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America",
         "author": "Nancy MacLean",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "1101980966",
+        "isbn": "9781101980972",
         "review_path": null,
         "year_i_finished_reading": "2023"
     },
@@ -307,7 +395,7 @@
         "title": "God, Human, Animal, Machine: Technology, Metaphor, and the Search for Meaning",
         "author": "Meghan O'Gieblyn",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780525562719",
         "review_path": null,
         "year_i_finished_reading": "2023"
     },
@@ -315,7 +403,7 @@
         "title": "Trust",
         "author": "Hernan Diaz",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0593420314",
+        "isbn": "9780593420317",
         "review_path": null,
         "year_i_finished_reading": "2023"
     },
@@ -323,7 +411,7 @@
         "title": "This Side of Paradise",
         "author": "F. Scott Fitzgerald",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0684843781",
+        "isbn": "9788420655642",
         "review_path": null,
         "year_i_finished_reading": "2023"
     },
@@ -355,7 +443,7 @@
         "title": "Lolita",
         "author": "Vladimir Nabokov",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9789592540637",
         "review_path": null,
         "year_i_finished_reading": "2023"
     },
@@ -395,7 +483,7 @@
         "title": "How to Win Friends & Influence People",
         "author": "Dale Carnegie",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781442344839",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -544,10 +632,10 @@
         "year_i_finished_reading": "2022"
     },
     {
-        "title": "The Man in the High Castle",
+        "title": "The Man in the High Castle (Vintage)",
         "author": "Philip K. Dick",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "9780141186672",
+        "isbn": "0679740678",
         "review_path": null,
         "year_i_finished_reading": "2022"
     },
@@ -685,15 +773,15 @@
         "rating": "\u2605\u2605\u2605",
         "isbn": "0060517123",
         "review_path": null,
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2022"
     },
     {
         "title": "API Design Patterns",
-        "author": "JJ Geewax",
+        "author": "J.J. Geewax",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "161729585X",
         "review_path": null,
-        "year_i_finished_reading": "2022"
+        "year_i_finished_reading": null
     },
     {
         "title": "A Moveable Feast",
@@ -779,7 +867,7 @@
         "title": "The Call of the Wild",
         "author": "Jack London",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781329820418",
         "review_path": "the-call-of-the-wild-jack-london/",
         "year_i_finished_reading": "2021"
     },
@@ -787,16 +875,16 @@
         "title": "The Dispossessed: An Ambiguous Utopia",
         "author": "Ursula K. Le Guin",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9781857988826",
-        "review_path": "the-dispossessed-(hainish-cycle,-#6)-ursula-k-le-guin/",
+        "isbn": "9788804689973",
+        "review_path": null,
         "year_i_finished_reading": "2021"
     },
     {
         "title": "The Left Hand of Darkness",
         "author": "Ursula K. Le Guin",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780441478125",
-        "review_path": "the-left-hand-of-darkness-(hainish-cycle,-#4)-ursula-k-le-guin/",
+        "isbn": "9788445070239",
+        "review_path": null,
         "year_i_finished_reading": "2021"
     },
     {
@@ -848,12 +936,12 @@
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "The Medium is the Message",
+        "title": "The Medium is the Massage: An Inventory of Effects",
         "author": "Marshall McLuhan",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9781584230700",
-        "review_path": "the-medium-is-the-message-marshall-mcluhan/",
-        "year_i_finished_reading": null
+        "review_path": null,
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "Showstopper! the Breakneck Race to Create Windows NT and the Next Generation at Microsoft",
@@ -931,17 +1019,17 @@
         "title": "The quiet revolution",
         "author": "Jim Cairns",
         "rating": "\u2605\u2605",
-        "isbn": "0869320076",
+        "isbn": "9780972330084",
         "review_path": "the-quiet-revolution-jim-cairns/",
         "year_i_finished_reading": "2021"
     },
     {
-        "title": "The Age of Spiritual Machines: When Computers Exceed Human Intelligence",
+        "title": "The Age of Spiritual Machines",
         "author": "Ray Kurzweil",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0140282025",
-        "review_path": "the-age-of-spiritual-machines-when-computers-exceed-human-intelligence-ray-kurzweil/",
-        "year_i_finished_reading": null
+        "review_path": null,
+        "year_i_finished_reading": "2021"
     },
     {
         "title": "The Mythical Man-Month: Essays on Software Engineering",
@@ -1024,7 +1112,7 @@
         "year_i_finished_reading": "2020"
     },
     {
-        "title": "Children of Dune (Dune, #3)",
+        "title": "Children of Dune (Dune #3)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0593098242",
@@ -1112,7 +1200,7 @@
         "year_i_finished_reading": "2020"
     },
     {
-        "title": "Dune Messiah (Dune, #2)",
+        "title": "Dune Messiah (Dune #2)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0593098234",
@@ -1141,13 +1229,13 @@
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0393341763",
         "review_path": "a-clockwork-orange-anthony-burgess/",
-        "year_i_finished_reading": null
+        "year_i_finished_reading": "2020"
     },
     {
         "title": "Dune (Dune, #1)",
         "author": "Frank Herbert",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "059309932X",
+        "isbn": "9780593438374",
         "review_path": null,
         "year_i_finished_reading": "2020"
     },
@@ -1232,10 +1320,10 @@
         "year_i_finished_reading": "2020"
     },
     {
-        "title": "Cat's Cradle",
+        "title": "Cat\u2019s Cradle",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0140285601",
+        "isbn": "9780808520696",
         "review_path": null,
         "year_i_finished_reading": "2020"
     },
@@ -1249,7 +1337,7 @@
     },
     {
         "title": "V for Vendetta",
-        "author": "Alan Moore",
+        "author": "Alan             Moore",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "1401207928",
         "review_path": null,
@@ -1288,10 +1376,10 @@
         "year_i_finished_reading": "2019"
     },
     {
-        "title": "The Restaurant at the End of the Universe (Hitchhiker's Guide to the Galaxy, #2)",
+        "title": "The Restaurant at the End of the Universe (The Hitchhiker's Guide to the Galaxy, #2)",
         "author": "Douglas Adams",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780671442682",
+        "isbn": "9788599296950",
         "review_path": null,
         "year_i_finished_reading": "2019"
     },
@@ -1320,10 +1408,10 @@
         "year_i_finished_reading": "2019"
     },
     {
-        "title": "The Hitchhiker's Guide to the Galaxy (The Hitchhiker's Guide to the Galaxy, #1)",
+        "title": "The Hitchhiker\u2019s Guide to the Galaxy (The Hitchhiker's Guide to the Galaxy, #1)",
         "author": "Douglas Adams",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780385365925",
         "review_path": null,
         "year_i_finished_reading": "2019"
     },
@@ -1379,7 +1467,7 @@
         "title": "The Defining Decade: Why Your Twenties Matter\u2014And How to Make the Most of Them Now",
         "author": "Meg Jay",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780446561754",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1408,7 +1496,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Conscience of a Conservative",
+        "title": "The Conscience of a Conservative (The James Madison Library in American Politics)",
         "author": "Barry M. Goldwater",
         "rating": "\u2605",
         "isbn": "0691131171",
@@ -1435,7 +1523,7 @@
         "title": "The Consolations of Philosophy",
         "author": "Alain de Botton",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780786167371",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1443,7 +1531,7 @@
         "title": "Digital Fortress",
         "author": "Dan    Brown",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9787020048144",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1464,10 +1552,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The da Vinci Code (Robert Langdon, #2)",
+        "title": "The Da Vinci Code (Robert Langdon, #2)",
         "author": "Dan    Brown",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "5550155184",
+        "isbn": "9789170012945",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1483,7 +1571,7 @@
         "title": "The Elements of Style",
         "author": "William Strunk Jr.",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781794480025",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1499,7 +1587,7 @@
         "title": "The Fountainhead",
         "author": "Ayn Rand",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780451133199",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1528,7 +1616,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Giver (The Giver, #1)",
+        "title": "The Giver (Giver, #1)",
         "author": "Lois Lowry",
         "rating": "",
         "isbn": "0385732554",
@@ -1568,7 +1656,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "A Midsummer Night's Dream",
+        "title": "A Midsummer Night\u2019s Dream",
         "author": "William Shakespeare",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0743477545",
@@ -1579,7 +1667,7 @@
         "title": "Romeo and Juliet",
         "author": "William Shakespeare",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780497902209",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1624,14 +1712,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Soul of a New Machine",
-        "author": "Tracy Kidder",
-        "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0316491977",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Communist Manifesto",
         "author": "Karl Marx",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -1664,7 +1744,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "23 Things They Don't Tell You about Capitalism",
+        "title": "23 Things They Don't Tell You About Capitalism",
         "author": "Ha-Joon Chang",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "1608191664",
@@ -1731,7 +1811,7 @@
         "title": "Infinite Jest",
         "author": "David Foster Wallace",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9783499249570",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1739,7 +1819,7 @@
         "title": "Slaughterhouse-Five",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0385333846",
+        "isbn": "9780385333849",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1760,10 +1840,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Hobbit, or There and Back Again (The Lord of the Rings, #0)",
+        "title": "The Hobbit, or There and Back Again",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780345368584",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -1816,7 +1896,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Most Good You Can Do: How Effective Altruism Is Changing Ideas About Living Ethically",
+        "title": "The Most Good You Can Do: How Effective Altruism Is Changing Ideas About Living Ethically (Castle Lectures in Ethics, Politics, and Economics)",
         "author": "Peter Singer",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0300180276",
@@ -1840,18 +1920,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Walden",
+        "title": "Walden or, Life in the Woods",
         "author": "Henry David Thoreau",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9781722500030",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "How to Win Friends and Influence People",
-        "author": "Dale Carnegie",
-        "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0671355007",
+        "isbn": "9780030093203",
         "review_path": null,
         "year_i_finished_reading": null
     },
