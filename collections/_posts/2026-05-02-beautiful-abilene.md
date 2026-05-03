@@ -111,7 +111,7 @@ My simple and approximate financial model puts the GPU-hour cost of Stargate Abi
 [^server-amortization]: Five years is a simplifying assumption for useful economic life, not a claim that the servers physically stop working after five years. In 2024 analysts were claiming that the NVIDIA H100 SXM5 had a depreciation term of only 3-4 years. This turned out to be very wrong. H100s are _increasing_ in price in early 2026, almost 4 years after release.
 
 The bones of this breakdown come from the latest (7th) edition of the quantative [Computer Architecture](https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-443-15406-5) textbook from Patterson, Hennesey, and Kozyrakis. What's important to notice is that the capital
-expenditure (CAPEX) for the IT equipment nearly dwarves the cost of facilities, _and_ the IT equipment has a much shorter depreciation time.
+expenditure (CAPEX) for the IT equipment nearly dwarfs the cost of facilities, _and_ the IT equipment has a much shorter depreciation time.
 
 To get to a per-GPU-hour cost we need to translate from CAPEX to operation expenditure (OPEX). Upfront costs combine with depreciation to become costs-over-time, and we add in ongoing service, maintenance, and operations cost, e.g. people! Assume 300 fully loaded staff at $250,000/year (generous). CAPEX costs are converted to monthly costs using a 5% capital recovery factor over each amortization period.
 
@@ -189,8 +189,8 @@ It is plausible that this industry of immense wealth, one that can make a 22 yea
 Maybe Silicon Valley's noble era is coming. They're in such a rush to cure cancer. But the population is clearly uneasy, and part of it is a sense that the Valley
 is unendingly rapacious, that it lacks a public spirit, lacks vitality.
 
-They might actually put a country full of Einsteins in a datacenter that looks like a Costco wholesaler. In the bad old days we had just one Einstein,
-but we at least put him in a building worthy of his work and caring of the people that walked by its walls.
+They might actually put a country full of Einsteins in a datacenter that looks like a Costco Wholesale. In the bad old days we had just one Einstein,
+but we at least put him in a building worthy of his work and caring for the people that walked by its walls.
 
 <figure class="post-image">
   <img src="/images/prussian-academy-of-sciences.jpg" alt="Prussian Academy of Sciences building." />
