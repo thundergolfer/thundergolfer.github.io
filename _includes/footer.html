@@ -100,11 +100,131 @@ footer .footer-each a:active, footer .footer-each a:hover {
     anchors.options.placement = 'left';
     anchors.add('article h2, article h3, article h5, article h5, article h6');
 </script>{% endif %}
+{% if page.side_footnotes %}
+<script>
+(function() {
+    function footnoteIdFromHref(href) {
+        if (!href || href.charAt(0) !== '#') {
+            return null;
+        }
+
+        return href.slice(1);
+    }
+
+    function makeSideFootnote(ref, footnote, index) {
+        var note = document.createElement('span');
+        var content = footnote.cloneNode(true);
+        var backlinks = content.querySelectorAll('.reversefootnote');
+        var referenceContainer = ref.closest('sup') || ref;
+        var noteContent = '';
+
+        Array.prototype.forEach.call(backlinks, function(backlink) {
+            backlink.parentNode.removeChild(backlink);
+        });
+
+        if (content.children.length === 1 && content.firstElementChild.tagName.toLowerCase() === 'p') {
+            noteContent = content.firstElementChild.innerHTML;
+        } else {
+            noteContent = content.innerHTML;
+        }
+
+        note.className = 'side-footnote';
+        note.id = 'side-' + footnote.id;
+        note.setAttribute('role', 'note');
+        note.innerHTML = '<span class="side-footnote__number">' + (index + 1) + '</span> ' + noteContent;
+
+        ref.setAttribute('aria-controls', note.id);
+        ref.setAttribute('aria-expanded', 'false');
+
+        referenceContainer.parentNode.insertBefore(note, referenceContainer.nextSibling);
+
+        return note;
+    }
+
+    function initSideFootnotes() {
+        var article = document.querySelector('.post-content.has-side-footnotes');
+        var wideScreen = window.matchMedia('(min-width: 78em)');
+        var activeNote = null;
+
+        if (!article) {
+            return;
+        }
+
+        var refs = article.querySelectorAll('a.footnote[href^="#"]');
+
+        Array.prototype.forEach.call(refs, function(ref, index) {
+            var footnoteId = footnoteIdFromHref(ref.getAttribute('href'));
+            var footnote = footnoteId && document.getElementById(footnoteId);
+
+            if (!footnote) {
+                return;
+            }
+
+            var note = makeSideFootnote(ref, footnote, index);
+
+            ref.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                if (wideScreen.matches) {
+                    return;
+                }
+
+                if (activeNote && activeNote !== note) {
+                    activeNote.classList.remove('is-open');
+                    if (activeNote.controlRef) {
+                        activeNote.controlRef.setAttribute('aria-expanded', 'false');
+                    }
+                }
+
+                var shouldOpen = !note.classList.contains('is-open');
+                note.classList.toggle('is-open', shouldOpen);
+                ref.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+                note.controlRef = ref;
+                activeNote = shouldOpen ? note : null;
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!activeNote || article.contains(event.target)) {
+                return;
+            }
+
+            activeNote.classList.remove('is-open');
+            if (activeNote.controlRef) {
+                activeNote.controlRef.setAttribute('aria-expanded', 'false');
+            }
+            activeNote = null;
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key !== 'Escape' || !activeNote) {
+                return;
+            }
+
+            activeNote.classList.remove('is-open');
+            if (activeNote.controlRef) {
+                activeNote.controlRef.setAttribute('aria-expanded', 'false');
+                activeNote.controlRef.focus();
+            }
+            activeNote = null;
+        });
+
+        article.classList.add('is-side-footnotes-ready');
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSideFootnotes);
+    } else {
+        initSideFootnotes();
+    }
+})();
+</script>
+{% endif %}
 <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
 {% if page.tags contains 'home' %}
 <!-- Punch Tape SVG Generator -->
-<div id="punch-tape-container" style="width: 100%; height: 150px; margin-top: 30px; pointer-events: none; background: #f4f1e8;"></div>
+<div id="punch-tape-container" style="width: 100%; height: 150px; margin-top: 30px; pointer-events: none; background: #f8f6ef;"></div>
 <script>
 (function() {
     function initPunchTape() {

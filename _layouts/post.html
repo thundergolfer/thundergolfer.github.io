@@ -20,7 +20,7 @@ layout: default
   </span>
 </div>
 
-<article class="post-content">{{ content }}</article>
+<article class="post-content{% if page.side_footnotes %} has-side-footnotes{% endif %}">{{ content }}</article>
 
 {% if site.show_post_footers %} {% include post_footer.html %} {% endif %} {% if
 site.show_subscribe_cta %} {% include subscribe.html %} {% endif %}

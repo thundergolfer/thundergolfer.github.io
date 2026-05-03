@@ -4,7 +4,7 @@
 }
 
 .posts .post {
-  background-color: #f4f0e5;
+  background-color: #f8f6ef;
   margin-bottom: 0.75em;
   border-bottom: thin solid #f3f3f3;
 }
@@ -87,6 +87,82 @@
   font-size: 0.85rem;
   font-style: italic;
   text-align: center;
+}
+
+.post-content.has-side-footnotes {
+  position: relative;
+  overflow: visible;
+}
+
+.post-content.has-side-footnotes.is-side-footnotes-ready .footnotes {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.post-content.has-side-footnotes a.footnote {
+  cursor: pointer;
+}
+
+.side-footnote {
+  display: none;
+}
+
+.side-footnote__number {
+  font-feature-settings: "tnum";
+  font-size: 0.72em;
+  font-weight: 700;
+  vertical-align: super;
+}
+
+.side-footnote p {
+  margin: 0;
+}
+
+@media screen and (min-width: 78em) {
+  .post-content.has-side-footnotes .side-footnote {
+    position: absolute;
+    left: calc(100% + 2rem);
+    display: block;
+    width: 16rem;
+    color: #7a7a7a;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    text-align: left;
+    transform: translateY(-0.1rem);
+  }
+
+  .post-content.has-side-footnotes .side-footnote__number {
+    margin-right: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 77.99em) {
+  .post-content.has-side-footnotes .side-footnote {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-top: 0.35rem;
+    padding: 0.75rem 0.85rem;
+    color: $black;
+    background: #fffdf7;
+    border: 1px solid rgba(53, 53, 52, 0.14);
+    box-shadow: 0 0.5rem 1.5rem rgba(53, 53, 52, 0.16);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .post-content.has-side-footnotes .side-footnote.is-open {
+    display: block;
+  }
 }
 
 @keyframes abilene-hero-reveal {
