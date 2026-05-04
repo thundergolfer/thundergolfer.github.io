@@ -186,8 +186,7 @@ I believe it does reinforce a sense of blindness and meagreness in Silicon Valle
 
 It is plausible that this industry of immense wealth, one that can make a 22 year old in college sweatpants a billionaire, may fail to leave a legacy of public works. In my city, I walk with millions of others by the good works of a grocer (Woolworth), an automaker (Chrysler), and a steel magnate (Frick). In Brooklyn a sugar refinery is proudly restored next to a park named for it. Just five years ago a New York billionaire put in $200M for a [little park](https://en.wikipedia.org/wiki/Little_Island_at_Pier_55).
 
-Maybe Silicon Valley's noble era is coming. They're in such a rush to cure cancer. But the population is clearly uneasy, and part of it is a sense that the Valley
-is unendingly rapacious, that it lacks a public spirit, lacks vitality.
+Maybe Silicon Valley's noble era is coming. They're right now just a bit busy—in such a rush to cure cancer. But the population is clearly uneasy, and part of it is a sense that the Valley is unendingly rapacious, that it lacks a public spirit.
 
 They might actually put a country full of Einsteins in a datacenter that looks like a Costco Wholesale. In the bad old days we had just one Einstein,
 but we at least put him in a building worthy of his work and caring for the people that walked by its walls.
