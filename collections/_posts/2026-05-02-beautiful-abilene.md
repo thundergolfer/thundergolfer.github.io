@@ -149,7 +149,7 @@ To turn this cluster of buildings into a soul warmer you need only raise the GPU
 Yes, half of one percent.
 
 I've chosen here to beautify Stargate Abeline using the work of New York's [Monumental Labs](https://www.monumentallabs.co/). They use robotics
-to dramatically drop the cost of producing stone ornamentation. They've recently completed restoration work at Carnegie Hall and The Frick in Manhattan.
+to dramatically drop the cost of producing stone ornamentation. They count a Stripe founder and a Coinbase founder amongst their customers, and recently completed restoration work at Carnegie Hall and The Frick in Manhattan.
 
 | ------------------------------------------ | -------------- |
 | Building wall surface area (square meters) | 240,000 |
