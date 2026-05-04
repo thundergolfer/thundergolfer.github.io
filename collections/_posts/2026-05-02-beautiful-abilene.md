@@ -194,4 +194,7 @@ but we at least put him in a building worthy of his work and caring for the peop
 
 <figure class="post-image">
   <img src="/images/prussian-academy-of-sciences.jpg" alt="Prussian Academy of Sciences building." />
+  <figcaption>
+    The Prussian Academy of Sciences, where Einstein moved to work after his annus mirabilis.
+  </figcaption>
 </figure>
