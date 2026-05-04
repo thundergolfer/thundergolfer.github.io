@@ -160,7 +160,7 @@ to dramatically drop the cost of producing stone ornamentation. They count a Str
 | Landscaping | $10,000,000 |
 | Ornament amortization[^ornament-amortization] | 25 years |
 
-[^ornament-amortization]: A nice thing about stone ornamentation is that it ages gracefully and thus holds its value over a very long time. It's not outlandish to say that it would need to be replaced every 50 or 100 years.
+[^ornament-amortization]: A nice thing about stone ornamentation is that it ages gracefully and thus holds its value over a very long time. It's not outlandish to say that it would need to be replaced only every 50 or 100 years.
 
 [^monumental-list-prices]: I'm using list prices from the website of Monumental Labs.
 
