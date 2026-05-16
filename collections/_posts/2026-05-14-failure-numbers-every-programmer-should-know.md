@@ -36,8 +36,8 @@ Failure numbers are for programmers who want their systems to be *reliable*.
 | HDD failure | Hardware | ~60 | ~1.5% | Backblaze's 2025 fleet snapshot reports 1.36% annual AFR and 1.30% lifetime AFR across hundreds of thousands of drives.[^backblaze-hdd] Use 1-2% unless you know the specific drive model and age. |
 | RAM uncorrectable error | Hardware | ~75 | ~1-4% | In Google's DRAM study, 1.29% of machines per year had at least one uncorrectable error, with individual platforms reaching 4.15%.[^dram-errors] One uncorrectable error typically means a machine shutdown and DIMM replacement. |
 | AWS regional outage, non-us-east-1 | Service | ~4 | ~25% | Here a failure means a region-scale incident big enough to require application-level mitigation, not every status page blip. |
-| AWS regional outage, us-east-1 | Service | ~2 | ~50% | us-east-1 deserves its own row because it is old, huge, and entangled with many AWS control planes. See the October 2025 AWS outage for the shape of one such event. |
-| ElastiCache node failure | Service | ~0.3 | ~300% | AWS documents node replacement and failover as normal ElastiCache operating behavior.[^elasticache-resilience] The rate here is based on internal Modal operational data: roughly three node failures or replacements per node-year in the fleet. |
+| AWS regional outage, us-east-1 | Service | ~2 | ~50% | us-east-1 deserves its own row because it is old, huge, and entangled with many AWS control planes. See the [October 2025 AWS outage](/blog/aws-us-east-1-outage-oct20) for the shape of one such event. |
+| ElastiCache 50-node cluster failover rate | Service | ~0.2 (73 days) | ~500% | AWS documents node replacement and failover as normal ElastiCache operating behavior.[^elasticache-resilience] If each node has a 10-year MTTF, then a 50-node cluster has a cluster-level any-node failover MTTF of roughly 0.2 years: `10 years / 50 nodes`. That is about five failovers per cluster-year, assuming independent constant-rate node failures. This is a cluster-level operational rate, not a per-node failure rate. |
 | NVIDIA A100 critical error[^gpu-critical] | Hardware | ~0.18 (65 days) | ~560% | Internal Modal fleet measurements. At this rate, a fleet of 1,000 A100s should expect about 15 critical GPU errors per day. |
 | NVIDIA H100 critical error | Hardware | ~0.14 (50 days) | ~730% | Internal Modal fleet measurements. |
 | Cloud VM unavailability | Service | ~20-100 | ~1-5% | Cloud providers publish availability SLAs, not clean per-VM failure rates.[^aws-compute-sla] For a single cloud VM, I use 1-5% as a rough annual chance that the VM needs recovery or replacement because the underlying host, network, or power failed underneath it. |
@@ -148,6 +148,8 @@ Failure numbers are for programmers who want their systems to be *reliable*.
 
   .failure-chart__bar {
     width: var(--bar-size);
+    min-width: 0.15rem;
+    max-width: 100%;
     height: 100%;
     background: var(--bar-color);
     border-radius: inherit;
@@ -245,7 +247,7 @@ Failure numbers are for programmers who want their systems to be *reliable*.
       { name: "Cloud VM unavailability", type: "Service", years: 45, label: "~20-100 years" },
       { name: "AWS regional outage, non-us-east-1", type: "Service", years: 4, label: "~4 years" },
       { name: "AWS regional outage, us-east-1", type: "Service", years: 2, label: "~2 years" },
-      { name: "ElastiCache node failure", type: "Service", years: 0.3, label: "~0.3 years" },
+      { name: "ElastiCache 50-node cluster failover rate", type: "Service", years: 0.2, label: "~73 days" },
       { name: "NVIDIA A100 critical error", type: "Hardware", years: 0.18, label: "~65 days" },
       { name: "NVIDIA H100 critical error", type: "Hardware", years: 0.14, label: "~50 days" },
       { name: "Production bug or defect", type: "Software", years: 0.003, label: "~12h-2d" }
