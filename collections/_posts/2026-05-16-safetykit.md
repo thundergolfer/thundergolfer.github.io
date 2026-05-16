@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "safetykit"
-date: 2026-05-14
+date: 2026-05-16
 summary: A small collection of safety demos for human-in-the-loop scripts.
 categories: software safety
 permalink: safetykit
