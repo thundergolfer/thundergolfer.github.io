@@ -1,0 +1,7 @@
+{"version":2,"width":88,"height":14,"timestamp":1778970000,"env":{"SHELL":"/bin/zsh","TERM":"xterm-256color"}}
+[0.1,"o","$ python safetykit.py confirm\r\n"]
+[0.4,"o","Selected file for deletion: stale-cache.tmp\r\n"]
+[0.7,"o","Type the filename 'stale-cache.tmp' to confirm deletion: "]
+[1.5,"o","stale-cache.tmp\r\n"]
+[1.8,"o","\u2705 Removed: stale-cache.tmp\r\n"]
+[2.1,"o","$ "]

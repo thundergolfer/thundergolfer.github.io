@@ -1,0 +1,6 @@
+{"version":2,"width":88,"height":14,"timestamp":1778970000,"env":{"SHELL":"/bin/zsh","TERM":"xterm-256color"}}
+[0.1,"o","$ python safetykit.py pause\r\n"]
+[0.3,"o","Running rm -rf on system root (/).\r\n"]
+[0.5,"o","Let's free some disk space!\r\n"]
+[2.5,"o","Just kidding!\r\n"]
+[2.8,"o","$ "]

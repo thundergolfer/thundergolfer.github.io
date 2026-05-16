@@ -1,0 +1,12 @@
+{"version":2,"width":88,"height":16,"timestamp":1778970000,"env":{"SHELL":"/bin/zsh","TERM":"xterm-256color"}}
+[0.1,"o","$ python safetykit.py undo\r\n"]
+[0.3,"o","Demo workspace: /tmp/safetykit_undo_4m7d2j\r\n"]
+[0.5,"o","Created: /tmp/safetykit_undo_4m7d2j/important-report.txt\r\n"]
+[0.7,"o","Moved to quarantine: /tmp/safetykit_undo_4m7d2j/quarantine/important-report.txt.deleted\r\n"]
+[0.9,"o","Press any key within 10 seconds to undo the delete.\r\n"]
+[1.1,"o","Committing delete in 10s...\r\n"]
+[1.8,"o","Committing delete in  9s...\r\n"]
+[2.5,"o","Committing delete in  8s...\r\n"]
+[3.2,"o","x\r\n"]
+[3.4,"o","\u2705 Cancelled delete and restored: /tmp/safetykit_undo_4m7d2j/important-report.txt\r\n"]
+[3.7,"o","$ "]

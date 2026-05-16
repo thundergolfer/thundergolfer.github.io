@@ -1,0 +1,13 @@
+{"version":2,"width":88,"height":18,"timestamp":1778970000,"env":{"SHELL":"/bin/zsh","TERM":"xterm-256color"}}
+[0.1,"o","$ python safetykit.py feedback\r\n"]
+[0.4,"o","Selected logical core 7 from 12 available cores.\r\n"]
+[0.6,"o","Raising CPU pressure. Press Ctrl-C to stop.\r\n\r\n"]
+[0.9,"o","CPU affinity pinning is not available on this platform; running best-effort.\r\n"]
+[1.2,"o","\u001b[94mcore=07 target= 10% usage=  9.7% blue   [###-------------------------]\u001b[0m\r\n"]
+[1.6,"o","\u001b[92mcore=07 target= 30% usage= 29.8% green  [########--------------------]\u001b[0m\r\n"]
+[2.0,"o","\u001b[93mcore=07 target= 50% usage= 49.5% yellow [##############--------------]\u001b[0m\r\n"]
+[2.4,"o","\u001b[38;5;208mcore=07 target= 70% usage= 69.2% orange [###################---------]\u001b[0m\r\n"]
+[2.8,"o","\u001b[91mcore=07 target= 90% usage= 89.4% red    [#########################---]\u001b[0m\r\n"]
+[3.2,"o","\u001b[91mcore=07 target=100% usage= 98.1% red    [###########################-]\u001b[0m\r\n"]
+[3.5,"o","\r\nCPU pressure reached 100%. Cooling down.\r\n"]
+[3.8,"o","$ "]

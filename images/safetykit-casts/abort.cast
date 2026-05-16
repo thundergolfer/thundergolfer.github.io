@@ -1,0 +1,7 @@
+{"version":2,"width":88,"height":14,"timestamp":1778970000,"env":{"SHELL":"/bin/zsh","TERM":"xterm-256color"}}
+[0.1,"o","$ python safetykit.py abort\r\n"]
+[0.4,"o","Writing data to /tmp/critical_output.txt safely (interrupt with Ctrl-C or kill)...\r\n"]
+[0.8,"o","...writing (simulate slow write, try interrupting now)...\r\n"]
+[2.0,"o","^C\r\n"]
+[2.2,"o","Abort received. Temporary file removed; committed output was not corrupted.\r\n"]
+[2.5,"o","$ "]
