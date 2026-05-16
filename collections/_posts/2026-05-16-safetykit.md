@@ -181,11 +181,19 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
       renderFull();
     };
 
-    document.querySelectorAll(".safetykit-cast").forEach((container) => {
-      loadCast(container).catch(() => {
-        container.textContent = "Could not load terminal recording.";
+    const initialisePlayers = () => {
+      document.querySelectorAll(".safetykit-cast").forEach((container) => {
+        loadCast(container).catch(() => {
+          container.textContent = "Could not load terminal recording.";
+        });
       });
-    });
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initialisePlayers);
+    } else {
+      initialisePlayers();
+    }
   })();
 </script>
 
