@@ -162,7 +162,7 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
 
         events.forEach((event) => {
           const eventTime = event[0];
-          accumulatedDelay += Math.max(50, Math.min(900, (eventTime - previousTime) * 450));
+          accumulatedDelay += Math.max(40, Math.min(1600, (eventTime - previousTime) * 1000));
           previousTime = eventTime;
           timers.push(
             setTimeout(() => {
