@@ -126,7 +126,7 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
       container.innerHTML = `
         <div class="safetykit-cast__bar">
           <span>${escapeHtml(title)}</span>
-          <button class="safetykit-cast__button" type="button">Replay</button>
+          <button class="safetykit-cast__button" type="button">Play</button>
         </div>
         <pre class="safetykit-cast__body" aria-label="${escapeHtml(title)} terminal recording"></pre>
       `;
@@ -149,7 +149,7 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
         body.innerHTML = terminalHtml(normaliseTerminalText(text));
         body.scrollTop = body.scrollHeight;
       };
-      const renderFull = () => render(events.map((event) => event[2]).join(""));
+      const renderInitial = () => render(events[0]?.[2] || "");
 
       button.addEventListener("click", () => {
         clearTimers();
@@ -157,6 +157,7 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
         let accumulatedDelay = 500;
         let previousTime = 0;
         button.disabled = true;
+        button.textContent = "Playing...";
         render("");
 
         events.forEach((event) => {
@@ -174,11 +175,12 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
         timers.push(
           setTimeout(() => {
             button.disabled = false;
+            button.textContent = "Replay";
           }, accumulatedDelay + 50)
         );
       });
 
-      renderFull();
+      renderInitial();
     };
 
     const initialisePlayers = () => {
