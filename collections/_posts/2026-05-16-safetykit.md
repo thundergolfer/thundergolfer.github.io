@@ -154,7 +154,7 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
       button.addEventListener("click", () => {
         clearTimers();
         let transcript = "";
-        let accumulatedDelay = 0;
+        let accumulatedDelay = 500;
         let previousTime = 0;
         button.disabled = true;
         render("");
