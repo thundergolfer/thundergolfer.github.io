@@ -231,7 +231,7 @@ Moves a file into quarantine first, waits briefly for a cancel key, and only com
 
 ## feedback
 
-Ramps CPU pressure on one logical core while printing color-coded progress, making the system's changing state visible.
+Ramps CPU pressure on one logical core while printing color-coded progress, then stops cleanly when the user interrupts.
 
 <div class="safetykit-cast" data-title="python safetykit.py feedback" data-cast="/images/safetykit-casts/feedback.cast"></div>
 

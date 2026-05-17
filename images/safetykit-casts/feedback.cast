@@ -20,5 +20,6 @@
 [5.15,"o","\u001b[38;5;208mcore=07 target= 70% usage= 69.2% orange [###################---------]\u001b[0m\r\n"]
 [5.60,"o","\u001b[91mcore=07 target= 90% usage= 89.4% red    [#########################---]\u001b[0m\r\n"]
 [6.05,"o","\u001b[91mcore=07 target=100% usage= 98.1% red    [###########################-]\u001b[0m\r\n"]
-[6.34,"o","\r\nCPU pressure reached 100%. Cooling down.\r\n"]
-[6.70,"o","$ "]
+[6.32,"o","^C\r\n"]
+[6.55,"o","Recieved interrupt. Stopping...\r\n"]
+[6.95,"o","$ "]
