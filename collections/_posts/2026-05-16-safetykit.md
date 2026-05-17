@@ -201,9 +201,9 @@ The gist exists to make common safety techniques concrete. Instead of saying "be
 
 ## dryrun
 
-Separates planning from execution by printing what would happen before anything actually changes.
+Separates planning from execution by printing what would happen first, then shows the wet run committing the same delete.
 
-<div class="safetykit-cast" data-title="python safetykit.py dryrun" data-cast="/images/safetykit-casts/dryrun.cast"></div>
+<div class="safetykit-cast" data-title="python safetykit.py dryrun, then wet run" data-cast="/images/safetykit-casts/dryrun.cast"></div>
 
 ## confirm
 
