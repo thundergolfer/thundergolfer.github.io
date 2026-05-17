@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "safetykit"
-date: 2026-05-16
+date: 2026-05-17
 summary: A small collection of safety demos for human-in-the-loop scripts.
 categories: software safety
 permalink: safetykit
@@ -13,10 +13,13 @@ permalink: safetykit
       <img src="images/safetykit-lockout.jpg" alt="Lockout tags left on controls in an abandoned power plant" style="width: 100%;">
     </div>
   </div>
-  <figcaption style="color: #777;">Tags left in place in a powerplant after it was shut down, decommissioned, and abandoned</figcaption>
+  <figcaption style="color: #777;">Tags left in place in a powerplant after it was shut down, decommissioned, and abandoned.</figcaption>
 </figure>
 
-I made a small Python gist called [`safetykit`](https://gist.github.com/thundergolfer/931f08687d6b1b215083dbeb56f29f50). It is not meant to be a polished package. It is a set of runnable demonstrations for a simple idea: production scripts should have seatbelts.
+For some reason I'm a particularly cautious software engineer. It has its downsides, but one concrete benefit is that when I [slip](https://ixdf.org/literature/book/the-glossary-of-human-computer-interaction/human-error-slips-and-mistakes) (everyone does), those
+slips are less likely to cause an incident. Over time I've seen slips contribute to many serious incidents, and have come to properly value the role of straightforward safety mechanisms in tools.
+The most obvious and commonly used mechanism is [`--dry-run`](https://www.gresearch.com/news/in-praise-of-dry-run/), but there are many more safety mechanisms you can introduce into a semi-automated system.
+I've made a small Python gist called [safetykit](https://gist.github.com/thundergolfer/931f08687d6b1b215083dbeb56f29f50) to collect these mechanisms. It is a set of runnable demonstrations that advance a simple idea: production scripts should have seatbelts.
 
 The gist exists to make common safety techniques concrete. Instead of saying "be careful with destructive scripts", it shows a few ways a script can slow down, explain itself, ask for help, recover from interruption, and leave evidence behind.
 
@@ -231,7 +234,9 @@ Moves a file into quarantine first, waits briefly for a cancel key, and only com
 
 ## feedback
 
-Ramps CPU pressure on one logical core while printing color-coded progress, then stops cleanly when the user interrupts.
+Feedback is central to safety. When humans or machines act in the world, they need feedback to tell
+whether their actions are safe and whether their internal _model_ of the world corresponds to reality.
+This demo ramps CPU pressure on one logical core while printing color-coded progress, then stops cleanly when the user notices the overload and interrupts.
 
 <div class="safetykit-cast" data-title="python safetykit.py feedback" data-cast="/images/safetykit-casts/feedback.cast"></div>
 
@@ -243,7 +248,8 @@ Emits a JSON Lines audit trail with hash chaining so a run has a durable record 
 
 ## two_person
 
-Requires a second independently run script, with a shared secret, before the initiating script proceeds.
+Requires a second independently run script, with a shared secret, before the initiating script proceeds. It's a translation of the [two-person rule](https://en.wikipedia.org/wiki/Two-person_rule)
+used in nuclear weapons management. This software version has serious design flaws, but it was a fun exercise to sketch out.
 
 <div class="safetykit-cast" data-title="python safetykit.py two_person" data-cast="/images/safetykit-casts/two-person.cast"></div>
 
