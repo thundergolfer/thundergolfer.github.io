@@ -207,7 +207,7 @@ Separates planning from execution by printing what would happen first, then show
 
 ## confirm
 
-Requires a typed confirmation before deleting a selected file, using a stronger guard than a reflexive y/n prompt.
+Requires a typed confirmation before deleting a selected file, using a stronger guard than a reflexive y/n prompt. One cautionary reference is Leveson and Turner's [Therac-25 accident investigation](https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html), where repeated proceed prompts helped train operators into dangerous reflexes.
 
 <div class="safetykit-cast" data-title="python safetykit.py confirm" data-cast="/images/safetykit-casts/confirm.cast"></div>
 
