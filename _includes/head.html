@@ -15,9 +15,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
-    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
-    <link rel="dns-prefetch" href="//cdn.mathjax.org">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    {% if site.enable_anchorjs %}<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">{% endif %}
+    {% if site.enable_mathjax or page.mathjax == true %}<link rel="dns-prefetch" href="//cdn.mathjax.org">{% endif %}
+    {% if site.show_social_icons or site.show_sharing_icons %}<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">{% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
     {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">
@@ -27,8 +27,13 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
-    <!-- JQuery (Required for menu, Github Projects Page, and Resume Page for PDF printing) -->
+    {% if page.categories contains "project" or page.tags contains "portfolio" or page.tags contains "projects" %}
+    <!-- jQuery: only loaded on the projects/portfolio pages that actually need it.
+         These pages have inline <script> blocks (gh_projects.js, util_buttons.js, the
+         $("#display-projects").getRepos(...) bootstrap) that reference $ during parse,
+         so jQuery cannot be deferred here without restructuring those callers. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {% endif %}
 
     {% if page.categories contains "project" or page.tags contains "portfolio" %}
     <!-- Page-type specific CSS -->
@@ -44,14 +49,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0.3/extras/css/emojione.min.css"/>
     {% endif %}
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+    <!-- Fonts: self-hosted (see _sass/_fonts.scss, served from /css/fonts/).
+         The @font-face rules ship inside junior.css, so there's no third-party
+         CSS round-trip to fonts.googleapis.com and no extra origin to connect to.
+         We preload the primary latin subsets (body/headings = Cabin, code =
+         Source Code Pro) so they download in parallel with the CSS rather than
+         being discovered only after junior.css is parsed. font-display: swap
+         keeps text visible while they load. -->
+    <link rel="preload" href="{{ "/css/fonts/cabin-normal-latin.woff2" | prepend: site.baseurl }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ "/css/fonts/source-code-pro-normal-latin.woff2" | prepend: site.baseurl }}" as="font" type="font/woff2" crossorigin>
     {% if site.show_social_icons or site.show_sharing_icons %}
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     {% endif %}
 
     {% if site.enable_mathjax or page.mathjax == true %}

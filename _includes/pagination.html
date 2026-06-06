@@ -2,9 +2,9 @@
   <div class="left">
     {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
-        <a href="{{ site.baseurl }}/blog/">
+        <a href="{{ site.baseurl }}/blog/" aria-label="Previous page">
           <span class="left-circle-arrow">
-            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
               <!-- Arrow stem (three rows of dots) -->
               <!-- Top row -->
               <circle cx="30" cy="24" r="2" fill="#000"/>
@@ -37,9 +37,9 @@
           </span>
         </a>
       {% else %}
-        <a href="{{ paginator.previous_page_path }}">
+        <a href="{{ paginator.previous_page_path }}" aria-label="Previous page">
           <span class="left-circle-arrow">
-            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
               <!-- Arrow stem (three rows of dots) -->
               <!-- Top row -->
               <circle cx="30" cy="24" r="2" fill="#000"/>
@@ -73,9 +73,8 @@
         </a>
       {% endif %}
     {% else %}
-        <a href="">
-          <span class="left-circle-arrow arrow-disabled">
-            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <span class="left-circle-arrow arrow-disabled" role="link" aria-disabled="true" aria-label="Previous page (unavailable)">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
               <!-- Arrow stem (three rows of dots) -->
               <!-- Top row -->
               <circle cx="30" cy="24" r="2" fill="#000"/>
@@ -105,15 +104,14 @@
               <circle cx="24" cy="40" r="2" fill="#000"/>
               <circle cx="24" cy="48" r="2" fill="#000"/>
             </svg>
-          </span>
-        </a>
+        </span>
     {% endif %}
   </div>
   <div class="right">
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}">
+      <a href="{{ paginator.next_page_path }}" aria-label="Next page">
           <span class="right-circle-arrow">
-            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
               <!-- Arrow stem (three rows of dots) -->
               <!-- Top row -->
               <circle cx="10" cy="24" r="2" fill="#000"/>
@@ -145,9 +143,8 @@
           </span>
       </a>
     {% else %}
-      <a href="">
-        <span class="right-circle-arrow arrow-disabled">
-          <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <span class="right-circle-arrow arrow-disabled" role="link" aria-disabled="true" aria-label="Next page (unavailable)">
+          <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
               <!-- Arrow stem (two rows of dots) -->
               <circle cx="10" cy="28" r="2" fill="#000"/>
               <circle cx="16" cy="28" r="2" fill="#000"/>
@@ -167,7 +164,6 @@
               <circle cx="40" cy="40" r="2" fill="#000"/>
           </svg>
         </span>
-      </a>
     {% endif %}
   </div>
 </div>
