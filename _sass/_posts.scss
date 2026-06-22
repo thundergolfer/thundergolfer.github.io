@@ -31,6 +31,47 @@
   font-weight: 400;
 }
 
+// Faint vertical rules that bound the article column, à la brandur.org.
+// The text measure is preserved; the lines sit just outside it and begin at
+// the article body (i.e. below the title/meta header), and any horizontal
+// rule is stretched so it meets the lines exactly.
+$post-gutter: 2rem;
+$post-rule-color: rgba(53, 53, 52, 0.12);
+
+@media screen and (min-width: 52em) {
+  .post-page .measure {
+    padding-left: $post-gutter;
+    padding-right: $post-gutter;
+  }
+
+  .post-page .post-body {
+    position: relative;
+  }
+
+  .post-page .post-body::before,
+  .post-page .post-body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: $post-rule-color;
+  }
+
+  .post-page .post-body::before {
+    left: -$post-gutter;
+  }
+
+  .post-page .post-body::after {
+    right: -$post-gutter;
+  }
+
+  .post-page .measure hr {
+    margin-left: -$post-gutter;
+    margin-right: -$post-gutter;
+  }
+}
+
 .abilene-hero {
   margin: 0 0 2rem;
 }
@@ -128,7 +169,7 @@
 @media screen and (min-width: 78em) {
   .post-content.has-side-footnotes .side-footnote {
     position: absolute;
-    left: calc(100% + 2rem);
+    left: calc(100% + 3rem);
     display: block;
     width: 16rem;
     color: #7a7a7a;

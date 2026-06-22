@@ -4,7 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="site{% if page.tags contains 'home' %} home{% endif %}">
+<body class="site{% if page.tags contains 'home' %} home{% endif %}{% if page.layout == 'post' %} post-page{% endif %}">
   {% include header.html %}
   <div class="site-wrap">
 

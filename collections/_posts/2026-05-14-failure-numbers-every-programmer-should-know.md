@@ -201,7 +201,7 @@ Failure numbers are for programmers who want their systems to be *reliable*.
     .failure-table-toolbar {
       position: absolute;
       top: 0;
-      left: calc(100% + 2rem);
+      left: calc(100% + 3rem);
       display: block;
       width: 16rem;
       margin: 0;
