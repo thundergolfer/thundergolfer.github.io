@@ -8,7 +8,7 @@ permalink: /blog/playing-pinball/
 image: /images/playing-pinball-the-city-rises.jpg
 ---
 
-<figure style="width: 90%; margin: 0 auto 1.5em;">
+<figure style="width: 100%; margin: 0 auto 1.5em;">
   <img
     src="/images/playing-pinball-the-city-rises.jpg"
     alt="Umberto Boccioni’s The City Rises, with workers and a powerful red horse amid a city under construction."
