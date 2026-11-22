@@ -5,20 +5,20 @@ date: 2026-11-22
 categories: software startups
 summary: The point of playing is to keep playing, to secure another go at it.
 permalink: /blog/playing-pinball/
-image: /images/playing-pinball-boccioni.jpg
+image: /images/playing-pinball-the-city-rises.jpg
 ---
 
 <figure style="width: 90%; margin: 0 auto 1.5em;">
   <img
-    src="/images/playing-pinball-boccioni.jpg"
-    alt="Umberto Boccioni’s abstract painting of a soccer player in motion, with interlocking blue, red, green, and yellow forms."
-    width="1562"
-    height="1501"
+    src="/images/playing-pinball-the-city-rises.jpg"
+    alt="Umberto Boccioni’s The City Rises, with workers and a powerful red horse amid a city under construction."
+    width="650"
+    height="431"
     fetchpriority="high"
     style="display: block; width: 100%; height: auto; border-radius: 0.4em;"
   >
   <figcaption style="color: #777; margin-top: 0.5em;">
-    Umberto Boccioni, <a href="https://www.arthistoryproject.com/artists/umberto-boccioni/dynamism-of-a-soccer-player/"><em>Dynamism of a Soccer Player</em></a>, 1913.
+    Umberto Boccioni, <a href="https://cdn.kastatic.org/ka-perseus-images/dc7d35236a9f4ed061fbe0379170d77f1a917af2.jpg"><em>The City Rises</em></a>.
   </figcaption>
 </figure>
 
