@@ -185,7 +185,7 @@ My main takeaway is that in our industry the design, implementation, and operati
 
 Software systems are far more complex and buggy than we realize. Useful software systems, such as EC2, [always operate in a degraded state](https://how.complexsystems.fail/) with dozens of present or latent bugs and faults. The presence of constant safety, of the cherished five 9s, is not a miracle, but a very challenging design and operational endeavor. 
 
-Monday was a bad day for hyper-scaled distributed systems. But in in the long run the public cloud industry will root out its unsound design and operation. Today’s [advanced correctness and reliability practices](https://assets.amazon.science/67/f9/92733d574c11ba1a11bd08bfb8ae/how-amazon-web-services-uses-formal-methods.pdf) will become normal.
+Monday was a bad day for hyper-scaled distributed systems. But in the long run the public cloud industry will root out its unsound design and operation. Today’s [advanced correctness and reliability practices](https://assets.amazon.science/67/f9/92733d574c11ba1a11bd08bfb8ae/how-amazon-web-services-uses-formal-methods.pdf) will become normal.
 
 [^1]: I originally said "layer zero", but Brad Knowles, ex-AWS, [corrected me](https://www.linkedin.com/feed/update/urn:li:activity:7388747844003991552/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7388747844003991552%2C7388989179097071636%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287388989179097071636%2Curn%3Ali%3Aactivity%3A7388747844003991552%29) that NTP and DHCP are layer zero, not EC2 and DynamoDB. 
 [^2]: After writing this, I'm now doubting it. It's also plausible that the TOCTOU bug existed for no good reason.
